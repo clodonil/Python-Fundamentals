@@ -38,18 +38,52 @@ Atribuição em cadeia
 ```
 ### Escopo de Variável
 ### Estrutura de Dados
-   ####  String 
+   #### String 
+   String é uma sequencia de caracteres Unicode. Para representar uma string pode ser utilizado aspas simples e aspa duplas.
+   Exemplo:
+   ```python
+       texto="As vezes voce tem que levantar sozinho e seguir em frente"
+   ```
+   Para declarar multiplas linhas utilize 3 aspas simple.
+   Exemplo:
+   ```python
+        texto='''
+               Tudo é possivel. 
+               O impossível apenas demora mais
+               '''
+   ```
+  Semelhante a lista e Tuplas, as string também utilizam o operador [ ]. Dessa forma é possível obter apenas parte da string.
+  Exemplo:
+  ```python
+  texto="As vezes voce tem que levantar sozinho e seguir em frente" 
+  # Recuperar o caractere da posição 5
+  texto[6]   # Retorno "z"
+   
+  # Recuperar do inicio da string ate posição 10
+  texto[0:10]  # Retorno "As vezes vo"
+  
+  # Recuperar da posição 10 até a posição 15
+  texto[10:15] # retorno "
+  ```
+   
+   String is sequence of Unicode characters. We can use single quotes or double quotes to represent strings. Multi-line strings can be denoted using triple quotes, ''' or """.
    #### Numbers
    #### List
    #### Tuple
    #### Dictionary
+   #### Conversão entre tipos
 
 ## Operadores
 ## Controle de Fluxo
+O controle de fluxo de dados no Python podem ser realizado utilizado
+If
 ```python
 x=10
 if x > 10:
     print("Maior que 10")
 ```   
-
+Case
+While
+For
+Until
 
