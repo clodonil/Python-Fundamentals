@@ -7,7 +7,9 @@ Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a de
 O curso tem carga horária de 40 horas
 
 ## Conteúdo
+
 - Modulo 1
+
    -- Pré-história;
    -- Criador da linguagem;
    -- Conceitos da Linguagem
