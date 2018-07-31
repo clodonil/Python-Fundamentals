@@ -87,9 +87,41 @@ a = 1+2j
 print(a, "numero complexo?", isinstance(1+2j,complex))
 ```
    #### 5.2.3 List
-   #### 5.2.4 Tuple
-   #### 5.2.5 Dictionary
-   #### 5.2.6 Conversão entre tipos
+ Lista é Python é uma sequencia de item, equivale os array de outras linguagem. A lista é um dos tipos de dados mais utilizados em Python por ser muito flexivel.Todos os items de uma lista NÃO precisam ser do mesmo tipo.  
+   
+Exemplo:
+
+```python 
+lista=[10,60,'jose','45234234',50.9]
+# Mostrando a lista
+print("Conteudo da lista, lista)
+```
+Nas listas podemos utilizar o operador [ ]. Dessa forma podemos obter um elementro especifico da lista ou mostrar uma conjunto de elemento.
+
+Exemplo:
+```python
+lista=[10,30,50,90,100,1,5,19]
+
+# lista[2] = 50
+print("lista[2] = ", lista[2])
+
+# lista[0:3] = [10, 30, 50]
+print("lista[0:3] = ", lista[0:3])
+
+# lista[5:] = [1, 5, 19]
+print("lista[5:] = ", lista[5:])
+```
+A lista podem ser alteradas.
+```python
+a = [1,2,3]
+a[2]=4
+
+# [1, 2, 4]
+print(a)
+```
+#### 5.2.4 Tuple
+#### 5.2.5 Dictionary
+#### 5.2.6 Conversão entre tipos
 
 ## 5.3 Operadores
 ## 5.3 Controle de Fluxo
