@@ -4,7 +4,7 @@
 Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a desenvolver aplicações ricas com acesso a banco de dados e interface WEB
 
 ## Conteúdo:
-   - [Pré-história](#prehistoria)
+   - [História](#historia)
    - [Criador da linguagem](#criadodalinguagem)
    - [Conceitos da Linguagem](#conceitodalinguagem)
    - [Ambiente de Desenvolvimento](#ambientededesenvolvimento)
@@ -15,7 +15,9 @@ Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a de
    - [Estrutura de dados](#estruturadedados)
 
 
-## Pré História
+## História
+A 
+![http://mindbending.org/pt/a-historia-do-python](http://mindbending.org/pt/a-historia-do-python)
 ## Criador da Linguagem
 ## Conceitos da Linguagem
 ## Ambiente de Desenvolvimento;
