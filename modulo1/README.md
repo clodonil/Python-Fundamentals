@@ -29,6 +29,21 @@ Não vou escrever sobre a história do Python porque já tem muita coisa boa esc
 ## Ambiente de Desenvolvimento;
 ## Sintaxe básica
 ## Variável
+```python
+   dados=10
+```
+Atribuição em cadeia
+```python
+   dados=x=filho=10
+```
+### Escopo de Variável
+### Estrutura de Dados
+   ####  String 
+   #### Numbers
+   #### List
+   #### Tuple
+   #### Dictionary
+
 ## Operadores
 ## Controle de Fluxo
 ```python
@@ -36,5 +51,5 @@ x=10
 if x > 10:
     print("Maior que 10")
 ```   
-## Estrutura de Dados
+
 
