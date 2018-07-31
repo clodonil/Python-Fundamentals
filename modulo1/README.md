@@ -16,7 +16,9 @@ Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a de
 
 ## História
 No Brasil em 1989, Collor de Melo vencia a primeira eleição direta, na Alemanha caia o muro de Belim e na Holanda o Guido Van Rossum criava a linguagem Python.
+
 A história da linguagem é fantástica e seu aprendizado vai se tornar mais divertido após tomar conhecimento de alguns eventos que aconteceram.
+
 Não vou escrever sobre a história do Python porque já tem muita coisa boa escrita, segue alguns links que vale a pena ler:
 
 * [http://mindbending.org/pt/a-historia-do-python](http://mindbending.org/pt/a-historia-do-python)
