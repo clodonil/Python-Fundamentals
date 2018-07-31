@@ -74,7 +74,7 @@ Atribuição em cadeia
    Exemplo:
    
   
-  > No exemplo abaixo utilizamos a função type() para mostrar o tipo da classe da variável. Também usamos a função isinstance() para verificar/comparar o tipo da váriavel. Se for o mesmo tipo ele retorno true.
+  > No exemplo abaixo utilizamos a função `type()` para mostrar o tipo da classe da variável. Também usamos a função `isinstance()` para verificar/comparar o tipo da váriavel. Se for o mesmo tipo ele retorno true.
   
 ```python
 a = 5
