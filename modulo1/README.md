@@ -120,6 +120,16 @@ a[2]=4
 print(a)
 ```
 #### 5.2.4 Tuple
+As tuple são uma sequencia de itens, semelhante a uma lista. A diferença que a tuples são imultavél. Uma vez que a tupla são criadas,não podem ser modificadas.
+
+As tuplas são usadas para dados que são protegidas contra gravação e por não serem modificadas dinamicamente, elas são usualmente mais rapidas que as listas. 
+
+Exemplo:
+```python
+t = (10,40,'jose','maria',6.5)
+
+print(t[1])
+```
 #### 5.2.5 Dictionary
 #### 5.2.6 Conversão entre tipos
 
