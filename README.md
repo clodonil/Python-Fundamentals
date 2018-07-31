@@ -19,27 +19,27 @@ O curso tem carga horária de 40 horas
    - Estrutura de dados;
 
 ### Módulo 2
-   -- Funções builtin;
-   -- Principais bibliotecas: Strings, data, boolean,number ;
-   -- Métodos para lista, dicionário e set;
-   -- Instalação de pacote com pip;
-   -- Classes
-   -- Herança
-   -- Polimorfismo
-   -- Métodos
-   -- Atributos
-   -- Encapsulamento;
+   - Funções builtin;
+   - Principais bibliotecas: Strings, data, boolean,number ;
+   - Métodos para lista, dicionário e set;
+   - Instalação de pacote com pip;
+   - Classes
+   - Herança
+   - Polimorfismo
+   - Métodos
+   - Atributos
+   - Encapsulamento;
    
 ### Módulo 3
-   -- Trabalhando com arquivos
-   -- JSON e CSV
-   -- Banco de dados;
-   -- Modulos e Package;
+   - Trabalhando com arquivos
+   - JSON e CSV
+   - Banco de dados;
+   - Modulos e Package;
 
 ### Módulo 4
-   -- Tests;
-   -- Frameworks;
-   -- Como criar executaveis
+   - Tests;
+   - Frameworks;
+   - Como criar executaveis
    
 ## Módulo 5
-   -- Desenvolvimento WEB com Flask
+   - Desenvolvimento WEB com Flask
