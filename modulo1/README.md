@@ -1,11 +1,11 @@
-# Python Fundamentals
+# Módulo 1  - Python Fundamentals
 
 ## Objetivo
 Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a desenvolver aplicações ricas com acesso a banco de dados e interface WEB
 
 ## Conteúdo:
-   - [Pré-história](#pre historia)
-   - [Criador da linguagem]
+   - [Pré-história](#prehistoria)
+   - [Criador da linguagem](#criadodalinguagem)
    - Conceitos da Linguagem
    - Ambiente de Desenvolvimento;
    - Sintaxe básica
