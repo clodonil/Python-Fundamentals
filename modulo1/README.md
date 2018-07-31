@@ -68,9 +68,14 @@ Atribuição em cadeia
    
    #### 5.2.2 Numbers
    Com python é possível utilizar 3 tipos de variável para números. São os Inteiros (int), Ponto Flutuante (float) e os números complexos (complex).
+   
    Não é necessário declarar os tipos que deseja utilizar, apenas declarar o conteúdo que o tipo automáticamente é alocado.
+   
    Exemplo:
-We can use the type() function to know which class a variable or a value belongs to and the isinstance() function to check if an object belongs to a particular class.
+   
+  
+  ->  We can use the type() function to know which class a variable or a value belongs to and the isinstance() function to check if an object belongs to a particular class.
+  
 ```python
 a = 5
 print(a, "do tipo", type(a))
