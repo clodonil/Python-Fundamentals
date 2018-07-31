@@ -14,7 +14,7 @@ Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a de
    - [Estrutura de dados](#estruturadedados)
 
 
-## História
+## 1 História
 No Brasil em 1989, Collor de Melo vencia a primeira eleição direta, na Alemanha caia o muro de Belim e na Holanda o Guido Van Rossum criava a linguagem Python.
 
 A história da linguagem é fantástica e seu aprendizado vai se tornar mais divertido após tomar conhecimento de alguns eventos que aconteceram.
@@ -25,10 +25,10 @@ Não vou escrever sobre a história do Python porque já tem muita coisa boa esc
 * [https://www.python-course.eu/python3_history_and_philosophy.php](https://www.python-course.eu/python3_history_and_philosophy.php)
 * [https://wiki.python.org.br/HistoriaDoPython](https://wiki.python.org.br/HistoriaDoPython)
 
-## Conceitos da Linguagem
-## Ambiente de Desenvolvimento;
-## Sintaxe básica
-## Variável
+## 2 Conceitos da Linguagem
+## 3 Ambiente de Desenvolvimento;
+## 4 Sintaxe básica
+## 5 Variável
 ```python
    dados=10
 ```
@@ -36,9 +36,9 @@ Atribuição em cadeia
 ```python
    dados=x=filho=10
 ```
-### Escopo de Variável
-### Estrutura de Dados
-   #### String 
+### 5.1 Escopo de Variável
+### 5.2 Estrutura de Dados
+   #### 5.2.1 String 
    String é uma sequencia de caracteres Unicode. Para representar uma string pode ser utilizado aspas simples e aspa duplas.
    Exemplo:
    ```python
@@ -66,15 +66,28 @@ Atribuição em cadeia
   texto[10:15] # retorno "
   ```
    
-   String is sequence of Unicode characters. We can use single quotes or double quotes to represent strings. Multi-line strings can be denoted using triple quotes, ''' or """.
-   #### Numbers
-   #### List
-   #### Tuple
-   #### Dictionary
-   #### Conversão entre tipos
+   #### 5.2.2 Numbers
+   Com python é possível utilizar 3 tipos de variável para números. São os Inteiros (int), Ponto Flutuante (float) e os números complexos (complex).
+   Não é necessário declarar os tipos que deseja utilizar, apenas declarar o conteúdo que o tipo automáticamente é alocado.
+   Exemplo:
+We can use the type() function to know which class a variable or a value belongs to and the isinstance() function to check if an object belongs to a particular class.
+```python
+a = 5
+print(a, "is of type", type(a))
 
-## Operadores
-## Controle de Fluxo
+a = 2.0
+print(a, "is of type", type(a))
+
+a = 1+2j
+print(a, "is complex number?", isinstance(1+2j,complex))
+```
+   #### 5.2.3 List
+   #### 5.2.4 Tuple
+   #### 5.2.5 Dictionary
+   #### 5.2.6 Conversão entre tipos
+
+## 5.3 Operadores
+## 5.3 Controle de Fluxo
 O controle de fluxo de dados no Python podem ser realizado utilizado
 If
 ```python
