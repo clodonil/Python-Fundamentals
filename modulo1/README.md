@@ -73,13 +73,13 @@ Atribuição em cadeia
 We can use the type() function to know which class a variable or a value belongs to and the isinstance() function to check if an object belongs to a particular class.
 ```python
 a = 5
-print(a, "is of type", type(a))
+print(a, "do tipo", type(a))
 
 a = 2.0
-print(a, "is of type", type(a))
+print(a, "do tipo", type(a))
 
 a = 1+2j
-print(a, "is complex number?", isinstance(1+2j,complex))
+print(a, "numero complexo?", isinstance(1+2j,complex))
 ```
    #### 5.2.3 List
    #### 5.2.4 Tuple
