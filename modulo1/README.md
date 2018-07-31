@@ -30,6 +30,11 @@ Não vou escrever sobre a história do Python porque já tem muita coisa boa esc
 ## Sintaxe básica
 ## Variável
 ## Operadores
-## Controle de fluxo;
-## Estrutura de dados;
+## Controle de Fluxo
+```python
+x=10
+if x > 10:
+    print("Maior que 10")
+```   
+## Estrutura de Dados
 
