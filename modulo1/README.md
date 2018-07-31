@@ -5,7 +5,7 @@ Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a de
 
 ## Conteúdo:
    - [História](#historia)
-   - [Conceitos da Linguagem](#conceitodalinguagem)
+   - [Filosofia da Linguagem](#conceitodalinguagem)
    - [Ambiente de Desenvolvimento](#ambientededesenvolvimento)
    - [Sintaxe básica](#sintaxebasica)
    - [Variável](#variavel)
@@ -25,7 +25,7 @@ Não vou escrever sobre a história do Python porque já tem muita coisa boa esc
 * [https://www.python-course.eu/python3_history_and_philosophy.php](https://www.python-course.eu/python3_history_and_philosophy.php)
 * [https://wiki.python.org.br/HistoriaDoPython](https://wiki.python.org.br/HistoriaDoPython)
 
-## 2 Conceitos da Linguagem
+## 2 Filosofia da Linguagem
 ## 3 Ambiente de Desenvolvimento;
 ## 4 Sintaxe básica
 ## 5 Variável
@@ -74,7 +74,7 @@ Atribuição em cadeia
    Exemplo:
    
   
-  ->  We can use the type() function to know which class a variable or a value belongs to and the isinstance() function to check if an object belongs to a particular class.
+  > No exemplo abaixo utilizamos a função type() para mostrar o tipo da classe da variável. Também usamos a função isinstance() para verificar/comparar o tipo da váriavel. Se for o mesmo tipo ele retorno true.
   
 ```python
 a = 5
