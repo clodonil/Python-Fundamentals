@@ -3,6 +3,7 @@ Laboratório Práticas
 
 (https://pt.wikipedia.org/wiki/C%C3%A2mara_Municipal_de_S%C3%A3o_Paulo)[https://pt.wikipedia.org/wiki/C%C3%A2mara_Municipal_de_S%C3%A3o_Paulo)
 
+![lista_vereadores_wikipedia](https://github.com/clodonil/curso_python/blob/master/Imagens/m1_lab1_f1.PNG)
 
 1. **Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas:**
 
