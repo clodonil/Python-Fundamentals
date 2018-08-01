@@ -208,4 +208,4 @@ No link abaixo temos o laboratório dirigido, faça o laboratório para prática
 
 ## 7. Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
-> [Lista de Exericio](exercicios/README.md)
+> [Lista de Exercício](exercicios/README.md)
