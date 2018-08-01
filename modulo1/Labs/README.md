@@ -6,10 +6,10 @@ Laboratório Práticas
 ```Exemplo de resposta:
        Eduardo
        Milton L
-        Reginald
-        Conte Lo
-        Mario Co
-        Eduardo
+       Reginald
+       Conte Lo
+       Mario Co
+       Eduardo
         ...
 ```
 > Codificação: [m1_lab1.py](code/m1_lab1.py)
