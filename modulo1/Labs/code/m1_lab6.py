@@ -1,6 +1,6 @@
 '''
-classe: m1_lab1.py
-descricao: Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas
+classe: m1_lab6.py
+descricao: Numero total de votos por partido
 autor: Clodonil Honorio Trigo
 email: clodonil@nisled.org
 data: 04 de julho de 2018
@@ -21,18 +21,28 @@ if __name__ == "__main__":
      # Pegando a tabela 5 (Vereadores em exercicio)
      tables = site_connect.get_tables(5)
   
+     # Dicionario para armazenar partido e votos
+     # key = partidos
+     # values = votos
+     partidos =  {}
+
      # Listando o conteudo da tabela
      for linha in tables[1:]:
 
-          # Obtendo o nome. Esta na primeira posicao da lista
-          nome = linha[0]
+          # Obtendo o partido
+          partido = linha[1]
 
-          # Imprimindo os caracteres da posicao 0 ate 8 
-          print(nome[0:8])
+          # Obtendo o voto do partido
+          n_voto = float(linha[2].split(" ")[0])
 
-
-          #Outras formas de fazer a mesma coisa
-          #print(nome[:8])
- 
-          #Para retirar os espacos em branco de uma string
-          #print(nome[:8].replace(' ',''))
+          # se o partido esta no dicionario
+          if partido in partidos:
+          # Se tiver soma os votos
+            partidos[partido] = partidos[partido] + n_voto
+          else:
+          # Se nao tiver inicializa o dicionario com o partido e o numero de votos
+            partidos[partido] = n_voto
+    
+     # Imprime os partidos e os votos
+     for partido in partidos:
+         print(partido, 'teve',partidos[partido], 'votos.') 

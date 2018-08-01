@@ -35,7 +35,8 @@ Vamos utilizar os seguintes recursos da linguagem:
 
 1. **Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas:**
 
-```Exemplo de resposta:
+```
+Exemplo de resposta:
        Eduardo
        Milton L
        Reginald
@@ -48,10 +49,11 @@ Vamos utilizar os seguintes recursos da linguagem:
 	 
 2. **Listar os partidos que tiveram candidatos eleitos:**
    
-```Exemplo de Resposta:
-         PDT
-	 PSDB
-	 ....
+```
+Exemplo de Resposta:
+    PDT
+    PSDB
+     ....
 ```
 > Codificação: [m1_lab2.py](code/m1_lab2.py)
 
@@ -61,22 +63,45 @@ Vamos utilizar os seguintes recursos da linguagem:
 > Codificação: [m1_lab3.py](code/m1_lab3.py)
 
 4. **Pesquisar se tem algum vereador vereador com os seguintes nomes (João, Eduardo, josé):**
-```Exemplo de Resposta:
-	    Eduardo Suplicy
-		Eduardo Tuma
-		João Jorge
-		José Police Neto
+```
+Exemplo de Resposta:
+   Eduardo Suplicy
+   Eduardo Tuma
+   João Jorge
+   José Police Neto
 ```
 > Codificação: [m1_lab4.py](code/m1_lab4.py)
 	
 5. **O partido que tive mais vereadores eleitos:**
    
-```Resposta: 
-        PSDB com 10 vereadores
+```
+Exemplo de Resposta: 
+   PSDB com 10 vereadores
 ```
 > Codificação: [m1_lab5.py](code/m1_lab5.py)
 6. **Numero total de votos por partidos:**
-   Resposta: 
+
+```
+Resposta: 
+    PT teve 564.304 votos.
+    DEM teve 239.54700000000003 votos.
+    PV teve 116.849 votos.
+    PP teve 80.052 votos.
+    PSDB teve 422.56199999999995 votos.
+    PTB teve 96.313 votos.
+    PRB teve 161.194 votos.
+    PMDB teve 80.79599999999999 votos.
+    PR teve 145.926 votos.
+    PSD teve 156.232 votos.
+    PSB teve 98.977 votos.
+    PPS teve 58.557 votos.
+    PSC teve 30.382 votos.
+    PROS teve 28.515 votos.
+    PODE teve 21.849 votos.
+    NOVO teve 19.425 votos.
+    PSOL teve 28.476 votos.
+    PHS teve 14.957 votos.
+```
    
 > Codificação: [m1_lab6.py](code/m1_lab6.py)
 
