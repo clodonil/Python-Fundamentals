@@ -193,9 +193,10 @@ x=10
 if x > 10:
     print("Maior que 10")
 ```   
-Case
-While
-For
-Until
+* Case
+* While
+* For
+* Until
 
 
+![Labs-Modulo1](https://github.com/clodonil/curso_python/blob/master/Imagens/python_labs.PNG)
