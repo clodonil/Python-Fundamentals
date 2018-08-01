@@ -106,5 +106,6 @@ Resposta:
 > Codificação: [m1_lab6.py](code/m1_lab6.py)
 
 7. **Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:**
+> Lista da Lava jato: https://pt.wikipedia.org/wiki/Lista_de_pessoas_envolvidas_na_Opera%C3%A7%C3%A3o_Lava_Jato
  
 > Codificação: [m1_lab7.py](code/m1_lab7.py)

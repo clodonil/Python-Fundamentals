@@ -1,6 +1,6 @@
 '''
 classe: m1_lab7.py
-descricao: Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas
+descricao: Pesquisar se tem algum vereador está na lista de investigados na Lava Jato 
 autor: Clodonil Honorio Trigo
 email: clodonil@nisled.org
 data: 04 de julho de 2018
