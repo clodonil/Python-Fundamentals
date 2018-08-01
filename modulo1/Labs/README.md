@@ -1,5 +1,6 @@
 Laboratório Práticas
---------------------
+======
+
 # Como trabalhar
 Vamos colocar em prática o que aprendemos sobre a linguagem Python. 
 
