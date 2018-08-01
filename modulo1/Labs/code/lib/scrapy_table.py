@@ -13,9 +13,9 @@ from urllib.parse import urlparse
 
 
 class Scrapy_Table:
-      def __init__(self):
+      def __init__(self, url):
           # links
-          self.all_tables = []
+          self.url = url
 
       def get_page(self,url):    
           '''
@@ -42,45 +42,32 @@ class Scrapy_Table:
           ''' 
               Metodo para buscar o links da pagina e verifica se pertece ao mesmo dominio
           '''
-          for link in page.find_all('a', attrs={'class':'item__info-title'}):
-              hlink = link.get('href')
-              if len(link.text) > 0:
-                 if not hlink in self.links:
-                    self.links.append(hlink)
-                    self.list_link.append([hlink,self.check_domain(hlink)]) 
-         
-          _next = page.find('li', attrs={'class':'pagination__next'})
-          proximo = _next.a.get('href')
-          if proximo == "#":
-             return False
-          else:
-             return proximo
+          all_table = []
+          for table in page.find_all('table'):
+              ntable = [] 
+              rows = table.find_all('tr')
+              for row in rows:
+                  cols = row.find_all('td')
+                  if not cols:
+                     cols = row.find_all('th')
+
+                  cols = [ele.text.strip() for ele in cols]
+                  ntable.append([ele for ele in cols if ele])
+              all_table.append(ntable)
+          return all_table     
    
-      def clear(self, tag):
-           '''
-              Limpar lixo da tag
-           '''
-           return tag.replace("\n","").replace("\t","")
 
-      def check_domain(self,url):
-           if self.domain == urlparse(url).netloc:
-               return True
-           else:
-               return False
-
-      def get_tables(self, site):
+      def get_tables(self, ntables=-1):
           '''
              Metodo para iniciar acao da classe
           '''
-          _next=site
-          while _next:
-              _next = self.busca_table(self.get_page(_next))
-              self.all_tables.append(_next)
+          all_tables = []
+          page = self.get_page(self.url)
+          if page:
+              all_tables = self.busca_table(page)
 
-          return self.all_tables
+              if ntables != -1:
+                 return all_tables[ntables]
 
+          return all_tables
 
-if __name__ == "__main__":
-     url="https://pt.wikipedia.org/wiki/Lista_de_cidades_por_taxa_de_homic%C3%ADdios"
-     site_connect = Scrapy_Table()
-     tables = site_connect.get_tables(url)

@@ -1,17 +1,49 @@
 Laboratório Práticas
 --------------------
 
- 
-Obrigatórios: 
-   1. [M1-Q1] - 
-   2. [M1-Q2] - 
-   3. [M1-03] - 
-   4. [M1-04] - 
-   5. [M1-05] - 
 
-Desafios:
-   6. [M1-06] - 
-   7. [M1-07] - 
-   8. [M1-08] - 
-   9. [M1-09] - 
-   10. [M1-10] - 
+
+1. _Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas:_
+
+    ```Exemplo de resposta:
+        Eduardo
+		Milton L
+        Reginald
+        Conte Lo
+        Mario Co
+        Eduardo
+        ...
+     ```
+	 
+2. _Listar os partidos que tiveram candidatos eleitos:_
+   
+    ```Exemplo de Resposta:
+	     PDT
+		 PSDB
+		 ....
+    ```
+
+3. _Mostrar o somatória de todos os votos em vereadores:_
+    
+	```Exemplo de Resposta: 2364.913'```
+
+
+4. _Pesquisar se tem algum vereador vereador com os seguintes nomes (João, Eduardo, josé):_
+    ```Exemplo de Resposta:
+	    Eduardo Suplicy
+		Eduardo Tuma
+		João Jorge
+		José Police Neto
+    ```
+        	
+	
+5. _O partido que tive mais vereadores eleitos:_
+   
+   ```Resposta: 
+        PSDB com 10 vereadores
+    ```
+6. _Numero total de votos por partidos:_
+   Resposta: 
+   
+7. _Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:_ 
+ 
