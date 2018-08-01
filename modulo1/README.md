@@ -13,7 +13,8 @@ Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a de
    6. [Operadores](#operadores)
    7. [Controle de fluxo](#controlefluxo)
    8. [Estrutura de dados](#estruturadedados)
-   9. [Laboratório]#(lab)
+   9. [Laboratório]#(https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
+   10.[Exercícios]#(exercicio)
 
 
 ## 1 História
@@ -201,4 +202,6 @@ if x > 10:
 * Until
 
 
-![Labs-Modulo1](https://github.com/clodonil/curso_python/blob/master/Imagens/python_labs.PNG)
+## 6. Laboratório
+No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
+> Laboratório: [Laboratório]#(https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
