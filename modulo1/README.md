@@ -1,5 +1,6 @@
-# Módulo 1  - Python Fundamentals
-
+ __Python Fundamentals__ - Módulo 1
+ ====================== 
+ 
 ## Objetivo
 Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a desenvolver aplicações ricas com acesso a banco de dados e interface WEB
 
