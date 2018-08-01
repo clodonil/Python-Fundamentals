@@ -1,11 +1,22 @@
 Laboratório Práticas
 --------------------
+# Como trabalhar
+Vamos colocar em prática o que aprendemos sobre a linguagem Python. 
 
-(https://pt.wikipedia.org/wiki/C%C3%A2mara_Municipal_de_S%C3%A3o_Paulo)[https://pt.wikipedia.org/wiki/C%C3%A2mara_Municipal_de_S%C3%A3o_Paulo)
+Esse laboratório propoe um problema e suas soluções. O aluno deve trabalhar como `code review`, isso é entender o código e fazer modificações verificando o que muda. 
+
+> Ao final do laboratório proponha perguntas para você mesmo e tente responde-lás desenvolvendo o código em Python.
+
+
+# Problema
+
+No site da Wikipedia (https://pt.wikipedia.org/wiki/C%C3%A2mara_Municipal_de_S%C3%A3o_Paulo) temos uma listagem dos vereadores eleitos no municipio de São Paulo no ano de 2017.
 
 ![lista_vereadores_wikipedia](https://github.com/clodonil/curso_python/blob/master/Imagens/m1_lab1_f1.PNG)
 
-Para obter os valores da lista dinamicamente, será utilizado a biblioteca Scrapy_table. Se uma página tiver mais de uma tabela, informe qual delas deseja obter. Por exemplo, no código abaixo queremos pegar a tabela de número 5  `tables = site_connect.get_tables(5)`.
+Para obter os valores da lista dinamicamente, utilizaremos a biblioteca `Scrapy_table`. Mais a frente vamos entender como foi desenvolvida essa biblioteca, mais agora o importante é saber utiliza-lá.
+
+A biblioteca retorna as tabelas de uma página html. Se uma página tiver mais de uma tabela, informe qual delas deseja obter. Por exemplo, no código abaixo queremos pegar a tabela de número 5  `tables = site_connect.get_tables(5)`, que é a lista de vereadores. Veja no link (https://pt.wikipedia.org/wiki/C%C3%A2mara_Municipal_de_S%C3%A3o_Paulo) que existe várias tabela na página.
 
 ```python
 # importa a lib para obter as tabelas da Wikipedia
@@ -21,11 +32,10 @@ tables = site_connect.get_tables(5)
 Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os códigos em Python.
 
 Vamos utilizar os seguintes recursos da linguagem:
-* Variável;
-* String;
+* Variável (String/Float);
 * List
 * Set
-* Tupla
+* Tuple
 * for
 * if
 * Operadores
