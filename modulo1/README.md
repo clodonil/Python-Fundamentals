@@ -5,14 +5,15 @@
 Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a desenvolver aplicações ricas com acesso a banco de dados e interface WEB
 
 ## Conteúdo:
-   - [História](#historia)
-   - [Filosofia da Linguagem](#conceitodalinguagem)
-   - [Ambiente de Desenvolvimento](#ambientededesenvolvimento)
-   - [Sintaxe básica](#sintaxebasica)
-   - [Variável](#variavel)
-   - [Operadores](#operadores)
-   - [Controle de fluxo](#controlefluxo)
-   - [Estrutura de dados](#estruturadedados)
+   1. [História](#historia)
+   2. [Filosofia da Linguagem](#conceitodalinguagem)
+   3. [Ambiente de Desenvolvimento](#ambientededesenvolvimento)
+   4. [Sintaxe básica](#sintaxebasica)
+   5. [Variável](#variavel)
+   6. [Operadores](#operadores)
+   7. [Controle de fluxo](#controlefluxo)
+   8. [Estrutura de dados](#estruturadedados)
+   9. [Laboratório]#(lab)
 
 
 ## 1 História
