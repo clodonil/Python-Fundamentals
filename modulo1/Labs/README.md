@@ -12,7 +12,7 @@ Laboratório Práticas
         Eduardo
         ...
 ```
-> Exemplo de codigicação: [code](code/m1_lab1.py)
+> Codigicação: [m1_lab1.py](code/m1_lab1.py)
 	 
 2. **Listar os partidos que tiveram candidatos eleitos:**
    
@@ -21,7 +21,7 @@ Laboratório Práticas
 	 PSDB
 	 ....
 ```
-> Exemplo de codigicação: [code](code/m1_lab2.py)
+> Codigicação: [m1_lab2.py](code/m1_lab2.py)
 
 3. **Mostrar o somatória de todos os votos em vereadores:**
     
