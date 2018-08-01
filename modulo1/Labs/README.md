@@ -5,6 +5,8 @@ Laboratório Práticas
 
 ![lista_vereadores_wikipedia](https://github.com/clodonil/curso_python/blob/master/Imagens/m1_lab1_f1.PNG)
 
+Para obter os valores da lista dinamicamente, será utilizado a biblioteca Scrapy_table. Se uma página tiver mais de uma tabela, informe qual delas deseja obter. Por exemplo, no código abaixo queremos pegar a tabela de número 5  `tables = site_connect.get_tables(5)`.
+
 ```python
 # importa a lib para obter as tabelas da Wikipedia
 from  lib.scrapy_table import Scrapy_Table
@@ -15,6 +17,19 @@ site_connect = Scrapy_Table(url)
 # Pegando a tabela 5 (Vereadores em exercicio)
 tables = site_connect.get_tables(5)
 ```
+
+Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os códigos em Python.
+
+Vamos utilizar os seguintes recursos da linguagem:
+* Variável;
+* String;
+* List
+* Set
+* Tupla
+* for
+* if
+* Operadores
+* Dicionário
 
 1. **Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas:**
 
