@@ -13,7 +13,7 @@ Laboratório Práticas
         ...
 ```
 	 
-2. _Listar os partidos que tiveram candidatos eleitos:_
+2. **Listar os partidos que tiveram candidatos eleitos:**
    
 ```Exemplo de Resposta:
          PDT
@@ -21,12 +21,12 @@ Laboratório Práticas
 	 ....
 ```
 
-3. _Mostrar o somatória de todos os votos em vereadores:_
+3. **Mostrar o somatória de todos os votos em vereadores:**
     
 ```Exemplo de Resposta: 2364.913'```
 
 
-4. _Pesquisar se tem algum vereador vereador com os seguintes nomes (João, Eduardo, josé):_
+4. **Pesquisar se tem algum vereador vereador com os seguintes nomes (João, Eduardo, josé):**
 ```Exemplo de Resposta:
 	    Eduardo Suplicy
 		Eduardo Tuma
@@ -35,13 +35,13 @@ Laboratório Práticas
 ```
         	
 	
-5. _O partido que tive mais vereadores eleitos:_
+5. **O partido que tive mais vereadores eleitos:**
    
 ```Resposta: 
         PSDB com 10 vereadores
 ```
-6. _Numero total de votos por partidos:_
+6. **Numero total de votos por partidos:**
    Resposta: 
    
-7. _Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:_ 
+7. **Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:**
  
