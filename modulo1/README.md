@@ -204,4 +204,4 @@ if x > 10:
 
 ## 6. Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
-> Laboratório: [Laboratório](#https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
+> [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
