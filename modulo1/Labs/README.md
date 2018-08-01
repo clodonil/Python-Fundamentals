@@ -1,4 +1,4 @@
-Laboratório Práticas
+Laboratório do Módulo 1 
 ======
 
 # Como trabalhar
