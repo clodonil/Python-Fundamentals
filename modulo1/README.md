@@ -165,7 +165,7 @@ print(posicao_chegada)
 Nós podmeos converter entre diferentes tipo de dados usando diferentes funções de conversão semelhante a `int()`, `float()`, `str()`...etc.
 
 | S| Descrição| Função | Exemplo |
-|--|--------|-----------|
+|--|----------|-----------|-----|
 |1 | Converts x to an integer. The base specifies the base if x is a string.|  int(x [,base]) | |
 |2 | Converts x to a floating-point number.|float(x) | |
 |3 | Creates a complex number.|complex(real [,imag]) |  |
