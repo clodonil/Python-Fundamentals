@@ -14,7 +14,7 @@ Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a de
   > 7. [Controle de fluxo](#controlefluxo)
   > 8. [Estrutura de dados](#estruturadedados)
   > 9. [Laboratório](#laboratório)
-  > 10.[Exercícios]#(exercicio)
+  > 10.[lista Exercícios](#exercicio)
 
 
 ## 1 História
@@ -205,3 +205,7 @@ if x > 10:
 ## 6. Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
 > [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
+
+## 7. Lista de Exercício
+Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
+> [Lista de Exericio](exercicios/README.md)
