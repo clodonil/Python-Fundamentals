@@ -31,6 +31,8 @@ Vamos utilizar os seguintes recursos da linguagem:
 * Operadores
 * Dicionário
 
+------
+
 1. **Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas:**
 
 ```Exemplo de resposta:
