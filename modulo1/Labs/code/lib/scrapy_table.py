@@ -15,9 +15,7 @@ from urllib.parse import urlparse
 class Scrapy_Table:
       def __init__(self):
           # links
-          self.links = []
-          self.domain = ""
-          self.list_link = []
+          self.all_tables = []
 
       def get_page(self,url):    
           '''
@@ -70,28 +68,19 @@ class Scrapy_Table:
            else:
                return False
 
-      def run(self, site):
+      def get_tables(self, site):
           '''
              Metodo para iniciar acao da classe
           '''
-          #Domain
-          #self.domain = urlparse(site).netloc
-          #self.list_link.append([site,True])
-          #self.links.append(site)
-
-          #while self.list_link:
-          #     url = self.list_link.pop()
-          #     if url[1]:
           _next=site
           while _next:
-              _next = self.busca_links(self.get_page(_next))
+              _next = self.busca_table(self.get_page(_next))
+              self.all_tables.append(_next)
 
-          for k in self.links:
-              print(k)
-          return self.links
+          return self.all_tables
 
 
 if __name__ == "__main__":
      url="https://pt.wikipedia.org/wiki/Lista_de_cidades_por_taxa_de_homic%C3%ADdios"
      site_connect = Scrapy_Table()
-     tables = site_connect.run(url)
+     tables = site_connect.get_tables(url)
