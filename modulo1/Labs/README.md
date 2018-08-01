@@ -12,7 +12,7 @@ Laboratório Práticas
         Eduardo
         ...
 ```
-> [Código](../code/m1_lab1.py)
+> [Código](code/m1_lab1.py)
 	 
 2. **Listar os partidos que tiveram candidatos eleitos:**
    
