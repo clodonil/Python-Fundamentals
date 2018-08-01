@@ -1,9 +1,7 @@
 Laboratório Práticas
 --------------------
 
-
-
-1. *Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas:*
+1. **Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas:**
 
 ```Exemplo de resposta:
        Eduardo
