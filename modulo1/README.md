@@ -131,7 +131,37 @@ t = (10,40,'jose','maria',6.5)
 print(t[1])
 ```
 #### 5.2.5 Dictionary
-#### 5.2.6 Conversão entre tipos
+Dicionário são estrutura de dados com um par conhecido como `chave/valor`. 
+
+Geralmente é usado quando temos uma quantidade enorme de dados. Os dicionários são otimizados para recuperar dados. Nós devemos conhecer a chave para recuperar o valor.
+
+No Python, os dicionários são definidos entre chaves {}, sendo cada item um par na chave do formulário: valor. Chave e valor podem ser de qualquer tipo de variável.
+
+```python
+login = {"user": "jose","passwd":"okri"}
+
+print("Tipo", type(login))
+
+#Recuperando o valor
+print(login['uesr']
+
+#Recuperando o valor
+print(login['passwd'])
+```
+Usamos a chave para recuperar o valor. Mas o contrário não funciona.
+
+#### 5.2.6 Set
+Set é uma coleção não ordenada de itens exclusivos (não pode ter itens repetidos). Set é definido por valores separados por vírgula entre chaves {}.
+
+Podemos realizar operações de conjunto como união, interseção em dois conjuntos. Conjunto tem valores exclusivos. Eles eliminam duplicatas.
+
+Como o conjunto é uma coleção não ordenada, a indexação não funciona. Portanto, o operador [ ] não funciona.
+```python
+posicao_chegada={3,4,1,7,8}
+print(posicao_chegada)
+```
+
+#### 5.2.7 Conversão entre tipos
 
 ## 5.3 Operadores
 ## 5.3 Controle de Fluxo
