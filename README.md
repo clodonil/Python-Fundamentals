@@ -1,13 +1,15 @@
-# Python Fundamentals
+Python Fundamentals
+===============
 
-## Objetivo
+# Objetivo
 Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a desenvolver aplicações ricas com acesso a banco de dados e interface WEB
 
-## Carga Horária  
+# Carga Horária  
 O curso tem carga horária de 40 horas
 
-## Conteúdo
-### Modulo 1
+# Conteúdo
+> [Módulo 1](modulo1/README.md)
+
    - Pré-história;
    - Criador da linguagem;
    - Conceitos da Linguagem
