@@ -164,24 +164,24 @@ print(posicao_chegada)
 #### 5.2.7 Conversão entre tipos
 Nós podmeos converter entre diferentes tipo de dados usando diferentes funções de conversão semelhante a `int()`, `float()`, `str()`...etc.
 
-| S.No.	| Função | Descrição |
-|--------|--------|-----------|
-|1	     |   int(x [,base]) |Converts x to an integer. The base specifies the base if x is a string.|
-|2 | float(x) | Converts x to a floating-point number.|
-|3	| complex(real [,imag]) |  Creates a complex number.|
-|4 | str(x) |  Converts object x to a string representation.|
-|5	| repr(x) Converts object x to an expression string.|
-|6	| eval(str) | Evaluates a string and returns an object.|
-|7	| tuple(s) | Converts s to a tuple.|
-|8	|list(s) | Converts s to a list.|
-|9	| set(s) | Converts s to a set.|
-|10	| dict(d) | Creates a dictionary. d must be a sequence of (key,value) tuples.|
-|11	| frozenset(s) | Converts s to a frozen set.|
-|12	| chr(x) | Converts an integer to a character.|
-|13	| unichr(x) | Converts an integer to a Unicode character.|
-|14	|ord(x) | Converts a single character to its integer value.|
-|15	| hex(x) | Converts an integer to a hexadecimal string.|
-|16	| oct(x) | Converts an integer to an octal string.|
+| S| Descrição| Função | Exemplo |
+|--|--------|-----------|
+|1 | Converts x to an integer. The base specifies the base if x is a string.|  int(x [,base]) | |
+|2 | Converts x to a floating-point number.|float(x) | |
+|3 | Creates a complex number.|complex(real [,imag]) |  |
+|4 | Converts object x to a string representation.|str(x) |  |
+|5 | Converts object x to an expression string.|repr(x) | |
+|6 | Evaluates a string and returns an object.|eval(str) | |
+|7 | Converts s to a tuple.|tuple(s) | |
+|8 | Converts s to a list.|list(s) | |
+|9 | Converts s to a set.|set(s) | |
+|10| Creates a dictionary. d must be a sequence of (key,value) tuples.| dict(d) | |
+|11| Converts s to a frozen set.| frozenset(s) | |
+|12| Converts an integer to a character.|chr(x) | |
+|13| Converts an integer to a Unicode character.|unichr(x) | |
+|14| Converts a single character to its integer value.| ord(x) | |
+|15| Converts an integer to a hexadecimal string.| hex(x) | |
+|16| Converts an integer to an octal string.| oct(x) | |
 
 
 ## 5.3 Operadores
