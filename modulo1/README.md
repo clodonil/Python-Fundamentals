@@ -29,6 +29,29 @@ Não vou escrever sobre a história do Python porque já tem muita coisa boa esc
 * [https://wiki.python.org.br/HistoriaDoPython](https://wiki.python.org.br/HistoriaDoPython)
 
 ## 2 Filosofia da Linguagem
+A linguagem Python tem uma filosofia. Siga e seja Feliz.
+
+> O [Zen Python](https://www.python.org/dev/peps/pep-0020/) por Tim  Peters
+* Bonito é melhor que feio.
+* Explícito é melhor que implícito.
+* Simples é melhor que complexo.
+* Complexo é melhor que complicado.
+* Linear é melhor que aninhado.
+* Esparso é melhor que denso.
+* Legibilidade conta.
+* Casos especiais não são especiais o suficiente para violar as regras.
+* Ainda que praticidade vença pureza.
+* Erros nunca devem passar silenciosamente.
+* A menos que sejam explicitamente silenciados.
+* Em caso de ambiguidade, resista à tentação de adivinhar.
+* Deve haver um - e somente um - jeito óbvio de fazer.
+* Embora esse modo possa não ser óbvio a princípio a menos que você seja holandês.
+* Agora é melhor que nunca.
+* Embora nunca é frequentemente melhor que exatamente agora.
+* Se a implementação é difícil de explicar, a ideia é ruim.
+* Se a implementação é fácil de explicar, talvez a ideia seja boa.
+* Namespaces são uma grande idéia - vamos fazer mais deles!
+
 ## 3 Ambiente de Desenvolvimento;
 ## 4 Sintaxe básica
 ## 5 Variável
