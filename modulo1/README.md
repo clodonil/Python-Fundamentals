@@ -238,6 +238,9 @@ Nós podmeos converter entre diferentes tipo de dados usando diferentes funçõe
 
 
 ## 5.3 Operadores
+
+http://excript.com/python/operador-aritmetico-em-python.html
+
 ## 5.3 Controle de Fluxo
 O controle de fluxo de dados no Python podem ser realizado utilizado
 If
