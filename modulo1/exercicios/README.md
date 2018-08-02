@@ -1,7 +1,7 @@
-Laboratório Práticas
---------------------
+Módulo 1 - Lista de Exercício
+=========
 
-
+Para realização desse exercício vamos utilizar a lista de municipios do Brasil, juntamente com a taxa de homicídio e a taxa de fecundidade. Vamos realizar o cruzamento dessas informações para obter respostas interessantes:
 
 ![lista_exercicio](https://github.com/clodonil/curso_python/blob/master/Imagens/m1_exercicio.JPG)
 
@@ -9,7 +9,7 @@ Laboratório Práticas
 * https://pt.wikipedia.org/wiki/Lista_de_cidades_por_taxa_de_homic%C3%ADdios
 * https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_taxa_de_fecundidade
 
-Para obter os valores da lista dinamicamente, será utilizado a biblioteca Scrapy_table. Se uma página tiver mais de uma tabela, informe qual delas deseja obter. Por exemplo, no código abaixo queremos pegar a tabela de número 5  `tables = site_connect.get_tables(5)`.
+Para obter os valores da lista dinamicamente, será utilizado a biblioteca Scrapy_table. Se uma página tiver mais de uma tabela, informe qual delas deseja obter. Para obter as tabelas acima utilize o seguinte código:
 
 ```python
 # importa a lib para obter as tabelas da Wikipedia
@@ -24,91 +24,27 @@ tables = site_connect.get_tables(5)
 
 Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os códigos em Python.
 
-Vamos utilizar os seguintes recursos da linguagem:
-* Variável;
-* String;
-* List
-* Set
-* Tupla
-* for
-* if
-* Operadores
-* Dicionário
 
 ------
-
+> Obrigatório para nota
 1. **Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas:**
-
-```
-Exemplo de resposta:
-       Eduardo
-       Milton L
-       Reginald
-       Conte Lo
-       Mario Co
-       Eduardo
-        ...
-```
-> Codificação: [m1_lab1.py](code/m1_lab1.py)
 	 
 2. **Listar os partidos que tiveram candidatos eleitos:**
    
-```
-Exemplo de Resposta:
-    PDT
-    PSDB
-     ....
-```
-> Codificação: [m1_lab2.py](code/m1_lab2.py)
-
 3. **Mostrar o somatória de todos os votos em vereadores:**
-    
-```Exemplo de Resposta: 2364.913'```
-> Codificação: [m1_lab3.py](code/m1_lab3.py)
 
 4. **Pesquisar se tem algum vereador vereador com os seguintes nomes (João, Eduardo, josé):**
-```
-Exemplo de Resposta:
-   Eduardo Suplicy
-   Eduardo Tuma
-   João Jorge
-   José Police Neto
-```
-> Codificação: [m1_lab4.py](code/m1_lab4.py)
 	
 5. **O partido que tive mais vereadores eleitos:**
-   
-```
-Exemplo de Resposta: 
-   PSDB com 10 vereadores
-```
-> Codificação: [m1_lab5.py](code/m1_lab5.py)
+
+> Obrigatório para nota
+
 6. **Numero total de votos por partidos:**
 
-```
-Resposta: 
-    PT teve 564.304 votos.
-    DEM teve 239.54700000000003 votos.
-    PV teve 116.849 votos.
-    PP teve 80.052 votos.
-    PSDB teve 422.56199999999995 votos.
-    PTB teve 96.313 votos.
-    PRB teve 161.194 votos.
-    PMDB teve 80.79599999999999 votos.
-    PR teve 145.926 votos.
-    PSD teve 156.232 votos.
-    PSB teve 98.977 votos.
-    PPS teve 58.557 votos.
-    PSC teve 30.382 votos.
-    PROS teve 28.515 votos.
-    PODE teve 21.849 votos.
-    NOVO teve 19.425 votos.
-    PSOL teve 28.476 votos.
-    PHS teve 14.957 votos.
-```
-   
-> Codificação: [m1_lab6.py](code/m1_lab6.py)
-
 7. **Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:**
- 
-> Codificação: [m1_lab7.py](code/m1_lab7.py)
+
+8. **Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:**
+
+9. **Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:**
+
+10. **Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:**
