@@ -45,8 +45,8 @@ __Exemplo de Resposta:__
 4. **Qual municipio tem o menos de habilitante. Mostre também em qual estadao está esse municipio:**
 	
 5. **Mostre a taxa de fecundidade para os estados:**
-     - ** que tem a cidade com maior número de habilitantes**
-     - ** que tem a cidade com menor número de habilitantes**
+     - **que tem a cidade com maior número de habilitantes**
+     - **que tem a cidade com menor número de habilitantes**
 
 > Questão 6 e 8 são para aprofundamento do conhecimento
 
