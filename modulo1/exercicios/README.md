@@ -23,7 +23,7 @@ tables = site_connect.get_tables(5)
 ```
 
 Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os códigos em Python.
-`
+```css
 s { font-style: normal; } //strike-through
 em { font-style: normal; font-weight: bold; } //italic emphasis
 
@@ -32,7 +32,7 @@ s { color: green }
 em { color: blue }
 
 ------
-`
+```
 1. **Listar o nome de todos os municpios do Brasil com o código do IBGE:**
 >
 
