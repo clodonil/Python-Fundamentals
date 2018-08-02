@@ -26,9 +26,10 @@ Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os cód
 
 
 ------
-> Obrigatório para nota
-1. **Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas:**
-	 
+<span style="color:blue">some *This is Blue italic.* text</span> Obrigatório para nota
+1. **Listar o nome de todos os municpios do Brasil com o código do IBGE:**
+>
+
 2. **Listar os partidos que tiveram candidatos eleitos:**
    
 3. **Mostrar o somatória de todos os votos em vereadores:**
