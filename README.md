@@ -20,7 +20,7 @@ O curso tem carga horária de 40 horas
 * [Módulo 5](modulo5/README.md)
 
 ***
-> **CONTATO**
+> By:
 ```python
 Autor   = ['Clodonil Honorio Trigo','clodonil@nisled.org']
 linkdin = 'https://www.linkedin.com/in/clodonil-trigo-4155722a'
