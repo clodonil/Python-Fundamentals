@@ -22,8 +22,7 @@ O curso tem carga horária de 40 horas
 ***
 > Contato
 ```python
-Autor   = 'Clodonil Honorio Trigo'
-Email   = 'clodonil@nisled.org'
+Autor   = ['Clodonil Honorio Trigo','clodonil@nisled.org']
 linkdin = 'https://www.linkedin.com/in/clodonil-trigo-4155722a'
 Blog    = 'http://www.devops-sys.com.br'
 ```
