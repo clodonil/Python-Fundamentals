@@ -19,8 +19,10 @@ O curso tem carga horária de 40 horas
 * [Módulo 4](modulo4/README.md)
 * [Módulo 5](modulo5/README.md)
 
-
----
-> `by: Clodonil Honorio Trigo { clodonil@nisled.org }`
-
-![linkdin](Imagens/linkdin.png) ![blog](Imagens/wordpress.png)
+> Contato
+```python
+Autor   = 'Clodonil Honorio Trigo'
+Email   = 'clodonil@nisled.org'
+linkdin = 'https://www.linkedin.com/in/clodonil-trigo-4155722a'
+Blog    = 'http://www.devops-sys.com.br'
+```
