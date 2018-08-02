@@ -42,7 +42,7 @@ __Exemplo de Resposta:__
    
 3. **Mostrar o estado que tem o maior número de cidades acima 100.000 habilitantes:**
 
-4. **Qual municipio tem o menos de habilitante. Mostre também em qual estadao está esse municipio:**
+4. **Qual municipio tem o menor número de habilitantes. Mostre também em qual estado está esse municipio:**
 	
 5. **Mostre a taxa de fecundidade para os estados:**
      - **que tem a cidade com maior número de habilitantes**
@@ -55,7 +55,7 @@ __Exemplo de Resposta:__
 
 7. Quantos estados brasileiros estão abaixo da taxa de reposição populacional (2.10 filhos):
 
-8. Quantos habilitantes moram no sudeste (São Paulo, Minas Gerais, Rio de Janeiro, Espírito Santo):
+8. Quantos habitantes moram no sudeste (São Paulo, Minas Gerais, Rio de Janeiro, Espírito Santo):
 ```
 
 > Questão 9 e 10 são desafios; só para os valentes, corajosos e fortes. Esqueça você não vai conseguir.
