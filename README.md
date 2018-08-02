@@ -23,4 +23,4 @@ O curso tem carga horária de 40 horas
 *** 
 > by: Clodonil Honorio Trigo - clodonil@nisled.org 
 
-> ![linkdin](https://cdn.freebiesupply.com/logos/large/2x/linkedin-icon-logo-png-transparent.png =45x)
+![linkdin](https://cdn.freebiesupply.com/logos/large/2x/linkedin-icon-logo-png-transparent.png =45x)
