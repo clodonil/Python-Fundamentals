@@ -13,12 +13,11 @@ O curso tem carga horária de 40 horas
 
 # Conteúdo
 
-> *[Módulo 1](modulo1/README.md)
-> *[Módulo 2](modulo2/README.md)
-> *[Módulo 3](modulo3/README.md)
-> *[Módulo 4](modulo4/README.md)
-> *[Módulo 5](modulo5/README.md)
-
+> 1. [Módulo](modulo1/README.md)
+> 2. [Módulo](modulo2/README.md)
+> 3. [Módulo](modulo3/README.md)
+> 4. [Módulo](modulo4/README.md)
+> 5. [Módulo](modulo5/README.md)
 
 
 ---------
