@@ -23,7 +23,12 @@ tables = site_connect.get_tables(5)
 ```
 
 Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os códigos em Python.
+s { font-style: normal; } //strike-through
+em { font-style: normal; font-weight: bold; } //italic emphasis
 
+// colors
+s { color: green }
+em { color: blue }
 
 ------
 '''
