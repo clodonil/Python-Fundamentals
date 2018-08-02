@@ -217,5 +217,3 @@ Autor   = ['Clodonil Honorio Trigo','clodonil@nisled.org']
 linkdin = 'https://www.linkedin.com/in/clodonil-trigo-4155722a'
 Blog    = 'http://www.devops-sys.com.br'
 ```
-
-#include "Labs/README.md"
