@@ -19,6 +19,7 @@ O curso tem carga horária de 40 horas
 * [Módulo 4](modulo4/README.md)
 * [Módulo 5](modulo5/README.md)
 
+***
 > Contato
 ```python
 Autor   = 'Clodonil Honorio Trigo'
