@@ -53,6 +53,33 @@ A linguagem Python tem uma filosofia. Siga e seja Feliz.
 * Namespaces são uma grande idéia - vamos fazer mais deles!
 
 ## 3 Ambiente de Desenvolvimento;
+Para começarmos a programar, precisamos ter instalado no computador a linguagem de Programação Python3 e também um editor de texto.
+Caso você tenha dificuldade para instalar o Python, siga os seguintes links:
+
+* [Instalação no Windows](https://python.org.br/instalacao-windows/)
+* [Instalação no Ubuntu](https://python.org.br/instalacao-linux/)
+* [Instalação no Centos7](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-centos-7)
+
+Os editores que recomendo para o desenvolvimento com o Python são:
+* code (microsoft)
+* TextEdit
+* Notepad++
+* Vim
+
+Para aqueles que desejam ter uma máquina virtual em Linux para desenvolver o seu código, estou deixando o código do Vagrant preparado para provisionar um centos7 com o Centos7 instalado (Você precisa ter o Vagrant instalado no seu computador e também o Virtualbox).
+
+Para utilizar, entre na pasta 'vms' e digite:
+```
+   $ vagrant up
+ ```
+ Após subir o Linux, entre e no Linux:
+ 
+ ```
+ $ vagrant ssh python
+```
+Outra possibilidade também é utilizar uma IDE que está na cloud. No meu ponto de vista a melhor delas é o [cloud9](https://c9.io/login). É só se cadastrar e sair usando.
+
+
 ## 4 Sintaxe básica
 ## 5 Variável
 ```python
