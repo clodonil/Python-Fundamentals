@@ -51,17 +51,17 @@ __Exemplo de Resposta:__
 > Questão 6 e 8 são para aprofundamento do conhecimento
 
 ```
-6. Numero total de votos por partidos:
+6. Mostrar o total da população brasileira:
 
-7. Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:
+7. Quantos estados brasileiros estão abaixo da taxa de reposição populacional (2.10 filhos):
 
-8. Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:
+8. Quantos habilitantes moram no sudeste (São Paulo, Minas Gerais, Rio de Janeiro, Espírito Santo):
 ```
 
-> Questão 9 e 10 são desafios, só para os valentes, corajosos e fortes. Esqueçe que você não vai conseguir.
+> Questão 9 e 10 são desafios; só para os valentes, corajosos e fortes. Esqueça você não vai conseguir.
 
 ```
-9. Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:
+9. Mostrar o nome, número de habilitantes e taxa de fecundidade para as cidades brasileiras que estão com taxa de homicídio acima de 60 por 100 Mil:
 
-10. Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:
+10. Quantos habitantes brasileiros estão morando nas 50 cidades mais violentas do mundo:
 ```
