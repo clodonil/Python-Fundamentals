@@ -50,11 +50,13 @@ __Exemplo de Resposta:__
 
 > Questão 6 e 8 são para aprofundamento do conhecimento
 
+```
 6. *Numero total de votos por partidos:**
 
 7. *Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:
 
 8. *Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:
+```
 
 > Questão 9 e 10 são desafios, só para os valentes, corajosos e fortes. Esqueçe que você não vai conseguir.
 
