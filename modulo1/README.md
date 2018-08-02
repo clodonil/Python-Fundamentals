@@ -209,3 +209,11 @@ No link abaixo temos o laboratório dirigido, faça o laboratório para prática
 ## 7. Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
 > [Lista de Exercício](exercicios/README.md)
+
+***
+> By:
+```python
+Autor   = ['Clodonil Honorio Trigo','clodonil@nisled.org']
+linkdin = 'https://www.linkedin.com/in/clodonil-trigo-4155722a'
+Blog    = 'http://www.devops-sys.com.br'
+```
