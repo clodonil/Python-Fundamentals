@@ -38,13 +38,15 @@ __Exemplo de Resposta:__
  ...      ....
  ```
 
-2. **Listar os partidos que tiveram candidatos eleitos:**
+2. **Listar os municipios com menos de 70.000 habilitantes:**
    
-3. **Mostrar o somatória de todos os votos em vereadores:**
+3. **Mostrar o estado que tem o maior número de cidades acima 100.000 habilitantes:**
 
-4. **Pesquisar se tem algum vereador vereador com os seguintes nomes (João, Eduardo, josé):**
+4. **Qual municipio tem o menos de habilitante. Mostre também em qual estadao está esse municipio:**
 	
-5. **O partido que tive mais vereadores eleitos:**
+5. **Mostre a taxa de fecundidade para os estados:**
+     - ** que tem a cidade com maior número de habilitantes**
+     - ** que tem a cidade com menor número de habilitantes**
 
 > Questão 6 e 8 são para aprofundamento do conhecimento
 
