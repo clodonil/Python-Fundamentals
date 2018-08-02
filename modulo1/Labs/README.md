@@ -120,3 +120,12 @@ Resposta:
 > Lista da Lava jato: https://pt.wikipedia.org/wiki/Lista_de_pessoas_envolvidas_na_Opera%C3%A7%C3%A3o_Lava_Jato
  
 > Codificação: [m1_lab7.py](code/m1_lab7.py)
+
+***
+> By:
+```python
+Autor   = ['Clodonil Honorio Trigo','clodonil@nisled.org']
+linkdin = 'https://www.linkedin.com/in/clodonil-trigo-4155722a'
+Blog    = 'http://www.devops-sys.com.br'
+```
+
