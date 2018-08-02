@@ -23,6 +23,7 @@ tables = site_connect.get_tables(5)
 ```
 
 Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os códigos em Python.
+<span style=“color:green;”> text goes here</span>
 ```css
 >> Questões consideradas para nota:
 
