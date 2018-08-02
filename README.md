@@ -13,15 +13,11 @@ O curso tem carga horária de 40 horas
 
 # Conteúdo
 
-> **[Módulo 1](modulo1/README.md)**
-
-> **[Módulo 2](modulo2/README.md)**
-
-> **[Módulo 3](modulo3/README.md)**
-
-> **[Módulo 4](modulo4/README.md)**
-
-> **[Módulo 5](modulo5/README.md)**
+> *[Módulo 1](modulo1/README.md)
+> *[Módulo 2](modulo2/README.md)
+> *[Módulo 3](modulo3/README.md)
+> *[Módulo 4](modulo4/README.md)
+> *[Módulo 5](modulo5/README.md)
 
 
 
@@ -30,4 +26,4 @@ O curso tem carga horária de 40 horas
 
 > E-Mail: clodonil@nisled.org 
 
->  [![linkdin](https://cdn.freebiesupply.com/logos/large/2x/linkedin-icon-logo-png-transparent.png =45x)](https://www.linkedin.com/in/clodonil-trigo-4155722a/)   [![blog](https://s.w.org/style/images/about/WordPress-logotype-wmark.png =70x)](http://www.devops-sys.com.br) 
+>  [linkdin](https://cdn.freebiesupply.com/logos/large/2x/linkedin-icon-logo-png-transparent.png =45x)](https://www.linkedin.com/in/clodonil-trigo-4155722a/)   ![blog](https://s.w.org/style/images/about/WordPress-logotype-wmark.png =70x)(http://www.devops-sys.com.br) 
