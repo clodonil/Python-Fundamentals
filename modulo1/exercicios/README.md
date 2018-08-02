@@ -66,3 +66,10 @@ com taxa de homicídio acima de 60 por 100 Mil:
 
 10. Quantos habitantes brasileiros estão morando nas 50 cidades mais violentas do mundo:
 ```
+***
+> By:
+```python
+Autor   = ['Clodonil Honorio Trigo','clodonil@nisled.org']
+linkdin = 'https://www.linkedin.com/in/clodonil-trigo-4155722a'
+Blog    = 'http://www.devops-sys.com.br'
+```
