@@ -1,4 +1,4 @@
-Python Fundamentals
+Python Fundamentals (Python 3)
 ===============
 
 # Objetivo
@@ -7,41 +7,20 @@ Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a de
 # Carga Horária  
 O curso tem carga horária de 40 horas
 
+# Metodologia
+
+
+
 # Conteúdo
+
 > [Módulo 1](modulo1/README.md)
+> [Módulo 2](modulo2/README.md)
+> [Módulo 3](modulo3/README.md)
+> [Módulo 4](modulo4/README.md)
+> [Módulo 5](modulo5/README.md)
 
-   - Pré-história;
-   - Criador da linguagem;
-   - Conceitos da Linguagem
-   - Ambiente de Desenvolvimento;
-   - Sintaxe básica
-   - Variável
-   - Operadores
-   - Controle de fluxo;
-   - Estrutura de dados;
 
-### Módulo 2
-   - Funções builtin;
-   - Principais bibliotecas: Strings, data, boolean,number ;
-   - Métodos para lista, dicionário e set;
-   - Instalação de pacote com pip;
-   - Classes
-   - Herança
-   - Polimorfismo
-   - Métodos
-   - Atributos
-   - Encapsulamento;
-   
-### Módulo 3
-   - Trabalhando com arquivos
-   - JSON e CSV
-   - Banco de dados;
-   - Modulos e Package;
-
-### Módulo 4
-   - Tests;
-   - Frameworks;
-   - Como criar executaveis
-   
-## Módulo 5
-   - Desenvolvimento WEB com Flask
+---------
+> by: Clodonil Honorio Trigo
+> E-Mail: clodonil@nisled.org 
+>  [![linkdin](https://cdn.freebiesupply.com/logos/large/2x/linkedin-icon-logo-png-transparent.png =45x)](https://www.linkedin.com/in/clodonil-trigo-4155722a/)   [![blog](https://s.w.org/style/images/about/WordPress-logotype-wmark.png =70x)](http://www.devops-sys.com.br) 
