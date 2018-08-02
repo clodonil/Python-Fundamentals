@@ -26,7 +26,7 @@ Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os cód
 
 
 ------
-<span style="color:blue">** Obrigatório para nota**
+'''
 1. **Listar o nome de todos os municpios do Brasil com o código do IBGE:**
 >
 
@@ -37,7 +37,7 @@ Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os cód
 4. **Pesquisar se tem algum vereador vereador com os seguintes nomes (João, Eduardo, josé):**
 	
 5. **O partido que tive mais vereadores eleitos:**
-</span>
+'''
 
 > Obrigatório para nota
 
