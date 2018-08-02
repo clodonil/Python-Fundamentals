@@ -27,9 +27,9 @@ Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os cód
 > Questão de 1-5 serão consideradas para nota
 
 1. **Listar o nome de todos os municpios do Brasil com o código do IBGE:**
-> Exemplo de Resposta:
+__Exemplo de Resposta:__
 ```sh
-   N IBGE  Municipio
+  N IBGE  Municipio
 --------------------
 3550308	São Paulo
 3304557	Rio de Janeiro	
