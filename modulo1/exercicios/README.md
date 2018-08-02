@@ -61,7 +61,7 @@ __Exemplo de Resposta:__
 > Questão 9 e 10 são desafios; só para os valentes, corajosos e fortes. Esqueça você não vai conseguir.
 
 ```
-9. Mostrar o nome, número de habilitantes e taxa de fecundidade para as cidades brasileiras que estão \n
+9. Mostrar o nome, número de habilitantes e taxa de fecundidade para as cidades brasileiras que estão 
 com taxa de homicídio acima de 60 por 100 Mil:
 
 10. Quantos habitantes brasileiros estão morando nas 50 cidades mais violentas do mundo:
