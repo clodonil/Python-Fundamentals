@@ -122,26 +122,59 @@ else
    print("Menor")
 ```
 Perceba que o único controle que existe para determinar o bloco de código é o espaçamento. Como já falei, isso no inicio pode trazer problemas, mais é algo que é incorporado rapidamente.
+
 A vantagen da tabulação que o código semple está aninhado, com as hieraquias bem definicas, tornando o código muito mais fácil de ler e realizar as modificações necessárias.
 
 Os blocos de códigos em Python são marcados 
 
 ## 5 Variável
-```python
-   dados=10
+
+Como já falamos o Python tem tipagem forte e dinâmica de váriavel, não existe um local especifico para declarar as variáveis, você pode declarar no local que desejar. A única preocupação que você deve ter é não consultar uma variável que não existe. Se isso acontecer, um erro vai acontecer.
+
+As variáveis podem ter nomes conforme a vontade do programador, com nomes longos, contendo letras e números. No entanto, elas devem necessariamente começar com 'letras minúsculas'.
+
+Além dessa regra é importante também estar atento às palavras reservadas da linguagem, que não podem ser utilizadas como variáveis.
+
+```bash
+and       def       exec      if        not       return
+assert    del       finally   import    or        try
+break     elif      for       in        pass      while
+class     else      from      is        print     yield
+continue  except    global    lambda    raise
 ```
-Atribuição em cadeia
+
+Para declarar um variável é muito, simples. Vamos criar uma variável com o nome `dados` e vamos 'armazenar' o valor inteiro 10.
+
 ```python
-   dados=x=filho=10
+dados=10
 ```
+Perceba que em nenhum momento foi citado que a variável dados é do tipo inteiro. A linguagem automáticamente faz isso.
+
+Atribuição também pode ser realizado em cadeia, conforme o exemplo:
+
+```python
+dados=x=filho=10
+```
+
+Outra forma de realizar atribuição em cadeia:
+
+```python
+nome,idade,tel = 'jose',10,'56945-2342'
+
+# Imprimir o conteúdo da variável
+print(nome)
+print(idade)
+print(tel)
+```
+
 ### 5.1 Escopo de Variável
 ### 5.2 Estrutura de Dados
-   #### 5.2.1 String 
-   String é uma sequencia de caracteres Unicode. Para representar uma string pode ser utilizado aspas simples e aspa duplas.
-   Exemplo:
-   ```python
-       texto="As vezes voce tem que levantar sozinho e seguir em frente"
-   ```
+#### 5.2.1 String 
+String é uma sequencia de caracteres Unicode. Para representar uma string pode ser utilizado aspas simples e aspa duplas.
+Exemplo:
+ ```python
+texto="As vezes voce tem que levantar sozinho e seguir em frente"
+```
    Para declarar multiplas linhas utilize 3 aspas simple.
    Exemplo:
    ```python
