@@ -81,6 +81,51 @@ Outra possibilidade também é utilizar uma IDE que está na cloud. No meu ponto
 
 
 ## 4 Sintaxe básica
+
+Se você já programa em outra linguagem está acostumado declarar o tipo de dados que a variável vai receber. Isso é muito comum em `C`, `JAVA` e várias outras linguagem.
+
+O Python é diferente, ela entra nos grupos de linguagem que tem tipagem dinâmica e forte. 
+
+Dizemos que uma linguagem tem tipagem dinâmica quando o próprio interpretador infere o tipo de dados de uma variável recebe, sem a necessidade que você, o usuário da linguagem diga.
+
+A tipagem forte significa que o interpretador do Python avalia as expressões (evaluate) e não faz coerções automáticas entre tipos não compatíveis (conversões de valores). Por ele ser dinâmica, não significa que todos os tipos de conversões são permitidas.
+
+Além da tipagem dinâmica e forte, o Python tem uma sintaxe simples e direta. Porém, um ponto de dificuldade aos iniciantes, são os blocos de códigos.
+
+Blocos de códigos em outas linguagem  são marcas por `{` e  `}`, como por exemplo em `C`:
+
+```c
+if (x > 5){
+   printf("maior")
+}else {
+   printf("menor")
+}
+```
+
+Outras linguagens como o Ruby utiliza o `do`e `end` para limitar o blodo de código:
+
+```ruby
+if x > 5
+   echo "Maior"
+else
+   echo "Menor"
+end
+```
+O Python não tem nada disso, todo o controle do bloco de código é realizado por espaçamento.Se os espaçamentos não forem realizados corretamente, o código não vai funcionar.
+
+Exemplo do if com bloco de código:
+
+```python
+if x > 5
+   print("Maior")
+else
+   print("Menor")
+```
+Perceba que o único controle que existe para determinar o bloco de código é o espaçamento. Como já falei, isso no inicio pode trazer problemas, mais é algo que é incorporado rapidamente.
+A vantagen da tabulação que o código semple está aninhado, com as hieraquias bem definicas, tornando o código muito mais fácil de ler e realizar as modificações necessárias.
+
+Os blocos de códigos em Python são marcados 
+
 ## 5 Variável
 ```python
    dados=10
