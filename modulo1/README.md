@@ -70,12 +70,12 @@ Para aqueles que desejam ter uma máquina virtual em Linux para desenvolver o se
 
 Para utilizar, entre na pasta 'vms' e digite:
 ```
-   $ vagrant up
+$ vagrant up
  ```
  Após subir o Linux, entre e no Linux:
  
  ```
- $ vagrant ssh python
+$ vagrant ssh python
 ```
 Outra possibilidade também é utilizar uma IDE que está na cloud. No meu ponto de vista a melhor delas é o [cloud9](https://c9.io/login). É só se cadastrar e sair usando.
 
@@ -167,45 +167,49 @@ print(idade)
 print(tel)
 ```
 
-### 5.1 Escopo de Variável
 ### 5.2 Estrutura de Dados
+Podemos estrutura os dados em Python com variáveis em do tipo:
+* String;
+* Number (Integer e Float);
+* Lista;
+* Tuple;
+* Dicionário;
+
 #### 5.2.1 String 
 String é uma sequencia de caracteres Unicode. Para representar uma string pode ser utilizado aspas simples e aspa duplas.
 Exemplo:
  ```python
 texto="As vezes voce tem que levantar sozinho e seguir em frente"
 ```
-   Para declarar multiplas linhas utilize 3 aspas simple.
-   Exemplo:
+Para declarar multiplas linhas utilize 3 aspas simple.
+Exemplo:
    ```python
-        texto='''
-               Tudo é possivel. 
-               O impossível apenas demora mais
-               '''
+texto='''
+     Tudo é possivel. 
+     O impossível apenas demora mais
+     '''
    ```
-  Semelhante a lista e Tuplas, as string também utilizam o operador [ ]. Dessa forma é possível obter apenas parte da string.
-  Exemplo:
-  ```python
-  texto="As vezes voce tem que levantar sozinho e seguir em frente" 
-  # Recuperar o caractere da posição 5
-  texto[6]   # Retorno "z"
+Semelhante a lista e Tuplas, as string também utilizam o operador [ ]. Dessa forma é possível obter apenas parte da string.
+Exemplo:
+```python
+texto="As vezes voce tem que levantar sozinho e seguir em frente" 
+# Recuperar o caractere da posição 5
+texto[6]   # Retorno "z"
    
-  # Recuperar do inicio da string ate posição 10
-  texto[0:10]  # Retorno "As vezes vo"
+# Recuperar do inicio da string ate posição 10
+texto[0:10]  # Retorno "As vezes vo"
   
-  # Recuperar da posição 10 até a posição 15
-  texto[10:15] # retorno "
-  ```
+# Recuperar da posição 10 até a posição 15
+texto[10:15] # retorno "
+```   
+#### 5.2.2 Numbers
+Com python é possível utilizar 3 tipos de variável para números. São os Inteiros (int), Ponto Flutuante (float) e os números complexos (complex).
    
-   #### 5.2.2 Numbers
-   Com python é possível utilizar 3 tipos de variável para números. São os Inteiros (int), Ponto Flutuante (float) e os números complexos (complex).
+Não é necessário declarar os tipos que deseja utilizar, apenas declarar o conteúdo que o tipo automáticamente é alocado.
    
-   Não é necessário declarar os tipos que deseja utilizar, apenas declarar o conteúdo que o tipo automáticamente é alocado.
-   
-   Exemplo:
-   
-  
-  > No exemplo abaixo utilizamos a função `type()` para mostrar o tipo da classe da variável. Também usamos a função `isinstance()` para verificar/comparar o tipo da váriavel. Se for o mesmo tipo ele retorno true.
+Exemplo:
+     
+> No exemplo abaixo utilizamos a função `type()` para mostrar o tipo da classe da variável. Também usamos a função `isinstance()` para verificar/comparar o tipo da váriavel. Se for o mesmo tipo ele retorno true.
   
 ```python
 a = 5
@@ -217,7 +221,7 @@ print(a, "do tipo", type(a))
 a = 1+2j
 print(a, "numero complexo?", isinstance(1+2j,complex))
 ```
-   #### 5.2.3 List
+#### 5.2.3 List
  Lista é Python é uma sequencia de item, equivale os array de outras linguagem. A lista é um dos tipos de dados mais utilizados em Python por ser muito flexivel.Todos os items de uma lista NÃO precisam ser do mesmo tipo.  
    
 Exemplo:
@@ -291,28 +295,43 @@ Como o conjunto é uma coleção não ordenada, a indexação não funciona. Por
 posicao_chegada={3,4,1,7,8}
 print(posicao_chegada)
 ```
+#### 5.2.7 frozenset
+Frozen set são conjuntos similares ao set. A diferença que frozenset são imutável, portanto não podem ser modificados. Devido a isso, podem ser usados como chave no dicionário ou como elemento de outro conjunto. Mas como conjuntos, não é ordenado (os elementos podem ser definidos em qualquer índice).
+```python
+lisya = ('a', 'e', 'i', 'o', 'u')
 
+fSet = frozenset(vowels)
+print('O frozen set é:', fSet)
+print('UM set vazio:', frozenset())
+```
+Um outro exemplo:
+
+```python
+# random dictionary
+person = {"name": "John", "age": 23, "sex": "male"}
+
+fSet = frozenset(person)
+print('The frozen set is:', fSet)
+```
 #### 5.2.7 Conversão entre tipos
 Nós podmeos converter entre diferentes tipo de dados usando diferentes funções de conversão semelhante a `int()`, `float()`, `str()`...etc.
 
 | Descrição| Função | Exemplo |
 |----------|-----------|-----|
-| Converts x to an integer. The base specifies the base if x is a string.|  int(x [,base]) | |
-| Converts x to a floating-point number.|float(x) | |
-| Creates a complex number.|complex(real [,imag]) |  |
-| Converts object x to a string representation.|str(x) |  |
+| Converte para intero.|  int(x) | num=int(a)|
+| Converte para float.|float(x) |num = float(a) |
+| Converte para número Complexos|complex(x) |num = complex(a)  |
+| Converte para String |str(x) | letra = str(num)  |
 | Converts object x to an expression string.|repr(x) | |
 | Evaluates a string and returns an object.|eval(str) | |
-| Converts s to a tuple.|tuple(s) | |
-| Converts s to a list.|list(s) | |
-| Converts s to a set.|set(s) | |
-| Creates a dictionary. d must be a sequence of (key,value) tuples.| dict(d) | |
-| Converts s to a frozen set.| frozenset(s) | |
-| Converts an integer to a character.|chr(x) | |
-| Converts an integer to a Unicode character.|unichr(x) | |
-| Converts a single character to its integer value.| ord(x) | |
-| Converts an integer to a hexadecimal string.| hex(x) | |
-| Converts an integer to an octal string.| oct(x) | |
+| Converte para uma tuple|tuple(s) |t_lista = tuple(lista) |
+| Converte para Lista.|list(s) |lista = list(a) |
+| Converte para Set.|set(s) | l = set(lista) |
+| Converte um set em frozenset.| frozenset(s) |frozenset(x) |
+| Converte um número em um string da tabela ascii.|chr(x) | |
+| Converte uma string em um valor da tabela ascii.| ord(x) | ord('a') |
+| Converte para Hexdecimal.| hex(x) |h=hex(10) |
+| Converte uma string para um Inteiro octal| oct(x) | oct(10)|
 
 
 ## 5.3 Operadores
