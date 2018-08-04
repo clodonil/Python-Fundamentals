@@ -336,6 +336,8 @@ Nós podmeos converter entre diferentes tipo de dados usando diferentes funçõe
 
 ## 5.3 Operadores
 fdsfsdf
+
+
 | Operação | Operador |
 |----------|---------|
 |adição	| + |
