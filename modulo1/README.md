@@ -328,16 +328,16 @@ Nós podmeos converter entre diferentes tipo de dados usando diferentes funçõe
 | Converte para Lista.|list(s) |lista = list(a) |
 | Converte para Set.|set(s) | l = set(lista) |
 | Converte um set em frozenset.| frozenset(s) |frozenset(x) |
-| Converte um número em um string da tabela ascii.|chr(x) | |
+| Converte um número em um string da tabela ascii.|chr(x) | chr(95) |
 | Converte uma string em um valor da tabela ascii.| ord(x) | ord('a') |
 | Converte para Hexdecimal.| hex(x) |h=hex(10) |
 | Converte uma string para um Inteiro octal| oct(x) | oct(10)|
 
 
 ## 5.3 Operadores
-
-|Operação	|Operador|
--------------------
+fdsfsdf
+| Operação | Operador |
+|----------|---------|
 |adição	| + |
 |subtração	| - |
 |multiplicação	| * |
