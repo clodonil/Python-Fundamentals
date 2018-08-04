@@ -338,10 +338,10 @@ Nós podmeos converter entre diferentes tipo de dados usando diferentes funçõe
 
 |Operação	|Operador|
 -------------------
-|adição	|+|
-|subtração	|-|
-|multiplicação	|*|
-|divisão	|/|
+|adição	| + |
+|subtração	| - |
+|multiplicação	| * |
+|divisão	| / |
 
 
 ## 5.3 Controle de Fluxo
