@@ -338,7 +338,7 @@ Nós podmeos converter entre diferentes tipo de dados usando diferentes funçõe
 Vamos começar pelos operadores matemáticos, igualmente as outras linguagem de programação, as operações básicas de matemáticas são realizadas pelos operadores `+`, `-`, `/` e `*`. 
 
 | Descrição | Operador |
-|----------|---------|
+|--------- -|----------|
 |adição	| + |
 |subtração	| - |
 |multiplicação	| * |
@@ -360,10 +360,10 @@ result = (2+2)*2 # Resultado 8
 Com os operadores básicos podemos acrescentar os operadores que fazem operação e atribuição.
 | Descrição | Operador |
 |-----------|----------|
-|  soma e atribui         | +=       |
-|  subtrai e atribui         | -=       |
-|  dividi e atribui         | *=       |
-|  multiplica e atribui         | /=       | 
+| soma e atribui         | +=       |
+| subtrai e atribui         | -=       |
+| dividi e atribui         | * =       |
+| multiplica e atribui         | /=       | 
 
 Exemplo:
 ```python
@@ -455,7 +455,7 @@ E para finalizar vamos estudar os operadores binários.
 
 | Descrição | Operador|
 |-----------|---------|
-| OU binário     |   |   |
+| OU binário     |   '|'   |
 | OU exclusivo          |   ^     |
 | E Binário          |    &   |
 | Desloca bit a direita         |  >>       |
