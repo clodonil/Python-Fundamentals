@@ -357,7 +357,7 @@ result = 2+2*2   # Resultado 6
 #dessa forma fica mais ligivel
 result = (2+2)*2 # Resultado 8
 ```
-
+Com os operadores básicos podemos acrescentar os operadores que fazem operação e atribuição.
 | Descrição | Operador |
 |-----------|----------|
 |  soma e atribui         | +=       |
@@ -365,6 +365,12 @@ result = (2+2)*2 # Resultado 8
 |  dividi e atribui         | *=       |
 |  multiplica e atribui         | /=       | 
 
+Exemplo:
+```python
+a=10
+a = a + 10 
+a += 10
+```
 Além dos operadores básicos, também temos os operadores para exponenciação, extração do módulo da divisão, parte inteira de uma divisão.
 
 |Descrição	|Operador|
@@ -445,19 +451,24 @@ O operador lambda é bastante útil, com ele podemos fazer pequenas funções.
 produdo = lambda  x,y: x*y
 print(produto(6,4))
 ```
-E para finalizar os operadores, vamos verificar 
+E para finalizar vamos estudar os operadores binários. 
+
 | Descrição | Operador|
 |-----------|---------|
-|           |   |     |
-|           |   ^     |
-|           |   &     |
-|           | >>      |
-|           |  <<     |
-|           |  ~x     |
-|           |  +x     |
-|           |  -x     |
+| OU binário     |   |   |
+| OU exclusivo          |   ^     |
+| E Binário          |    &   |
+| Desloca bit a direita         |  >>       |
+| Desloca bit a esquerda          |  <<     |
+|   Complemento        |  ~x     |
 
-
+Exemplo de utilização dos operadores binários.
+```python
+a = int("1100100",2)
+print(a)
+print(a << 1)
+print(a >> 1)
+```
 ## 5.3 Controle de Fluxo
 O controle de fluxo de dados no Python podem ser realizado utilizado
 If
