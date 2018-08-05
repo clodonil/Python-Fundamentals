@@ -335,8 +335,7 @@ Nós podmeos converter entre diferentes tipo de dados usando diferentes funçõe
 
 
 ## 5.3 Operadores
-fdsfsdf
-
+Vamos começar pelos operadores matemáticos, igualmente as outras linguagem de programação, as operações básicas de matemáticas são realizadas pelos operadores `+`, `-`, `/` e `*`. 
 
 | Operação | Operador |
 |----------|---------|
@@ -345,7 +344,55 @@ fdsfsdf
 |multiplicação	| * |
 |divisão	| / |
 
+A utilização é bem simples.
 
+```python
+soma = 10 + 5
+```
+Python também segue as precedência definida pela Matemática, porém sempre recomendamos utilizar parentes `( )` para separar os operadores, para tornar mais legível.
+Por exemplo:
+
+```python 
+result = 2+2*2   # Resultado 6
+#dessa forma fica mais ligivel
+result = (2+2)*2 # Resultado 8
+```
+Além dos operadores básicos, também temos os operadores para exponenciação, extração do módulo da divisão, parte inteira de uma divisão.
+
+|Operação	|Operador|
+|--------|-------|
+|exponenciação	|**|
+|parte inteira	|//|
+|módulo|	%|
+
+A sintaxe para utilização desses operadores.
+
+```python
+result = 2 ** 2  # resutado  2
+result = 5 // 2  # resultado 2
+result = 5 %  2  # resultado 1
+```
+Esses operadores que vimos também podem ser utilizados com outras estrutura de dados tais como string e list.
+Um exemplo de utilização com string:
+
+```python
+result = "-"*50   
+result = "Ola" + "Mundo"
+```
+Operadores com Lista:
+```python
+ lista = [1,2,3] * 10
+ todos_numeros = [2,4,6,8] + [1,3,5,7] 
+```
+Seguindo com 
+
+|Descrição	|Operador|
+|----------|--------|
+|Maior que	|>|
+|Menor que	|<|
+|Igual a	|==|
+|Maior ou igual a	|>=|
+|Menor ou igual a	|<=|
 ## 5.3 Controle de Fluxo
 O controle de fluxo de dados no Python podem ser realizado utilizado
 If
@@ -376,3 +423,4 @@ Autor   = ['Clodonil Honorio Trigo','clodonil@nisled.org']
 linkdin = 'https://www.linkedin.com/in/clodonil-trigo-4155722a'
 Blog    = 'http://www.devops-sys.com.br'
 ```
+
