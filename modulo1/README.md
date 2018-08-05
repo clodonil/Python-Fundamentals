@@ -337,12 +337,12 @@ Nós podmeos converter entre diferentes tipo de dados usando diferentes funçõe
 ## 5.3 Operadores
 Vamos começar pelos operadores matemáticos, igualmente as outras linguagem de programação, as operações básicas de matemáticas são realizadas pelos operadores `+`, `-`, `/` e `*`. 
 
-| Descrição | Operador |
-|--------- -|----------|
-|adição	| + |
-|subtração	| - |
-|multiplicação	| * |
-|divisão	| / |
+| Descrição     | Operador |
+|---------------|----------|
+| adição	       | +        |
+| subtração	    | -        |
+| multiplicação	| *        |
+| divisão	      | /        |
 
 A utilização é bem simples.
 
@@ -361,7 +361,7 @@ Com os operadores básicos podemos acrescentar os operadores que fazem operaçã
 | Descrição | Operador |
 |-----------|----------|
 | soma e atribui         | +=       |
-| subtrai e atribui         | -=       |
+| subtrai e atribui      | -=       |
 | dividi e atribui         | * =       |
 | multiplica e atribui         | /=       | 
 
@@ -455,7 +455,7 @@ E para finalizar vamos estudar os operadores binários.
 
 | Descrição | Operador|
 |-----------|---------|
-| OU binário     |   '|'   |
+| OU binário     |   \|   |
 | OU exclusivo          |   ^     |
 | E Binário          |    &   |
 | Desloca bit a direita         |  >>       |
