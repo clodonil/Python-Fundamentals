@@ -358,12 +358,13 @@ result = 2+2*2   # Resultado 6
 result = (2+2)*2 # Resultado 8
 ```
 Com os operadores básicos podemos acrescentar os operadores que fazem operação e atribuição.
-| Descrição | Operador |
-|-----------|----------|
+
+| Descrição | Operador    |
+|-----------|------------|
 | soma e atribui         | +=       |
 | subtrai e atribui      | -=       |
-| dividi e atribui         | \*=       |
-| multiplica e atribui         | /=       | 
+| dividi e atribui       | \*=       |
+| multiplica e atribui   | /=       | 
 
 Exemplo:
 ```python
