@@ -362,7 +362,7 @@ Com os operadores básicos podemos acrescentar os operadores que fazem operaçã
 |-----------|----------|
 | soma e atribui         | +=       |
 | subtrai e atribui      | -=       |
-| dividi e atribui         | * =       |
+| dividi e atribui         | \*=       |
 | multiplica e atribui         | /=       | 
 
 Exemplo:
