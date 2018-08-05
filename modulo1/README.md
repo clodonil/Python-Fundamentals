@@ -174,6 +174,7 @@ Podemos estrutura os dados em Python com variáveis em do tipo:
 * Lista;
 * Tuple;
 * Dicionário;
+* Boolean
 
 #### 5.2.1 String 
 String é uma sequencia de caracteres Unicode. Para representar uma string pode ser utilizado aspas simples e aspa duplas.
@@ -313,6 +314,14 @@ person = {"name": "John", "age": 23, "sex": "male"}
 fSet = frozenset(person)
 print('The frozen set is:', fSet)
 ```
+#### 5.2.7 Boolean
+O tipo de dados Boolean em Python são criados pela classe `bool` que logicamente aceita 2 valores constante `True` e `False`.
+
+```python
+print(type(True))
+```
+Os booleanos também podem ser presentados por inteiros sendo 1 para `True`e 0 para `False`.
+
 #### 5.2.7 Conversão entre tipos
 Nós podmeos converter entre diferentes tipo de dados usando diferentes funções de conversão semelhante a `int()`, `float()`, `str()`...etc.
 
