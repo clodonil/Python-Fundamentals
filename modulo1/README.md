@@ -493,7 +493,12 @@ if x > 10:
 
 * Until
 
-
+## Outras funções
+Para o desenvolvimento do laboratório  e da lista de exercício, vamos precisar conhecer as seguintes funções:
+* print
+* split
+### Função Print
+### Função Split
 ## 6. Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
 > [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
