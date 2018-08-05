@@ -337,7 +337,7 @@ Nós podmeos converter entre diferentes tipo de dados usando diferentes funçõe
 ## 5.3 Operadores
 Vamos começar pelos operadores matemáticos, igualmente as outras linguagem de programação, as operações básicas de matemáticas são realizadas pelos operadores `+`, `-`, `/` e `*`. 
 
-| Operação | Operador |
+| Descrição | Operador |
 |----------|---------|
 |adição	| + |
 |subtração	| - |
@@ -357,9 +357,17 @@ result = 2+2*2   # Resultado 6
 #dessa forma fica mais ligivel
 result = (2+2)*2 # Resultado 8
 ```
+
+| Descrição | Operador |
+|-----------|----------|
+|  soma e atribui         | +=       |
+|  subtrai e atribui         | -=       |
+|  dividi e atribui         | *=       |
+|  multiplica e atribui         | /=       | 
+
 Além dos operadores básicos, também temos os operadores para exponenciação, extração do módulo da divisão, parte inteira de uma divisão.
 
-|Operação	|Operador|
+|Descrição	|Operador|
 |--------|-------|
 |exponenciação	|**|
 |parte inteira	|//|
@@ -384,7 +392,7 @@ Operadores com Lista:
  lista = [1,2,3] * 10
  todos_numeros = [2,4,6,8] + [1,3,5,7] 
 ```
-Seguindo com 
+Além dos operadores matemáticos, também tempos os operadores lógicos que retornar `True` e `False`.
 
 |Descrição	|Operador|
 |----------|--------|
@@ -393,6 +401,63 @@ Seguindo com
 |Igual a	|==|
 |Maior ou igual a	|>=|
 |Menor ou igual a	|<=|
+| Conjunção e    |  and |
+| Disjunção ou   | or |
+| negação        | not |
+
+A utilização dos operadores lógicos também é bem simples. Eles não muito utilizados para tomada de decisão em `IF`.
+```python
+a=10 > 5
+b=100 == 200
+if 200 > 100:
+   print("maior")   
+if a or b:
+   print("Tudo certo")
+if a and b:
+   print("Tudo errado")
+x = not(a and b)
+```
+Também temos os operadores para verificar se um item está contido em um conjunto, para testar identidade e para criar pequenas funções.
+
+|Descrição | Operador|
+|----------|---------|
+|Contido em |in         |
+| Teste de identidade               | is |
+|Criar funções | lambda     |
+
+Utilizamos muito operador `in` para verificar se um valor está em uma lista.
+```python
+x = 10 in [3,4,5,10]   | Retorna True
+```
+Já operdor `is` é para testar a identidade de um objetivo. Verificar se realmente o mesmo objeto.
+```python
+a=10
+b=a
+k = a is b   
+print(id(a))
+print(id(b))
+a=[10,2,3]
+b=[10,2,3]
+k a is b
+```
+O operador lambda é bastante útil, com ele podemos fazer pequenas funções. 
+```python
+produdo = lambda  x,y: x*y
+print(produto(6,4))
+```
+E para finalizar os operadores, vamos verificar 
+| Descrição | Operador|
+|-----------|---------|
+|           |   |     |
+|           |   ^     |
+|           |   &     |
+|           | >>      |
+|           |  <<     |
+|           |  ~x     |
+|           |  +x     |
+|           |  -x     |
+
+
 ## 5.3 Controle de Fluxo
 O controle de fluxo de dados no Python podem ser realizado utilizado
 If
