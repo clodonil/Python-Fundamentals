@@ -483,7 +483,7 @@ print(a >> 1)
 
 O controle de fluxo de dados no Python podem ser realizado utilizado desvio no fluxo de código ou através de sistema de repetição.
 
-* IF
+* __IF__
 No desvio de fluxo, utilizamos o comando `IF`. A sintaxe é a seguinte:
 
 ```python
@@ -514,7 +514,7 @@ Além do desvio de fluxo, podemos repetir um pedaço de código. No python podem
 
 O `for` pode utilizar como controle de repetição uma lista. No exemplo a seguir, temos uma lista de palavaras `words`, e a cada interação (passagem pelo loop), uma palavra é atribuida a variável `w`. O len retorna o tamanho da palavra.
 
-* For
+* __For__
 ```python
 words = ['gato', 'cachorro', 'coelho']
 for w in words:
@@ -545,7 +545,7 @@ range(-10, -100, -30)
   -10, -40, -70
 ```
 
-* While
+* __While__
 
 Como conforma de loop também temos o `while`. Com o `while` não possui uma lista, portanto não é possível saber a quantidade de vezes que o fluxo do programa vai ficar no `while. O fluxo vai ficar no `while` até a condição for `False`.
 
@@ -581,7 +581,7 @@ while x.lower() != 'fim':
 print(lista)
 ```
 
-* break, continue e else para usar com o loop
+* __break, continue e else para usar com o loop__
 
 A instrução `break`, como em C, são interno para `for` ou `while` e quando invocado finaliza de forma bruta o loop.
 
@@ -608,7 +608,7 @@ for nome in nomes:
    
 ```
 No exemplo, o nome 'jose' não vai ser mostrado porque ele está dentro de um `if` com `continue`.
-* With
+* __With__
 ```python
 with open('workfile', 'r') as f:
      read_data = f.read()
