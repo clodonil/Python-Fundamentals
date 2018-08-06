@@ -546,6 +546,7 @@ range(-10, -100, -30)
 ```
 
 * While
+
 Como conforma de loop também temos o `while`. Com o `while` não possui uma lista, portanto não é possível saber a quantidade de vezes que o fluxo do programa vai ficar no `while. O fluxo vai ficar no `while` até a condição for `False`.
 
 Sintaxe:
@@ -580,10 +581,11 @@ while x.lower() != 'fim':
 print(lista)
 ```
 
-#### break, continue e else para usar com o loop
-The break statement, like in C, breaks out of the innermost enclosing for or while loop.
+* break, continue e else para usar com o loop
 
-Loop statements may have an else clause; it is executed when the loop terminates through exhaustion of the list (with for) or when the condition becomes false (with while), but not when the loop is terminated by a break statement. This is exemplified by the following loop, which searches for prime numbers:  
+A instrução `break`, como em C, são interno para `for` ou `while` e quando invocado finaliza de forma bruta o loop.
+
+As instruções de loop podem ter uma cláusula else; ele é executado quando o loop termina por esgotamento da lista (com for) ou quando a condição se torna falsa (com while), mas não quando o loop é finalizado por uma instrução `break`. Isso é exemplificado pelo seguinte loop, que procura por números primos:
 
 ```python
 for n in range(2, 10):
@@ -595,6 +597,17 @@ for n in range(2, 10):
          print(n, 'eh numero primor')
 ```
 
+O `break`  sempre finaliza o loop e não executa o `else`, já o `continue` finaliza aquela parte do bloco de código e volta para o inicio do loop. 
+```python
+nomes=['maria','jose','carlos','eduardo']
+
+for nome in nomes:
+    if nome == 'jose':
+        continue
+    print(nome)
+   
+```
+No exemplo, o nome 'jose' não vai ser mostrado porque ele está dentro de um `if` com `continue`.
 * With
 ```python
 with open('workfile', 'r') as f:
