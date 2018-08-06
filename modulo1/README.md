@@ -484,6 +484,7 @@ print(a >> 1)
 O controle de fluxo de dados no Python podem ser realizado utilizado desvio no fluxo de código ou através de sistema de repetição.
 
 * __IF__
+
 No desvio de fluxo, utilizamos o comando `IF`. A sintaxe é a seguinte:
 
 ```python
@@ -510,11 +511,14 @@ elif x == 1:
 else:
     print('Muitos')
 ```   
+
+
+* __For__
+
 Além do desvio de fluxo, podemos repetir um pedaço de código. No python podemos utilizar o `for`ou `while`.
 
 O `for` pode utilizar como controle de repetição uma lista. No exemplo a seguir, temos uma lista de palavaras `words`, e a cada interação (passagem pelo loop), uma palavra é atribuida a variável `w`. O len retorna o tamanho da palavra.
 
-* __For__
 ```python
 words = ['gato', 'cachorro', 'coelho']
 for w in words:
@@ -608,17 +612,46 @@ for nome in nomes:
    
 ```
 No exemplo, o nome 'jose' não vai ser mostrado porque ele está dentro de um `if` com `continue`.
-* __With__
-```python
-with open('workfile', 'r') as f:
-     read_data = f.read()
-f.closed
-```
-
 
 ## Outras funções
 Para o desenvolvimento do laboratório  e da lista de exercício, vamos precisar conhecer as seguintes funções:
 * print
+
+O print como já vimos em vários exemplos, é utilizado para imprimir (mostrar) algo na tela.
+
+ - Para imprimir um texto:
+```print("Olá Python")```
+ - Para  imprimir uma variável:
+ ```print(variavel)```
+ - Para imprimir um texto com a variável:
+```
+nome, idade, salario ="jose",30, 100.00
+
+print("Usuario:",nome)
+print("O usuario:"+ nome)
+print("O usuario {0} tem {1:d} idade".format(nome, idade))
+print("salario {0:0.2f} l".format(salario))
+
+# alinha a direita com 20 espaços em branco
+print("{0:>20}".format(nome))
+
+# alinha a direita com 20 símbolos #
+print("{0:->20}".format(nome))
+
+# alinha ao centro usando 10 espaços em branco a esquerda e 10 a direita
+print("{0:^20}".format(nome))
+
+# imprime só as primeiras cinco letras
+print("{0:.3}".format(nome))
+
+#Imprime em hexdecimaç
+print("{0:h}".format(23))
+
+#Imprime em binário
+print("{0:b}".format(123))
+```
+
+
 * split
 ### Função Print
 ### Função Split
