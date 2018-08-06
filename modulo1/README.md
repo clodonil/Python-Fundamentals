@@ -480,18 +480,128 @@ print(a << 1)
 print(a >> 1)
 ```
 ## 5.3 Controle de Fluxo
-O controle de fluxo de dados no Python podem ser realizado utilizado
-If
-```python
-x=10
-if x > 10:
-    print("Maior que 10")
-```   
-* Case
-* While
-* For
 
-* Until
+O controle de fluxo de dados no Python podem ser realizado utilizado desvio no fluxo de código ou através de sistema de repetição.
+
+* IF
+No desvio de fluxo, utilizamos o comando `IF`. A sintaxe é a seguinte:
+
+```python
+if (expressão):
+   pass
+elif (expressão):
+   pass
+else:
+   pass
+```
+
+Como exemplo, vamos fazer uma entrada de dados via input, vamos transformar em inteiro e realizar as comparações. Se a condição da expressão foi `True`, bloco de código vai ser realizado.
+
+```python
+x = int(input("Please enter an integer: "))
+
+if x < 0:
+    x = 0
+    print('Valor negativo')
+elif x == 0:
+    print('Zero')
+elif x == 1:
+    print('Apenas UM')
+else:
+    print('Muitos')
+```   
+Além do desvio de fluxo, podemos repetir um pedaço de código. No python podemos utilizar o `for`ou `while`.
+
+O `for` pode utilizar como controle de repetição uma lista. No exemplo a seguir, temos uma lista de palavaras `words`, e a cada interação (passagem pelo loop), uma palavra é atribuida a variável `w`. O len retorna o tamanho da palavra.
+
+* For
+```python
+words = ['gato', 'cachorro', 'coelho']
+for w in words:
+    print(w, len(w))
+```
+Caso não tenha uma lista de 'coisas', uma nova lista de números pode ser criada utilizando a função `range`. Por exemplo, se você precise gerar uma lista de números de 0 até 5 `range(5)`
+
+```python
+for i in range(5):
+    print(i)
+```
+A sintaxe do `range` é a seguinte:
+
+```python
+range(inicio, fim, pulo)
+```
+Caso um valor apenas seja declarado no `range(100)`, é considerado como fim e o inicio começa de zero. Se dois valores são declarados `range(4,9)`, são considerados como inicio e fim respectivamente. Se treis valores são declarados `range(0,100,4)`, teremos o inicio, fim e o número de pulos (step). A interação pode dar pulos de 1 em 1 (padrão) ou você pode definir.
+
+Exemplos:
+```
+range(5, 10)
+   5, 6, 7, 8, 9
+
+range(0, 10, 3)
+   0, 3, 6, 9
+
+range(-10, -100, -30)
+  -10, -40, -70
+```
+
+* While
+Como conforma de loop também temos o `while`. Com o `while` não possui uma lista, portanto não é possível saber a quantidade de vezes que o fluxo do programa vai ficar no `while. O fluxo vai ficar no `while` até a condição for `False`.
+
+Sintaxe:
+```
+ while condição:
+    pass
+ else:
+    pass
+```
+Como exemplo, vamos repetir um bloco de código enquanto o valor de x seja menor do que 10. Caso a expressão ( x < 10) retorne False, o bloco de código dentro do else pode ser executado. 
+
+```python
+x= 0
+
+while x < 10:
+    print('Numero',x)
+    x += 1
+
+else:
+   print('Finalizado')
+```   
+
+No caso anterior, sabiamos por dedução a quantidade de vezes que o programa iria executadar. Em muitos casos isso não é possível. Por exemplo, podemos fazer um programa para ler um valor, armazenar na lista. E para o sistema parar de ler um novo valor, o usuário tem que digitar `fim`.
+
+```python
+x = 'incio'
+lista = []
+while x.lower() != 'fim':
+    x = input("Digite o proximo nome:")
+    lista.append(x)
+
+print(lista)
+```
+
+#### break, continue e else para usar com o loop
+The break statement, like in C, breaks out of the innermost enclosing for or while loop.
+
+Loop statements may have an else clause; it is executed when the loop terminates through exhaustion of the list (with for) or when the condition becomes false (with while), but not when the loop is terminated by a break statement. This is exemplified by the following loop, which searches for prime numbers:  
+
+```python
+for n in range(2, 10):
+     for x in range(2, n):
+         if n % x == 0:
+            print(n, 'igual', x, '*', n//x)
+            break
+     else:
+         print(n, 'eh numero primor')
+```
+
+* With
+```python
+with open('workfile', 'r') as f:
+     read_data = f.read()
+f.closed
+```
+
 
 ## Outras funções
 Para o desenvolvimento do laboratório  e da lista de exercício, vamos precisar conhecer as seguintes funções:
