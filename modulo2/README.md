@@ -24,16 +24,20 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 > 10. [Encapsulamento](#p1)</br>
 
 
-## 1 História
-No Brasil em 1989, Collor de Melo vencia a primeira eleição direta, na Alemanha caia o muro de Belim e na Holanda o Guido Van Rossum criava a linguagem Python.
-
-# Python Fundamentals
-
-## Objetivo
-Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a desenvolver aplicações ricas com acesso a banco de dados e interface WEB
-
-## Carga Horária  
-O curso tem carga horária de 40 horas
-
-
-   
+## 1. Funções builtin
+## 2. Principais bibliotecas
+###  2.1 Strings
+###  2.2 Number
+###  2.3 Data
+###  2.3 boolean
+###  2.4 List
+###  2.5 Tuple
+###  2.5 Dicionário
+###  2.6 Set
+## 4.  Pip
+## 5.  Classes
+## 6.  Herança
+## 7.  Polimorfismo
+## 8.  Métodos
+## 9.  Atributos
+## 10. Encapsulamento
