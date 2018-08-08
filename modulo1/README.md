@@ -6,13 +6,13 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 
 ## Conteúdo:
 
-> [1]: [História](#p1)
-> [2]: [Filosofia da Linguagem](#p2)
-> [3]: [Ambiente de Desenvolvimento](#p3)
-> [4]: [Sintaxe básica](#p4)
-> [5]: [Variável](#p5)
-> [6]: [Estrutura de Dados](#p6)
->     [6.1]: [String](#p6.1)
+> 1: [História](#p1)
+> 2: [Filosofia da Linguagem](#p2)
+> 3: [Ambiente de Desenvolvimento](#p3)
+> 4: [Sintaxe básica](#p4)
+> 5: [Variável](#p5)
+> 6: [Estrutura de Dados](#p6)
+>     6.1: [String](#p6.1)
 >     6.2. [Numbers](#p6.2)
 >     6.3. [List](#p6.3)
 >     6.4. [Tuple](#p6.4)
