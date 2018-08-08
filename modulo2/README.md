@@ -45,22 +45,622 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 |compile()	    |globals()  |	map()	       |reversed()	|__import__()|
 |complex()	    |hasattr()  |	max()        | 	round() 	| |
 |delattr()	    |hash()     |	memoryview() |	set()	    ||
+* abs
+
+Descrição: `abs()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* dict
+
+Descrição: `dict()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+* help
+
+Descrição: `help()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* min
+
+Descrição: `min()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* setattr
+
+Descrição: `setattr()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* all
+
+Descrição: `all()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* dir
+
+Descrição: `dir()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* hex
+
+Descrição: `hex()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* next
+
+Descrição: `next()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* slice()
+
+Descrição: `slice()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* any
+
+Descrição: `any()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* divmod
+Descrição: `divmod()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* id
+
+Descrição: `id()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* object
+
+Descrição: `object()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* sorted
+
+Descrição: `sorted()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* ascii
+
+Descrição: `ascii()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* enumerate
+
+Descrição: `enumerate()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* input
+Descrição: `input()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* oct
+
+Descrição: `oct()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* staticmethod
+
+Descrição: `staticmethod()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* bin()
+
+Descrição: `bin`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* eval
+
+Descrição: `eval()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* int
+
+Descrição: `int()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* open
+
+Descrição: `open()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* str
+
+Descrição: `str()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* bool
+
+Descrição: `bool()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* exec
+
+Descrição: `exec()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* isinstance
+
+Descrição: `isinstance()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* ord
+
+Descrição: `ord()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* sum()
+
+Descrição: `sum`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* bytearray
+
+Descrição: `bytearray()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* filter
+
+Descrição: `filter()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* issubclass
+
+Descrição: `issubclass()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* pow
+
+Descrição: `pow()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* super
+
+Descrição: `super()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* bytes
+
+Descrição: `bytes()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* float
+
+Descrição: `float()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* iter
+
+Descrição: `iter()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* print
+
+Descrição: `print()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* tuple
+
+Descrição: `tuple()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* callable
+
+Descrição: `callable()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* format
+
+Descrição: `format()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* len
+
+Descrição: `len()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* property
+
+Descrição: `property()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* type
+
+Descrição: `type()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* chr
+
+Descrição: `chr()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* frozenset
+
+Descrição: `frozenset()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* list
+
+Descrição: `list()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* range
+
+Descrição: `range()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* vars
+
+Descrição: `vars()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* classmethod
+
+Descrição: `classmethod()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* getattr
+
+Descrição: `getattr()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* locals
+
+Descrição: `locals()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* repr
+
+Descrição: `repr()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* zip
+
+Descrição: `zip()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* compile
+
+Descrição: `compile()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* globals
+
+Descrição: `globals()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* map
+
+Descrição: `map()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* reversed
+
+Descrição: `reversed()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* __import__
+
+Descrição: `__import__()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* complex
+
+Descrição: `complex()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* hasattr
+
+Descrição: `hasattr()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* max
+
+Descrição: `max()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* round	 
+
+Descrição: `round()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* delattr
+
+Descrição: `delattr()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* hash
+
+Descrição: `hash()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* memoryview
+
+Descrição: `memoryview()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+* set	 
+
+Descrição: `set()`
+
+Exemplo:
+```pyton
+sdfsd
+```
+
+
+
 ## 2. Principais bibliotecas
 ###  2.1 Strings
 ###  2.2 Number
 
-+---------------------------------------+
-|                Results                |
-+---------------------------------------+
-|             |        Contestant       |
-+ Competition +-------------------------+
-|             |  John | Andrea | Robert |
-+-------------+-------+--------+--------+
-| Swimming    |  1:30 |   2:05 |   1:15 |
-+-------------+-------+--------+--------+
-| Running     | 15:30 |  14:10 |  15:45 |
-+-------------+-------+--------+--------+
-    
+
 ###  2.3 Data
 ###  2.3 boolean
 ###  2.4 List
