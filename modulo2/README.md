@@ -14,7 +14,7 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 > 2.4 [List](#p1)</br>
 > 2.5 [Tuple](#p1)</br>
 > 2.5 [Dicionário](#p1)</br>
-> 2.6 [Set]#(#p1)</br>
+> 2.6 [Set](#p1)</br>
 > 4. [Pip](#p1)</br>
 > 5. [Classes](#p1)</br>
 > 6. [Herança](#p1)</br>
