@@ -42,7 +42,7 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 |callable() 	|format()	    |len()	        |property()	|type()|
 |chr()	      |frozenset()	 |list()	       |range()   	|vars()|
 |classmethod()	| getattr()	|locals()      |	repr()   	|zip()|
-|compile()	    |globals()  |	map()	       |reversed()	|__import__()|
+|compile()	    |globals()  |	map()	       |reversed()	|\__import__()|
 |complex()	    |hasattr()  |	max()        | 	round() 	| |
 |delattr()	    |hash()     |	memoryview() |	set()	    ||
 * abs
