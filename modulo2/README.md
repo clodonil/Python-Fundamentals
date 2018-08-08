@@ -29,8 +29,8 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 ## 1. Funções builtin
 
 
-|Built-in Functions		|
-|------------------------|
+|            |            | Built-in Functions		|      |        |
+|------------|------------|---------------------|------|--------|
 |abs()	      |dict()	      |help()	       |min()      |	setattr()|
 |all()	      |dir()	       |hex()	        |next()	    |slice()|
 |any()	      |divmod()     |	id()	        |object()	  |sorted()|
