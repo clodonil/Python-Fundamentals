@@ -29,7 +29,7 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 ## 1. Funções builtin
 
 
-|            |            | Built-in Functions		|      |        |
+|            |            | Funções Built-in 		|      |        |
 |------------|------------|---------------------|------|--------|
 |abs()	      |dict()	      |help()	       |min()      |	setattr()|
 |all()	      |dir()	       |hex()	        |next()	    |slice()|
@@ -48,6 +48,19 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 ## 2. Principais bibliotecas
 ###  2.1 Strings
 ###  2.2 Number
+
++---------------------------------------+
+|                Results                |
++---------------------------------------+
+|             |        Contestant       |
++ Competition +-------------------------+
+|             |  John | Andrea | Robert |
++-------------+-------+--------+--------+
+| Swimming    |  1:30 |   2:05 |   1:15 |
++-------------+-------+--------+--------+
+| Running     | 15:30 |  14:10 |  15:45 |
++-------------+-------+--------+--------+
+    
 ###  2.3 Data
 ###  2.3 boolean
 ###  2.4 List
