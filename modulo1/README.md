@@ -5,17 +5,37 @@
 Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve ter a capacidade de desenvolver pequenos programas.
 
 ## Conteúdo:
-  > 1. [História](#historia)
-  > 2. [Filosofia da Linguagem](#conceitodalinguagem)
-  > 3. [Ambiente de Desenvolvimento](#ambientededesenvolvimento)
-  > 4. [Sintaxe básica](#sintaxebasica)
-  > 5. [Variável](#variavel)
-  > 6. [Operadores](#operadores)
-  > 7. [Controle de fluxo](#controlefluxo)
-  > 8. [Estrutura de dados](#estruturadedados)
-  > 9. [Laboratório](#laboratório)
-  > 10.[lista Exercícios](#exercicio)
+> 1. [História](#historia)
+> 2. [Filosofia da Linguagem](#conceitodalinguagem)
+> 3. [Ambiente de Desenvolvimento](#ambientededesenvolvimento)
+> 4. [Sintaxe básica](#sintaxebasica)
+> 5. [Variável](#variavel)
+> 6. [Operadores](#operadores)
+> 7. [Controle de fluxo](#controlefluxo)
+> 8. [Estrutura de dados](#estruturadedados)
+> 9. [Laboratório](#laboratório)
+> 10.[lista Exercícios](#exercicio)
 
+> 1 História
+> 2 Filosofia da Linguagem
+> 3 Ambiente de Desenvolvimento
+> 4 Sintaxe básica
+> 5 Variável
+> 6 Estrutura de Dados
+>   6.1 String 
+>   6.2 Numbers
+>   6.3 List
+>   6.4 Tuple
+>  6.5 Dictionary
+>  6.6 Set
+>  6.7 frozenset
+>  6.8 Boolean
+>  6.9 Conversão entre tipos
+>7 Operadores
+>8 Controle de Fluxo
+>9 Outras funções
+>10 Laboratório
+>11 Lista de Exercício
 
 ## 1 História
 No Brasil em 1989, Collor de Melo vencia a primeira eleição direta, na Alemanha caia o muro de Belim e na Holanda o Guido Van Rossum criava a linguagem Python.
@@ -52,7 +72,7 @@ A linguagem Python tem uma filosofia. Siga e seja Feliz.
 * Se a implementação é fácil de explicar, talvez a ideia seja boa.
 * Namespaces são uma grande idéia - vamos fazer mais deles!
 
-## 3 Ambiente de Desenvolvimento;
+## 3 Ambiente de Desenvolvimento
 Para começarmos a programar, precisamos ter instalado no computador a linguagem de Programação Python3 e também um editor de texto.
 Caso você tenha dificuldade para instalar o Python, siga os seguintes links:
 
@@ -681,11 +701,11 @@ print(lista[0])           # imprimir o nome
 ```
 Qualquer caractere pode ser o delimitador.
 
-## 10. Laboratório
+## 10 Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
 > [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
 
-## 11. Lista de Exercício
+## 11 Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
 > [Lista de Exercício](exercicios/README.md)
 
