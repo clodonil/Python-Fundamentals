@@ -12,8 +12,8 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 > 4. [Sintaxe básica](#p4)
 > 5. [Variável](#p5)
 > 6. [Estrutura de Dados](#p6)
->     6-1. [String](#p6.1)
->     6-2. [Numbers](#p6.2)
+>     6.1. [String](#p6.1)
+>     6.2. [Numbers](#p6.2)
 >     6.3. [List](#p6.3)
 >     6.4. [Tuple](#p6.4)
 >     6.5. [Dictionary](#p6.5)
@@ -21,11 +21,11 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 >     6.7. [frozenset](#p6.7)
 >     6.8. [Boolean](#p6.8)
 >     6.9. [Conversão entre tipos](#p6.9)
-> 7. [Operadores](#p6.7)
-> 8. [Controle de Fluxo](#p6.8)
-> 9. [Outras funções](#p6.9)
-> 10. [Laboratório](#p6.10)
-> 11. [Lista de Exercício](#p6.11)
+> 7. [Operadores](#p7)
+> 8. [Controle de Fluxo](#p8)
+> 9. [Outras funções](#p9)
+> 10. [Laboratório](#p10)
+> 11. [Lista de Exercício](#p11)
 
 ## 1 História
 No Brasil em 1989, Collor de Melo vencia a primeira eleição direta, na Alemanha caia o muro de Belim e na Holanda o Guido Van Rossum criava a linguagem Python.
@@ -695,7 +695,7 @@ Qualquer caractere pode ser o delimitador.
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
 > [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
 
-## 11 Lista de Exercício
+## 11 Lista de Exercício <span id="p11"</span>
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
 > [Lista de Exercício](exercicios/README.md)
 
