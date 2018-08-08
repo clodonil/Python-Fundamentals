@@ -198,13 +198,15 @@ Exemplo:
 ```python
 texto="As vezes voce tem que levantar sozinho e seguir em frente" 
 # Recuperar o caractere da posição 5
-print(texto[6])   # Retorno "z"
+print(texto[6])   # Retorno "e"
    
 # Recuperar do inicio da string ate posição 10
-print(texto[0:10])  # Retorno "As vezes vo"
+print(texto[0:10])  # Retorno "As vezes v"
   
 # Recuperar da posição 10 até a posição 15
-print(texto[10:15]) # retorno "
+print(texto[10:15]) # retorno "oce t"
+
+
 ```   
 #### 5.2.2 Numbers
 Com python é possível utilizar 3 tipos de variável para números. São os Inteiros (int), Ponto Flutuante (float) e os números complexos (complex).
