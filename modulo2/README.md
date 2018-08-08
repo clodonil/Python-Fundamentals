@@ -47,6 +47,7 @@ Por padrão o Python trás 68 comandos internos. São eles:
 |complex()	    |hasattr()  |	max()        | 	round() 	| |
 |delattr()	    |hash()     |	memoryview() |	set()	    ||
 
+A seguir a descrição de cada função e um exemplo para ajudar na compreensão.
 
 * abs
 
@@ -280,11 +281,14 @@ sdfsd
 
 * bool
 
-Descrição: `bool()`
+Descrição: A função `bool()`, converte um valor, True, False, 0 e 1 para o  tipo booleano.
+
+Convert a value to a Boolean
 
 Exemplo:
 ```pyton
-sdfsd
+print(bool(True))  # retorna True
+print(bool(0))     # retorna False
 ```
 
 * exec
@@ -397,11 +401,11 @@ sdfsd
 
 * print
 
-Descrição: `print()`
+Descrição:  A função `print()`, imprime na saída padrão
 
 Exemplo:
 ```pyton
-sdfsd
+print("Olá Python")
 ```
 
 * tuple
@@ -460,11 +464,12 @@ sdfsd
 
 * chr
 
-Descrição: `chr()`
+Descrição: A função `chr()`, retorna a representação de uma string baseado code unicode da tabela ascii. A entrada sempre é um inteiro.
+
 
 Exemplo:
 ```pyton
-sdfsd
+print(chr(97))   # Retorna 'a'
 ```
 
 * frozenset
