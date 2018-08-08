@@ -10,16 +10,16 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 > 3. [Ambiente de Desenvolvimento](#3-ambiente-de-desenvolvimento)
 > 4. [Sintaxe básica](#4-sintaxe-básica)
 > 5. [Variável](#5-variável)
-> 6. [Estrutura de Dados](#6-estrutura-de-dados)
-> 6.1 [String](#61-string)
-> 6.2 [Numbers](#62-numbers)
-> 6.3 [List](#63-list)
-> 6.4 [Tuple](#64-tuple)
-> 6.5 [Dictionary](#65-dictionary)
-> 6.6 [Set](#66-set)
-> 6.7 [frozenset](#67-frozenset)
-> 6.8 [Boolean](#68-boolean)
-> 6.9 [Conversão entre tipos](#69-conversão-entre-tipos)
+> 6. [Estrutura de Dados](#6-estrutura-de-dados)</br>
+> 6.1 [String](#61-string)</br>
+> 6.2 [Numbers](#62-numbers)</br>
+> 6.3 [List](#63-list)</br>
+> 6.4 [Tuple](#64-tuple)</br>
+> 6.5 [Dictionary](#65-dictionary)</br>
+> 6.6 [Set](#66-set)</br>
+> 6.7 [frozenset](#67-frozenset)</br>
+> 6.8 [Boolean](#68-boolean)</br>
+> 6.9 [Conversão entre tipos](#69-conversão-entre-tipos)</br>
 > 7. [Operadores](#7-operadores)
 > 8. [Controle de Fluxo](#8-controle-de-fluxo)
 > 9. [Outras funções](#9-outras-funções)
