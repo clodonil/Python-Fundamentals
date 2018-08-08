@@ -5,26 +5,26 @@
 Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve ter a capacidade de desenvolver pequenos programas.
 
 ## Conteúdo:
-> 1. [História](#p1)
-> 2. [Filosofia da Linguagem](#p2)
-> 3. [Ambiente de Desenvolvimento](#p3)
-> 4. [Sintaxe básica](#p4)
-> 5. [Variável](#p5)
-> 6. [Estrutura de Dados](#p6)
-> 6.1 [String](#p6)
-> 6.2 [Numbers](#p6)
-> 6.3 [List](#p6.3)
-> 6.4 [Tuple](#p6.4)
-> 6.5 [Dictionary](#p6.5)
-> 6.6 [Set](#p6.6)
-> 6.7 [frozenset](#p6.7)
-> 6.8 [Boolean](#p6.8)
-> 6.9 [Conversão entre tipos](#p6.9)
-> 7. [Operadores](#p7)
-> 8. [Controle de Fluxo](#p8)
-> 9. [Outras funções](#p9)
+> 1. [História](#1-história)
+> 2. [Filosofia da Linguagem](#2-filosofia-da-linguagem)
+> 3. [Ambiente de Desenvolvimento](#3-ambiente-de-desenvolvimento)
+> 4. [Sintaxe básica](#4-sintaxe-básica)
+> 5. [Variável](#5-variável)
+> 6. [Estrutura de Dados](#6-estrutura-de-dados)
+> 6.1 [String](#61-string)
+> 6.2 [Numbers](#62-numbers)
+> 6.3 [List](#63-list)
+> 6.4 [Tuple](#64-tuple)
+> 6.5 [Dictionary](#65-dictionary)
+> 6.6 [Set](#66-set)
+> 6.7 [frozenset](#67-frozenset)
+> 6.8 [Boolean](#68-boolean)
+> 6.9 [Conversão entre tipos](#69-conversão-entre-tipos)
+> 7. [Operadores](#7-operadores)
+> 8. [Controle de Fluxo](#8-controle-de-fluxo)
+> 9. [Outras funções](#9-outras-funções)
 > 10. [Laboratório](#10-laboratório)
-> 11. [Lista de Exercício](#p11)
+> 11. [Lista de Exercício](#11-lista-de-exercício)
 
 ## 1 História
 No Brasil em 1989, Collor de Melo vencia a primeira eleição direta, na Alemanha caia o muro de Belim e na Holanda o Guido Van Rossum criava a linguagem Python.
@@ -694,7 +694,7 @@ Qualquer caractere pode ser o delimitador.
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
 > [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
 
-## 11 <span id="p11">Lista de Exercício </span>
+## 11 Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
 > [Lista de Exercício](exercicios/README.md)
 
