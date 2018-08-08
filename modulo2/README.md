@@ -31,7 +31,7 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 
 |            |            | Funções Built-in 		|      |        |
 |------------|------------|---------------------|------|--------|
-|[abs()](#abs)	      |dict()	      |help()	       |min()      |	setattr()|
+|abs()	      |dict()	      |help()	       |min()      |	setattr()|
 |all()	      |dir()	       |hex()	        |next()	    |slice()|
 |any()	      |divmod()     |	id()	        |object()	  |sorted()|
 |ascii()	    |enumerate()	 |input()	      |oct()	     |staticmethod()|
@@ -47,9 +47,9 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 |delattr()	    |hash()     |	memoryview() |	set()	    ||
 * abs
 
-*Descrição:* `abs()`
+**Descrição:** `abs()`
 
-*Exemplo:*
+**Exemplo:**
 ```pyton
 sdfsd
 ```
