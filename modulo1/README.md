@@ -24,7 +24,7 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 > 7. [Operadores](#p7)
 > 8. [Controle de Fluxo](#p8)
 > 9. [Outras funções](#p9)
-> 10. [Laboratório](#p10)
+> 10. [Laboratório](#10-laboratório)
 > 11. [Lista de Exercício](#p11)
 
 ## 1 História
