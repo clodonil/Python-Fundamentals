@@ -15,6 +15,7 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 > 8. [Estrutura de dados](#estruturadedados)
 > 9. [Laboratório](#laboratório)
 > 10.[lista Exercícios](#exercicio)
+
 > 1 [História](#p1)
 > 2 [Filosofia da Linguagem](#p2)
 > 3 [Ambiente de Desenvolvimento](#p3)
@@ -30,11 +31,11 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 >   6.7 [frozenset](#p6.7)
 >   6.8 [Boolean](#p6.8)
 >   6.9 [Conversão entre tipos](#p6.9)
->7 [Operadores](#p6.7)
->8 [Controle de Fluxo](#p6.8)
->9 [Outras funções](#p6.9)
->10 [Laboratório](#p6.10)
->11 [Lista de Exercício](#p6.11)
+> 7 [Operadores](#p6.7)
+> 8 [Controle de Fluxo](#p6.8)
+> 9 [Outras funções](#p6.9)
+> 10 [Laboratório](#p6.10)
+>  11 [Lista de Exercício](#p6.11)
 
 ## 1 História
 No Brasil em 1989, Collor de Melo vencia a primeira eleição direta, na Alemanha caia o muro de Belim e na Holanda o Guido Van Rossum criava a linguagem Python.
