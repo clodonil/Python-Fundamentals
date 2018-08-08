@@ -6,7 +6,7 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 
 ## Conteúdo:
 
-> * 1. [História](#p1)
+> * [História](#p1)
 > * 2. [Filosofia da Linguagem](#p2)
 > * 3. [Ambiente de Desenvolvimento](#p3)
 > * 4. [Sintaxe básica](#p4)
