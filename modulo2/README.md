@@ -47,9 +47,9 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 |delattr()	    |hash()     |	memoryview() |	set()	    ||
 * abs
 
-Descrição: `abs()`
+_Descrição_: `abs()`
 
-Exemplo:
+_Exemplo_:
 ```pyton
 sdfsd
 ```
