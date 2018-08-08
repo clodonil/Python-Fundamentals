@@ -331,8 +331,6 @@ Nós podmeos converter entre diferentes tipo de dados usando diferentes funçõe
 | Converte para float.|float(x) |num = float(a) |
 | Converte para número Complexos|complex(x) |num = complex(a)  |
 | Converte para String |str(x) | letra = str(num)  |
-| Converts object x to an expression string.|repr(x) | |
-| Evaluates a string and returns an object.|eval(str) | |
 | Converte para uma tuple|tuple(s) |t_lista = tuple(lista) |
 | Converte para Lista.|list(s) |lista = list(a) |
 | Converte para Set.|set(s) | l = set(lista) |
@@ -619,23 +617,34 @@ Para o desenvolvimento do laboratório  e da lista de exercício, vamos precisar
 
 O print como já vimos em vários exemplos, é utilizado para imprimir (mostrar) algo na tela.
 
- - Para imprimir um texto:
-```print("Olá Python")```
- - Para  imprimir uma variável:
- ```print(variavel)```
- - Para imprimir um texto com a variável:
-```
+Vamos aprender com esses exemplos:
+
+```python
+# declarar variavel
 nome, idade, salario ="jose",30, 100.00
 
+# imprimendo texto
+print("Inicio do programa")
+
+# imprimindo apenas variável
+print(nome)
+
+# Imprime string com variável
 print("Usuario:",nome)
+
+# Imprime string com variável
 print("O usuario:"+ nome)
+
+# Usando o format
 print("O usuario {0} tem {1:d} idade".format(nome, idade))
+
+# Usando format com float
 print("salario {0:0.2f} l".format(salario))
 
 # alinha a direita com 20 espaços em branco
 print("{0:>20}".format(nome))
 
-# alinha a direita com 20 símbolos #
+# alinha a direita com 20 símbolos -
 print("{0:->20}".format(nome))
 
 # alinha ao centro usando 10 espaços em branco a esquerda e 10 a direita
@@ -645,16 +654,28 @@ print("{0:^20}".format(nome))
 print("{0:.3}".format(nome))
 
 #Imprime em hexdecimaç
-print("{0:h}".format(23))
+print("{0:x}".format(23))
 
 #Imprime em binário
-print("{0:b}".format(123))
+print("{0:b}".format(123)) 
 ```
 
-
 * split
-### Função Print
-### Função Split
+A função `split` utiliza um padrão para 'quebrar' uma string e gerar uma lista. 
+
+Como exemplo, vamos utilizar as seguinte string:
+
+```
+texto =  "jose:30anos:rua de baixo:sp"
+```
+Perceba que temos um delimitador na variável que é o ":". Podemos utilizar esse delimitador para quebrar a string em uma lista.
+
+```python
+lista = texto.split(":")  # ['jose','30anos','rua de baixo','sp']
+print(lista[0])           # imprimir o nome
+```
+Qualquer caractere pode ser o delimitador.
+
 ## 6. Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
 > [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
