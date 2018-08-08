@@ -1,4 +1,4 @@
-__Python Fundamentals__ - Módulo 1
+__Python Fundamentals__ - Módulo 2
  ====================== 
  
 ## Objetivo
@@ -15,13 +15,15 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 > 2.5 [Tuple](#p1)</br>
 > 2.5 [Dicionário](#p1)</br>
 > 2.6 [Set](#p1)</br>
-> 4. [Pip](#p1)</br>
-> 5. [Classes](#p1)</br>
-> 6. [Herança](#p1)</br>
-> 7. [Polimorfismo](#p1)</br>
-> 8. [Métodos](#p1)</br>
-> 9. [Atributos](#p1)</br>
-> 10. [Encapsulamento](#p1)</br>
+> 4. [Pip](#p1)
+> 5. [Classes](#p1)
+> 6. [Herança](#p1)
+> 7. [Polimorfismo](#p1)
+> 8. [Métodos](#p1)
+> 9. [Atributos](#p1)
+> 10. [Encapsulamento](#p1)
+> 11. [Laboratório](#10-laboratório)
+> 12. [Lista de Exercício](#11-lista-de-exercício)
 
 
 ## 1. Funções builtin
@@ -41,3 +43,18 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 ## 8.  Métodos
 ## 9.  Atributos
 ## 10. Encapsulamento
+## 11 Laboratório
+No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
+> [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
+
+## 11 Lista de Exercício
+Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
+> [Lista de Exercício](exercicios/README.md)
+
+***
+> By:
+```python
+Autor   = ['Clodonil Honorio Trigo','clodonil@nisled.org']
+linkdin = 'https://www.linkedin.com/in/clodonil-trigo-4155722a'
+Blog    = 'http://www.devops-sys.com.br'
+```
