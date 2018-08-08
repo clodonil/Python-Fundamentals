@@ -6,11 +6,11 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 
 ## Conteúdo:
 > 1.  [Funções builtin](#p1)
-> 2.  [Principais bibliotecas</br>
+> 2.  [Principais bibliotecas](#P1)</br>
 > 2.1 [Strings](#p1)</br>
 > 2.2 [Number](#p1)</br>
 > 2.3 [Data]#(#p1)</br>
-> 2.3 [boolean(#p1)</br>
+> 2.3 [boolean](#p1)</br>
 > 2.4 [List](#p1)</br>
 > 2.5 [Tuple](#p1)</br>
 > 2.5 [Dicionário](#p1)</br>
