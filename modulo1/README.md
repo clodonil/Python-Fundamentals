@@ -77,8 +77,11 @@ $ vagrant up
  ```
 $ vagrant ssh python
 ```
-Outra possibilidade também é utilizar uma IDE que está na cloud. No meu ponto de vista a melhor delas é o [cloud9](https://c9.io/login). É só se cadastrar e sair usando.
+Outra possibilidade também é utilizar uma IDE que está na cloud. No meu ponto de vista os melhores são:
+* [cloud9](https://c9.io/login)
+* [repl](https://repl.it/languages/python3)
 
+É só se cadastrar e sair usando.
 
 ## 4 Sintaxe básica
 
