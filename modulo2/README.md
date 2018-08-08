@@ -62,19 +62,21 @@ print(abs(-100.1)) # retorna 100.1
 
 * dict
 
-Descrição: `dict()`
+Descrição: A função `dict()` cria um novo dicionário de dados. É a mesma coisa que `{` e `}`.
 
 Exemplo:
 ```pyton
-sdfsd
+a = dict()
+a['jose'] = 10
+print(a)
 ```
 * help
 
-Descrição: `help()`
+Descrição: A função `help()` retorna uma ajuda para as funções internas do Python.
 
 Exemplo:
 ```pyton
-sdfsd
+print(help(id))
 ```
 
 * min
