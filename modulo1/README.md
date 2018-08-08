@@ -695,7 +695,7 @@ Qualquer caractere pode ser o delimitador.
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
 > [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
 
-## 11 Lista de Exercício <span id="p11"></span>
+## 11 <span id="p11">Lista de Exercício </span>
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
 > [Lista de Exercício](exercicios/README.md)
 
