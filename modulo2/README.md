@@ -28,6 +28,7 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 
 ## 1. Funções builtin
 
+Por padrão o Python trás 68 comandos internos. São eles:
 
 |            |            | Funções Built-in 		|      |        |
 |------------|------------|---------------------|------|--------|
@@ -45,13 +46,17 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 |compile()	    |globals()  |	map()	       |reversed()	|\__import__()|
 |complex()	    |hasattr()  |	max()        | 	round() 	| |
 |delattr()	    |hash()     |	memoryview() |	set()	    ||
+
+
 * abs
 
-**Descrição:** `abs()`
+**Descrição:** a função `abs()` retorna o valor absoluto de um número, isso é retorna o valor positivo.
 
 **Exemplo:**
 ```pyton
-sdfsd
+print(abs(-100))   # retorna 100
+print(abs(100))    # retorna 100
+print(abs(-100.1)) # retorna 100.1
 ```
 
 * dict
@@ -91,11 +96,14 @@ sdfsd
 
 * all
 
-Descrição: `all()`
+Descrição: A função `all()` retorna True se todos os elementos de uma interação é True (ou se a interação estiver vázio).
 
 Exemplo:
 ```pyton
-sdfsd
+x = [1,True]
+print(all(x))     # Retorna True
+x = [0,True]
+print(all(x))     # Retorna False
 ```
 
 * dir
@@ -136,11 +144,14 @@ sdfsd
 
 * any
 
-Descrição: `any()`
+Descrição: A função `any()`, retorna True se algum elemento da interação for verdade. Se a interação estiver vázia, retorna False.
 
 Exemplo:
 ```pyton
-sdfsd
+x = [False,True]
+print(any(x))     # Retorna True
+x = []
+print(any(x))     # Retorna False
 ```
 
 * divmod
@@ -224,11 +235,11 @@ sdfsd
 
 * bin()
 
-Descrição: `bin`
+Descrição: A função `bin`, converte um número inteiro em uma string binária.
 
 Exemplo:
 ```pyton
-sdfsd
+print(bin(10))  # Retorna '0b1010'
 ```
 
 * eval
