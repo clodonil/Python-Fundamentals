@@ -288,7 +288,7 @@ Geralmente é usado quando temos uma quantidade enorme de dados. Os dicionários
 No Python, os dicionários são definidos entre chaves {}, sendo cada item um par na chave do formulário: valor. Chave e valor podem ser de qualquer tipo de variável.
 
 ```python
-login = {"user": "jose","passwd":"okri"}
+login = {"user": "jose","password":"okri"}
 
 print("Tipo", type(login))
 
