@@ -1,7 +1,7 @@
 Módulo 1 - Lista de Exercício
 =========
 
-Para realização desse exercício vamos utilizar a lista de municipios do Brasil, juntamente com a taxa de homicídio e a taxa de fecundidade. Vamos realizar o cruzamento dessas informações para obter respostas interessantes:
+Para realização desse exercício vamos utilizar a lista de municípios do Brasil, juntamente com a taxa de homicídio e a taxa de fecundidade. Vamos realizar o cruzamento dessas informações para obter respostas interessantes:
 
 ![lista_exercicio](https://github.com/clodonil/curso_python/blob/master/Imagens/m1_exercicio.JPG)
 
@@ -26,7 +26,7 @@ Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os cód
 
 > Questão de 1-5 serão consideradas para nota
 
-1. **Listar o nome de todos os municpios do Brasil com o código do IBGE:**
+1. **Listar o nome de todos os municípios do Brasil com o código do IBGE:**
 __Exemplo de Resposta:__
 ```sh
   N IBGE  Municipio
@@ -38,15 +38,15 @@ __Exemplo de Resposta:__
  ...      ....
  ```
 
-2. **Listar os municipios com menos de 70.000 habilitantes:**
+2. **Listar os municípios com menos de 70.000 habitantes:**
    
-3. **Mostrar o estado que tem o maior número de cidades acima 100.000 habilitantes:**
+3. **Mostrar o estado que tem o maior número de cidades acima 100.000 habitantes:**
 
-4. **Qual municipio tem o menor número de habilitantes. Mostre também em qual estado está esse municipio:**
+4. **Qual município tem o menor número de habitantes. Mostre também em qual estado está esse município:**
 	
 5. **Mostre a taxa de fecundidade para os estados:**
-     - **que tem a cidade com maior número de habilitantes**
-     - **que tem a cidade com menor número de habilitantes**
+     - **que tem a cidade com maior número de habitantes**
+     - **que tem a cidade com menor número de habitantes**
 
 > Questão 6 e 8 são para aprofundamento do conhecimento
 
@@ -61,7 +61,7 @@ __Exemplo de Resposta:__
 > Questão 9 e 10 são desafios; só para os valentes, corajosos e fortes. Esqueça você não vai conseguir.
 
 ```
-9. Mostrar o nome, número de habilitantes e taxa de fecundidade para as cidades brasileiras que estão 
+9. Mostrar o nome, número de habitantes e taxa de fecundidade para as cidades brasileiras que estão 
 com taxa de homicídio acima de 60 por 100 Mil:
 
 10. Quantos habitantes brasileiros estão morando nas 50 cidades mais violentas do mundo:
