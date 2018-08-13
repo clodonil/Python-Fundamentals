@@ -24,14 +24,14 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 > 8. [Controle de Fluxo](#8-controle-de-fluxo)
 > 9. [Outras funções](#9-outras-funções)
 > 10. [Laboratório](#10-laboratório)
-> 11. [Lista de Exercício](#11-lista-de-exercício)
+> 11. [Lista de Exercícios](#11-lista-de-exercícios)
 
 ## 1 História
 No Brasil em 1989, Collor de Melo vencia a primeira eleição direta, na Alemanha caia o muro de Belim e na Holanda o Guido Van Rossum criava a linguagem Python.
 
-A história da linguagem é fantástica e seu aprendizado vai se tornar mais divertido após tomar conhecimento de alguns eventos que aconteceram.
+A história da linguagem é fantástica e seu aprendizado vai se tornar mais divertido após tomar conhecimento de alguns eventos que aconteceram durante a época de sua criação.
 
-Não vou escrever sobre a história do Python porque já tem muita coisa boa escrita, segue alguns links que vale a pena ler:
+Não vou escrever sobre a história do Python pois já há muita coisa boa escrita, segue alguns links que vale a pena ler:
 
 * [http://mindbending.org/pt/a-historia-do-python](http://mindbending.org/pt/a-historia-do-python)
 * [https://www.python-course.eu/python3_history_and_philosophy.php](https://www.python-course.eu/python3_history_and_philosophy.php)
@@ -56,10 +56,10 @@ A linguagem Python tem uma filosofia. Siga e seja Feliz.
 * Deve haver um - e somente um - jeito óbvio de fazer.
 * Embora esse modo possa não ser óbvio a princípio a menos que você seja holandês.
 * Agora é melhor que nunca.
-* Embora nunca é frequentemente melhor que exatamente agora.
+* Embora nunca seja frequentemente melhor que exatamente agora.
 * Se a implementação é difícil de explicar, a ideia é ruim.
 * Se a implementação é fácil de explicar, talvez a ideia seja boa.
-* Namespaces são uma grande idéia - vamos fazer mais deles!
+* Namespaces são uma grande ideia - vamos fazer mais deles!
 
 ## 3 Ambiente de Desenvolvimento
 Para começarmos a programar, precisamos ter instalado no computador a linguagem de Programação Python3 e também um editor de texto.
@@ -70,12 +70,12 @@ Caso você tenha dificuldade para instalar o Python, siga os seguintes links:
 * [Instalação no Centos7](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-centos-7)
 
 Os editores que recomendo para o desenvolvimento com o Python são:
-* code (microsoft)
+* VS Code (Microsoft)
 * TextEdit
 * Notepad++
 * Vim
 
-Para aqueles que desejam ter uma máquina virtual em Linux para desenvolver o seu código, estou deixando o código do Vagrant preparado para provisionar um centos7 com o Centos7 instalado (Você precisa ter o Vagrant instalado no seu computador e também o Virtualbox).
+Para aqueles que desejam ter uma máquina virtual em Linux para desenvolver o seu código, estou deixando o código do Vagrant preparado para provisionar um CentOS7 instalado (Você precisará ter o Vagrant instalado no seu computador e também o Virtualbox).
 
 Para utilizar, entre na pasta 'vms' e digite:
 ```
@@ -94,13 +94,13 @@ Outra possibilidade também é utilizar uma IDE que está na cloud. No meu ponto
 
 ## 4 Sintaxe básica
 
-Se você já programa em outra linguagem está acostumado declarar o tipo de dados que a variável vai receber. Isso é muito comum em `C`, `JAVA` e várias outras linguagem.
+Se você já programa em outra linguagem, já está acostumado a declarar o tipo de dados que a variável vai receber. Isso é muito comum em `C`, `JAVA` e várias outras linguagens.
 
 O Python é diferente, ela entra nos grupos de linguagem que tem tipagem dinâmica e forte. 
 
 Dizemos que uma linguagem tem tipagem dinâmica quando o próprio interpretador infere o tipo de dados de uma variável recebe, sem a necessidade que você, o usuário da linguagem diga.
 
-A tipagem forte significa que o interpretador do Python avalia as expressões (evaluate) e não faz coerções automáticas entre tipos não compatíveis (conversões de valores). Por ele ser dinâmica, não significa que todos os tipos de conversões são permitidas.
+A tipagem forte significa que o interpretador do Python avalia as expressões (evaluate) e não faz coerções automáticas entre tipos não compatíveis (conversões de valores). Por ele ser dinâmico, não significa que todos os tipos de conversões são permitidos.
 
 Além da tipagem dinâmica e forte, o Python tem uma sintaxe simples e direta. Porém, um ponto de dificuldade aos iniciantes, são os blocos de códigos.
 
@@ -108,13 +108,13 @@ Blocos de códigos em outas linguagem  são marcas por `{` e  `}`, como por exem
 
 ```c
 if (x > 5){
-   printf("maior")
+   printf("maior");
 }else {
-   printf("menor")
+   printf("menor");
 }
 ```
 
-Outras linguagens como o Ruby utiliza o `do`e `end` para limitar o blodo de código:
+Outras linguagens como o Ruby utilizam o `do`e `end` para limitar o bloco de código:
 
 ```ruby
 if x > 5
@@ -123,7 +123,7 @@ else
    echo "Menor"
 end
 ```
-O Python não tem nada disso, todo o controle do bloco de código é realizado por espaçamento.Se os espaçamentos não forem realizados corretamente, o código não vai funcionar.
+O Python não tem nada disso, todo o controle do bloco de código é realizado por espaçamento. Se os espaçamentos não forem realizados corretamente, o código não vai funcionar, ou seja o código fica completamente identado.
 
 Exemplo do if com bloco de código:
 
@@ -133,15 +133,15 @@ if x > 5
 else
    print("Menor")
 ```
-Perceba que o único controle que existe para determinar o bloco de código é o espaçamento. Como já falei, isso no inicio pode trazer problemas, mais é algo que é incorporado rapidamente.
+Perceba que o único controle que existe para determinar o bloco de código é o espaçamento. Como já falei, isso no início pode trazer problemas, mais é algo que é incorporado rapidamente.
 
-A vantagen da tabulação que o código semple está aninhado, com as hieraquias bem definicas, tornando o código muito mais fácil de ler e realizar as modificações necessárias.
+A vantagem da tabulação é que o código sempre está alinhado, com as hierarquias bem definidas, tornando o código muito mais fácil de ler e realizar as modificações necessárias.
 
 Os blocos de códigos em Python são marcados 
 
 ## 5 Variável
 
-Como já falamos o Python tem tipagem forte e dinâmica de váriavel, não existe um local especifico para declarar as variáveis, você pode declarar no local que desejar. A única preocupação que você deve ter é não consultar uma variável que não existe. Se isso acontecer, um erro vai acontecer.
+Como já falamos o Python tem tipagem forte e dinâmica de variável, não existe um local especifico para declarar as variáveis, você pode declarar no local que desejar. A única preocupação que você deve ter é não consultar uma variável que não existe. Se isso acontecer, um erro vai acontecer.
 
 As variáveis podem ter nomes conforme a vontade do programador, com nomes longos, contendo letras e números. No entanto, elas devem necessariamente começar com 'letras minúsculas'.
 
@@ -155,12 +155,12 @@ class     else      from      is        print     yield
 continue  except    global    lambda    raise
 ```
 
-Para declarar um variável é muito, simples. Vamos criar uma variável com o nome `dados` e vamos 'armazenar' o valor inteiro 10.
+Para declarar uma variável é muito simples. Vamos criar uma variável com o nome `dados` e vamos 'armazenar' o valor inteiro 10.
 
 ```python
 dados=10
 ```
-Perceba que em nenhum momento foi citado que a variável dados é do tipo inteiro. A linguagem automáticamente faz isso.
+Perceba que em nenhum momento foi citado que a variável dados é do tipo inteiro. A linguagem automaticamente faz isso.
 
 Atribuição também pode ser realizado em cadeia, conforme o exemplo:
 
@@ -183,29 +183,29 @@ print(tel)
 Podemos estrutura os dados em Python com variáveis em do tipo:
 * String;
 * Number (Integer e Float);
-* Lista;
+* List;
 * Tuple;
-* Dicionário;
+* Dictionary;
 * Boolean
 
 ### 6.1 String 
-String é uma sequencia de caracteres Unicode. Para representar uma string pode ser utilizado aspas simples e aspa duplas.
+String é uma sequência de caracteres Unicode. Para representar uma string pode ser utilizado aspas simples e aspa duplas.
 Exemplo:
  ```python
-texto="As vezes voce tem que levantar sozinho e seguir em frente"
+texto="Às vezes você tem que se levantar sozinho e seguir em frente"
 ```
-Para declarar multiplas linhas utilize 3 aspas simple.
+Para declarar múltiplas linhas utilize 3 aspas simples.
 Exemplo:
    ```python
 texto='''
-     Tudo é possivel. 
+     Tudo é possível. 
      O impossível apenas demora mais
      '''
    ```
-Semelhante a lista e Tuplas, as string também utilizam o operador [ ]. Dessa forma é possível obter apenas parte da string.
+Semelhante a lista e Tuplas, as strings também utilizam o operador [ ]. Dessa forma é possível obter apenas parte da string.
 Exemplo:
 ```python
-texto="As vezes voce tem que levantar sozinho e seguir em frente" 
+texto="Às vezes você tem que se levantar sozinho e seguir em frente" 
 # Recuperar o caractere da posição 5
 print(texto[6])   # Retorno "e"
    
@@ -213,14 +213,14 @@ print(texto[6])   # Retorno "e"
 print(texto[0:10])  # Retorno "As vezes v"
   
 # Recuperar da posição 10 até a posição 15
-print(texto[10:15]) # retorno "oce t"
+print(texto[10:15]) # retorno "ocê t"
 
 
 ```   
 ### 6.2 Numbers
 Com python é possível utilizar 3 tipos de variável para números. São os Inteiros (int), Ponto Flutuante (float) e os números complexos (complex).
    
-Não é necessário declarar os tipos que deseja utilizar, apenas declarar o conteúdo que o tipo automáticamente é alocado.
+Não é necessário declarar os tipos que deseja utilizar, apenas declarar o conteúdo que o tipo automaticamente é alocado.
    
 Exemplo:
      
@@ -234,19 +234,19 @@ a = 2.0
 print(a, "do tipo", type(a))
 
 a = 1+2j
-print(a, "numero complexo?", isinstance(1+2j,complex))
+print(a, "número complexo?", isinstance(1+2j,complex))
 ```
 ### 6.3 List
- Lista é Python é uma sequencia de item, equivale os array de outras linguagem. A lista é um dos tipos de dados mais utilizados em Python por ser muito flexivel.Todos os items de uma lista NÃO precisam ser do mesmo tipo.  
+ Lista é Python é uma sequência de item, equivale aos arrays de outras linguagens. A lista é um dos tipos de dados mais utilizados em Python por ser muito flexível. Todos os itens de uma lista NÃO precisam ser do mesmo tipo.  
    
 Exemplo:
 
 ```python 
 lista=[10,60,'jose','45234234',50.9]
 # Mostrando a lista
-print("Conteudo da lista, lista)
+print("Conteúdo da lista, lista)
 ```
-Nas listas podemos utilizar o operador [ ]. Dessa forma podemos obter um elementro especifico da lista ou mostrar uma conjunto de elemento.
+Nas listas podemos utilizar o operador [ ]. Dessa forma podemos obter um elemento especifico da lista ou mostrar um conjunto de elemento.
 
 Exemplo:
 ```python
@@ -261,7 +261,7 @@ print("lista[0:3] = ", lista[0:3])
 # lista[5:] = [1, 5, 19]
 print("lista[5:] = ", lista[5:])
 ```
-A lista podem ser alteradas.
+As listas podem ser alteradas.
 ```python
 a = [1,2,3]
 a[2]=4
@@ -270,9 +270,9 @@ a[2]=4
 print(a)
 ```
 ### 6.4 Tuple
-As tuple são uma sequencia de itens, semelhante a uma lista. A diferença que a tuples são imultavél. Uma vez que a tupla são criadas,não podem ser modificadas.
+As tuplas são uma sequência de itens, semelhante a uma lista. A diferença que a tuples são imultavél. Uma vez que a tupla são criadas, não podem ser modificadas.
 
-As tuplas são usadas para dados que são protegidas contra gravação e por não serem modificadas dinamicamente, elas são usualmente mais rapidas que as listas. 
+As tuplas são usadas para dados que são protegidas contra gravação e por não serem modificadas dinamicamente, elas são usualmente mais rápidas que as listas. 
 
 Exemplo:
 ```python
@@ -288,15 +288,15 @@ Geralmente é usado quando temos uma quantidade enorme de dados. Os dicionários
 No Python, os dicionários são definidos entre chaves {}, sendo cada item um par na chave do formulário: valor. Chave e valor podem ser de qualquer tipo de variável.
 
 ```python
-login = {"user": "jose","passwd":"okri"}
+login = {"user": "jose","password":"okri"}
 
 print("Tipo", type(login))
 
 #Recuperando o valor
-print(login['uesr']
+print(login['user']
 
 #Recuperando o valor
-print(login['passwd'])
+print(login['password'])
 ```
 Usamos a chave para recuperar o valor. Mas o contrário não funciona.
 
@@ -310,10 +310,10 @@ Como o conjunto é uma coleção não ordenada, a indexação não funciona. Por
 posicao_chegada={3,4,1,7,8}
 print(posicao_chegada)
 ```
-### 6.7 frozenset
-Frozen set são conjuntos similares ao set. A diferença que frozenset são imutável, portanto não podem ser modificados. Devido a isso, podem ser usados como chave no dicionário ou como elemento de outro conjunto. Mas como conjuntos, não é ordenado (os elementos podem ser definidos em qualquer índice).
+### 6.7 Frozenset
+Frozen set são conjuntos similares ao set. A diferença que frozenset são imutáveis, portanto não podem ser modificados. Devido a isso, podem ser usados como chave no dicionário ou como elemento de outro conjunto. Mas como conjuntos, não é ordenado (os elementos podem ser definidos em qualquer índice).
 ```python
-lisya = ('a', 'e', 'i', 'o', 'u')
+lista = ('a', 'e', 'i', 'o', 'u')
 
 fSet = frozenset(vowels)
 print('O frozen set é:', fSet)
@@ -329,7 +329,7 @@ fSet = frozenset(person)
 print('The frozen set is:', fSet)
 ```
 ### 6.8 Boolean
-O tipo de dados Boolean em Python são criados pela classe `bool` que logicamente aceita 2 valores constante `True` e `False`.
+O tipo de dados Boolean em Python são criados pela classe `bool` que logicamente aceita 2 valores constantes `True` e `False`.
 
 ```python
 print(type(True))
@@ -337,7 +337,7 @@ print(type(True))
 Os booleanos também podem ser presentados por inteiros sendo 1 para `True`e 0 para `False`.
 
 ### 6.9 Conversão entre tipos
-Nós podmeos converter entre diferentes tipo de dados usando diferentes funções de conversão semelhante a `int()`, `float()`, `str()`...etc.
+Nós podemos converter entre diferentes tipos de dados usando diferentes funções de conversão semelhantes a `int()`, `float()`, `str()`...etc.
 
 | Descrição| Função | Exemplo |
 |----------|-----------|-----|
@@ -349,14 +349,14 @@ Nós podmeos converter entre diferentes tipo de dados usando diferentes funçõe
 | Converte para Lista.|list(s) |lista = list(a) |
 | Converte para Set.|set(s) | l = set(lista) |
 | Converte um set em frozenset.| frozenset(s) |frozenset(x) |
-| Converte um número em um string da tabela ascii.|chr(x) | chr(95) |
+| Converte um número em um string da tabela ascii. | chr(x) | chr(95) |
 | Converte uma string em um valor da tabela ascii.| ord(x) | ord('a') |
-| Converte para Hexdecimal.| hex(x) |h=hex(10) |
+| Converte para Hexdecimal.| hex(x) | h=hex(10) |
 | Converte uma string para um Inteiro octal| oct(x) | oct(10)|
 
 
 ## 7 Operadores
-Vamos começar pelos operadores matemáticos, igualmente as outras linguagem de programação, as operações básicas de matemáticas são realizadas pelos operadores `+`, `-`, `/` e `*`. 
+Vamos começar pelos operadores matemáticos, igualmente as outras linguagens de programação, as operações básicas de matemáticas são realizadas pelos operadores `+`, `-`, `/` e `*`. 
 
 | Descrição     | Operador |
 |---------------|----------|
@@ -370,12 +370,12 @@ A utilização é bem simples.
 ```python
 soma = 10 + 5
 ```
-Python também segue as precedência definida pela Matemática, porém sempre recomendamos utilizar parentes `( )` para separar os operadores, para tornar mais legível.
+Python também segue as precedências definidas pela Matemática, porém sempre recomendamos utilizar parentes `( )` para separar os operadores, para tornar mais legível.
 Por exemplo:
 
 ```python 
 result = 2+2*2   # Resultado 6
-#dessa forma fica mais ligivel
+#dessa forma fica mais legível
 result = (2+2)*2 # Resultado 8
 ```
 Com os operadores básicos podemos acrescentar os operadores que fazem operação e atribuição.
@@ -389,7 +389,7 @@ Com os operadores básicos podemos acrescentar os operadores que fazem operaçã
 
 Exemplo:
 ```python
-a=10
+a = 10
 a = a + 10 
 a += 10
 ```
@@ -404,11 +404,11 @@ Além dos operadores básicos, também temos os operadores para exponenciação,
 A sintaxe para utilização desses operadores.
 
 ```python
-result = 2 ** 2  # resutado  2
+result = 2 ** 2  # resutado  4
 result = 5 // 2  # resultado 2
 result = 5 %  2  # resultado 1
 ```
-Esses operadores que vimos também podem ser utilizados com outras estrutura de dados tais como string e list.
+Esses operadores que vimos também podem ser utilizados com outras estruturas de dados tais como string e list.
 Um exemplo de utilização com string:
 
 ```python
@@ -420,7 +420,7 @@ Operadores com Lista:
  lista = [1,2,3] * 10
  todos_numeros = [2,4,6,8] + [1,3,5,7] 
 ```
-Além dos operadores matemáticos, também tempos os operadores lógicos que retornar `True` e `False`.
+Além dos operadores matemáticos, também temos os operadores lógicos que retornam `True` e `False`.
 
 |Descrição	|Operador|
 |----------|--------|
@@ -431,9 +431,9 @@ Além dos operadores matemáticos, também tempos os operadores lógicos que ret
 |Menor ou igual a	|<=|
 | Conjunção e    |  and |
 | Disjunção ou   | or |
-| negação        | not |
+| Negação        | not |
 
-A utilização dos operadores lógicos também é bem simples. Eles não muito utilizados para tomada de decisão em `IF`.
+A utilização dos operadores lógicos também são bem simples. Eles não são muito utilizados para tomadas de decisão em `IF`.
 ```python
 a=10 > 5
 b=100 == 200
@@ -453,11 +453,11 @@ Também temos os operadores para verificar se um item está contido em um conjun
 | Teste de identidade               | is |
 |Criar funções | lambda     |
 
-Utilizamos muito operador `in` para verificar se um valor está em uma lista.
+Utilizamos muito o operador `in` para verificar se um valor está incluso em uma lista.
 ```python
 x = 10 in [3,4,5,10]   | Retorna True
 ```
-Já operdor `is` é para testar a identidade de um objetivo. Verificar se realmente o mesmo objeto.
+Já operador `is` é para testar a identidade de um objetivo. Verificar se realmente é o mesmo objeto.
 ```python
 a=10
 b=a
@@ -493,7 +493,7 @@ print(a >> 1)
 ```
 ## 8 Controle de Fluxo
 
-O controle de fluxo de dados no Python podem ser realizado utilizado desvio no fluxo de código ou através de sistema de repetição.
+O controle de fluxo de dados no Python podem ser realizados utilizando desvio no fluxo de código, ou através de sistema de repetição.
 
 * __IF__
 
@@ -527,9 +527,9 @@ else:
 
 * __For__
 
-Além do desvio de fluxo, podemos repetir um pedaço de código. No python podemos utilizar o `for`ou `while`.
+Além do desvio de fluxo, podemos repetir um pedaço de código. No python podemos utilizar o `for` ou `while`.
 
-O `for` pode utilizar como controle de repetição uma lista. No exemplo a seguir, temos uma lista de palavaras `words`, e a cada interação (passagem pelo loop), uma palavra é atribuida a variável `w`. O len retorna o tamanho da palavra.
+O `for` pode utilizar como controle de repetição uma lista. No exemplo a seguir, temos uma lista de palavras `words`, e a cada interação (passagem pelo loop), uma palavra é atribuida a variável `w`. O len retorna o tamanho da palavra.
 
 ```python
 words = ['gato', 'cachorro', 'coelho']
@@ -547,7 +547,7 @@ A sintaxe do `range` é a seguinte:
 ```python
 range(inicio, fim, pulo)
 ```
-Caso um valor apenas seja declarado no `range(100)`, é considerado como fim e o inicio começa de zero. Se dois valores são declarados `range(4,9)`, são considerados como inicio e fim respectivamente. Se treis valores são declarados `range(0,100,4)`, teremos o inicio, fim e o número de pulos (step). A interação pode dar pulos de 1 em 1 (padrão) ou você pode definir.
+Caso um valor apenas seja declarado no `range(100)`, é considerado como fim e o início começa em zero. Se dois valores são declarados `range(4,9)`, são considerados como início e fim respectivamente. Se três valores são declarados `range(0,100,4)`, teremos o início, fim e o número de pulos (step). A interação pode dar pulos de 1 em 1 (padrão) ou você pode definir.
 
 Exemplos:
 ```
@@ -563,35 +563,35 @@ range(-10, -100, -30)
 
 * __While__
 
-Como conforma de loop também temos o `while`. Com o `while` não possui uma lista, portanto não é possível saber a quantidade de vezes que o fluxo do programa vai ficar no `while. O fluxo vai ficar no `while` até a condição for `False`.
+Como forma de loop também temos o `while`. Com o `while` não possui uma lista, portanto não é possível saber a quantidade de vezes que o fluxo do programa vai ficar no `while. O fluxo vai ficar no `while` até a condição for `False`.
 
-Sintaxe:
+Sintáxe:
 ```
  while condição:
     pass
  else:
     pass
 ```
-Como exemplo, vamos repetir um bloco de código enquanto o valor de x seja menor do que 10. Caso a expressão ( x < 10) retorne False, o bloco de código dentro do else pode ser executado. 
+Como exemplo, vamos repetir um bloco de código enquanto o valor de x seja menor que 10. Caso a expressão ( x < 10) retorne False, o bloco de código dentro do else pode ser executado. 
 
 ```python
 x= 0
 
 while x < 10:
-    print('Numero',x)
+    print('Numero', x)
     x += 1
 
 else:
    print('Finalizado')
 ```   
 
-No caso anterior, sabiamos por dedução a quantidade de vezes que o programa iria executadar. Em muitos casos isso não é possível. Por exemplo, podemos fazer um programa para ler um valor, armazenar na lista. E para o sistema parar de ler um novo valor, o usuário tem que digitar `fim`.
+No caso anterior, sabíamos por dedução a quantidade de vezes que o programa iria executar. Em muitos casos isso não é possível. Por exemplo, podemos fazer um programa para ler um valor e armazenar em uma lista. E para o sistema parar de ler um novo valor, o usuário tem que digitar `fim`.
 
 ```python
-x = 'incio'
+x = 'inicio'
 lista = []
 while x.lower() != 'fim':
-    x = input("Digite o proximo nome:")
+    x = input("Digite o próximo nome:")
     lista.append(x)
 
 print(lista)
@@ -599,7 +599,7 @@ print(lista)
 
 * __break, continue e else para usar com o loop__
 
-A instrução `break`, como em C, são interno para `for` ou `while` e quando invocado finaliza de forma bruta o loop.
+A instrução `break`, como em C, é interna para as funções `for` ou `while` e quando invocado finaliza de forma bruta o loop.
 
 As instruções de loop podem ter uma cláusula else; ele é executado quando o loop termina por esgotamento da lista (com for) ou quando a condição se torna falsa (com while), mas não quando o loop é finalizado por uma instrução `break`. Isso é exemplificado pelo seguinte loop, que procura por números primos:
 
@@ -613,7 +613,7 @@ for n in range(2, 10):
          print(n, 'eh numero primor')
 ```
 
-O `break`  sempre finaliza o loop e não executa o `else`, já o `continue` finaliza aquela parte do bloco de código e volta para o inicio do loop. 
+O `break` sempre finaliza o loop e não executa o `else`, já o `continue` finaliza aquela parte do bloco de código e volta para o início do loop. 
 ```python
 nomes=['maria','jose','carlos','eduardo']
 
@@ -626,7 +626,7 @@ for nome in nomes:
 No exemplo, o nome 'jose' não vai ser mostrado porque ele está dentro de um `if` com `continue`.
 
 ## 9 Outras funções
-Para o desenvolvimento do laboratório  e da lista de exercício, vamos precisar conhecer as seguintes funções:
+Para o desenvolvimento do laboratório e da lista de exercício, vamos precisar conhecer as seguintes funções:
 * print
 
 O print como já vimos em vários exemplos, é utilizado para imprimir (mostrar) algo na tela.
@@ -637,7 +637,7 @@ Vamos aprender com esses exemplos:
 # declarar variavel
 nome, idade, salario ="jose",30, 100.00
 
-# imprimendo texto
+# imprimindo texto
 print("Inicio do programa")
 
 # imprimindo apenas variável
@@ -677,10 +677,10 @@ print("{0:b}".format(123))
 * split
 A função `split` utiliza um padrão para 'quebrar' uma string e gerar uma lista. 
 
-Como exemplo, vamos utilizar as seguinte string:
+Como exemplo, vamos utilizar as seguinte strings:
 
 ```
-texto =  "jose:30anos:rua de baixo:sp"
+texto = "jose:30anos:rua de baixo:sp"
 ```
 Perceba que temos um delimitador na variável que é o ":". Podemos utilizar esse delimitador para quebrar a string em uma lista.
 
@@ -691,12 +691,12 @@ print(lista[0])           # imprimir o nome
 Qualquer caractere pode ser o delimitador.
 
 ## 10 Laboratório
-No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
+No link abaixo temos o laboratório dirigido, faça o laboratório para praticar os conhecimentos apreendidos
 > [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
 
 ## 11 Lista de Exercício
-Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
-> [Lista de Exercício](exercicios/README.md)
+Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercícios:
+> [Lista de Exercícios](exercicios/README.md)
 
 ***
 > By:
@@ -705,4 +705,3 @@ Autor   = ['Clodonil Honorio Trigo','clodonil@nisled.org']
 linkdin = 'https://www.linkedin.com/in/clodonil-trigo-4155722a'
 Blog    = 'http://www.devops-sys.com.br'
 ```
-
