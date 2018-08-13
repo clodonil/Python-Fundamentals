@@ -22,6 +22,8 @@ site_connect = Scrapy_Table(url)
 tables = site_connect.get_tables(5)
 ```
 
+Um demo pode ser consultado [AQUI](https://github.com/clodonil/Python-Fundamentals/blob/master/modulo1/exercicios/code/m1_exercicio_demo.py).
+
 Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os códigos em Python.
 
 > Questão de 1-5 serão consideradas para nota
