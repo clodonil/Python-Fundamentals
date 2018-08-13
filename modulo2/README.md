@@ -459,11 +459,12 @@ sdfsd
 
 * format
 
-Descrição: `format()`
+Descrição: A função `format()`, formata uma  string que contem campos entre chaves a serem substituídos pelos argumentos de format..
 
 Exemplo:
 ```pyton
-sdfsd
+x= 10 
+comando = "linha {0}".format(x)
 ```
 
 * len
@@ -498,30 +499,33 @@ print(type('a'))
 
 * chr
 
-Descrição: A função `chr()`, retorna a representação de uma string baseado code unicode da tabela ascii. A entrada sempre é um inteiro.
+**Descrição:** A função `chr()`, retorna a representação de uma string baseado code unicode da tabela ascii. A entrada sempre é um inteiro.
 
 
-Exemplo:
+**Exemplo:**
 ```pyton
 print(chr(97))   # Retorna 'a'
 ```
 
 * frozenset
 
-Descrição: `frozenset()`
+**Descrição:** A função `frozenset()`, retorna um novo conjunto fronzenset.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+vowels = ('a', 'e', 'i', 'o', 'u')
+fSet = frozenset(vowels)
+print('O frozen set eh:', fSet)
 ```
 
 * list
 
-Descrição: `list()`
+**Descrição:** A função `list()`, cria uma lista de elementos.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+lista = [1,2,3,4]
+print(lista)
 ```
 
 * range
@@ -536,11 +540,11 @@ for k in range(1,10):
 
 * vars
 
-Descrição: `vars()`
+Descrição: A função `vars()` retorna um dicionário com todas as variável daquele escopo.
 
 Exemplo:
 ```pyton
-sdfsd
+print(vars())
 ```
 
 * classmethod
@@ -563,7 +567,7 @@ sdfsd
 
 * locals
 
-Descrição: `locals()`
+Descrição:  `locals()`
 
 Exemplo:
 ```pyton
@@ -572,11 +576,13 @@ sdfsd
 
 * repr
 
-Descrição: `repr()`
+**Descrição:** A função `repr()`, é utilizada para retornar uma string da representação do objetivo. Muito utilizado nos consoles.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+>>> a = "banana"
+>>> a
+banana
 ```
 
 * zip
@@ -631,11 +637,11 @@ print(list(reversed(a)))
 
 * __import__
 
-Descrição: `__import__()`
+**Descrição:** A `__import__()`, é invocada pelo import. É utilizado para incoporar partes de outros programas
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+import spam
 ```
 
 * complex
@@ -695,11 +701,12 @@ sdfsd
 
 * hash
 
-Descrição: `hash()`
+**Descrição:** A função `hash()` retorna um valor inteiro. utilizado para verificar integridade.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+x = "texto 1"
+print(hash(x))
 ```
 
 * memoryview
@@ -724,8 +731,6 @@ print(v[1:4])
 conj = set([1,2])
 print(conj)
 ```
-
-
 
 ## 2. Principais Métodos
 ###  2.1 Strings
