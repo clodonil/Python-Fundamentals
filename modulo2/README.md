@@ -62,9 +62,9 @@ print(abs(-100.1)) # retorna 100.1
 
 * dict
 
-Descrição: A função `dict()` cria um novo dicionário de dados. É a mesma coisa que `{` e `}`.
+**Descrição:** A função `dict()` cria um novo dicionário de dados. É a mesma coisa que `{` e `}`.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 a = dict()
 a['jose'] = 10
@@ -72,9 +72,9 @@ print(a)
 ```
 * help
 
-Descrição: A função `help()` retorna uma ajuda para as funções internas do Python.
+**Descrição:** A função `help()` retorna uma ajuda para as funções internas do Python.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 print(help(id))
 ```
@@ -99,9 +99,9 @@ sdfsd
 
 * all
 
-Descrição: A função `all()` retorna True se todos os elementos de uma interação é True (ou se a interação estiver vázio).
+**Descrição:** A função `all()` retorna True se todos os elementos de uma interação é True (ou se a interação estiver vázio).
 
-Exemplo:
+**Exemplo:**
 ```pyton
 x = [1,True]
 print(all(x))     # Retorna True
@@ -111,9 +111,9 @@ print(all(x))     # Retorna False
 
 * dir
 
-Descrição: A função `dir()` retorna todas as variável e  função do escopo local.  Se um parâmetro for passado, será retornado todos os metodos daquela função.
+**Descrição:** A função `dir()` retorna todas as variável e  função do escopo local.  Se um parâmetro for passado, será retornado todos os metodos daquela função.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 a="teste"
 print(dir())
@@ -122,9 +122,9 @@ print(dir(a))
 
 * hex
 
-Descrição: A função `hex()`, converte um número em string hexadecimal.
+**Descrição:** A função `hex()`, converte um número em string hexadecimal.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 print(hex(123))
 ```
@@ -149,9 +149,9 @@ sdfsd
 
 * any
 
-Descrição: A função `any()`, retorna True se algum elemento da interação for verdade. Se a interação estiver vázia, retorna False.
+**Descrição:** A função `any()`, retorna True se algum elemento da interação for verdade. Se a interação estiver vázia, retorna False.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 x = [False,True]
 print(any(x))     # Retorna True
@@ -160,20 +160,21 @@ print(any(x))     # Retorna False
 ```
 
 * divmod
-Descrição: `divmod()`
+**Descrição:** A função `divmod()`,retorna o resultado da divisão de 2 números inteiros e também o resto.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+print(devmod(10,2)
 ```
 
 * id
 
-Descrição: `id()`
+**Descrição:** A função `id()`, retorno o identificador de um objeto.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+a=10
+print(id(a))
 ```
 
 * object
@@ -187,44 +188,48 @@ sdfsd
 
 * sorted
 
-Descrição: `sorted()`
+**Descrição:** A função `sorted()`, retorna uma lista ordenada.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+a=[3,5,1,9,10,100,-1]
+print(sorted(a))
 ```
 
 * ascii
 
-Descrição: `ascii()`
+Descrição: A função `ascii()`, retorna uma string da representação ascii
 
 Exemplo:
 ```pyton
-sdfsd
+a=10
+print(ascii(a))
 ```
 
 * enumerate
 
-Descrição: `enumerate()`
+**Descrição:** A função `enumerate()`, retorna um objeto enumerado (indexado). É possível utilizar apenas com objetivos interados (lista) e o retorno é uma tuple.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+a  = ['maria','jose','pedro']
+print(list(enumerate(a)))
 ```
 
 * input
-Descrição: `input()`
+**Descrição:** A função `input()`, recebe dados da entrada padrão (teclado.
 
 Exemplo:
 ```pyton
-sdfsd
+texto = input("Digite um texto:")
+idade   = int(input("Digite a sua idade:"))
 ```
 
 * oct
 
-Descrição: A função `oct()`, converte um inteiro para uma string octal com prefixo "0o".
+**Descrição:** A função `oct()`, converte um inteiro para uma string octal com prefixo "0o".
 
-Exemplo:
+**Exemplo:**
 ```pyton
 print(oct(10))
 ```
@@ -240,9 +245,9 @@ sdfsd
 
 * bin()
 
-Descrição: A função `bin`, converte um número inteiro em uma string binária.
+**Descrição:** A função `bin`, converte um número inteiro em uma string binária.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 print(bin(10))  # Retorna '0b1010'
 ```
@@ -258,11 +263,12 @@ sdfsd
 
 * int
 
-Descrição: `int()`
+**Descrição:** A função `int()`, retorna um inteiro apartir de uma string.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+a = int('10')
+print(a)
 ```
 
 * open
@@ -276,20 +282,19 @@ sdfsd
 
 * str
 
-Descrição: `str()`
+Descrição: A função `str()`, retorna uma string
 
 Exemplo:
 ```pyton
-sdfsd
+a=10
+print(str(a))
 ```
 
 * bool
 
-Descrição: A função `bool()`, converte um valor, True, False, 0 e 1 para o  tipo booleano.
+**Descrição:** A função `bool()`, converte um valor, True, False, 0 e 1 para o  tipo booleano.
 
-Convert a value to a Boolean
-
-Exemplo:
+**Exemplo:**
 ```pyton
 print(bool(True))  # retorna True
 print(bool(0))     # retorna False
@@ -324,11 +329,12 @@ print(ord('a'))
 
 * sum()
 
-Descrição: `sum`
+**Descrição:** A função `sum`, retorna a soma de um objeto interavel, tais como lista.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+a = [ 10,15,40,20 ]
+print(sum(a))
 ```
 
 * bytearray
@@ -360,11 +366,12 @@ sdfsd
 
 * pow
 
-Descrição: `pow()`
+Descrição: A função `pow()`, retorna a potência de um número. 
 
 Exemplo:
 ```pyton
-sdfsd
+#retornar a 2 potência  5
+print(pow(2,5)
 ```
 
 * super
@@ -387,11 +394,12 @@ sdfsd
 
 * float
 
-Descrição: `float()`
+**Descrição:** A função `float()`, retorna um número float. 
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+a = float('10.3')
+print(a)
 ```
 
 * iter
@@ -405,9 +413,9 @@ sdfsd
 
 * print
 
-Descrição:  A função `print()`, imprime na saída padrão
+**Descrição:**  A função `print()`, imprime na saída padrão
 
-Exemplo:
+**Exemplo:**
 ```pyton
 print("Olá Python")
 ```
@@ -499,11 +507,12 @@ sdfsd
 
 * range
 
-Descrição: `range()`
+Descrição: A função `range()`, retorna um serie de números no intervalo informado.
 
 Exemplo:
 ```pyton
-sdfsd
+for k in range(1,10):
+    print(k)
 ```
 
 * vars
@@ -553,11 +562,15 @@ sdfsd
 
 * zip
 
-Descrição: `zip()`
+**Descrição:** A função `zip()`, retorna uma tupla cotendo a junção de duas listas, elemento a elemento.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+x=[100,200,300]
+y=[1000,2000,3000]
+
+for i in zip(x,y):
+   print(i)
 ```
 
 * compile
@@ -571,11 +584,11 @@ sdfsd
 
 * globals
 
-Descrição: `globals()`
+**Descrição:** A função `globals()`, retorna um dicionário contendo a lista global de variável.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+print(globals())
 ```
 
 * map
@@ -589,11 +602,12 @@ sdfsd
 
 * reversed
 
-Descrição: `reversed()`
+**Descrição:** A função `reversed()`, inverte uma lista.  Não é realizada a ordenação, apenas a inversção das posições.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+a = [ 100,2,5,9,1]
+print(list(reversed(a)))
 ```
 
 * __import__
@@ -607,38 +621,48 @@ sdfsd
 
 * complex
 
-Descrição: `complex()`
+**Descrição:** A `complex()`, retorna um número complexo.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+x = complex('1+2j')
+print(x)
 ```
 
 * hasattr
 
-Descrição: `hasattr()`
+**Descrição:** A função `hasattr()`, retorna True se um metodo ou variável existir em um objeto (classe)
 
 Exemplo:
 ```pyton
-sdfsd
+class Person:
+     nome="jose"
+     idade=30
+
+
+print(hasattr(Person,'nome'))
+print(hasattr(Person,'idade'))
+print(hasattr(Person,'salario'))
 ```
 
 * max
 
-Descrição: `max()`
+**Descrição:** A função `max()`, retorno a maior valor de uma lista.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+a = [100,200, 500,1,2,3]
+print(max(a))
 ```
 
 * round	 
 
-Descrição: `round()`
+**Descrição:** A função `round()`, retorna o arendondamento de um númeto
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+x = round(10.9)
+print(x)
 ```
 
 * delattr
@@ -674,9 +698,9 @@ print(v[1:4])
 
 * set	 
 
-Descrição: A função `set()`, retorna um novo objeto com a estrutura de dados.
+**Descrição:** A função `set()`, retorna um novo objeto com a estrutura de dados.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 conj = set([1,2])
 print(conj)
@@ -684,11 +708,9 @@ print(conj)
 
 
 
-## 2. Principais bibliotecas
+## 2. Principais Métodos
 ###  2.1 Strings
 ###  2.2 Number
-
-
 ###  2.3 Data
 ###  2.3 boolean
 ###  2.4 List
