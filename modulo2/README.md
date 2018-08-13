@@ -49,6 +49,8 @@ Por padrão o Python trás 68 comandos internos. São eles:
 
 A seguir a descrição de cada função e um exemplo para ajudar na compreensão.
 
+==============
+
 * abs
 
 **Descrição:** a função `abs()` retorna o valor absoluto de um número, isso é retorna o valor positivo.
@@ -254,11 +256,13 @@ print(bin(10))  # Retorna '0b1010'
 
 * eval
 
-Descrição: `eval()`
+**Descrição:** A função `eval()` avalia uma string como uma expressão python.
 
 Exemplo:
 ```pyton
-sdfsd
+print(eval('1+1'))
+a = 10
+print(eval('a+1'))
 ```
 
 * int
@@ -311,18 +315,18 @@ sdfsd
 
 * isinstance
 
-Descrição: `isinstance()`
+**Descrição:** A função `isinstance()`, retorna True se a objeto é da mesma classe espeficicada.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+print(isinstance(10,int))
 ```
 
 * ord
 
-Descrição: A função `ord()`, retorna um inteiro como representação da string Unicode.
+**Descrição:** A função `ord()`, retorna um inteiro como representação da string Unicode.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 print(ord('a'))
 ```
@@ -357,11 +361,18 @@ sdfsd
 
 * issubclass
 
-Descrição: `issubclass()`
+**escrição:** A função `issubclass()`, retorna True em uma classe é subclasse da verificada.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+class Person:
+       nome = 'jose'
+       idade = 30
+
+class Politico(Person):
+      salario=100000
+.
+print(issubclass(Politico,Person))
 ```
 
 * pow
@@ -376,11 +387,18 @@ print(pow(2,5)
 
 * super
 
-Descrição: `super()`
+**Descrição:** A função `super()` é utilizado para sobrescrever um metodo herdado de uma class.
 
-Exemplo:
+**Exemplo:**
 ```pyton
-sdfsd
+Class Pai(object):
+  def __init__(self):
+    print('Construindo a classe Pai')
+
+    
+class Filha(Pai):
+  def __init__(self):
+    super().__init__()
 ```
 
 * bytes
@@ -422,11 +440,12 @@ print("Olá Python")
 
 * tuple
 
-Descrição: `tuple()`
+Descrição: A função `tuple()`, retorna um tuple de elementos.
 
 Exemplo:
 ```pyton
-sdfsd
+x= tuple(a)
+print(x)
 ```
 
 * callable
@@ -470,9 +489,9 @@ sdfsd
 
 * type
 
-Descrição: A função `type()`, retorna o tipo do objeto.
+**Descrição:** A função `type()`, retorna o tipo do objeto.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 print(type('a'))
 ```
@@ -507,9 +526,9 @@ sdfsd
 
 * range
 
-Descrição: A função `range()`, retorna um serie de números no intervalo informado.
+**Descrição:** A função `range()`, retorna um serie de números no intervalo informado.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 for k in range(1,10):
     print(k)
