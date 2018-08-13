@@ -49,7 +49,7 @@ Por padrão o Python trás 68 comandos internos. São eles:
 
 A seguir a descrição de cada função e um exemplo para ajudar na compreensão.
 
-==============
+-----------
 
 * abs
 
