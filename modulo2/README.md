@@ -111,20 +111,22 @@ print(all(x))     # Retorna False
 
 * dir
 
-Descrição: `dir()`
+Descrição: A função `dir()` retorna todas as variável e  função do escopo local.  Se um parâmetro for passado, será retornado todos os metodos daquela função.
 
 Exemplo:
 ```pyton
-sdfsd
+a="teste"
+print(dir())
+print(dir(a))
 ```
 
 * hex
 
-Descrição: `hex()`
+Descrição: A função `hex()`, converte um número em string hexadecimal.
 
 Exemplo:
 ```pyton
-sdfsd
+print(hex(123))
 ```
 
 * next
@@ -220,11 +222,11 @@ sdfsd
 
 * oct
 
-Descrição: `oct()`
+Descrição: A função `oct()`, converte um inteiro para uma string octal com prefixo "0o".
 
 Exemplo:
 ```pyton
-sdfsd
+print(oct(10))
 ```
 
 * staticmethod
@@ -313,11 +315,11 @@ sdfsd
 
 * ord
 
-Descrição: `ord()`
+Descrição: A função `ord()`, retorna um inteiro como representação da string Unicode.
 
 Exemplo:
 ```pyton
-sdfsd
+print(ord('a'))
 ```
 
 * sum()
@@ -439,11 +441,14 @@ sdfsd
 
 * len
 
-Descrição: `len()`
+Descrição: A função `len()`, retorno o tamanho de um objeto. 
 
 Exemplo:
 ```pyton
-sdfsd
+a="texto"
+b=[1,2,3,4]
+print(len(a))
+print(len(b))
 ```
 
 * property
@@ -457,11 +462,11 @@ sdfsd
 
 * type
 
-Descrição: `type()`
+Descrição: A função `type()`, retorna o tipo do objeto.
 
 Exemplo:
 ```pyton
-sdfsd
+print(type('a'))
 ```
 
 * chr
@@ -656,20 +661,25 @@ sdfsd
 
 * memoryview
 
-Descrição: `memoryview()`
+Descrição: A função `memoryview()`, retorna um objetivo do tipo memoryview, de acesso rápido.
 
 Exemplo:
 ```pyton
-sdfsd
+v = memoryview(b'abcefg')
+print(v[1])
+print(v[-1])
+print(v[1:4])
+print(v[1:4])
 ```
 
 * set	 
 
-Descrição: `set()`
+Descrição: A função `set()`, retorna um novo objeto com a estrutura de dados.
 
 Exemplo:
 ```pyton
-sdfsd
+conj = set([1,2])
+print(conj)
 ```
 
 
