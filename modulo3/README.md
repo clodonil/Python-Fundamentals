@@ -33,6 +33,7 @@ O curso tem carga horária de 40 horas
 ### Módulo 3
    - Date e Time
    - Trabalhando com arquivos
+   -  Pip
    - JSON e CSV
    - Banco de dados;
    - Modulos e Package;
