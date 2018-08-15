@@ -742,6 +742,7 @@ a=10
 ```
 
 | Méthodo  | Descrição  | Exemplo| Resultado|
+|----------|------------|--------|-----------|
 |bit_length |           |        |          |
 |conjugate|           |        |          |
 |denominator|           |        |          |
@@ -759,6 +760,7 @@ a=10.1
 ```
 
 | Méthodo  | Descrição  | Exemplo| Resultado|
+|----------|------------|--------|-----------|
 as_integer_ratio|           |        |          |
 conjugate|           |        |          |
 fromhex|           |        |          |
