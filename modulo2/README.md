@@ -740,14 +740,8 @@ a=10
 
 | Méthodo  | Descrição  | Exemplo| Resultado|
 |----------|------------|--------|-----------|
-|bit_length |           |        |          |
-|conjugate|           |        |          |
-|denominator|           |        |          |
-|from_bytes|           |        |          |
-|imag|           |        |          |
-|numerator|           |        |          |
-|real|           |        |          |
-|to_bytes|           |        |          |
+|bit_length |  Quantidade de bit para guardar o Inteiro         | bin(a); a.bin_length()       |  '0b1010' , 4        |
+|to_bytes|  Retonar uma array com os bytes que representam o inteiro.         |   a.to_bytes(2, byteorder='big')     |   b'\x00\n'       |
 
 
 * Float
@@ -757,14 +751,10 @@ a=10.1
 ```
 
 | Méthodo  | Descrição  | Exemplo| Resultado|
-|----------|------------|--------|-----------|
-as_integer_ratio|           |        |          |
-conjugate|           |        |          |
-fromhex|           |        |          |
-hex|           |        |          |
-imag|           |        |          |
-is_integer|           |        |          |
-real|           |        |          |
+as_integer_ratio| Retorna um par de inteiros cuja proporção é exatamente igual ao float original e com um denominador positivo.          |        |          |
+fromhex| Retorna o float hex de uma string          | a.fromhex('b')       | 11.0         |
+hex| Converte um float em Hex          | a.hex()       |  '0x1.4333333333333p+3'        |
+is_integer|  Verifica se o conteúdo do float é Inteiro         |   float(10).is_integer() |  True         |
 
 ###  2.4 List
 ###  2.5 Tuple
