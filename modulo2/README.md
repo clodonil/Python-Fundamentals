@@ -735,6 +735,37 @@ print(conj)
 ## 2. Principais Métodos
 ###  2.1 Strings
 ###  2.2 Number
+* Inteiro
+
+```python
+a=10
+```
+
+| Méthodo  | Descrição  | Exemplo| Resultado|
+|bit_length |           |        |          |
+|conjugate|           |        |          |
+|denominator|           |        |          |
+|from_bytes|           |        |          |
+|imag|           |        |          |
+|numerator|           |        |          |
+|real|           |        |          |
+|to_bytes|           |        |          |
+
+
+* Float
+
+```python
+a=10.1
+```
+
+| Méthodo  | Descrição  | Exemplo| Resultado|
+as_integer_ratio|           |        |          |
+conjugate|           |        |          |
+fromhex|           |        |          |
+hex|           |        |          |
+imag|           |        |          |
+is_integer|           |        |          |
+real|           |        |          |
 ###  2.3 Data
 ###  2.3 boolean
 ###  2.4 List
