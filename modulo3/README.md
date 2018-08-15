@@ -31,6 +31,7 @@ O curso tem carga horária de 40 horas
    - Encapsulamento;
    
 ### Módulo 3
+   - Date e Time
    - Trabalhando com arquivos
    - JSON e CSV
    - Banco de dados;
