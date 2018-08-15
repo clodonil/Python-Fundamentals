@@ -751,6 +751,7 @@ a=10.1
 ```
 
 | Méthodo  | Descrição  | Exemplo| Resultado|
+|---------|-------------|-------|-----------|
 as_integer_ratio| Retorna um par de inteiros cuja proporção é exatamente igual ao float original e com um denominador positivo.          |        |          |
 fromhex| Retorna o float hex de uma string          | a.fromhex('b')       | 11.0         |
 hex| Converte um float em Hex          | a.hex()       |  '0x1.4333333333333p+3'        |
