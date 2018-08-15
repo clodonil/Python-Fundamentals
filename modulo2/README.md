@@ -768,7 +768,7 @@ hex|           |        |          |
 imag|           |        |          |
 is_integer|           |        |          |
 real|           |        |          |
-###  2.3 Data
+
 ###  2.3 boolean
 ###  2.4 List
 ###  2.5 Tuple
