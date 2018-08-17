@@ -758,6 +758,25 @@ hex| Converte um float em Hex          | a.hex()       |  '0x1.4333333333333p+3'
 is_integer|  Verifica se o conteúdo do float é Inteiro         |   float(10).is_integer() |  True         |
 
 ###  2.4 List
+* list
+
+```python
+lista=[]
+```
+
+| Méthodo  | Descrição  | Exemplo| Resultado |
+|----------|------------|--------|-----------|
+|append    | Adiciona um item no final da lista           |  lista.append('jose')      |  lista ['jose']         |
+|copy  | Faz uma copia da lista           |   lista_b = lista.copy()     |  lista_b ['jose']         |
+|count  |  retorna o número de ocorrência de um item          | lista.count('jose')       |  1         |
+|extend  | Extende            |        |           |
+|index  |            |        |           |
+|insert  |            |        |           |
+|pop  |            |        |           |
+|remove  |            |        |           |
+|reverse  |            |        |           |
+|sort  |            |        |           |
+|clear  | Limpa toda a lista (remove tudo)           |   a.clear()     |           | a [ ]
 ###  2.5 Tuple
 ###  2.5 Dicionário
 ###  2.6 Set
