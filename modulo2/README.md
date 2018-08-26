@@ -721,35 +721,35 @@ Uma variável do tipo string possue uma série de métodos que auxiliam no desen
 ```python
 s = "se nada mudar, invente."
 ```
-|Método |	Descrição | 
-|-------|-------------|
-|s.capitalize()	|Retorna uma nova string com a primeira letra em maiusculo.|
-|s.center(width, char)	|Retorna uma nova string no tamanho width centralizada com espaços ou char preenchendo ambos o lados.|
-|s.ljust(width, char)	|Retorna uma nova string no tamanho width alinhada a esquerda e com espaços ou char preenchendo o restante à direita.|
-|s.rjust	|Retorna uma nova string no tamanho width alinhada a direita e com espaços ou char preenchendo o restante à esquerda.|
-|s.count(t, end)	|Retorna o número de ocorrências de t em s ou na fatia de s finalizado em end.|
-|s.find(t, start, end)	|Retorna a posição de t mais a esquerda em s ou na fatia começando por start e terminado em end. Se nada for encontrado retorna -1.|
-|s.rfind(t, start, end)	|O mesmo que find() porém buscando a partir da direita.|
-|s.isalnum()	|Retorna True se s não for vazia e cada caractere de s é alfanumérico.|
-|s.isalpha()	|Retorna True se s não for vazia e cada caractere de s é uma letra.|
-|s.isdecimal()	|Retorna True se s não for vazia e cada caractere de s é um numérico Unicode.|
-|s.isdigit()	|Retorna True se s não for vazia e cada caractere de s é é um numérico ASCII.|
-|s.isidentifier()	|Retorna True se s não for vazia e um identificador valido.|
-|s.islower()	|Retorna True se s não for vazia e todos os caracteres estão em minusculas.|
-|s.isuper()	|Retorna True se s não for vazia e todos os caracteres estão em maiúscula.|
-|s.isspace()	|Retorna True se s não for vazia e todos os caracteres são espaços.|
-|s.join(t)	|Fatia t é insere s entre cada pedaço de t, exemplo: s = ‘.’ t=’dois’ s.join(t)=’d.o.i.s’|
-|s.lower()	|Retorna uma nova string toda em minusculas.|
-|s.upper()	|Retorna uma nova string toda em maiúsculas.|
-|s.partition(t)|	Retorna uma tupla de três strings a parte de s antes de t, t e e a parte de s depois de t.|
-|s.split(t, n)|	Retorna uma lista de strings fragmentas pela string t no máximo n vezes. Se n não for dado fragmenta tudo. Se t não for dado fragmenta pelos espaços em branco.|
-|s.splitlines(f)|	Retorna um lista de strings fragmentadas no finalizador de linhas e sem os finalizadores ou com eles caso f seja True.|
-|s.strip(t)|	Retorna uma nova string retirando os caracteres de espaço a direita e a esquerda ou se for dado os caracteres em t.|
-|s.lstrip(chars)|	Retorna uma nova string retirando os caracteres de espaço a a esquerda ou se for dado os caracteres em chars.|
-|s.rstrip(chars)|	Retorna uma nova string retirando os caracteres de espaço a a direita ou se for dado os caracteres em chars.|
-|s.swapcase()|	Retorna uma nova string trocando maiúsculas por minusculas e vice versa.|
-|s.title()|	Retorna uma nova string com a primeira letra de cada palavra em maiúscula.|
-|s.zfill(n)|	Retorna uma nova string em que se s for menor que n o que estiver a esquerda e substituído por zeros.|
+|Método |	Descrição | Exemplo|
+|-------|-------------|-------|
+|s.capitalize()	|Retorna uma nova string com a primeira letra em maiusculo.|s.capitalize()|
+|s.center(width, char)	|Retorna uma nova string no tamanho width centralizada com espaços ou char preenchendo ambos o lados.|s.center(50,'-')|
+|s.ljust(width, char)	|Retorna uma nova string no tamanho width alinhada a esquerda e com espaços ou char preenchendo o restante à direita.|s.ljust(30,'-')|
+|s.rjust	|Retorna uma nova string no tamanho width alinhada a direita e com espaços ou char preenchendo o restante à esquerda.|s.rjust(30,'-')|
+|s.count(t, end)	|Retorna o número de ocorrências de t em s ou na fatia de s finalizado em end.|s.count('e'), s.count('e',2,10)|
+|s.find(t, start, end)	|Retorna a posição de t mais a esquerda em s ou na fatia começando por start e terminado em end. Se nada for encontrado retorna -1.|s.find('e'), s.find('e',1,20)|
+|s.rfind(t, start, end)	|O mesmo que find() porém buscando a partir da direita.|s.rfind('d'), s.rfind('d',2,23)|
+|s.isalnum()	|Retorna True se s não for vazia e cada caractere de s é alfanumérico.|s.isalmun()|
+|s.isalpha()	|Retorna True se s não for vazia e cada caractere de s é uma letra.|s.isalpha()|
+|s.isdecimal()	|Retorna True se s não for vazia e cada caractere de s é um numérico Unicode.|s.isdecimal()|
+|s.isdigit()	|Retorna True se s não for vazia e cada caractere de s é é um numérico ASCII.|s.isdigital()|
+|s.isidentifier()	|Retorna True se s não for vazia e um identificador valido.|s.isidentifier()|
+|s.islower()	|Retorna True se s não for vazia e todos os caracteres estão em minusculas.|s.islower()|
+|s.isuper()	|Retorna True se s não for vazia e todos os caracteres estão em maiúscula.|s.issuper()|
+|s.isspace()	|Retorna True se s não for vazia e todos os caracteres são espaços.|s.isspace()|
+|s.join(t)	|Fatia t é insere s entre cada pedaço de t|s = '.' t='dois' s.join(t)='d.o.i.s'|
+|s.lower()	|Retorna uma nova string toda em minusculas.|s.lowe()|
+|s.upper()	|Retorna uma nova string toda em maiúsculas.|s.upper()
+|s.partition(t)|	Retorna uma tupla de três strings a parte de s antes de t, t e e a parte de s depois de t.|s.partition('m')|
+|s.split(t, n)|	Retorna uma lista de strings fragmentas pela string t no máximo n vezes. Se n não for dado fragmenta tudo. Se t não for dado fragmenta pelos espaços em branco.|s.split('e')|
+|s.splitlines(f)|	Retorna um lista de strings fragmentadas no finalizador de linhas e sem os finalizadores ou com eles caso f seja True.|s.splitlines()|
+|s.strip(t)|	Retorna uma nova string retirando os caracteres de espaço a direita e a esquerda ou se for dado os caracteres em t.|s.strip()|
+|s.lstrip(chars)|	Retorna uma nova string retirando os caracteres de espaço a a esquerda ou se for dado os caracteres em chars.|s.lstrip()|
+|s.rstrip(chars)|	Retorna uma nova string retirando os caracteres de espaço a a direita ou se for dado os caracteres em chars.|s.rstrip()|
+|s.swapcase()|	Retorna uma nova string trocando maiúsculas por minusculas e vice versa.|s.swapcase()|
+|s.title()|	Retorna uma nova string com a primeira letra de cada palavra em maiúscula.|s.title()|
+|s.zfill(n)|	Retorna uma nova string em que se s for menor que n o que estiver a esquerda e substituído por zeros.|s.zfill(50)|
 ###  2.2 Number
 * Inteiro
 
