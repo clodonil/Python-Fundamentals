@@ -806,6 +806,23 @@ t = ('jose','maria','pedro')
 |t.count(x) |  Retorna um número de itesn que são iguais a x       |  t.count('jose')       |
 |t.index(x) |  Retorna o index do primeiro item encontrado que seja igual a x       |  t.index('pedro')       |
 ###  2.5 Dicionário
+Juntamente com a declaração de um dicionário, é atribuido um conjunto de métodos que auxiliam no desenvolvimento.
+```python
+st = {'SP':'São Paulo','RJ':'Rio de Janeiro','MG':'Minas Gerais' }
+```
+|Métodos | Descrição | Exemplo |
+|-------|-----------|---------|
+|st.copy()     | Faz uma cópia do dicionário        | new = st.copy()         |
+|st.fromkeys() |          |         |
+|st.get()      |Retorna um valor de uma chave         | st.get('SP') , st['SP']        |
+|st.items()    |Retorna uma visão do dicionário (key e value)        |st.items()         |
+|st.keys()     |Retorna uma visão do dicionário (key)         |    st.keys()     |
+|st.values()   |Retorna uma visão do dicionário (value)         |   st.values()      |
+|st.pop()      |         |         |
+|st.popitem()    |         |         |
+|st.setdefault() |          |         |
+|st.update()     |         |         |
+|st.clear()     | Limpa todos os elementos de um dicionário         | st.clear()        |
 ###  2.6 Set
 ## 5.  Classes
 ## 6.  Herança
