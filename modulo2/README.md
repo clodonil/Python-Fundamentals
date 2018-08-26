@@ -797,6 +797,14 @@ lista=[]
 |sort  |  Ordena os itens na própria lista           |   lista.sort()     |  [1,2,3]         |
 |clear  | Limpa toda a lista (remove tudo)           |   lista.clear()     |           | lista [ ]
 ###  2.5 Tuple
+Devido a tuple ser imutável, o número de métodossão resumidos.
+```python
+t = ('jose','maria','pedro')
+```
+|Método|Descrição| Exemplo|
+|------|---------|--------|
+|t.count(x) |  Retorna um número de itesn que são iguais a x       |  t.count('jose')       |
+|t.index(x) |  Retorna o index do primeiro item encontrado que seja igual a x       |  t.index('pedro')       |
 ###  2.5 Dicionário
 ###  2.6 Set
 ## 5.  Classes
