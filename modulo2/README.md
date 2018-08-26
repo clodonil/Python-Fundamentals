@@ -30,17 +30,17 @@ Por padrão o Python trás 68 comandos internos. São eles:
 |            |            | Funções Built-in 		|      |        |
 |------------|------------|---------------------|------|--------|
 |abs()	      |dict()	      |help()	       |min()      |	setattr()|
-|all()	      |dir()	       |hex()	        |next()	    |slice()|
+|all()	      |dir()	       |hex()	        |next()	    |zip()|
 |any()	      |divmod()     |	id()	        |object()	  |sorted()|
-|ascii()	    |enumerate()	 |input()	      |oct()	     |staticmethod()|
+|ascii()	    |enumerate()	 |input()	      |oct()	     |type()|
 |bin()	      |eval()       |	int()	       |open()     |	str()|
 |bool()	     |exec()       |	isinstance()	|ord()	     |sum()|
 |bytearray()	|filter()	    |issubclass()	 |pow()	     |super()|
-|bytes()	    |float()      |	iter()	      |print()    |	tuple()|
-|callable() 	|format()	    |len()	        |property()	|type()|
-|chr()	      |frozenset()	 |list()	       |range()   	|vars()|
-|classmethod()	| getattr()	|locals()      |	repr()   	|zip()|
-|compile()	    |globals()  |	map()	       |reversed()	|\__import__()|
+| vars()  |float()      |	iter()	      |print()    |	tuple()|
+|callable() 	|format()	    |len()	        |property()	|\__import__()|
+|chr()	      |frozenset()	 |list()	       |range()   	||
+|classmethod()	| getattr()	|locals()      |	repr()   	||
+|compile()	    |globals()  |	map()	       |reversed()	||
 |complex()	    |hasattr()  |	max()        | 	round() 	| |
 |delattr()	    |hash()     |	memoryview() |	set()	    ||
 
@@ -80,20 +80,25 @@ print(help(id))
 
 * min
 
-Descrição: `min()`
+Descrição: A `min()` retorna o menor valor de uma lista.
 
 Exemplo:
 ```pyton
-sdfsd
+lista=[100,8,9,19,1,80]
+print(min(lista))
 ```
 
 * setattr
 
-Descrição: `setattr()`
+Descrição: A função `setattr()` atribui um valor para um atributo.
 
 Exemplo:
 ```pyton
-sdfsd
+class Pessoa:
+   nome="ze"
+funcionario = Pessoa()
+setattr(funcionario,'nome','pedro')
+print("O nome do funcionario: {0}".format(funcionario.name))
 ```
 
 * all
@@ -110,7 +115,7 @@ print(all(x))     # Retorna False
 
 * dir
 
-**Descrição:** A função `dir()` retorna todas as variável e  função do escopo local.  Se um parâmetro for passado, será retornado todos os metodos daquela função.
+**Descrição:** A função `dir()` retorna todas as variável e função do escopo local.  Se um parâmetro for passado, será retornado todos os metodos daquela função.
 
 **Exemplo:**
 ```pyton
@@ -130,21 +135,16 @@ print(hex(123))
 
 * next
 
-Descrição: `next()`
+Descrição: A função `next()`, retorno o próximo objeto de uma interação.
+
 
 Exemplo:
 ```pyton
-sdfsd
+nomes = ['jose','pedro','maria']
+obj = iter(nomes)
+print(next(obj))
 ```
 
-* slice()
-
-Descrição: `slice()`
-
-Exemplo:
-```pyton
-sdfsd
-```
 
 * any
 
@@ -174,15 +174,6 @@ print(devmod(10,2)
 ```pyton
 a=10
 print(id(a))
-```
-
-* object
-
-Descrição: `object()`
-
-Exemplo:
-```pyton
-sdfsd
 ```
 
 * sorted
@@ -231,15 +222,6 @@ idade   = int(input("Digite a sua idade:"))
 **Exemplo:**
 ```pyton
 print(oct(10))
-```
-
-* staticmethod
-
-Descrição: `staticmethod()`
-
-Exemplo:
-```pyton
-sdfsd
 ```
 
 * bin()
@@ -338,27 +320,19 @@ a = [ 10,15,40,20 ]
 print(sum(a))
 ```
 
-* bytearray
-
-Descrição: `bytearray()`
-
-Exemplo:
-```pyton
-sdfsd
-```
 
 * filter
 
-Descrição: `filter()`
+Descrição: A função `filter()`, filtra os elementos de uma sequência. O processo de filtragem é definido a partir de uma função que o programador passa como primeiro argumento da função.
 
 Exemplo:
 ```pyton
-sdfsd
+print(list(filter(lambda n: n % 2, range(6))))
 ```
 
 * issubclass
 
-**escrição:** A função `issubclass()`, retorna True em uma classe é subclasse da verificada.
+**Descrição:** A função `issubclass()`, retorna True em uma classe é subclasse da verificada.
 
 **Exemplo:**
 ```pyton
@@ -398,15 +372,6 @@ class Filha(Pai):
     super().__init__()
 ```
 
-* bytes
-
-Descrição: `bytes()`
-
-Exemplo:
-```pyton
-sdfsd
-```
-
 * float
 
 **Descrição:** A função `float()`, retorna um número float. 
@@ -419,11 +384,14 @@ print(a)
 
 * iter
 
-Descrição: `iter()`
+Descrição: A função `iter()` retorna um objeto que pode ser interado.
 
 Exemplo:
 ```pyton
-sdfsd
+nomes = ['jose','maria','pedro']
+lista = iter(nomes)
+print(next(lista))  # jose
+print(next(lista))  # maria
 ```
 
 * print
@@ -447,7 +415,7 @@ print(x)
 
 * callable
 
-Descrição: `callable()`
+Descrição: A função `callable()`, retorna true se um objeto é acc
 
 Exemplo:
 ```pyton
@@ -555,29 +523,32 @@ sdfsd
 
 * getattr
 
-Descrição: `getattr()`
+Descrição: A função `getattr()`, retorna o valor de um objeto.
 
 Exemplo:
 ```pyton
-sdfsd
+class Pessoa:
+     nome = "jose"
+
+diretoria = Pessoa()
+print(getattr(diretoria,'nome'))
 ```
 
 * locals
 
-Descrição:  `locals()`
+Descrição:  A função `locals()` retorna as varíáveis que estão declaradas no escopo local
 
 Exemplo:
 ```pyton
-sdfsd
+print(locals())
 ```
 
 * repr
 
-**Descrição:** A função `repr()`, é utilizada para retornar uma string da representação do objetivo. Muito utilizado nos consoles.
-
+**Descrição:** A função `repr()`, é utilizada para retornar uma representaçao do objeto em string. Utilizado em console. No exemplo, quando digitamos a no console, a função repr é invocado para ser apresentada o valor no console.
 **Exemplo:**
 ```pyton
->>> a = "banana"
+a = "banana"
 >>> a
 banana
 ```
@@ -597,11 +568,13 @@ for i in zip(x,y):
 
 * compile
 
-Descrição: `compile()`
+Descrição: A função `compile()` retorna um objeto de código Python apatir de uma string.
 
 Exemplo:
 ```pyton
-sdfsd
+code = 'a=10\nb=20\nprint("soma:{0}".format(a+b))'
+codeObj = compile(code, 'soma', 'exec')
+exec(codeObj)
 ```
 
 * globals
@@ -615,11 +588,12 @@ print(globals())
 
 * map
 
-Descrição: `map()`
+Descrição: A função `map()`, serve para aplicarmos uma função a cada elemento de uma lista.
 
 Exemplo:
 ```pyton
-sdfsd
+alunos = ['jose','mario','clodonil','carlos']
+print(list(map(len,lista)))
 ```
 
 * reversed
@@ -689,11 +663,23 @@ print(x)
 
 * delattr
 
-Descrição: `delattr()`
+Descrição: A função `delattr()`, desaloca um objeto.  
 
 Exemplo:
 ```pyton
-sdfsd
+class Coordinate:
+  x = 10
+  y = -5
+  z = 0
+
+point1 = Coordinate() 
+
+print('x = ',point1.x)
+print('y = ',point1.y)
+print('z = ',point1.z)
+
+delattr(Coordinate, 'z')
+
 ```
 
 * hash
