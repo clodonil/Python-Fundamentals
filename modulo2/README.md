@@ -755,14 +755,14 @@ lista=[]
 |append    | Adiciona um item no final da lista           |  lista.append('jose')      |  lista ['jose']         |
 |copy  | Faz uma copia da lista           |   lista_b = lista.copy()     |  lista_b ['jose']         |
 |count  |  retorna o número de ocorrência de um item          | lista.count('jose')       |  1         |
-|extend  | Extende            |        |           |
-|index  |            |        |           |
-|insert  |            |        |           |
-|pop  |            |        |           |
-|remove  |            |        |           |
-|reverse  |            |        |           |
-|sort  |            |        |           |
-|clear  | Limpa toda a lista (remove tudo)           |   a.clear()     |           | a [ ]
+|extend  | Prolonga a lista, adicionando no fim todos os elementos de outra lista            | lista.extend([10,'maria')       |   lista['jose',10,'maria']        |
+|index  |Devolve o índice do primeiro item cujo valor é igual a x| lista.index('jose')       |  0         |
+|insert  | Insere um item em uma posição especificada. | lista.insert(0,'pedro')       | lista['pedro','jose',10,'maria']          |
+|pop  |Remove o item na posição dada e o devolve. |   lista.pop() lista.pop(0)     |    maria pedro       |
+|remove  | Remove o primeiro item encontrado na lista conforme o valor passado.     |   lista.remove('jose')     |           |
+|reverse  |Inverte a ordem dos elementos na lista             |    lista.reverse()    |   [10, jose]  |
+|sort  |  Ordena os itens na própria lista           |   lista.sort()     |  [1,2,3]         |
+|clear  | Limpa toda a lista (remove tudo)           |   lista.clear()     |           | lista [ ]
 ###  2.5 Tuple
 ###  2.5 Dicionário
 ###  2.6 Set
