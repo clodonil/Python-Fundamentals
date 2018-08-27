@@ -818,10 +818,10 @@ st = {'SP':'São Paulo','RJ':'Rio de Janeiro','MG':'Minas Gerais' }
 |st.items()    |Retorna uma visão do dicionário (key e value)        |st.items()         |
 |st.keys()     |Retorna uma visão do dicionário (key)         |    st.keys()     |
 |st.values()   |Retorna uma visão do dicionário (value)         |   st.values()      |
-|st.pop()      |         |         |
-|st.popitem()    |         |         |
-|st.setdefault() |          |         |
-|st.update()     |         |         |
+|st.pop()      |Remove e Retorna um valor de uma chave.         |   st.get('RS')      |
+|st.popitem()    |Remove e retorna um par(key, value) pela ordem de LIFO         | st.popitem()         |
+|st.setdefault() | Similar ao get,mais retorna um valor default se nenhuma key for achado          | st.setdefault('RO','None')        |
+|st.update()     |Atualiza um dicionário.         |   st.update({'RS':'Rio Grande do Sul'})      |
 |st.clear()     | Limpa todos os elementos de um dicionário         | st.clear()        |
 ###  2.6 Set
 ## 5.  Classes
