@@ -824,6 +824,37 @@ st = {'SP':'São Paulo','RJ':'Rio de Janeiro','MG':'Minas Gerais' }
 |st.update()     |Atualiza um dicionário.         |   st.update({'RS':'Rio Grande do Sul'})      |
 |st.clear()     | Limpa todos os elementos de um dicionário         | st.clear()        |
 ###  2.6 Set
+
+```python
+conj1 = {1,3,4,5,6}        # conj1 = set()
+conj2 = {200,300,400,500,1,2,3}
+```
+|Métodos | Descrição | Exemplos |
+|--------|-----------|----------|
+|conj1.add()	  | Adiciona elementos ao Set| ```conj1.add('jose')```|
+|conj1.copy()	| Faz a cópia de um Set|```new = conj1.copy()``` |
+|conj1.clear()	|Remove todos os elementos de um  set|``` new.clear()```|
+|conj1.remove()|	Remove elementos de um Set| ```conj1.remove('jose')```|
+|conj1.difference()|Retorna a diferença entre 2 Sets conj1 - conj2 |```conj1.difference(conj2)```|
+|conj1.difference_update()|	Updates Calling Set With Intersection o f Sets||
+|conj1.discard()	|Remove elemento de um Set, se estiver presente|```conj1.discard('jose')```|
+|conj1.intersection()	|Retorna a interseção de 2 ou mais Sets|```conj1.intersection(conj2)```|
+|conj1.intersection_update()|	Updates Calling Set With Intersection of Sets||
+|conj1.isdisjoint()	|Checks Disjoint Sets||
+|conj1.issubset()	|Checks if a Set is Subset of Another Set||
+|conj1.pop()	|Remove um elemento arbitrario|```conj1.pop()```|
+|conj1.symmetric_difference()|	Returns Symmetric Difference||
+|conj1.symmetric_difference_update()	|Updates Set With Symmetric Difference||
+|conj1.union()	|Retorna um novo Set com a União entre Sets|```conj1.union(conj2)```|
+|conj1.update()|	Add Elements to The Set.|``` conj1.update({8,4,5}) ```|
+|enumerate()|	Retorna a enumeração de um set|``` list(enumerate(conj1))``` |
+|len()	|Retorna o tamanho do Set|``` len(conj1) ```|
+|max()	|Retorna o maior elemento de um Set|``` max(conj1)```|
+|min()	|Retorna o menor elemento de um Set|``` min(conj1)```|
+|sorted()|	Retorna uma lista ordenada| ``` sorted(conj1)```|
+|sum()	|Retorna a soma de um Set|``` sum(conj1) ```|
+|zip()	|Retorna a interação entre dois set|``` list(zip(conj1,conj2))```|
+
 ## 5.  Classes
 ## 6.  Herança
 ## 7.  Polimorfismo
