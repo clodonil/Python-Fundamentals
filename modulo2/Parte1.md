@@ -1,24 +1,18 @@
-__Python Fundamentals__ - Módulo 2
+__Python Fundamentals__ - Módulo 2 (Parte 1)
  ====================== 
  
 ## Objetivo
-Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve ter a capacidade de desenvolver pequenos programas.
+Apresentar as principais funções de `builtin` do Python e também os métodos das estruturadas de dados.
 
 ## Conteúdo:
 > 1.  [Funções builtin](#p1)
-> 2.  [Principais bibliotecas](#P1)</br>
+> 2.  [Principais Métodos](#P1)</br>
 > 2.1 [Strings](#p1)</br>
 > 2.2 [Number](#p1)</br>
 > 2.4 [List](#p1)</br>
 > 2.5 [Tuple](#p1)</br>
 > 2.5 [Dicionário](#p1)</br>
 > 2.6 [Set](#p1)</br>
-> 5. [Classes](#p1)
-> 6. [Herança](#p1)
-> 7. [Polimorfismo](#p1)
-> 8. [Métodos](#p1)
-> 9. [Atributos](#p1)
-> 10. [Encapsulamento](#p1)
 > 11. [Laboratório](#10-laboratório)
 > 12. [Lista de Exercício](#11-lista-de-exercício)
 
