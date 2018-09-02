@@ -2,7 +2,7 @@ __Python Fundamentals__ - Módulo 2 (Parte 1)
  ====================== 
  
 ## Objetivo
-Apresentar as principais funções de `builtin` do Python e também os métodos das estruturadas de dados.
+Apresentar as principais funções de `built-in` do Python e também os métodos das estruturadas de dados. Conhecer essa principais funções e os métodos é fundamental para codificar com qualidade.
 
 ## Conteúdo:
 > 1.  [Funções builtin](#p1)
@@ -17,9 +17,9 @@ Apresentar as principais funções de `builtin` do Python e também os métodos 
 > 12. [Lista de Exercício](#11-lista-de-exercício)
 
 
-## 1. Funções builtin
+## 1. Funções built-in
 
-Por padrão o Python trás 68 comandos internos. São eles:
+Por padrão o Python trás 68 comandos internos. Esses são os comandos que tornam o Python nessa fantástica linguagem e conhece-las é fundamental. A seguir são apresentadas essa funções e um exemplo de utilização:
 
 |            |            | Funções Built-in 		|      |        |
 |------------|------------|---------------------|------|--------|
