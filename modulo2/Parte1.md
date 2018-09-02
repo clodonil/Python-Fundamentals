@@ -13,8 +13,8 @@ Apresentar as principais funções de `built-in` do Python e também os métodos
 > 2.4 [Tuple](#p1)</br>
 > 2.5 [Dicionário](#p1)</br>
 > 2.6 [Set](#p1)</br>
-> 7. [Laboratório](#7-laboratório)
-> 8. [Lista de Exercício](#8-lista-de-exercício)
+> 3. [Laboratório](#7-laboratório)
+> 4. [Lista de Exercício](#8-lista-de-exercício)
 
 
 ## 1. Funções built-in
@@ -772,7 +772,7 @@ a=10
 
 | Méthodo  | Descrição  | Exemplo|
 |----------|------------|--------|
-|bit_length |  Quantidade de bit para guardar o Inteiro         | ``bin(a)`` ; ``a.bin_length()```    
+|bit_length |  Quantidade de bit para guardar o Inteiro         | ``bin(a)`` ; ```a.bin_length()```    
 |to_bytes|  Retonar uma array com os bytes que representam o inteiro.         |   ```a.to_bytes(2, byteorder='big')``` |
 
 
@@ -785,58 +785,69 @@ a=10.1
 | Méthodo  | Descrição  | Exemplo|
 |---------|-------------|-------|
 |as_integer_ratio| Retorna um par de inteiros cuja proporção é exatamente igual ao float original e com um denominador positivo.          |        |    
-|fromhex| Retorna o float hex de uma string          | a.fromhex('b')       | 
-|hex| Converte um float em Hex          | a.hex()       |  
+|fromhex| Retorna o float hex de uma string          | ```a.fromhex('b')```       | 
+|hex| Converte um float em Hex          | ```a.hex()```       |  
 |is_integer|  Verifica se o conteúdo do float é Inteiro         |   ```float(10).is_integer()``` |  
 
 ###  2.4 List
-* list
+
+As listas possuem métodos que auxiliam no desenvolvimento, muitas das tarefas pesadas já foram desenvolvidas.
+
 
 ```python
 lista=[]
 ```
 
-| Méthodo  | Descrição  | Exemplo| Resultado |
-|----------|------------|--------|-----------|
-|append    | Adiciona um item no final da lista           |  lista.append('jose')      |  lista ['jose']         |
-|copy  | Faz uma copia da lista           |   lista_b = lista.copy()     |  lista_b ['jose']         |
-|count  |  retorna o número de ocorrência de um item          | lista.count('jose')       |  1         |
-|extend  | Prolonga a lista, adicionando no fim todos os elementos de outra lista            | lista.extend([10,'maria')       |   lista['jose',10,'maria']        |
-|index  |Devolve o índice do primeiro item cujo valor é igual a x| lista.index('jose')       |  0         |
-|insert  | Insere um item em uma posição especificada. | lista.insert(0,'pedro')       | lista['pedro','jose',10,'maria']          |
-|pop  |Remove o item na posição dada e o devolve. |   lista.pop() lista.pop(0)     |    maria pedro       |
-|remove  | Remove o primeiro item encontrado na lista conforme o valor passado.     |   lista.remove('jose')     |           |
-|reverse  |Inverte a ordem dos elementos na lista             |    lista.reverse()    |   [10, jose]  |
-|sort  |  Ordena os itens na própria lista           |   lista.sort()     |  [1,2,3]         |
-|clear  | Limpa toda a lista (remove tudo)           |   lista.clear()     |           | lista [ ]
+| Méthodo  | Descrição  | Exemplo| 
+|----------|------------|--------|
+|append    | Adiciona um item no final da lista           |  ```lista.append('jose')```         |
+|copy  | Faz uma copia da lista           |   ```lista_b = lista.copy()```         |
+|count  |  retorna o número de ocorrência de um item          | ```lista.count('jose')```    |
+|extend  | Prolonga a lista, adicionando no fim todos os elementos de outra lista            | ```lista.extend([10,'maria')```      |
+|index  |Devolve o índice do primeiro item cujo valor é igual a ao item pesquisado| ```lista.index('jose')```         |
+|insert  | Insere um item em uma posição especificada. | ```lista.insert(0,'pedro')```  |
+|pop  |Remove o item na posição dada e o devolve. |   ```lista.pop()``` ```lista.pop(0)``` |
+|remove  | Remove o primeiro item encontrado na lista conforme o valor passado.     |   ```lista.remove('jose')```  |
+|reverse  |Inverte a ordem dos elementos na lista |    ```lista.reverse()``` |
+|sort  |  Ordena os itens na própria lista|  ```lista.sort()```|
+|clear  | Limpa toda a lista (remove tudo)| ```lista.clear()```|
+
+
 ###  2.5 Tuple
-Devido a tuple ser imutável, o número de métodossão resumidos.
+Devido a tuple ser imutável, o número de método são resumidos.
+
 ```python
 t = ('jose','maria','pedro')
 ```
 |Método|Descrição| Exemplo|
 |------|---------|--------|
-|t.count(x) |  Retorna um número de itesn que são iguais a x       |  t.count('jose')       |
-|t.index(x) |  Retorna o index do primeiro item encontrado que seja igual a x       |  t.index('pedro')       |
+|t.count(x) |  Retorna o número de itens que são iguais a x       |  ```t.count('jose')```       |
+|t.index(x) |  Retorna o index do primeiro item encontrado que seja igual a x  | ``` t.index('pedro')``` |
+
 ###  2.5 Dicionário
+
 Juntamente com a declaração de um dicionário, é atribuido um conjunto de métodos que auxiliam no desenvolvimento.
+
 ```python
 st = {'SP':'São Paulo','RJ':'Rio de Janeiro','MG':'Minas Gerais' }
 ```
 |Métodos | Descrição | Exemplo |
 |-------|-----------|---------|
-|st.copy()     | Faz uma cópia do dicionário        | new = st.copy()         |
+|st.copy()| Faz uma cópia do dicionário| ```new = st.copy()```|
 |st.fromkeys() |          |         |
-|st.get()      |Retorna um valor de uma chave         | st.get('SP') , st['SP']        |
-|st.items()    |Retorna uma visão do dicionário (key e value)        |st.items()         |
-|st.keys()     |Retorna uma visão do dicionário (key)         |    st.keys()     |
-|st.values()   |Retorna uma visão do dicionário (value)         |   st.values()      |
-|st.pop()      |Remove e Retorna um valor de uma chave.         |   st.get('RS')      |
-|st.popitem()    |Remove e retorna um par(key, value) pela ordem de LIFO         | st.popitem()         |
-|st.setdefault() | Similar ao get,mais retorna um valor default se nenhuma key for achado          | st.setdefault('RO','None')        |
-|st.update()     |Atualiza um dicionário.         |   st.update({'RS':'Rio Grande do Sul'})      |
-|st.clear()     | Limpa todos os elementos de um dicionário         | st.clear()        |
+|st.get()      |Retorna um valor de uma chave         | ```st.get('SP')``` , ```st['SP']```        |
+|st.items()    |Retorna uma visão do dicionário (key e value)        |```st.items()```         |
+|st.keys()     |Retorna uma visão do dicionário (key)         |    ```st.keys()```     |
+|st.values()   |Retorna uma visão do dicionário (value)         |   ```st.values()```      |
+|st.pop()      |Remove e Retorna um valor de uma chave.         |   ```st.get('RS')```      |
+|st.popitem()    |Remove e retorna um par(key, value) pela ordem de LIFO         | ```st.popitem()```         |
+|st.setdefault() | Similar ao get,mais retorna um valor default se nenhuma key for achado          | ```st.setdefault('RO','None')```        |
+|st.update()     |Atualiza um dicionário.         |   ```st.update({'RS':'Rio Grande do Sul'})```      |
+|st.clear()     | Limpa todos os elementos de um dicionário         | ```st.clear()```        |
+
 ###  2.6 Set
+
+Os conjuntos possuem uma série de métodos que auxiliam muito no desenvolvimento.
 
 ```python
 conj1 = {1,3,4,5,6}        # conj1 = set()
@@ -868,11 +879,11 @@ conj2 = {200,300,400,500,1,2,3}
 |sum()	|Retorna a soma de um Set|``` sum(conj1) ```|
 |zip()	|Retorna a interação entre dois set|``` list(zip(conj1,conj2))```|
 
-## 11 Laboratório
+## 3 Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
 > [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
 
-## 11 Lista de Exercício
+## 4 Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
 > [Lista de Exercício](exercicios/README.md)
 
