@@ -40,13 +40,13 @@ Por padrão o Python trás 68 comandos internos. São elas:
 
 Esses são os comandos que tornam o Python nessa fantástica linguagem e conhecê-las é fundamental. A seguir são apresentadas essa funções e um exemplo de utilização.
 
-Recomendo utilizar o console do Python para experimentar os comandos e ter uma rápida.
+> Recomendo utilizar o console do Python para experimentar os comandos e ter uma rápida.
 
-[repl.it](https://repl.it/languages/python3)
+> [repl.it](https://repl.it/languages/python3)
 
-Confome o exemplo:
+> Confome o exemplo:
 
-![console](https://github.com/clodonil/Python-Fundamentals/blob/master/Imagens/repl.it-console.png)
+> ![console](https://github.com/clodonil/Python-Fundamentals/blob/master/Imagens/repl.it-console.png)
 
 -----------
 
@@ -82,9 +82,9 @@ print(help(id))
 
 * min
 
-Descrição: A `min()` retorna o menor valor de uma lista.
+**Descrição:** A `min()` retorna o menor valor de uma lista.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 lista=[100,8,9,19,1,80]
 print(min(lista))
@@ -92,9 +92,9 @@ print(min(lista))
 
 * setattr
 
-Descrição: A função `setattr()` atribui um valor para um atributo.
+**Descrição:** A função `setattr()` atribui um valor para um atributo.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 class Pessoa:
    nome="ze"
@@ -137,10 +137,9 @@ print(hex(123))
 
 * next
 
-Descrição: A função `next()`, retorno o próximo objeto de uma interação.
+**Descrição:** A função `next()`, retorno o próximo objeto de uma interação.
 
-
-Exemplo:
+**Exemplo:**
 ```pyton
 nomes = ['jose','pedro','maria']
 obj = iter(nomes)
@@ -161,6 +160,7 @@ print(any(x))     # Retorna False
 ```
 
 * divmod
+
 **Descrição:** A função `divmod()`,retorna o resultado da divisão de 2 números inteiros e também o resto.
 
 **Exemplo:**
@@ -190,7 +190,7 @@ print(sorted(a))
 
 * ascii
 
-Descrição: A função `ascii()`, retorna uma string da representação ascii
+**Descrição:** A função `ascii()`, retorna uma string da representação ascii
 
 Exemplo:
 ```pyton
@@ -209,9 +209,10 @@ print(list(enumerate(a)))
 ```
 
 * input
+
 **Descrição:** A função `input()`, recebe dados da entrada padrão (teclado.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 texto = input("Digite um texto:")
 idade   = int(input("Digite a sua idade:"))
@@ -239,7 +240,7 @@ print(bin(10))  # Retorna '0b1010'
 
 **Descrição:** A função `eval()` avalia uma string como uma expressão python.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 print(eval('1+1'))
 a = 10
@@ -258,7 +259,7 @@ print(a)
 
 * open
 
-Descrição: `open()`
+**Descrição:** `open()`
 
 Exemplo:
 ```pyton
@@ -267,9 +268,9 @@ sdfsd
 
 * str
 
-Descrição: A função `str()`, retorna uma string
+**Descrição:** A função `str()`, retorna uma string
 
-Exemplo:
+**Exemplo:**
 ```pyton
 a=10
 print(str(a))
@@ -287,7 +288,7 @@ print(bool(0))     # retorna False
 
 * exec
 
-Descrição: `exec()`
+**Descrição:** `exec()`
 
 Exemplo:
 ```pyton
@@ -325,9 +326,9 @@ print(sum(a))
 
 * filter
 
-Descrição: A função `filter()`, filtra os elementos de uma sequência. O processo de filtragem é definido a partir de uma função que o programador passa como primeiro argumento da função.
+**Descrição:** A função `filter()`, filtra os elementos de uma sequência. O processo de filtragem é definido a partir de uma função que o programador passa como primeiro argumento da função.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 print(list(filter(lambda n: n % 2, range(6))))
 ```
@@ -350,9 +351,9 @@ print(issubclass(Politico,Person))
 
 * pow
 
-Descrição: A função `pow()`, retorna a potência de um número. 
+**Descrição:** A função `pow()`, retorna a potência de um número. 
 
-Exemplo:
+**Exemplo:**
 ```pyton
 #retornar a 2 potência  5
 print(pow(2,5)
@@ -386,9 +387,9 @@ print(a)
 
 * iter
 
-Descrição: A função `iter()` retorna um objeto que pode ser interado.
+**Descrição:** A função `iter()` retorna um objeto que pode ser interado.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 nomes = ['jose','maria','pedro']
 lista = iter(nomes)
@@ -407,9 +408,9 @@ print("Olá Python")
 
 * tuple
 
-Descrição: A função `tuple()`, retorna um tuple de elementos.
+**Descrição:** A função `tuple()`, retorna um tuple de elementos.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 x= tuple(a)
 print(x)
@@ -417,7 +418,7 @@ print(x)
 
 * callable
 
-Descrição: A função `callable()`, retorna true se um objeto é acc
+**Descrição:** A função `callable()`, retorna true se um objeto é acc
 
 Exemplo:
 ```pyton
@@ -426,9 +427,9 @@ sdfsd
 
 * format
 
-Descrição: A função `format()`, formata uma  string que contem campos entre chaves a serem substituídos pelos argumentos de format..
+**Descrição:** A função `format()`, formata uma  string que contem campos entre chaves a serem substituídos pelos argumentos de format..
 
-Exemplo:
+**Exemplo:**
 ```pyton
 x= 10 
 comando = "linha {0}".format(x)
@@ -436,9 +437,9 @@ comando = "linha {0}".format(x)
 
 * len
 
-Descrição: A função `len()`, retorno o tamanho de um objeto. 
+**Descrição:** A função `len()`, retorno o tamanho de um objeto. 
 
-Exemplo:
+**Exemplo:**
 ```pyton
 a="texto"
 b=[1,2,3,4]
@@ -448,9 +449,9 @@ print(len(b))
 
 * property
 
-Descrição: `property()`
+**Descrição:** `property()`
 
-Exemplo:
+**Exemplo:**
 ```pyton
 sdfsd
 ```
@@ -507,27 +508,27 @@ for k in range(1,10):
 
 * vars
 
-Descrição: A função `vars()` retorna um dicionário com todas as variável daquele escopo.
+**Descrição:** A função `vars()` retorna um dicionário com todas as variável daquele escopo.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 print(vars())
 ```
 
 * classmethod
 
-Descrição: `classmethod()`
+**Descrição:** `classmethod()`
 
-Exemplo:
+**Exemplo:**
 ```pyton
 sdfsd
 ```
 
 * getattr
 
-Descrição: A função `getattr()`, retorna o valor de um objeto.
+**Descrição:** A função `getattr()`, retorna o valor de um objeto.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 class Pessoa:
      nome = "jose"
@@ -538,9 +539,9 @@ print(getattr(diretoria,'nome'))
 
 * locals
 
-Descrição:  A função `locals()` retorna as varíáveis que estão declaradas no escopo local
+**Descrição:**  A função `locals()` retorna as variável que estão declaradas no escopo local
 
-Exemplo:
+**Exemplo:**
 ```pyton
 print(locals())
 ```
@@ -570,9 +571,9 @@ for i in zip(x,y):
 
 * compile
 
-Descrição: A função `compile()` retorna um objeto de código Python apatir de uma string.
+**Descrição:** A função `compile()` retorna um objeto de código Python apatir de uma string.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 code = 'a=10\nb=20\nprint("soma:{0}".format(a+b))'
 codeObj = compile(code, 'soma', 'exec')
@@ -590,9 +591,9 @@ print(globals())
 
 * map
 
-Descrição: A função `map()`, serve para aplicarmos uma função a cada elemento de uma lista.
+**Descrição:** A função `map()`, serve para aplicarmos uma função a cada elemento de uma lista.
 
-Exemplo:
+**Exemplo:**
 ```pyton
 alunos = ['jose','mario','clodonil','carlos']
 print(list(map(len,lista)))
@@ -631,7 +632,7 @@ print(x)
 
 **Descrição:** A função `hasattr()`, retorna True se um metodo ou variável existir em um objeto (classe)
 
-Exemplo:
+**Exemplo:**
 ```pyton
 class Person:
      nome="jose"
@@ -665,9 +666,9 @@ print(x)
 
 * delattr
 
-Descrição: A função `delattr()`, desaloca um objeto.  
+**Descrição:** A função `delattr()`, desaloca um objeto.  
 
-Exemplo:
+**Exemplo:**
 ```pyton
 class Coordinate:
   x = 10
@@ -696,7 +697,7 @@ print(hash(x))
 
 * memoryview
 
-Descrição: A função `memoryview()`, retorna um objetivo do tipo memoryview, de acesso rápido.
+**Descrição:** A função `memoryview()`, retorna um objetivo do tipo memoryview, de acesso rápido.
 
 Exemplo:
 ```pyton
@@ -718,11 +719,18 @@ print(conj)
 ```
 
 ## 2. Principais Métodos
+Além das funções internas, as estruturas de dados, tais com variável, lista, tuple e dicionários possuem uma série de métodos que auxiliam no desenvolvimento do código.
+
+
 ###  2.1 Strings
 Uma variável do tipo string possue uma série de métodos que auxiliam no desenvolvimento.
+
+A parte do código a seguir do ser executado no console. Utilize experimente todos os módulos utilizando a variável `s`.
+
 ```python
 s = "se nada mudar, invente."
 ```
+
 |Método |	Descrição | Exemplo|
 |-------|-------------|-------|
 |s.capitalize()	|Retorna uma nova string com a primeira letra em maiusculo.|s.capitalize()|
@@ -753,16 +761,19 @@ s = "se nada mudar, invente."
 |s.title()|	Retorna uma nova string com a primeira letra de cada palavra em maiúscula.|`s.title()`|
 |s.zfill(n)|	Retorna uma nova string em que se s for menor que n o que estiver a esquerda e substituído por zeros.|`s.zfill(50)`|
 ###  2.2 Number
+
+Os tipos númericos também possue métodos. São eles:
+
 * Inteiro
 
 ```python
 a=10
 ```
 
-| Méthodo  | Descrição  | Exemplo| Resultado|
-|----------|------------|--------|-----------|
-|bit_length |  Quantidade de bit para guardar o Inteiro         | bin(a); a.bin_length()       |  '0b1010' , 4        |
-|to_bytes|  Retonar uma array com os bytes que representam o inteiro.         |   a.to_bytes(2, byteorder='big')     |   b'\x00\n'       |
+| Méthodo  | Descrição  | Exemplo|
+|----------|------------|--------|
+|bit_length |  Quantidade de bit para guardar o Inteiro         | ``bin(a)`` ; ``a.bin_length()```    
+|to_bytes|  Retonar uma array com os bytes que representam o inteiro.         |   ```a.to_bytes(2, byteorder='big')``` |
 
 
 * Float
@@ -771,12 +782,12 @@ a=10
 a=10.1
 ```
 
-| Méthodo  | Descrição  | Exemplo| Resultado|
-|---------|-------------|-------|-----------|
-as_integer_ratio| Retorna um par de inteiros cuja proporção é exatamente igual ao float original e com um denominador positivo.          |        |          |
-fromhex| Retorna o float hex de uma string          | a.fromhex('b')       | 11.0         |
-hex| Converte um float em Hex          | a.hex()       |  '0x1.4333333333333p+3'        |
-is_integer|  Verifica se o conteúdo do float é Inteiro         |   float(10).is_integer() |  True         |
+| Méthodo  | Descrição  | Exemplo|
+|---------|-------------|-------|
+|as_integer_ratio| Retorna um par de inteiros cuja proporção é exatamente igual ao float original e com um denominador positivo.          |        |    
+|fromhex| Retorna o float hex de uma string          | a.fromhex('b')       | 
+|hex| Converte um float em Hex          | a.hex()       |  
+|is_integer|  Verifica se o conteúdo do float é Inteiro         |   ```float(10).is_integer()``` |  
 
 ###  2.4 List
 * list
