@@ -849,11 +849,11 @@ conj2 = {200,300,400,500,1,2,3}
 
 ## 3 Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
-> [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo2/Labs)
+> [Laboratório](parte1/Labs)
 
 ## 4 Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
-> [Lista de Exercício](exercicios/README.md)
+> [Lista de Exercício](parte1/exercicios)
 
 ***
 > By:
