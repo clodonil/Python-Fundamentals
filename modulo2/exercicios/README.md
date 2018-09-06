@@ -14,7 +14,7 @@ Esse laboratório propoe um problema e suas soluções. O aluno deve trabalhar c
 No site 'dados abertos' da câmera de deputados federal (https://dadosabertos.camara.leg.br/) temos todas as informações de ações e gastos dos deputados federais.
 
 
-![dadosabertos](https://github.com/clodonil/curso_python/blob/master/Imagens/dadosabertos1.PNG)
+![dadosabertos](https://github.com/clodonil/Python-Fundamentals/blob/master/Imagens/dados_abertos1.png)
 
 Para obter os valores dinâmicamente, utilizaremos a biblioteca `Scrapy_DadosAbertos`. Mais a frente vamos entender como foi desenvolvida essa biblioteca, mais agora o importante é saber utiliza-lá.
 
