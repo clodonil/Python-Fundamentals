@@ -259,11 +259,13 @@ print(a)
 
 * open
 
-**Descrição:** `open()`
+**Descrição:** A função `open()`, abre uma arquivo para leitura um escrita.
 
 Exemplo:
 ```pyton
-sdfsd
+doc  = open('documento.txt','w')
+doc.write('linha1')
+doc.close()
 ```
 
 * str
@@ -284,15 +286,6 @@ print(str(a))
 ```pyton
 print(bool(True))  # retorna True
 print(bool(0))     # retorna False
-```
-
-* exec
-
-**Descrição:** `exec()`
-
-Exemplo:
-```pyton
-sdfsd
 ```
 
 * isinstance
@@ -416,15 +409,6 @@ x= tuple(a)
 print(x)
 ```
 
-* callable
-
-**Descrição:** A função `callable()`, retorna true se um objeto é acc
-
-Exemplo:
-```pyton
-sdfsd
-```
-
 * format
 
 **Descrição:** A função `format()`, formata uma  string que contem campos entre chaves a serem substituídos pelos argumentos de format..
@@ -445,15 +429,6 @@ a="texto"
 b=[1,2,3,4]
 print(len(a))
 print(len(b))
-```
-
-* property
-
-**Descrição:** `property()`
-
-**Exemplo:**
-```pyton
-sdfsd
 ```
 
 * type
@@ -513,15 +488,6 @@ for k in range(1,10):
 **Exemplo:**
 ```pyton
 print(vars())
-```
-
-* classmethod
-
-**Descrição:** `classmethod()`
-
-**Exemplo:**
-```pyton
-sdfsd
 ```
 
 * getattr
@@ -760,6 +726,7 @@ s = "se nada mudar, invente."
 |s.swapcase()|	Retorna uma nova string trocando maiúsculas por minusculas e vice versa.|`s.swapcase()`|
 |s.title()|	Retorna uma nova string com a primeira letra de cada palavra em maiúscula.|`s.title()`|
 |s.zfill(n)|	Retorna uma nova string em que se s for menor que n o que estiver a esquerda e substituído por zeros.|`s.zfill(50)`|
+
 ###  2.2 Number
 
 Os tipos númericos também possue métodos. São eles:
@@ -814,6 +781,7 @@ lista=[]
 
 
 ###  2.5 Tuple
+
 Devido a tuple ser imutável, o número de método são resumidos.
 
 ```python
@@ -881,7 +849,7 @@ conj2 = {200,300,400,500,1,2,3}
 
 ## 3 Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
-> [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
+> [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo2/Labs)
 
 ## 4 Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
