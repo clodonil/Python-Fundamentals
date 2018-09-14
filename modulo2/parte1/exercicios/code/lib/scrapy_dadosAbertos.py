@@ -5,9 +5,12 @@ class DadosAbertos:
   def __init__(self):
        self.url = 'https://dadosabertos.camara.leg.br/api/v2/'
 
-  def get(self,link):
-      resposta = requests.get(link)
-      return resposta.json()['dados']
+ def get(self,link):
+      resposta = requests.get(link)      
+      try: 
+         return resposta.json()['dados']
+      except:
+         return resposta.json()
   
   def blocos(self):
        link = self.url + '/blocos'
@@ -133,38 +136,91 @@ class DadosAbertos:
   def proposicoes_votacoes(self, id):
        # /proposicoes/{id}/votacoes
        link = self.url + 'proposicoes/' + str(id) + '/votacoes'
-       return self.get(link)
-     
+       return self.get(link)   
 
-
-st = DadosAbertos()
-
-dados = st.evento_pauta(6174)
-print(dados)
-#print(dados)
-#print(st.deputado_orgaos(73579))
-
-#dados.situacoesDeputado()
-
-
-
-# /referencias/situacoesEvento
-# /referencias/tiposEvento
-# /legislaturas
-# /legislaturas/{id}
-# /legislaturas/{id}/mesa
-# /referencias/situacoesProposicao
-# /referencias/tiposProposicao
-# /referencias/tiposTramitacao
-# /referencias/situacoesDeputado
-# /referencias/situacoesEvento
-# /referencias/situacoesOrgao
-# /referencias/situacoesProposicao
-# /referencias/tiposEvento
-# /referencias/tiposOrgao
-# /referencias/tiposProposicao
-# /referencias/tiposTramitacao
-# /referencias/uf
+  def referencias_situacoesEvento(self):
+       # /referencias/situacoesEvento
+       link = self.url + 'referencias/situacoesEvento'
+       return self.get(link)   
+  def referencias_tiposEvento(self):  
+      # /referencias/tiposEvento
+      link = self.url + '/referencias/tiposEvento'
+      return self.get(link)   
+    
+  def legislaturas(self):  
+      # /legislaturas
+      link = self.url + '/legislaturas'
+      return self.get(link)   
+    
+  def legislaturas(self,id):  
+      # /legislaturas/{id}
+      link = self.url + '/legislaturas' + str(id)
+      return self.get(link)   
+  def legislaturas_mesa(self,id):
+      # /legislaturas/{id}/mesa
+      link = self.url + '/legislaturas' + str(id) + '/mesa'
+      return self.get(link)   
+  
+  def referencias_situacoesProposicao(self):
+      # /referencias/situacoesProposicao
+      link = self.url + '/referencias/situacoesProposicao'
+      return self.get(link)   
+    
+  def referencias_tiposProposicao(self):
+      # /referencias/tiposProposicao
+      link = self.url + '/referencias/tiposProposicao'
+      return self.get(link)   
+    
+  def referencias_tiposTramitacao(self):
+      # /referencias/tiposTramitacao
+      link = self.url + '/referencias/tiposTramitacao'
+      return self.get(link)   
+    
+   def referencias_situacoesDeputado(self):
+       # /referencias/situacoesDeputado
+      link = self.url + '/referencias/situacoesDeputado'
+      return self.get(link)   
+      
+   def referencias_situacoesEvento(self):
+       # /referencias/situacoesEvento
+      link = self.url + '/referencias/situacoesEvento'
+      return self.get(link)   
+      
+   def referencias_situacoesOrgao(self):
+       # /referencias/situacoesOrgao
+      link = self.url + '/referencias/situacoesOrgao'
+      return self.get(link)   
+      
+   def referencias_situacoesProposicao(self):
+       # /referencias/situacoesProposicao
+      link = self.url + '/referencias/situacoesProposicao'
+      return self.get(link)   
+      
+   def referencias_tiposEvento(self):
+       # /referencias/tiposEvento
+      link = self.url + '/referencias/tiposEvento'
+      return self.get(link)   
+      
+   def referencias_tiposOrgao(self):
+       # /referencias/tiposOrgao
+      link = self.url + '/referencias/tiposOrgao'
+      return self.get(link)   
+      
+   def referencias_tiposProposicao(self):
+       # /referencias/tiposProposicao
+      link = self.url + '/referencias/tiposProposicao'
+      return self.get(link)   
+      
+   def referencias_tiposTramitacao(self):
+       # /referencias/tiposTramitacao
+      link = self.url + '/referencias/tiposTramitacao'
+      return self.get(link)   
+   
+   def referencias_uf(self):
+      # /referencias/uf
+      link = self.url + '/referencias/uf'
+      return self.get(link)   
+  
 # /proposicoes/{id}/votacoes
 # /votacoes/{id}
 # /votacoes/{id}/votos
