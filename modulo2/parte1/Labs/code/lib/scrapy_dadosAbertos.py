@@ -272,7 +272,7 @@ class DadosAbertos:
                    referencias_tiposTramitacao():
                    referencias_uf():      
                   """    
-        print(metodos)
+        return metodos
 # /proposicoes/{id}/votacoes
 # /votacoes/{id}
 # /votacoes/{id}/votos

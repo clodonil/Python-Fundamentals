@@ -21,14 +21,17 @@ Para obter os valores dinâmicamente, utilizaremos a biblioteca `Scrapy_DadosAbe
 A biblioteca retorna os dados da API do site dados abertos. 
 
 ```python
-# importa a lib para obter as tabelas da Wikipedia
-from  lib.scrapy_table import Scrapy_Table
-# Variavel com o link da tabela
-url="https://pt.wikipedia.org/wiki/C%C3%A2mara_Municipal_de_S%C3%A3o_Paulo"
-# Inicia a class para obter a tabela
-site_connect = Scrapy_Table(url)
-# Pegando a tabela 5 (Vereadores em exercicio)
-tables = site_connect.get_tables(5)
+# importa a lib para conexão com o site Dados Abertos
+from  lib.scrapy_dadosAbertos import DadosAbertos
+# Inicia a class para obter os dados
+site_connect = DadosAberto()
+# obtendo ajuda com os métodos disponíveis.
+print(site_connect.help())
+#Obtendo a lista de Deputados
+list_dep = site_connect.deputados()
+#Imprimindo a lista de deputados
+print(list_dep)
+
 ```
 
 Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os códigos em Python.
