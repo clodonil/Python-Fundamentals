@@ -14,7 +14,8 @@ class DadosAbertos:
        self.url = 'https://dadosabertos.camara.leg.br/api/v2/'
 
     def get(self,link):
-        resposta = requests.get(link)      
+        parametros = {'formato': 'json', 'itens': 100}
+        resposta = requests.get(link, parametros)      
         try: 
            return resposta.json()['dados']
         except:
@@ -37,7 +38,7 @@ class DadosAbertos:
         return self.get(link)
     
     def deputado_despesas(self,id):
-        link = self.url + str(id) + '/despesas'
+        link = self.url + 'deputados/' +  str(id) + '/despesas'
         return self.get(link)
        
     def deputado_discursos(self,id):
@@ -228,49 +229,44 @@ class DadosAbertos:
     
     def help(self): 
         metodos = """ Métodos da class  Dados Abertos:
-                   blocos():
-                   blocos_id(id):
-                   deputados():
-                   deputado_id(id):
-                   deputado_despesas(id):
-                   deputado_discursos(id):
-                   deputado_eventos(id):
-                   deputado_orgaos(id):
-                   deputado_mesa(id):
-                   situacoesDeputado():
-                   eventos():
-                   evento_id(id):
-                   evento_deputados(id):
-                   evento_pauta(id):
-                   partidos():
-                   partido_id(id):
-                   orgaos():
-                   orgaos_id(id):
-                   orgaos_eventos(id):
-                   orgaos_membros(id):
-                   proposicoes():
-                   proposicoes_id(id):
-                   proposicoes_autores(id):
-                   proposicoes_relacionadas(id):
-                   proposicoes_tramitacoes(id):
-                   proposicoes_votacoes(id):
-                   referencias_situacoesEvento():
-                   referencias_tiposEvento():
-                   legislaturas():
-                   legislaturas(id):
-                   legislaturas_mesa(id):
-                   referencias_situacoesProposicao():
-                   referencias_tiposProposicao():
-                   referencias_tiposTramitacao():
-                   referencias_situacoesDeputado():
-                   referencias_situacoesEvento():
-                   referencias_situacoesOrgao():
-                   referencias_situacoesProposicao():
-                   referencias_tiposEvento():
-                   referencias_tiposOrgao():
-                   referencias_tiposProposicao():
-                   referencias_tiposTramitacao():
-                   referencias_uf():      
+                   blocos()                               : Lista de dados sobre os blocos partidários
+                   blocos_id(bloco_id)                    : Informações sobre um bloco partidário específico
+                   deputados()                            : Listagem e busca de deputados, segundo critérios
+                   deputado_id(deputado_id)               : Informações detalhadas sobre um deputado específico
+                   deputado_despesas(deputado_id)         : As despesas com exercício parlamentar do deputado
+                   deputado_discursos(deputado_id)        : Os discursos feitos por um deputado em vários eventos
+                   deputado_eventos(deputado_id)          : Uma lista de eventos com a participação do parlamentar
+                   deputado_orgaos(deputado_id)         : Os órgãos dos quais um deputado é integrante
+                   deputado_mesa(deputado_id)             : Quais deputados fizeram parte da Mesa Diretora em uma legislatura
+                   situacoesDeputado()                    : As possíveis situações de exercício parlamentar de um deputado
+                   eventos()                              : Lista de eventos ocorridos ou previstos nos diversos órgãos da Câmara
+                   evento_id(evento_id)                   : Informações detalhadas sobre um evento específico
+                   evento_deputados(evento_id)            : Os deputados participantes de um evento específico
+                   evento_pauta(evento_id)                : Lista de proposições que foram ou deverão ser avaliadas em um evento de caráter deliberativo
+                   partidos()                             : Os partidos políticos que têm ou já tiveram parlamentares em exercício na Câmara
+                   partido_id(partido_id)                 : Informações detalhadas sobre um partido
+                   orgaos()                               : A lista das comissões e outros órgãos legislativos da Câmara
+                   orgaos_id(orgao_id)                    : Informações detalhadas sobre um órgão legislativo
+                   orgaos_eventos(orgao_id)               : Informações detalhadas sobre um órgão legislativo
+                   orgaos_membros(orgao_id)               : Informações detalhadas sobre um órgão legislativo 
+                   proposicoes()                          : Lista configurável de proposições na Câmara
+                   proposicoes_id(proposicao_id)          : Informações detalhadas sobre uma proposição específica
+                   proposicoes_autores(proposicao_id)     : Lista pessoas e/ou entidades autores de uma proposição
+                   proposicoes_relacionadas(proposicao_id): Uma lista de proposições relacionadas a uma em especial
+                   proposicoes_tramitacoes(proposicao_id) : O histórico de passos na tramitação de uma proposta
+                   proposicoes_votacoes(proposicao_id)    : As votações por quais uma proposição já passou
+                   referencias_situacoesEvento()          :  As possíveis situações para eventos
+                   referencias_tiposEvento()              : Os tipos de eventos realizados na Câmara
+                   legislaturas()                         : Os períodos de mandatos e atividades parlamentares da Câmara
+                   legislaturas(legislatura_id)           : Informações extras sobre uma determinada legislatura da Câmara
+                   legislaturas_mesa(legislatura_id)      : Quais deputados fizeram parte da Mesa Diretora em uma legislatura
+                   referencias_situacoesProposicao()      : Os possíveis estados de tramitação de uma proposição
+                   referencias_tiposProposicao()          : Os vários tipos de proposições existentes
+                   referencias_tiposTramitacao()          : Os vários tipos de tramitação existentes
+                   referencias_situacoesDeputado()        : As possíveis situações de exercício parlamentar de um deputado                   
+                   referencias_situacoesOrgao()           : As situações em que órgãos podem se encontrar
+                   referencias_tiposOrgao()               : Os tipos de órgãos que existem na Câmara
+                   referencias_uf()                       : Identificadores dos estados e do Distrito Federal 
                   """    
         return metodos
 # /proposicoes/{id}/votacoes

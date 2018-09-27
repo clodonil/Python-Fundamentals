@@ -48,26 +48,26 @@ Vamos utilizar os seguintes recursos da linguagem:
 
 ------
 
-1. **Listar os dados dos deputados (id, Nome, DNasc, email, estado, partido):**
+1. **Imprima a quantidade de deputadores retornados na consulta**
 
 > Codificação: [m2p1_lab1.py](code/m2p1_lab1.py)
 	 
-2. **Ordene a lista dos deputados por nome:**
+2. **Listar os dados dos deputados (id, Nome, DNasc, email, estado, partido):**
    
 > Codificação: [m2p1_lab2.py](code/m2p1_lab2.py)
 
-3. **Ordene a lista dos deputados por partido:**
+3. **Ordene a lista dos deputados por partido. Imprima o nome do deputado e o partido:**
     
 > Codificação: [m2p1_lab3.py](code/m2p1_lab3.py)
 
-4. **Ordene a lista dos deputados por idade:**
+4. **Lista as descrição e o valor das despesas de um deputado (pode ser qualquer um):**
 
 > Codificação: [m2p1_lab4.py](code/m2p1_lab4.py)
 	
-5. **Ordene a lista dos deputados por partidos:**
+5. **Lista os titulos em maiúsculo dos orgãos (comissão) do Congresso.:**
    
 > Codificação: [m2p1_lab5.py](code/m2p1_lab5.py)
-6. **Digite o id do deputado, e deve retornar o seus gastos:**
+6. **Lista os deputados que participam da comissão que tem o ID 5973:**
    
 > Codificação: [m2p1_lab6.py](code/m2p1_lab6.py)
 
