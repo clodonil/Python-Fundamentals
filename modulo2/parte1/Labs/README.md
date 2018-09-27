@@ -24,7 +24,7 @@ A biblioteca retorna os dados da API do site dados abertos.
 # importa a lib para conexão com o site Dados Abertos
 from  lib.scrapy_dadosAbertos import DadosAbertos
 # Inicia a class para obter os dados
-site_connect = DadosAberto()
+site_connect = DadosAbertos()
 # obtendo ajuda com os métodos disponíveis.
 print(site_connect.help())
 #Obtendo a lista de Deputados
