@@ -36,25 +36,24 @@ Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os cód
 
 4. **Mostre o nome dos 3 deputados com maiores gastos:**
 	
-5. **Mostre as informações da comissão sobre 'PEC57402':**
+5. **Mostre as informações formatadas da comissão sobre 'PEC57402':**
 
 > Questão 6 e 8 são para aprofundamento do conhecimento
 
 ```
 6. Mostre os gastos mais comum dos deputados:
 
-7. Quantos estados brasileiros estão abaixo da taxa de reposição populacional (2.10 filhos):
+7. Mostre os nomes dos 3 deputados que tiveram o menor gastos:
 
-8. Quantos habitantes moram no sudeste (São Paulo, Minas Gerais, Rio de Janeiro, Espírito Santo):
+8. Mostre os deputados que participam de mais comissão:
 ```
 
 > Questão 9 e 10 são desafios; só para os valentes, corajosos e fortes. Esqueça você não vai conseguir.
 
 ```
-9. Mostrar o nome, número de habitantes e taxa de fecundidade para as cidades brasileiras que estão 
-com taxa de homicídio acima de 60 por 100 Mil:
+9. Lista as proposições os dados do deputados que apresentou:
 
-10. Quantos habitantes brasileiros estão morando nas 50 cidades mais violentas do mundo:
+10. Lista as votações das proposições.:
 ```
 ***
 > By:
