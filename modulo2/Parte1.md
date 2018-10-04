@@ -853,7 +853,7 @@ No link abaixo temos o laboratório dirigido, faça o laboratório para prática
 
 ## 4 Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
-> [Lista de Exercício](parte1/exercicios)
+> [Lista de Exercício](parte1/Exercicios)
 
 ***
 > By:
