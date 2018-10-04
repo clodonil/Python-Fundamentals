@@ -51,9 +51,9 @@ Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os cód
 > Questão 9 e 10 são desafios; só para os valentes, corajosos e fortes. Esqueça você não vai conseguir.
 
 ```
-9. Lista as proposições os dados do deputados que apresentou:
+9. Lista as proposições (projetos)  e os dados do deputados que apresentou:
 
-10. Lista as votações das proposições.:
+10. Lista as votações das proposições (projetos):
 ```
 ***
 > By:
