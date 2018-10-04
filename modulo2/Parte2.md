@@ -2,7 +2,7 @@ __Python Fundamentals__ - Módulo 2 (Parte 2)
  ====================== 
  
 ## Objetivo
-Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve ter a capacidade de desenvolver pequenos programas.
+Apresentar os conceitos de Orientação a Objeto e desenvolver código utilizando essa métodologia.
 
 ## Conteúdo:
 > 5. [Classes](#p1)
