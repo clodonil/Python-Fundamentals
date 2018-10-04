@@ -28,7 +28,7 @@ Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os cód
 
 > Questão de 1-5 serão consideradas para nota
 
-1. **Listar os nomes em maúsculo dos deputados que tenham mais de 50 anos de idade:**
+1. **Listar os nomes em maiúscula dos deputados que tenham mais de 50 anos de idade:**
 
 2. **Listar as deputadas:**
    
