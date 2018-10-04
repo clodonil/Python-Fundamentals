@@ -51,9 +51,9 @@ Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os cód
 > Questão 9 e 10 são desafios; só para os valentes, corajosos e fortes. Esqueça você não vai conseguir.
 
 ```
-9. Lista as proposições (projetos)  e os dados do deputados que apresentou:
+9. Mostre todos os votos (a favor ou contra) de um deputado e a descrição dos projetos:
 
-10. Lista as votações das proposições (projetos):
+10. Apresente todos os projetos para um usuário e solicite a votaçao para cada projeto. Verifique qual deputado votou mais semestre ao usuário.
 ```
 ***
 > By:
