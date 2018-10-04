@@ -23,7 +23,7 @@ list_dep = site_connect.deputados()
 print(list_dep)
 
 ```
-Execute o ![demo](https://github.com/clodonil/Python-Fundamentals/blob/master/modulo2/parte1/Exercicios/code/demo.py) com o exemplo dos métodos implementados.
+Execute o [demo](https://github.com/clodonil/Python-Fundamentals/blob/master/modulo2/parte1/Exercicios/code/demo.py) com o exemplo dos métodos implementados.
 
 Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os códigos em Python.
 
