@@ -165,7 +165,7 @@ print(any(x))     # Retorna False
 
 **Exemplo:**
 ```pyton
-print(devmod(10,2)
+print(divmod(10,2)
 ```
 
 * id
