@@ -14,7 +14,7 @@ A biblioteca retorna os dados da API do site dados abertos.
 # importa a lib para conexão com o site Dados Abertos
 from  lib.scrapy_dadosAbertos import DadosAbertos
 # Inicia a class para obter os dados
-site_connect = DadosAberto()
+site_connect = DadosAbertos()
 # obtendo ajuda com os métodos disponíveis.
 print(site_connect.help())
 #Obtendo a lista de Deputados
@@ -23,12 +23,13 @@ list_dep = site_connect.deputados()
 print(list_dep)
 
 ```
+Execute o [demo](https://github.com/clodonil/Python-Fundamentals/blob/master/modulo2/parte1/Exercicios/code/demo.py) com o exemplo dos métodos implementados.
 
 Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os códigos em Python.
 
 > Questão de 1-5 serão consideradas para nota
 
-1. **Listar os nomes em maúsculo dos deputados que tenham mais de 50 anos de idade:**
+1. **Listar os nomes em maiúscula dos deputados que tenham mais de 50 anos de idade:**
 
 2. **Listar as deputadas:**
    
@@ -51,9 +52,9 @@ Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os cód
 > Questão 9 e 10 são desafios; só para os valentes, corajosos e fortes. Esqueça você não vai conseguir.
 
 ```
-9. Lista as proposições os dados do deputados que apresentou:
+9. Mostre todos os votos (a favor ou contra) de um deputado e a descrição dos projetos:
 
-10. Lista as votações das proposições.:
+10. Apresente todos os projetos para um usuário e solicite a votaçao para cada projeto. Verifique qual deputado votou mais semestre ao usuário.
 ```
 ***
 > By:
