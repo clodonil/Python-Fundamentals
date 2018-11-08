@@ -1,17 +1,12 @@
    
 ### Módulo 3
-   - Date e Time
-   - Trabalhando com arquivos
-   -  Pip
-   - JSON e CSV
-   - Banco de dados;
-   - Modulos e Package;
 
- __Python Fundamentals__ - Módulo 1
+
+ __Python Fundamentals__ - Módulo 3
  ====================== 
  
 ## Objetivo
-Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve ter a capacidade de desenvolver pequenos programas.
+Neste módulo vamos desenvolver habilidade de persistir os dados tanto por aquivos como banco de dados.
 
 ## Conteúdo:
 > 1. [Date e Time](#1-date-e-time)
@@ -81,7 +76,7 @@ Também podemos converter uma string em `datetime`.
 
 from datetime import datetime
 
-data_e_hora_em_texto = ‘01/03/2018 12:30’
+data_e_hora_em_texto = '01/03/2018 12:30'
 data_e_hora = datetime.strptime(data_em_texto, ‘%d/%m/%Y %H:%M’)
 
 ```
