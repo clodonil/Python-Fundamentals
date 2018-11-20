@@ -327,14 +327,8 @@ Algumas bibliotecas interessantes:
 | Theano | Com os modelos da biblioteca Theano, é possível processar grandes volumes de dados — em teras ou petabytes — em alta velocidade, usando a chamada data-intensive computing. |
 | TensorFlow | Desenvolvida pelo Google, TensorFlow é uma sucessora do DistBelief e usada para treinar redes neurais. Com sistemas de nós, a TensorFlow permite que se configure rapidamente várias camadas de dados, visando o treinamento e a implantação de redes neurais artificiais.Com essa biblioteca, o Google consegue identificar detalhes em fotos e entender palavras específicas em áudios nos aplicativos de reconhecimento de voz. |
 | Scrapy | A Scrapy é usada na criação de bots que fazem o rastreamento sistemático da web e a extração de dados estruturados. São capazes também de colher dados também de APIs.As aplicações da Scrapy são variadas e vão de testes automatizados e monitoramento até mineração de dados e aprendizado de máquina. |
-| NLTK | A NLTK um conjunto de bibliotecas projetado para processamento de linguagem natural. Entre suas funções básicas estão a marcação de textos, a identificação de entidades e a exibição de árvores de análise sintática.
-
-É útil para demandas de análise de sentimento do público-alvo e para resumos esquemáticos e mapas mentais.
-
-
-| NetworkX | Permite a criação e a análise de gráficos e dados em rede, contemplando formatos de dados padronizados e não estruturados.
-
-Isso torna a biblioteca NetworkX eficiente e escalável, especialmente quando a demanda está relacionada à análise de volumes de dados grandes e complexos, como os oriundos de redes sociais.|
+| NLTK | A NLTK um conjunto de bibliotecas projetado para processamento de linguagem natural. Entre suas funções básicas estão a marcação de textos, a identificação de entidades e a exibição de árvores de análise sintática. É útil para demandas de análise de sentimento do público-alvo e para resumos esquemáticos e mapas mentais.|
+| NetworkX | Permite a criação e a análise de gráficos e dados em rede, contemplando formatos de dados padronizados e não estruturados. Isso torna a biblioteca NetworkX eficiente e escalável, especialmente quando a demanda está relacionada à análise de volumes de dados grandes e complexos, como os oriundos de redes sociais.|
 | Selenium | Embora bastante conhecido para testes automatizados no navegador, o Selenium também pode ser usado como uma ferramenta de raspagem. Eu prometo a você, ele é muito bom. Com métodos para encontrar elementos via ids, nome, classe etc., o Selenium permitirá que você obtenha qualquer coisa do site.
 | BeautifulSoup | é outro belo módulo Python que ajuda na raspagem dos dados necessários a partir de html/xmls via tags. Com ele, você pode raspar quase tudo, porque ele oferece métodos diferentes, como pesquisa de tags, encontrar todos os links etc.|
 | Mechanize | Biblioteca que permite a criação de uma instância do navegador. Ele também mantém sessões que auxiliam como um toolkit para obter tarefas como login, automação de inscrição etc.|
