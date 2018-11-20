@@ -18,16 +18,18 @@ Neste módulo vamos desenvolver habilidade de persistir os dados tanto por aquiv
 > 7. [Lista de Exercício](#11-lista-de-exercício)
 
 ## 1 Date e Time
+Um dos recursos frequentemente utilizado no dia-a-dia e também no desenvolvimento de software, é a manipulação de datas.
+
 Para manipulação de data e hora, vamos um módulo interno do Python `datetime`. Com esse módulo podemos de forma simples manipular dados relacionando a data e hora.
 
+O exemplo abaixo, retorno a data atual do sistema.
 
 ```python
 import datetime
 now = datetime.datetime.now()
-print(now)
-
+print(now)  #2018-11-20 01:27:10.903625
 ```
-Para imprimir uma data, podemos utilizar um atributo `strftime`.
+Para formatar a impressão da data com as informações necessárias, podemos utilizar o método `strftime`.
 
 ```python
 import datetime
@@ -36,6 +38,7 @@ now = datetime.datetime.now())
 print(now.strftime("%d/%m/%y")) # (07/11/18)
 
 ```
+Com o método strtime, podemos formatar uma data com as informações que precisamos. 																													
 Os parâmetros que podemos utilizar no strftime são:
 
 |Parâmetros |	Descriçao	|Exemplo|
@@ -80,11 +83,54 @@ data_e_hora_em_texto = '01/03/2018 12:30'
 data_e_hora = datetime.strptime(data_em_texto, ‘%d/%m/%Y %H:%M’)
 
 ```
+
+Além da formatação de datas, podemos realizar as operações básicas tais como "maior (>)", "menor (<)","igual (=)". Também somar, subtrair. 
+
+Um exemplo dessas operações:
+
+```python
+import datetime
+#data atual
+now = datetime.datetime.now()
+# data nascimento
+nasc = datetime.datetime.strptime('01/03/2018 12:30', '%d/%m/%Y %H:%M')
+print ( now - nasc)  # 263 days, 13:30:19.341628 
+print ( now > nasc)  # True
+```
+### Timedelta
+
+A classe timedelta também é bastante útil na manipulação das datas. Com ela podemos movimentar as datas em semanas (`weeks`), dias (`days`), horas (`hours`), minutos (`minutes`) ou segundos (`seconds`).
+
+**Exemplo1:**
+
+Vamos somar duas semanas em um data especifica.
+
+```python
+import datetime
+data = datetime.datetime.strptime('01/03/2018 12:30', '%d/%m/%Y %H:%M')
+print(data)
+data += datetime.timedelta(weeks=2)
+print(data)
+```
+
+**Exemplo2:**
+
+Vamos subtrair 100 dias de um data especifica.
+
+```python
+import datetime
+data = datetime.datetime.strptime('01/03/2018 12:30', '%d/%m/%Y %H:%M')
+print(data)
+data -= datetime.timedelta(days=2)
+print(data)
+```
+
+
 ## 2 Trabalhando com Arquivos
 Podemos tornar os nossos programas muito mais interessante quando podemos gravar e ler conteúdo de arquivos.
 No Python podemos utilizar a função `open()` para ler o conteúdo de um arquivo e também para escrever nesse arquivo.
 
-Para o código abaixo, crie um arquivo chamado `file.txt` e escreva um conteúdo.
+Para o código abaixo, crie um arquivo chamado `file.txt` e escreva um conteúdo. O programa vai ler o conteudo do arquivo e imprimir na tela.
 
 ```python
 #abrir o arquivo
@@ -98,14 +144,15 @@ print(conteudo)
 
 ```
 Nesse caso o arquivo `file.txt` está no mesmo diretório do código em python, caso esteja em outro diretório é necessário colocar o diretório completo.
+
 A função `open()` tem a seguinte sintaxe:
 
 * open("filename", "mode"): O filename é o nome do arquivo que será tratado e o mode, é a forma que vamos trabalhar com o arquivo. 
 
-* 'r' - Abre o arquivo apenas para leitura; 
-* 'w' - Cria o arquivo para escrita, se o arquivo existir um arquivo com o mesmo nome, será deletado. 
-* 'a' - Abre o arquivo para escrita e adiciona o conteúdo no final do arquivo. 
-* 'r+' - Modo especial de leitura e gravação, usado para lidar com as duas ações ao trabalhar com um arquivo.
+** 'r' - Abre o arquivo apenas para leitura; 
+** 'w' - Cria o arquivo para escrita, se o arquivo existir um arquivo com o mesmo nome, será deletado. 
+** 'a' - Abre o arquivo para escrita e adiciona o conteúdo no final do arquivo. 
+** 'r+' - Modo especial de leitura e gravação, usado para lidar com as duas ações ao trabalhar com um arquivo.
 
 Se nenhuma opção for declarado no mode, por padrão vai ser `r`.
 
