@@ -172,9 +172,175 @@ fconf.write(linha)
 fconf.close()
 ```
 
-## 3 JSON e CSV
+## 3 JSON
 
-## 4 Banco de Dados
+O Python manipula dados em JSON (JavaScript Object Notation) através da biblioteca interna `json`. Com ela podemos realizar as principais tarefas.
+
+Nesse  primeiro exemplo, vamos transformar um json que está na string `json_string` para dicionário e assim acessar os dados. O método `loads` transforma o json em dicionário de dados.
+
+```python
+import json
+json_string = '{"first_name": "Guido", "last_name":"Rossum"}'
+
+parsed_json = json.loads(json_string)
+
+print(parsed_json['first_name'])
+```
+
+No próximo exemplo vamos utilizar a função `dumps` para transformar um dicionário em json.
+
+```python
+import json
+dados = {
+          "nome" : "Jose",
+		  "end"  : "rua de  baixo",
+		  "idade": "40"
+        }
+json_dados = dados.dumps(dados)
+print(json_dados)
+```
+Principais funções da classe json são:
+
+* loads: Transforma um json em dicionário
+* dumps: Transforma um dicionário no formato JSON
+
+Uma combinação bastante utilizada e interessante é obter dados de API em JSON e manipular esse dados. No exemplo a seguir, utilizando a biblioteca `requests` para acessar os dados da API e assim transformar os dados em dicionários.
+
+```python
+import json
+import requests
+
+response = requests.get("https://jsonplaceholder.typicode.com/todos")
+todos = json.loads(response.text)
+
+print(todos)
+```
+
+Também é possível escrever o JSON em um arquivo e também ler o JSON de um arquivo. O processo é semelhante a ler um arquivo texto comum.
+
+Um exemplo para escrever o arquivo JSON em um arquivo.
+
+```python
+import json
+
+dados = { 'nome': 'jose',
+          'cidade': 'SP',
+		  'partido': 'NOVO'
+		  }
+
+j_file = open('filename.json','w')
+j_file.write(json.dumps(dados))
+j_file.close()
+```
+Agora será utilizado o mesmo arquivo JSON para ler o conteúdoe realizar a transformação para dicionário.
+
+```python
+import json
+
+j_file = open('filename.json','r')
+raw = j_file.read()
+j_file.close()
+
+dados =  json.loads(raw)
+
+print(dados['nome'])
+print(dados)
+```
+## 4 CSV
+Outra forma bastante comum para armazenar os dados os dados de forma estruturada é utilizando arquivos CSV (Comma Separated Values). 
+
+A utilização do CSV é interessante porque programas exportão dados nessa estrutura e os dados também podem ser gerados pelas planilhas eletrônicas.
+
+Como exemplo, vamos criar um arquivo CSV manualmente. Salve com o nome arquivo.csv. 
+
+```csv
+id;nome;idade;partido
+1;jose;90;PT
+2;maria;18;PSDB
+3;carlos;20;NOVO
+```
+Perceba que o arquivo CSV utiliza um delimitador para separar os dados, no exemplo o delimitador utilizado é o ";".
+
+Para manipulação de dados em CSV, vamos utilizar a biblioteca  `csv`. Primeiramente vamos lêr os dados do arquivo e transformar em uma lista.
+
+O método `csv.reader` faz todo o trabalho que é ler o arquivo e transformar em uma lista que python facilmente consegue tratar.
+
+```python
+import csv
+csvfile = open('arquivo.csv')
+spamreader = csv.reader(csvfile, delimiter=';')
+
+for item in spamreader:
+  print(item)
+```
+Também podemos salvar os dados em um arquivo CSV. Nesse próximo exemplo tem uma lista chamado `dados` que contém as linhas com os valores que serão gravados no arquivo.
+
+O método `csv.write` abre o arquivo para escrita e define o delimitador. Já o `writerow` salva os dados de uma linha.
+
+```python
+import csv
+csvfile = open('eggs.csv', 'w') 
+writer = csv.writer(csvfile, delimiter=';')
+
+dados = [
+           ['nome','idade','UF'],
+           ['Maria','19','SP'],
+           ['Jose','40','RJ'],
+           ['Pedro','21','MG'],
+        ]
+for linha in dados:    
+    writer.writerow(linha)
+
+csvfile.close()
+```
+
+## 5 Packages
+
+Até esse momento temos utilizado as bibliotecas internas do Python, mas existe um infinidades de outras bibliotecas que pode ser utilizado para auxiliar no desenvolvimento.
+
+As bibliotecas externas podem ser instaladas facilmente utilizando o aplicativo `pip`.
+
+As principais funções do `pip` são:
+
+|  Commando   | descrição |
+|-------------|-----------|
+|  install    |  Instalação de pacotes. |
+|  download   |  Download de pacotes. |
+|  uninstall  |  Desinstalação de pacotes. |
+|  freeze     |  Gera um arquivo `requirements` com os pacotes instalados. |
+|  list       |  Lista todos os pacotes instalados. |
+|  show       |  Mostra informação sobre um pacote instalado. |
+|  check      |  Verify installed packages have compatible dependencies. |
+|  search     |  Procura no PyPI por um pacote. |
+|  help       |  Mostra ajuda. |
+
+O `pip`utiliza o site `https://pypi.org/` como repositório para instalação dos pacotes.
+
+Um exemplo da utilização 
+
+
+Algumas bibliotecas interessantes:
+
+| Nome | Descrição|
+|------|----------|
+| scikit-learn | Biblioteca adiciona um conjunto de algoritmos apropriados para executar tarefas de aprendizado de máquina, como agrupamento de dados, regressão e classificação.|
+| Theano | Com os modelos da biblioteca Theano, é possível processar grandes volumes de dados — em teras ou petabytes — em alta velocidade, usando a chamada data-intensive computing. |
+| TensorFlow | Desenvolvida pelo Google, TensorFlow é uma sucessora do DistBelief e usada para treinar redes neurais. Com sistemas de nós, a TensorFlow permite que se configure rapidamente várias camadas de dados, visando o treinamento e a implantação de redes neurais artificiais.Com essa biblioteca, o Google consegue identificar detalhes em fotos e entender palavras específicas em áudios nos aplicativos de reconhecimento de voz. |
+| Scrapy | A Scrapy é usada na criação de bots que fazem o rastreamento sistemático da web e a extração de dados estruturados. São capazes também de colher dados também de APIs.As aplicações da Scrapy são variadas e vão de testes automatizados e monitoramento até mineração de dados e aprendizado de máquina. |
+| NLTK | A NLTK um conjunto de bibliotecas projetado para processamento de linguagem natural. Entre suas funções básicas estão a marcação de textos, a identificação de entidades e a exibição de árvores de análise sintática.
+
+É útil para demandas de análise de sentimento do público-alvo e para resumos esquemáticos e mapas mentais.
+
+
+| NetworkX | Permite a criação e a análise de gráficos e dados em rede, contemplando formatos de dados padronizados e não estruturados.
+
+Isso torna a biblioteca NetworkX eficiente e escalável, especialmente quando a demanda está relacionada à análise de volumes de dados grandes e complexos, como os oriundos de redes sociais.|
+| Selenium | Embora bastante conhecido para testes automatizados no navegador, o Selenium também pode ser usado como uma ferramenta de raspagem. Eu prometo a você, ele é muito bom. Com métodos para encontrar elementos via ids, nome, classe etc., o Selenium permitirá que você obtenha qualquer coisa do site.
+| BeautifulSoup | é outro belo módulo Python que ajuda na raspagem dos dados necessários a partir de html/xmls via tags. Com ele, você pode raspar quase tudo, porque ele oferece métodos diferentes, como pesquisa de tags, encontrar todos os links etc.|
+| Mechanize | Biblioteca que permite a criação de uma instância do navegador. Ele também mantém sessões que auxiliam como um toolkit para obter tarefas como login, automação de inscrição etc.|
+| PyGames | Bibliotecas para desenvolvimento de jogos |
+| Plotly | Biblioteca para gerar gráficos |
+## 6 Banco de Dados
 
 ```python
 from sqlalchemy import create_engine, Column, String, Integer
@@ -197,8 +363,6 @@ session.commit()
 p = session.query(PollList).filter(PollList.id == None)
 print(type(p)) 
 ```
-
-## 5 Modulos e Package
 
 ## 6 Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para praticar os conhecimentos apreendidos
