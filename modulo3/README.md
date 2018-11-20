@@ -149,10 +149,12 @@ A função `open()` tem a seguinte sintaxe:
 
 * open("filename", "mode"): O filename é o nome do arquivo que será tratado e o mode, é a forma que vamos trabalhar com o arquivo. 
 
-** 'r' - Abre o arquivo apenas para leitura; 
-** 'w' - Cria o arquivo para escrita, se o arquivo existir um arquivo com o mesmo nome, será deletado. 
-** 'a' - Abre o arquivo para escrita e adiciona o conteúdo no final do arquivo. 
-** 'r+' - Modo especial de leitura e gravação, usado para lidar com as duas ações ao trabalhar com um arquivo.
+| mode | descrição |
+|------|-----------|
+| 'r' | Abre o arquivo apenas para leitura; |
+| 'w' | Cria o arquivo para escrita, se o arquivo existir um arquivo com o mesmo nome, será deletado.| 
+| 'a' | Abre o arquivo para escrita e adiciona o conteúdo no final do arquivo. |
+| 'r+' | Modo especial de leitura e gravação, usado para lidar com as duas ações ao trabalhar com um arquivo.|
 
 Se nenhuma opção for declarado no mode, por padrão vai ser `r`.
 
