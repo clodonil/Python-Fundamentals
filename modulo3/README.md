@@ -11,11 +11,12 @@ Neste módulo vamos desenvolver habilidade de persistir os dados tanto por aquiv
 ## Conteúdo:
 > 1. [Date e Time](#1-date-e-time)
 > 2. [Trabalhando com Arquivos](#2-trabalhando-com-Arquivos)
-> 3. [JSON e CSV](#3-JSON-CSV)
-> 4. [Banco de Dados](#4-Banco-de-Dados)
-> 5. [Modulos e Package](#6-Modulos-e-Package)
-> 6. [Laboratório](#10-laboratório)
-> 7. [Lista de Exercício](#11-lista-de-exercício)
+> 3. [JSON ](#3-JSON)
+> 4. [CSV](#4-CSV)
+> 5. [Packages](#5-Package)
+> 6. [Banco de Dados](#4-Banco-de-Dados)
+> 7. [Laboratório](#10-laboratório)
+> 8. [Lista de Exercício](#11-lista-de-exercício)
 
 ## 1 Date e Time
 Um dos recursos frequentemente utilizado no dia-a-dia e também no desenvolvimento de software, é a manipulação de datas.
@@ -334,35 +335,88 @@ Algumas bibliotecas interessantes:
 | Mechanize | Biblioteca que permite a criação de uma instância do navegador. Ele também mantém sessões que auxiliam como um toolkit para obter tarefas como login, automação de inscrição etc.|
 | PyGames | Bibliotecas para desenvolvimento de jogos |
 | Plotly | Biblioteca para gerar gráficos |
+
 ## 6 Banco de Dados
 
-```python
-from sqlalchemy import create_engine, Column, String, Integer
-from sqlalchemy.orm import mapper, sessionmaker
-from sqlalchemy.ext.declarative import declarative_base
+Para finalizar esse módulo será apresentado a biblioteca `sqlalchemy`. Essa biblioteca é muito interessante porque transforma a estrutura de banco de dados em código.
 
-engine = create_engine('sqlite:///data.db')
-Base = declarative_base(engine)
-metadata = Base.metadata
-Session = sessionmaker(bind=engine)
-session = Session()
+`SQLAlchemy` é um SQL toolkit ORM (Object Relational Mapper), ela abstrae as funções que são executadas em um banco de dados.
 
-class User(Base):
-	__tablename__ = "users"
-	id = Column(Integer, primary_key=True)
-	nome = Column(String(255), nullable=False)
-	idade = Column(Integer, nullable=False)
-Base.metadata.create_all(bind=engine)
-session.commit()
-p = session.query(PollList).filter(PollList.id == None)
-print(type(p)) 
+Muitos banco de dados são suportados, alguns deles são:
+  * SQLite
+  * Postgresql
+  * MySQL
+  * Oracle
+  * MS-SQL
+  * Firebird
+  * Sybase
+  * Muitos outros.
+
+Para utilizar o `SQLAlchemy` precisamos instalar a biblioteca:
+
+```bash
+pip install SQLAlchemy
 ```
 
-## 6 Laboratório
-No link abaixo temos o laboratório dirigido, faça o laboratório para praticar os conhecimentos apreendidos
-> [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
+Com a biblioteca instalado, vamos criar um banco de dados e realizar as operações básicas utilizado CRUD.
 
-## 7 Lista de Exercício
+```python
+import os
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+  
+Base = declarative_base()
+ 
+class User(Base):
+    __tablename__ = 'users'
+    id = Column(Integer, primary_key=True)
+    nome   = Column(String(250), nullable=False)
+    idade  = Column(String(250), nullable=False)
+    cidade = Column(String(250), nullable=False)
+
+banco = "banco_de_dado.db"
+engine = create_engine("sqlite:///{0}".format(banco)) 
+
+if not os.path.exists(banco):   
+   Base.metadata.create_all(engine)
+
+#Base.metadata.bind = engine
+DBSession = sessionmaker(bind=engine)
+session = DBSession()
+ 
+# Adicionando um novo registro
+new_person = User(nome='clodonil',idade='10',cidade='SP')
+session.add(new_person)
+session.commit()
+ 
+# Lista todos
+def lista_todos(): 
+    for user in session.query(User).all():
+        print(user.name, user.idade, user.cidade)
+
+# Pesquisar por um elemento espeficio
+user1 = session.query(User).filter(User.name == 'clodonil').first()
+
+lista_todos()
+#Alterar um Registro
+user1.name = "jose"
+user1.idade = "20"
+session.commit()
+lista_todos()
+
+# Delete 
+user1 = session.query(User).filter(User.name == 'clodonil').first()
+session.delete(user1)
+session.commit()
+```
+
+## 7 Laboratório
+No link abaixo temos o laboratório dirigido, faça o laboratório para praticar os conhecimentos apreendidos
+> [Laboratório](/Labs/README.md)
+
+## 8 Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercícios:
 > [Lista de Exercícios](exercicios/README.md)
 
