@@ -414,7 +414,7 @@ session.commit()
 
 ## 7 Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para praticar os conhecimentos apreendidos
-> [Laboratório](/Labs/README.md)
+> [Laboratório](Labs/README.md)
 
 ## 8 Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercícios:
