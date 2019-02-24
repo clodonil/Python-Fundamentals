@@ -29,7 +29,7 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 ## 1 História
 No Brasil em 1989, Collor de Melo vencia a primeira eleição direta, na Alemanha caia o muro de Belim e na Holanda o Guido Van Rossum criava a linguagem Python.
 
-A história da linguagem é fantástica e seu aprendizado vai se tornar mais divertido após tomar conhecimento de alguns eventos que aconteceram durante a época de sua criação.
+A história da linguagem é fantástica e seu aprendizado vai tornar-se mais divertido após conhecer alguns eventos que aconteceram durante a época de sua criação.
 
 Não vou escrever sobre a história do Python pois já há muita coisa boa escrita, segue alguns links que vale a pena ler:
 
@@ -192,20 +192,20 @@ Podemos estrutura os dados em Python com variáveis em do tipo:
 String é uma sequência de caracteres Unicode. Para representar uma string pode ser utilizado aspas simples e aspa duplas.
 Exemplo:
  ```python
-texto="Às vezes você tem que se levantar sozinho e seguir em frente"
+texto="As vezes você tem que se levantar sozinho e seguir em frente"
 ```
 Para declarar múltiplas linhas utilize 3 aspas simples.
 Exemplo:
    ```python
 texto='''
-     Tudo é possível. 
+     Tudo e possível. 
      O impossível apenas demora mais
      '''
    ```
 Semelhante a lista e Tuplas, as strings também utilizam o operador [ ]. Dessa forma é possível obter apenas parte da string.
 Exemplo:
 ```python
-texto="Às vezes você tem que se levantar sozinho e seguir em frente" 
+texto="As vezes você tem que se levantar sozinho e seguir em frente" 
 # Recuperar o caractere da posição 5
 print(texto[6])   # Retorno "e"
    
@@ -244,7 +244,7 @@ Exemplo:
 ```python 
 lista=[10,60,'jose','45234234',50.9]
 # Mostrando a lista
-print("Conteúdo da lista, lista)
+print("Conteúdo da lista", lista)
 ```
 Nas listas podemos utilizar o operador [ ]. Dessa forma podemos obter um elemento especifico da lista ou mostrar um conjunto de elemento.
 
@@ -293,7 +293,7 @@ login = {"user": "jose","password":"okri"}
 print("Tipo", type(login))
 
 #Recuperando o valor
-print(login['user']
+print(login['user'])
 
 #Recuperando o valor
 print(login['password'])
@@ -362,8 +362,8 @@ Vamos começar pelos operadores matemáticos, igualmente as outras linguagens de
 |---------------|----------|
 | adição	       | +        |
 | subtração	    | -        |
-| multiplicação	| *        |
-| divisão	      | /        |
+| multiplicação	| /        |
+| divisão	      | *        |
 
 A utilização é bem simples.
 
