@@ -22,7 +22,7 @@ O curso tem carga horária de 40 horas
 
 Temos um grupo no whatsapp para tirar as suas dúvidas:
 
-![whatsapp](Imagens/whatsapp.jpeg)
+![whatsapp](Imagens/whatsapp.jpeg  =50x50)
 
 [click aqui](https://chat.whatsapp.com/Hk7ejb8anLULWmgOfMMFhB) para entrar no grupo
 
