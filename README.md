@@ -19,7 +19,9 @@ O curso tem carga horária de 40 horas
 * [Módulo 4](modulo4/README.md)
 * [Módulo 5](modulo5/README.md)
 
-***
+
+
+***https://chat.whatsapp.com/Hk7ejb8anLULWmgOfMMFhB
 > By:
 ```python
 Autor   = ['Clodonil Honorio Trigo','clodonil@nisled.org']

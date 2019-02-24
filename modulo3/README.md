@@ -14,9 +14,10 @@ Neste módulo vamos desenvolver habilidade de persistir os dados tanto por aquiv
 > 3. [JSON ](#3-JSON)
 > 4. [CSV](#4-CSV)
 > 5. [Packages](#5-Package)
-> 6. [Banco de Dados](#4-Banco-de-Dados)
-> 7. [Laboratório](#10-laboratório)
-> 8. [Lista de Exercício](#11-lista-de-exercício)
+> 6. [Test Unit](#6-Test)
+> 7. [Banco de Dados](#4-Banco-de-Dados)
+> 8. [Laboratório](#10-laboratório)
+> 9. [Lista de Exercício](#11-lista-de-exercício)
 
 ## 1 Date e Time
 Um dos recursos frequentemente utilizado no dia-a-dia e também no desenvolvimento de software, é a manipulação de datas.
