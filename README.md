@@ -20,8 +20,12 @@ O curso tem carga horária de 40 horas
 * [Módulo 5](modulo5/README.md)
 
 
+Temos um grupo no whatsapp para tirar as suas dúvidas:
 
-***https://chat.whatsapp.com/Hk7ejb8anLULWmgOfMMFhB
+![whatsapp.jpeg][imagens/whatsapp.jpeg]
+[click aqui](https://chat.whatsapp.com/Hk7ejb8anLULWmgOfMMFhB) para entrar no grupo
+
+
 > By:
 ```python
 Autor   = ['Clodonil Honorio Trigo','clodonil@nisled.org']
