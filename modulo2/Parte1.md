@@ -100,7 +100,7 @@ class Pessoa:
    nome="ze"
 funcionario = Pessoa()
 setattr(funcionario,'nome','pedro')
-print("O nome do funcionario: {0}".format(funcionario.name))
+print("O nome do funcionario: {0}".format(funcionario.nome))
 ```
 
 * all
