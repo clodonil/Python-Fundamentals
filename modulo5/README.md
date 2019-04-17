@@ -24,11 +24,11 @@ $ pip install Flask
 
 ```
 
- Agora podemos criar a nossa primeira aplicação que basicamente será um 'Hello Flask'.
+Agora podemos criar a nossa primeira aplicação que basicamente será um 'Hello Flask'.
 
 Apesar de simples, é super importante esse primeiro código porque valida que tudo está preparado para o desenvolvimento.
 
-```python {.line-numbers}
+```python
 from flask import Flask 
 app = Flask(__name__)
 
@@ -43,14 +43,24 @@ if __name__ == "__main__":
 
 Com pouco código, temos uma aplicação web rodando. Vamos entender as principais linhas desse código:
 
-1. Primeiramente importamos a classe do Flask. Uma instância dessa classe vamos utilizar em nossa aplicação;
-2. Criamos uma instância da Classe Flask. O primeiro argumento é o nome da aplicação  ou pacote.
+ 1. Primeiramente importamos a classe do `Flask`. Uma instância dessa classe vamos utilizar em nossa aplicação;
+
+ 2. Criamos uma instância da Classe Flask. O primeiro argumento é o nome da aplicação ou pacote;
+
+ 4. Criamos um `endpoint` ou `router` de acesso que nesse caso é "/";
+
+ 5. Criamos o métodos para processar o `router` "/";
+
+ 6. Retornamos para o navegador a string `Hello Flask!!!`;
+
+ 8. Verifica a classe `main`está sendo executada;
+
+ 9. Inicializamos aplicação com o IP e porta necessário. O `debug=True` permite criar debug no navegador; 
 
  
 
 ```
 
-Next we create an instance of this class. The first argument is the name of the application’s module or package. If you are using a single module (as in this example), you should use __name__ because depending on if it’s started as application or imported as module the name will be different ('__main__' versus the actual import name). This is needed so that Flask knows where to look for templates, static files, and so on. For more information have a look at the Flask documentation.
 
 ```
 
