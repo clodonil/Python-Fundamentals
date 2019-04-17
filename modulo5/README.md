@@ -26,7 +26,7 @@ $ pip install Flask
 
 Agora podemos criar a nossa primeira aplicação que basicamente será um 'Hello Flask'.
 
-Apesar de simples, é super importante esse primeiro código porque valida que tudo está preparado para o desenvolvimento.
+Apesar de simples, é super importante esse primeiro código [app1]() porque valida que tudo está preparado para o desenvolvimento.
 
 ```python
 from flask import Flask 
@@ -37,52 +37,94 @@ def hello():
     return "Hello Flask!!!"
  
 if __name__ == "__main__":
-   app.run(host='0.0.0.0', debug=True, port=8080)     
-
+   app.run(host='0.0.0.0', debug=True, port=8080)
 ```
-
 Com pouco código, temos uma aplicação web rodando. Vamos entender as principais linhas desse código:
 
  1. Primeiramente importamos a classe do `Flask`. Uma instância dessa classe vamos utilizar em nossa aplicação;
-
  2. Criamos uma instância da Classe Flask. O primeiro argumento é o nome da aplicação ou pacote;
-
- 4. Criamos um `endpoint` ou `router` de acesso que nesse caso é "/";
-
- 5. Criamos o métodos para processar o `router` "/";
-
+ 4. Criamos um *`endpoint`* ou *`router()`* de acesso que nesse caso é "/";
+ 5. Criamos o métodos para processar o *`router`*;
  6. Retornamos para o navegador a string `Hello Flask!!!`;
-
  8. Verifica a classe `main`está sendo executada;
-
- 9. Inicializamos aplicação com o IP e porta necessário. O `debug=True` permite criar debug no navegador; 
-
- 
-
-```
-
-
-```
-
- 
-
-3. Usamos *router()* para o FLask relacionar as URLs com as funções .
-
-5. Usamos o `app.run` para iniciar aplicação em um IP e porta especifica. Também é possível o modo debug se o programa estiver em desenvolvimento.
-
- 
-
- 
-
- 
-
-## Statics
-
- 
+ 9. Usamos o `app.run` para iniciar aplicação em um IP e porta especifica. Também é possível o modo debug se o programa estiver em desenvolvimento.
 
 ## Templates
 
+Gerar HTML de dentro do Python não é uma tarefa legal e natural, é na verdade, bastante trabalhoso, porque você precisa fazer o HTML escapar no return da função. Por causa disso, o Flask configura o mecanismo do template [Jinja2](http://jinja.pocoo.org/docs/2.10/) para você automaticamente.
+
+Para renderizar um template, você pode usar o método `render_template()`. Tudo o que você precisa fazer é fornecer o nome do template e as variáveis que deseja passar para o mecanismo de template como argumentos.
+
+Para utilizar um template, podemos utilizar 2 casos:
+
+1 Caso: Esse é o exemplo mais simples, temos aplicação em um único arquivo e os arquivos de template estão localizados no diretório templates no mesmo nível da aplicação. 
+
+```
+/application.py
+/templates
+    /hello.html
+```
+
+2 Caso: Esse exemplo é mais interessante porque trabalha com pacotes, sendo o arquivo `__init__.py` o principal para carregar os outros módulos.
+
+```
+/application
+    /__init__.py
+    /templates
+        /hello.html
+```
+
+Como exemplo, vamos utilizar o 1 caso. O [app2]() cria 2 rotas, sendo a primeira é uma rota para o "/" e a segunda é passado um parâmetro que é passado para o template. 
+
+```python
+from flask import Flask
+from flask import render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+@app.route("/<name>")
+def hello(name=None):
+    return render_template('hello.html', name=name)
  
+if __name__ == "__main__":
+   app.run(host='0.0.0.0', debug=True, port=8080)
+
+```
+O exemplo acima, `render_template`  chamada o arquivo `hello.html`, passando como parâmetro a variável `name`.
+O template em jinja2 recebe a variável e manipula a variável.
+
+```
+<!doctype html>
+<title>Hello from Flask</title>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
+```
+
+## Statics
+
+Aplicações web dinâmicas também precisam de arquivos estáticos. Normalmente, é de onde vêm os arquivos CSS e JavaScript. Idealmente, o seu servidor web é configurado para trabalhar com servidores de CDN ( Delivery Network - Rede de Distribuição de Conteúdo) atendê-los por você, mas durante o desenvolvimento,o Flask também pode fazer isso.
+Basta criar uma pasta chamada `static` no seu pacote ou ao lado do seu módulo e estará disponível em `/ static` no aplicativo.
+
+Para gerar URLs para arquivos estáticos, use o nome especial do terminal 'static':
+
+```python
+url_for ('static', filename = 'style.css')
+```
+O arquivo deve ser armazenado no sistema de arquivos como static/style.css.
+
+Em nosso exemplo, o [app3]() agora temos os arquivos estáticos.
+
+```
+/application.py
+/static
+    /style.css
+/templates
+    /hello.html
+```
 
 ## Debug Mode
 
@@ -98,18 +140,10 @@ Com pouco código, temos uma aplicação web rodando. Vamos entender as principa
 
 ## Logging
 
- 
-
 ```python
-
 app.logger.debug('A value for debugging')
-
 app.logger.warning('A warning occurred (%d apples)', 42)
-
 app.logger.error('An error occurred')
-
 ```
-
- 
 
 ## Database
