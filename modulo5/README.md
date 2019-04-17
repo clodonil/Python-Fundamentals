@@ -139,18 +139,12 @@ app.run(host='0.0.0.0', debug=True, port=8080)
 ```
 Durante a execução em modo `debug`, o console disponibiliza um `token`.
 
-![cmd](https://github.com/clodonil/Python-Fundamentals/raw/master/modulo5/img/debug.png)
+![cmd](https://github.com/clodonil/Python-Fundamentals/blob/master/Imagens/debug.png)
 
 Com o `token` deve ser utilizado no browser para depurar os erros.
 
-![browser](https://github.com/clodonil/Python-Fundamentals/blob/master/modulo5/img/browser.png)
+![browser](https://github.com/clodonil/Python-Fundamentals/blob/master/Imagens/browser.png)
  
-## Sessions
-
- 
-
- 
-
 ## Logging
 
 ```python
@@ -158,5 +152,7 @@ app.logger.debug('A value for debugging')
 app.logger.warning('A warning occurred (%d apples)', 42)
 app.logger.error('An error occurred')
 ```
+## Sessions
 
+ 
 ## Database
