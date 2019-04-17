@@ -1,5 +1,23 @@
-# Desenvolvimento WEB
+__Python Fundamentals__ - Módulo 5 - Desenvolvimento WEB
+ ====================== 
+ 
+## Objetivo
 
+Apresentar o `framework` para desenvolvimento web em Pytonn (`Flask`). 
+
+## Conteúdo:
+> 1.  [Flask](#1-Flask)
+> 2.  [Template](#2-Template)</br>
+> 3.  [Static](#3-Static)</br>
+> 4.  [Debug Mode](#4-Debug-Mode)</br>
+> 5.  [Logging](#5-Logging)</br>
+> 6.  [Sessions](#6-Sessions)</br>
+> 7.  [Database](#7-Database)</br>
+> 8.  [Aplicação de Exemplo](#8-Aplicação-de-Exemplo)</br>
+> 9. [Laboratório](#9-laboratório)
+> 10. [Lista de Exercício](#10-lista-de-exercício)
+
+## 1 Flask
 Python é bastante versátil, com um conjunto de framework para diferente funções. Entre esses framework em Python, podemos destacar os seguintes para desenvolvimento Web:
 
 * [Django](https://www.djangoproject.com/)
@@ -49,7 +67,7 @@ Com pouco código, temos uma aplicação web rodando. Vamos entender as principa
  8. Verifica a classe `main`está sendo executada;
  9. Usamos o `app.run` para iniciar aplicação em um IP e porta especifica. Também é possível o modo debug se o programa estiver em desenvolvimento.
 
-## Templates
+## 2 Templates
 
 Gerar HTML de dentro do Python não é uma tarefa legal e natural, é na verdade, bastante trabalhoso, porque você precisa fazer o HTML escapar no return da função. Por causa disso, o Flask configura o mecanismo do template [Jinja2](http://jinja.pocoo.org/docs/2.10/) para você automaticamente.
 
@@ -104,7 +122,7 @@ O template em jinja2 recebe a variável e manipula a variável.
 {% endif %}
 ```
 
-## Statics
+## 3 Statics
 
 Aplicações web dinâmicas também precisam de arquivos estáticos. Normalmente, é de onde vêm os arquivos CSS e JavaScript. Idealmente, o seu servidor web é configurado para trabalhar com servidores de CDN ( Delivery Network - Rede de Distribuição de Conteúdo) atendê-los por você, mas durante o desenvolvimento,o Flask também pode fazer isso.
 Basta criar uma pasta chamada `static` no seu pacote ou ao lado do seu módulo e estará disponível em `/ static` no aplicativo.
@@ -126,7 +144,7 @@ Em nosso exemplo, o [app3](https://github.com/clodonil/Python-Fundamentals/tree/
     /hello.html
 ```
 
-## Debug Mode
+## 4 Debug Mode
 
 Durante o desenvolvimento é bastante interessante habilitar o modo `debug` para encontrar erros e soluciona-lós de forma mais rápida.
 
@@ -145,14 +163,39 @@ Com o `token` deve ser utilizado no browser para depurar os erros.
 
 ![browser](https://github.com/clodonil/Python-Fundamentals/blob/master/Imagens/browser.png)
  
-## Logging
+## 5 Logging
+
+Muitas vezes durante é necessário o lancamento de marcação para `debug`, `warning` ou `error`.
+
+Para esses casos podemos utilizar em nossa aplicação a chamada `app.logger` conforme o exemplo abaixo.
 
 ```python
 app.logger.debug('A value for debugging')
 app.logger.warning('A warning occurred (%d apples)', 42)
 app.logger.error('An error occurred')
 ```
-## Sessions
+
+## 6 Sessions
 
  
-## Database
+## 7 Database
+
+## 8 Aplicação de Exemplo
+
+- [Jornada do Code em Dev ao Deploy em AWS](https://github.com/clodonil/apptask)
+
+## 9 Laboratório
+No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
+> [Laboratório](parte1/Labs)
+
+## 10 Lista de Exercício
+Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
+> [Lista de Exercício](parte1/Exercicios)
+
+***
+> By:
+```python
+Autor   = ['Clodonil Honorio Trigo','clodonil@nisled.org']
+linkdin = 'https://www.linkedin.com/in/clodonil-trigo-4155722a'
+Blog    = 'http://www.devops-sys.com.br'
+```
