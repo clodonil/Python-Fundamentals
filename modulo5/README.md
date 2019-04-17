@@ -1,4 +1,4 @@
-__Python Fundamentals__ - Módulo 5 - Desenvolvimento WEB
+__Python Fundamentals__ - Módulo 5
  ====================== 
  
 ## Objetivo
