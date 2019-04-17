@@ -13,9 +13,10 @@ Apresentar o `framework` para desenvolvimento web em Pytonn (`Flask`).
 > 5.  [Logging](#5-Logging)</br>
 > 6.  [Sessions](#6-Sessions)</br>
 > 7.  [Database](#7-Database)</br>
-> 8.  [Aplicação de Exemplo](#8-Aplicação-de-Exemplo)</br>
-> 9. [Laboratório](#9-laboratório)
-> 10. [Lista de Exercício](#10-lista-de-exercício)
+> 8.  [Blueprint](#8-Blueprint) </br>
+> 9.  [Aplicação de Exemplo](#8-Aplicação-de-Exemplo)</br>
+> 10. [Laboratório](#9-laboratório)
+> 11. [Lista de Exercício](#10-lista-de-exercício)
 
 ## 1 Flask
 Python é bastante versátil, com um conjunto de framework para diferente funções. Entre esses framework em Python, podemos destacar os seguintes para desenvolvimento Web:
@@ -180,17 +181,21 @@ app.logger.error('An error occurred')
  
 ## 7 Database
 
-## 8 Aplicação de Exemplo
+## 8 Blueprint
+
+## 9 Aplicação de Exemplo
+
+Para melhorar a compreensão do desenvolvimento web em Python, recomendo fazer o exercício abaixo. Nele é construído uma aplicação de cadastro de tarefas.
 
 - [Jornada do Code em Dev ao Deploy em AWS](https://github.com/clodonil/apptask)
 
-## 9 Laboratório
+## 10 Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
-> [Laboratório](parte1/Labs)
+> [Laboratório](Labs)
 
-## 10 Lista de Exercício
-Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
-> [Lista de Exercício](parte1/Exercicios)
+## 11 Lista de Exercício
+Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercício:
+> [Lista de Exercício](Exercicios)
 
 ***
 > By:
