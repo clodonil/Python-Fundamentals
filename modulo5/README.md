@@ -144,8 +144,6 @@ Durante a execução em modo `debug`, o console disponibiliza um `token`.
 Com o `token` deve ser utilizado no browser para depurar os erros.
 
 ![browser](https://github.com/clodonil/Python-Fundamentals/blob/master/Imagens/browser.png)
-![browse2](https://github.com/clodonil/Python-Fundamentals/blob/master/Imagens/dados_abertos1.png)
-
  
 ## Logging
 
