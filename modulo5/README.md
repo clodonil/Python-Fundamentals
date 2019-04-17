@@ -139,7 +139,7 @@ app.run(host='0.0.0.0', debug=True, port=8080)
 ```
 Durante a execução em modo `debug`, o console disponibiliza um `token`.
 
-![cmd](https://github.com/clodonil/Python-Fundamentals/tree/master/modulo5/img/debug.png)
+![cmd](https://github.com/clodonil/Python-Fundamentals/raw/master/modulo5/img/debug.png)
 
 Com o `token` deve ser utilizado no browser para depurar os erros.
 
