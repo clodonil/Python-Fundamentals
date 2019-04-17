@@ -28,7 +28,7 @@ $ pip install Flask
 
 Apesar de simples, é super importante esse primeiro código porque valida que tudo está preparado para o desenvolvimento.
 
-```python class:"LineNo"
+```python {.line-numbers}
 from flask import Flask 
 app = Flask(__name__)
 
