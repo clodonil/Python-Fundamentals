@@ -26,7 +26,7 @@ $ pip install Flask
 
 Agora podemos criar a nossa primeira aplicação que basicamente será um 'Hello Flask'.
 
-Apesar de simples, é super importante esse primeiro código [app1]() porque valida que tudo está preparado para o desenvolvimento.
+Apesar de simples, é super importante esse primeiro código [app1](https://github.com/clodonil/Python-Fundamentals/tree/master/modulo5/exemplos/app1) porque valida que tudo está preparado para o desenvolvimento.
 
 ```python
 from flask import Flask 
@@ -74,7 +74,7 @@ Para utilizar um template, podemos utilizar 2 casos:
         /hello.html
 ```
 
-Como exemplo, vamos utilizar o 1 caso. O [app2]() cria 2 rotas, sendo a primeira é uma rota para o "/" e a segunda é passado um parâmetro que é passado para o template. 
+Como exemplo, vamos utilizar o 1 caso. O [app2](https://github.com/clodonil/Python-Fundamentals/tree/master/modulo5/exemplos/app2) cria 2 rotas, sendo a primeira é uma rota para o "/" e a segunda é passado um parâmetro que é passado para o template. 
 
 ```python
 from flask import Flask
@@ -116,7 +116,7 @@ url_for ('static', filename = 'style.css')
 ```
 O arquivo deve ser armazenado no sistema de arquivos como static/style.css.
 
-Em nosso exemplo, o [app3]() agora temos os arquivos estáticos.
+Em nosso exemplo, o [app3](https://github.com/clodonil/Python-Fundamentals/tree/master/modulo5/exemplos/app3) agora temos os arquivos estáticos.
 
 ```
 /application.py
@@ -128,10 +128,23 @@ Em nosso exemplo, o [app3]() agora temos os arquivos estáticos.
 
 ## Debug Mode
 
- 
+Durante o desenvolvimento é bastante interessante habilitar o modo `debug` para encontrar erros e soluciona-lós de forma mais rápida.
 
- 
+Além de mostrar os erros de forma mais amigável, possibilita que os códigos salvos sejam automaticamente recarregado.
 
+Para habilitar o `debug` ative o `True` na inicialização da aplicação.
+
+```
+app.run(host='0.0.0.0', debug=True, port=8080)
+```
+Durante a execução em modo `debug`, o console disponibiliza um `token`.
+
+![cmd](https://github.com/clodonil/Python-Fundamentals/tree/master/modulo5/img/debug.png)
+
+Com o `token` deve ser utilizado no browser para depurar os erros.
+
+![browser](https://github.com/clodonil/Python-Fundamentals/tree/master/modulo5/img/browser.png)
+ 
 ## Sessions
 
  
