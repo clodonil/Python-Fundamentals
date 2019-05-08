@@ -133,6 +133,12 @@ Para gerar URLs para arquivos estáticos, use o nome especial do terminal 'stati
 ```python
 url_for ('static', filename = 'style.css')
 ```
+no exemplo do `hello.html`:
+
+```html
+ <link rel="stylesheet" media="screen" href="{{ url_for ('static', filename = 'style.css') }}"> 
+```
+
 O arquivo deve ser armazenado no sistema de arquivos como static/style.css.
 
 Em nosso exemplo, o [app3](https://github.com/clodonil/Python-Fundamentals/tree/master/modulo5/exemplos/app3) agora temos os arquivos estáticos.
