@@ -178,6 +178,74 @@ app.logger.error('An error occurred')
 
 ## 6 Sessions
 
+Ao contrário de um cookie, os dados da sessão são armazenados no servidor. Uma sessão de usuário é o intervalo de tempo em que um cliente efetua login em um servidor até efetua logout. Os dados, que precisam ser mantidos nessa sessão, são armazenados em um diretório temporário no servidor.
+
+Uma sessão com cada cliente recebe um ID de sessão. Os dados da sessão são armazenados em cima dos cookies e o servidor os registra criptograficamente. Para essa criptografia, um aplicativo Flask precisa de um `SECRET_KEY` definido.
+
+O objeto de sessão também é um objeto de dicionário que contém pares de valor-chave de variáveis de sessão e valores associados.
+
+Por exemplo, para definir uma variável de sessão "username", use a instrução:
+
+```
+session["username"] = "admin"
+```
+
+Para liberar uma variável de sessão, use o método pop ().
+
+```
+session.pop ('username', None)
+```
+A seguir, um exemplo [app5](exemplo/app5/app5.py) de utilização de sessão, durante o login de um usuário.
+
+O campo `app.secret_key` deve conter uma string complexa suficiente para servir de chave.
+Uma forma de gerar essa chave pode ser feito da seguinte forma:
+
+```python
+$ python -c 'import os; print(os.urandom(16))'
+b'i\x85%@Il,OB\x13@^6\xb2u{'
+```
+Nesse exemplo, as seguintes rotas são criadas:
+
+| Routa| Descrição |
+|------|-----------|
+| /    | Verifica através da sessão se o usuário está logado          |
+|/login| Formulário para login          |
+|/logout| Logout, limpa a sessao          |
+
+
+```python
+from flask import Flask, session, redirect, url_for, escape, request
+
+app = Flask(__name__)
+
+app.secret_key = b'i\x85%@Il,OB\x13@^6\xb2u{'
+
+@app.route('/')
+def index():
+    if 'username' in session:
+        return 'Usuario logado, %s' % escape(session['username'])
+    return 'Você não está logado'
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        session['username'] = request.form['username']
+        return redirect(url_for('index'))
+    return '''
+        <form method="post">
+            <p><input type=text name=username>
+            <p><input type=submit value=Login>
+        </form>
+    '''
+
+@app.route('/logout')
+def logout():
+    # remove the username from the session if it's there
+    session.pop('username', None)
+    return redirect(url_for('index'))
+```
+Apesar da sessão guardar chave/valor, não devemos aguardar muita informação porque alguns navegadores tem limite para o tamanho da sessão.
+
  
 ## 7 Database
 
