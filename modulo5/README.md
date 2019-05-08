@@ -12,8 +12,8 @@ Apresentar o `framework` para desenvolvimento web em Pytonn (`Flask`).
 > 4.  [Debug Mode](#4-Debug-Mode)</br>
 > 5.  [Logging](#5-Logging)</br>
 > 6.  [Sessions](#6-Sessions)</br>
-> 7.  [Database](#7-Database)</br>
-> 8.  [Blueprint](#8-Blueprint) </br>
+> 9.  [Blueprint](#8-Blueprint) </br>
+> 8.  [Database](#7-Database)</br>
 > 9.  [Aplicação de Exemplo](#8-Aplicação-de-Exemplo)</br>
 > 10. [Laboratório](#9-laboratório)
 > 11. [Lista de Exercício](#10-lista-de-exercício)
@@ -207,7 +207,7 @@ O campo `app.secret_key` deve conter uma string complexa suficiente para servir 
 Uma forma de gerar essa chave pode ser feito da seguinte forma:
 
 ```python
-$ python -c 'import os; print(os.urandom(16))'
+python -c 'import os; print(os.urandom(16))'
 b'i\x85%@Il,OB\x13@^6\xb2u{'
 ```
 Nesse exemplo, as seguintes rotas são criadas:
@@ -252,10 +252,155 @@ def logout():
 ```
 Apesar da sessão guardar chave/valor, não devemos aguardar muita informação porque alguns navegadores tem limite para o tamanho da sessão.
 
- 
-## 7 Database
 
-## 8 Blueprint
+## 7 Blueprint
+
+O Flask como já mencionado não tem um padrão definido para desenvolvimento. Até o momento temos desenvolvido exemplo simples, que normalmente são suportados em apenas um arquivo.
+Mas, no mundo real, pouquíssimos casos são aplicados nesse modelo. Normalmente desenvolvemos em módulos, separando o desenvolvimento em `features` e também em pequenos arquivos com finalidade especifica.
+
+Para esses casos, o Flask disponibiliza o `Blueprint`. Com ele podemos desenvolver em módulos.
+
+> Um módulo no python é um diretório com o arquivo __init__.py
+
+Vamos utilizar como exemplo uma aplicação que deve ter os seguintes módulos:
+
+- autenticacao
+- usuarios
+- produtos
+- venda
+
+Transpondo essa estrutura para o Flask, teremos os sequintes diretórios:
+
+```
+ / app.py
+   /authenticao/__init__.py
+   /usuario/__init__.py
+   /produto/__init__.py
+   /venda/__init__.py
+   /templates
+       /autenticacao/index.html
+       /usuario/index.html
+       /produto/index.html
+       /venda/index.html
+   /static
+       /js
+       /css
+```
+
+Antes do código em python, vamos entender como funciona essa estruturação.
+
+1. O `app.py` é o arquivo principal, nele que são orquestrada as chamadas do módulos;
+2. Cada diretório virá um módulo (autenticacao,usuario,produto,venda), e o código desse módulo está localizado no arquivo __init__.py.
+3. Utilizando o módelo MVC, os diretório dos módulos funciona como `controller` e o templates como `view`. 
+4. Os templates dos módulos ficam dentro do diretório template separado pelo nome do módulo.
+5. Os arquivos estáticos ficam dentro do diretório `static`;
+
+Agora que conhecemos a estrutura do projeto, vamos começar a entrar nos detalhes do desenvolvimento, começando pelo arquivo `app.py`.
+
+
+```
+from flask import Flask, Blueprint
+
+app = Flask(__name__)
+
+# Importando os módulos
+from autenticacao import auth
+from usuario    import user
+from produto    import product
+from venda      import ecommerce  
+
+
+# Registrando as rotas
+app.register_blueprint(auth, url_prefix='/auth')
+app.register_blueprint(user, url_prefix='/user')
+app.register_blueprint(product, url_prefix='/product')
+app.register_blueprint(venda, url_prefix='/ecommerce')
+
+
+if __name__ == "__main__":
+   app.run(host='0.0.0.0', debug=True, port=8080)
+
+```
+
+Os pontos importantes nesse arquivo são:
+
+- Instânciar a variável app com o objeto Flask `app=Flask(__name__)`
+- Importa os módulos `from autenticacao import auth`, o nome `auth` é o nome da rota definido dentro do módulos
+- Registrar o blueprint com uma rota definida `app.register_blueprint(auth, url_prefix='/auth')`
+
+Todo o código pode ser desenvolvido no módulo. Vamos utilizar como exemplo o módulo  `autenticacao`. Portanto dentro do arquivo `autenticacao/__init__.py` termos toda a regra de negócio desse módulo.
+
+Dentro do módulo precisa definir o nome do registro do blueprint, que deve ser o mesmo definido no arquivo `app.py` na linha `pp.register_blueprint(auth, url_prefix='/auth')`.
+
+```
+from flask import Flask,Blueprint, render_template
+
+# Registra o rota com o blueprint
+auth = Blueprint('auth',__name__)
+
+# Definie o nome da rotas para o módulo
+# Portanto para acessar esse módulo pode ser chamado da seguinte forma:
+# auth/ ou auth/index.html
+@auth.route('/')
+@auth.route('/index.html')
+def login():
+    return render_template('autenticacao/index.htm
+```
+
+Linhas importantes:
+
+- Registra o blueprint `auth = Blueprint('auth',__name__)`.
+- O nome do registro o blueprint deve ser o mesmo importado no arquivo app.py;
+- Define duas rotas para o módulo autenticacao;
+- Define o método para desenvolvimento `def login()`; 
+- Chama o template definido o diretório do módulo `return render_template('autenticacao/index.htm`
+
+E para finalizar temos o arquivo de template `autenticacao/index.html` com um formulário html, bastante simples.
+
+```
+<h1> Login</h1>
+
+<form>
+    <p>Login</p>
+    <p><input type=text name=username></p>
+    <p>Password</p>
+    <p><input type=password name=password></p>
+    <p><input type=submit value=Login>
+</form>
+```
+
+Os outros módulos seguem o mesma mecânica, e o código completo pode ser obtico [aqui](exemplos/app6/). 
+
+Muitos projetos utilizarm esse modelo de organização de código, entretanto existe outras formas, e o blueprint é flexível para permitir as mudança necessárias.
+
+Por exemplo, essa mesmo projeto poderia ser organizado dessa forma, sendo o módulo contendo todos os outros arquivos:
+
+```
+ / app.py
+   /authenticao/
+       __init__.py
+      /templates
+         /index.html
+   /usuario/
+      __init__.py
+      /templates
+         /index.html      
+   /produto/
+      __init__.py
+      /templates
+         /index.html      
+   /venda/
+      __init__.py
+      /templates
+         /index.html      
+   /static
+       /js
+       /css
+```
+
+
+## 8 Database
+
 
 ## 9 Aplicação de Exemplo
 
