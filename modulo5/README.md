@@ -406,7 +406,7 @@ Por exemplo, essa mesmo projeto poderia ser organizado dessa forma, sendo o mód
 
 Para melhorar a compreensão do desenvolvimento web em Python, recomendo fazer o exercício abaixo. Nele é construído uma aplicação de cadastro de tarefas.
 
-- [Jornada do Code em Dev ao Deploy em AWS](https://github.com/clodonil/apptask)
+- [Jornada do Code ao Deploy em AWS](https://github.com/clodonil/apptask)
 
 ## 10 Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
