@@ -12,10 +12,9 @@ Apresentar o `framework` para desenvolvimento web em Pytonn (`Flask`).
 > 4.  [Debug Mode](#4-Debug-Mode)</br>
 > 5.  [Logging](#5-Logging)</br>
 > 6.  [Sessions](#6-Sessions)</br>
-> 9.  [Blueprint](#8-Blueprint) </br>
-> 8.  [Database](#7-Database)</br>
-> 9.  [Aplicação de Exemplo](#8-Aplicação-de-Exemplo)</br>
-> 10. [Laboratório](#9-laboratório)
+> 7.  [Blueprint](#8-Blueprint) </br>
+> 8.  [Aplicação de Exemplo](#8-Aplicação-de-Exemplo)</br>
+> 9. [Laboratório](#9-laboratório)
 > 11. [Lista de Exercício](#10-lista-de-exercício)
 
 ## 1 Flask
@@ -397,9 +396,6 @@ Por exemplo, essa mesmo projeto poderia ser organizado dessa forma, sendo o mód
        /js
        /css
 ```
-
-
-## 8 Database
 
 
 ## 9 Aplicação de Exemplo
