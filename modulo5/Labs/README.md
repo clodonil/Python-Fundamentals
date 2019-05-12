@@ -52,7 +52,7 @@ Vamos utilizar os seguintes recursos da linguagem:
 - Adicione um link para voltar para a lista de deputados;
 
 
-3. **Construa uma aplicação WEB que mostra uma tabela com cadastro do deputado (Foto, Nome, Estado e Partido), adicione um link para mostrar os gastos mensais do deputado; **
+3. **Construa uma aplicação WEB que mostra uma tabela com cadastro do deputado (Foto, Nome, Estado e Partido), adicione um link para mostrar os gastos mensais do deputado;**
 
 <img src="code/img/lab3.png"  width="200" height="200">
     
