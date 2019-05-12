@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                color: blue;
+                font-family: verdana;
+                font-size: 300%;
+            }
+            table {
+              width:70%;
+            }
+            table, th, td {
+               border: 1px solid black;
+               border-collapse: collapse;
+            }
+            th, td {
+                padding: 15px;
+                text-align: left;
+            }
+            table#t01 tr:nth-child(even) {
+                background-color: #eee;
+            }
+            table#t01 tr:nth-child(odd) {
+               background-color: #fff;
+            }
+            table#t01 th {
+              background-color: black;
+              color: white;
+            }        
+         </style>    
+    </head>        
+
+<h1> Lista de Deputados </h1>
+
+
+<table> 
+    <tr>
+        <th>Foto</th>
+        <th>Nome</th>
+        <th>Estado</th>
+        <th>Partido</th>
+    </tr>
+{% for lista in listas %}
+    <tr>
+       <td><img src={{ lista['urlFoto']}} width="50px" height="50px"/></td>
+       <td>{{ lista['nome']        }}</td>
+       <td>{{ lista['siglaUf']     }}</td>
+       <td>{{ lista['siglaPartido']}}</td>
+    </tr>
+    
+{% endfor %}
+</table>
+</html>
