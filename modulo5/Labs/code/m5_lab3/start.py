@@ -22,7 +22,6 @@ def deputado(id):
    obj    = DadosAbertos()
    info   = obj.deputado_id(id)
    gastos = obj.deputado_despesas(id)
-   print(gastos)
    return render_template('gastos.html', listas=info, gastos=gastos)
 
 
