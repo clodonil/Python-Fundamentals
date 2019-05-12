@@ -55,16 +55,25 @@ Vamos utilizar os seguintes recursos da linguagem:
 - Organize os gastos por mês;
 - Ordene os gastos por meses;
 
-4. **Lista as descrição e o valor das despesas de um deputado (pode ser qualquer um):**
+4. **Faça um gráfico dos deputados por partidos:**
 
-> Codificação: [m5_lab4.py](code/m5_lab4/)
+> Codificação: [m5_lab4](code/m5_lab4)
+
+**Sugestão de alteração:**
+- Adicione mais um gráfico de deputados x deputadas
+
 	
-5. **Lista os titulos em maiúsculo dos orgãos (comissão) do Congresso.:**
+5. **Faça um gráfico com a relação frente parlamentar x membros:**
    
-> Codificação: [m5_lab5.py](code/m5_lab5/)
+> Codificação: [m5_lab5](code/m5_lab5/)
+
+**Sugestão de alteração:**
+- Adicione mais um gráfico de deputados x deputadas
+
+
 6. **Lista os deputados que participam da comissão que tem o ID 5973:**
    
-> Codificação: [m5_lab6.py](code/m5_lab6/)
+> Codificação: [m5_lab6](code/m5_lab6/)
 
 
 ***
