@@ -29,9 +29,7 @@ Vamos utilizar os seguintes recursos da linguagem:
 
 1. **Construa uma aplicação WEB que mostra uma tabela com cadastro dos deputados (Foto, Nome, Estado e Partido)**
 
- > <img src="code/img/lab1.png"  width="200" height="200">
-
-
+ ><img src="code/img/lab1.png"  width="200" height="200">
  > Codificação: [m5_lab1](code/m5_lab1/)
 
 **Sugestão de alteração:**
@@ -41,9 +39,7 @@ Vamos utilizar os seguintes recursos da linguagem:
 	 
 2. **Construa uma aplicação WEB que mostra uma tabela com cadastro do deputado (Foto,Nome, Estado e Partido); ao clicar no nome do deputado, uma nova janela apresenta o cadastro completa do deputado**
 
-<img src="code/img/lab2.png"  width="200" height="200">
-
-
+ ><img src="code/img/lab2.png"  width="200" height="200">
  > Codificação: [m5_lab2](code/m5_lab2/)
 
 **Sugestão de alteração:**
@@ -52,17 +48,14 @@ Vamos utilizar os seguintes recursos da linguagem:
 - Adicione um link para voltar para a lista de deputados;
 
 
-3. **Construa uma aplicação WEB que mostra uma tabela com cadastro do deputado (Foto, Nome, Estado e Partido), adicione um link para mostrar os gastos mensais do deputado;**
+3. **Construa uma aplicação WEB que mostra uma tabela com cadastro do deputado (Foto, Nome, Estado e Partido), adicione um link para mostrar os gastos do deputado;**
 
-<img src="code/img/lab3.png"  width="200" height="200">
-    
  > Codificação: [m5_lab3](code/m5_lab3/)
 
 **Sugestão de alteração:**
 - Melhore o CSS das tabelas;
-- Adicione mais dados na ficha do deputado;
-- Adicione um link para voltar para a lista de deputados;
-
+- Organize os gastos por mês;
+- Ordene os gastos por meses;
 
 4. **Lista as descrição e o valor das despesas de um deputado (pode ser qualquer um):**
 
