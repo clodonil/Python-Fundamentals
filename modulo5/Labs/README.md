@@ -29,7 +29,7 @@ Vamos utilizar os seguintes recursos da linguagem:
 
 1. **Construa uma aplicação WEB que mostra uma tabela com cadastro dos deputados (Foto, Nome, Estado e Partido)**
 
-![lab1](code/img/lab1.png)
+![lab1](code/img/lab1.png =250x)
 
 > Codificação: [m5_lab1](code/m5_lab1/)
 
