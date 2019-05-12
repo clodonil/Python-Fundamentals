@@ -35,9 +35,9 @@ Vamos utilizar os seguintes recursos da linguagem:
 > Codificação: [m5_lab1](code/m5_lab1/)
 
 **Sugestão de alteração:**
-  1. Acrescente na listagem o ID do deputado;
-  2. Altere o CSS, da tabela;
-  3. Ordenar os deputados por partido;
+  - Acrescente na listagem o ID do deputado;
+  - Altere o CSS, da tabela;
+  - Ordenar os deputados por partido;
 	 
 2. **Construa uma aplicação WEB que mostra uma tabela com cadastro do deputado (Foto,Nome, Estado e Partido); ao clicar no nome do deputado, uma nova janela apresenta o cadastro completa do deputado**
 
@@ -47,9 +47,9 @@ Vamos utilizar os seguintes recursos da linguagem:
 > Codificação: [m5_lab2](code/m5_lab2/)
 
 **Sugestão de alteração:**
-  1. Melhore o CSS das tabelas;
-  2. Adicione mais dados na ficha do deputado;
-  3. Adicione um link para voltar para a lista de deputados;
+  - Melhore o CSS das tabelas;
+  - Adicione mais dados na ficha do deputado;
+  - Adicione um link para voltar para a lista de deputados;
 
 
 3. **Construa uma aplicação WEB que mostra uma tabela com cadastro do deputado (Foto, Nome, Estado e Partido), adicione um link para mostrar os gastos mensais do deputado; **
@@ -59,9 +59,9 @@ Vamos utilizar os seguintes recursos da linguagem:
 > Codificação: [m5_lab3](code/m5_lab3/)
 
 **Sugestão de alteração:**
-  1. Melhore o CSS das tabelas;
-  2. Adicione mais dados na ficha do deputado;
-  3. Adicione um link para voltar para a lista de deputados;
+  - Melhore o CSS das tabelas;
+  - Adicione mais dados na ficha do deputado;
+  - Adicione um link para voltar para a lista de deputados;
 
 
 4. **Lista as descrição e o valor das despesas de um deputado (pode ser qualquer um):**
