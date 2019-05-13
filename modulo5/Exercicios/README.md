@@ -30,13 +30,13 @@ Com essa informação, vamos responder as perguntas abaixo. Desenvolva os códig
 
 1. **Desenvolva uma página WEB com os nomes dos partidos e o números de deputados. Ao clicar no partido, uma nova página deve mostrar os nomes dos deputados:**
 
-2. **Listar as deputadas:**
+2. **Apresente um infográficos dos deputados por faixa etária (18 a 24 anos, 25 a 34 anos, 35 a 44 anos, 45 a 54 anos, 55 a 54 anos, 65 a 74 anos e 75 anos ou mais), mostrando os deputados de cada grupo:**
    
-3. **Mostre a soma dos gastos de um deputados especificos:**
+3. **Apresente um infográfico dos deputados x deputadas:**
 
-4. **Mostre o nome dos 3 deputados com maiores gastos:**
+4. **Apresente um infográfico dos gastos dos deputados do mês atual:**
 	
-5. **Mostre as informações formatadas da comissão sobre 'PEC57402':**
+5. **Desenvolva uma página WEB que mostra todas as comissões da câmera dos deputados. Ao clicar em uma comissão, deve mostrar as informações mais detalhadas:**
 
 > Questão 6 e 8 são para aprofundamento do conhecimento
 
@@ -54,6 +54,7 @@ Com essa informação, vamos responder as perguntas abaixo. Desenvolva os códig
 9. Mostre todos os votos (a favor ou contra) de um deputado e a descrição dos projetos:
 
 10. Apresente todos os projetos para um usuário e solicite a votaçao para cada projeto. Verifique qual deputado votou mais semestre ao usuário.
+
 ```
 ***
 > By:
