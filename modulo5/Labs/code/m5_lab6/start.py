@@ -22,7 +22,20 @@ def deputado(id):
    obj    = DadosAbertos()
    info   = obj.deputado_id(id)
    gastos = obj.deputado_despesas(id)
-   return render_template('gastos.html', listas=info, gastos=gastos)
+
+   valores = {}
+   for gasto in gastos:
+       data = str(gasto['mes']) + '/' + str(gasto['ano'])
+
+       if data in valores:
+          valores[data] += gasto['valorLiquido']    
+       else:
+          valores[data] = gasto['valorLiquido']   
+       
+   line_labels = valores.keys()
+   line_values = valores.values()
+
+   return render_template('gastos.html', title='Gráfico de Gastos', max=10000, labels=line_labels, values=line_values)
 
 
 if __name__ == "__main__":

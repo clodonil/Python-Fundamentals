@@ -1,55 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            h1{
-                color: blue;
-                font-family: verdana;
-                font-size: 300%;
-            }
-            #deputatado{
-              color: black;
-            }
-            table {
-              width:100%;
-            }
-            table, tr, td {
-               border: 1px solid black;
-               border-collapse: collapse;
-            }
-            
-         </style>    
-    </head>        
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ title }}</title>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>
+</head>
+
 <body>
+  <center>
+    <h1>{{ title }}</h1>
 
-
-<h1><strong>Lista de Gastos</strong></h1>
-
-<p>
-   Nome: {{ listas['nomeCivil']}} / {{listas['ultimoStatus']['siglaPartido']}}
-</p>
-
-
-<table>
-  <tr>
-    <td> Data</td>
-    <td> Tipo Despesa</td>
-    <td> Fornecedor</td>
-    <td> CNPJ</td>
-    <td> Valor</td>
-  </tr>
-  {% for despesa in gastos %}  
-  <tr>
-    <td>{{despesa['mes']}}/{{despesa['ano']}}</td>
-    <td>{{despesa['tipoDespesa']}}</td>
-    <td>{{despesa['nomeFornecedor']}}</td>
-    <td>{{despesa['cnpjCpfFornecedor']}}</td>
-    <td>R$ {{despesa['valorDocumento']}}</td>
-  </tr>
-  {% endfor %}
-  
-
-</table>
+    <canvas id="chart" width="600" height="400"></canvas>
+    <script>
+      // bar chart data
+      var barData = {
+        labels : [
+          {% for item in labels %}
+            "{{ item }}",
+          {% endfor %}
+        ],
+        datasets : [{
+          fillColor: "rgba(151,187,205,0.2)",
+          strokeColor: "rgba(151,187,205,1)",
+          pointColor: "rgba(151,187,205,1)",
+          pointStrokeColor: "#fff",
+          pointHighlightFill: "#fff",
+          pointHighlightStroke: "rgba(151,187,205,1)",
+          bezierCurve : false,
+          data : [
+	    {% for item in values %}
+              {{ item }},
+            {% endfor %}]
+          }
+	]
+      }
+      Chart.defaults.global.animationSteps = 50;
+      Chart.defaults.global.tooltipYPadding = 16;
+      Chart.defaults.global.tooltipCornerRadius = 0;
+      Chart.defaults.global.tooltipTitleFontStyle = "normal";
+      Chart.defaults.global.tooltipFillColor = "rgba(0,0,0,0.8)";
+      Chart.defaults.global.animationEasing = "easeOutBounce";
+      Chart.defaults.global.responsive = false;
+      Chart.defaults.global.scaleLineColor = "black";
+      Chart.defaults.global.scaleFontSize = 16;
+      // get bar chart canvas
+      var mychart = document.getElementById("chart").getContext("2d");
+      steps = 10
+      max = {{ max }}
+      // draw bar chart
+      var LineChartDemo = new Chart(mychart).Line(barData, {
+        scaleOverride: true,
+        scaleSteps: steps,
+        scaleStepWidth: Math.ceil(max / steps),
+        scaleStartValue: 0,
+        scaleShowVerticalLines: true,
+        scaleShowGridLines : true,
+        barShowStroke : true,
+        scaleShowLabels: true,
+        bezierCurve: false,
+      });
+    </script>
+  </center>
 </body>
 </html>
-
