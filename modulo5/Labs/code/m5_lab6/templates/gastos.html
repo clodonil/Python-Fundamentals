@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                color: blue;
+                font-family: verdana;
+                font-size: 300%;
+            }
+            #deputatado{
+              color: black;
+            }
+            table {
+              width:100%;
+            }
+            table, tr, td {
+               border: 1px solid black;
+               border-collapse: collapse;
+            }
+            
+         </style>    
+    </head>        
+<body>
+
+
+<h1><strong>Lista de Gastos</strong></h1>
+
+<p>
+   Nome: {{ listas['nomeCivil']}} / {{listas['ultimoStatus']['siglaPartido']}}
+</p>
+
+
+<table>
+  <tr>
+    <td> Data</td>
+    <td> Tipo Despesa</td>
+    <td> Fornecedor</td>
+    <td> CNPJ</td>
+    <td> Valor</td>
+  </tr>
+  {% for despesa in gastos %}  
+  <tr>
+    <td>{{despesa['mes']}}/{{despesa['ano']}}</td>
+    <td>{{despesa['tipoDespesa']}}</td>
+    <td>{{despesa['nomeFornecedor']}}</td>
+    <td>{{despesa['cnpjCpfFornecedor']}}</td>
+    <td>R$ {{despesa['valorDocumento']}}</td>
+  </tr>
+  {% endfor %}
+  
+
+</table>
+</body>
+</html>
+

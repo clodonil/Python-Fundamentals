@@ -22,19 +22,7 @@ class DadosAbertos:
            return resposta.json()['dados']
         except:
            return resposta.json()
-
-    def frentes(self):
-        link = self.url + '/frentes'
-        return self.get(link)
-
-    def frente(self, id):
-        link = self.url + '/frentes/' + str(id)
-        return self.get(link)
-          
-    def frentes_membros(self, id):
-        link = self.url + '/frentes/' + str(id) + '/membros'
-        return self.get(link)
-        
+  
     def blocos(self):
         link = self.url + '/blocos'
         return self.get(link)

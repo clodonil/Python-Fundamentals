@@ -63,15 +63,15 @@ Vamos utilizar os seguintes recursos da linguagem:
 - Adicione mais um gráfico de deputados x deputadas
 
 	
-5. **Faça um gráfico com a relação frente parlamentar x membros:**
+5. **Faça um gráfico com a relação de proposições x partidos:**
    
 > Codificação: [m5_lab5](code/m5_lab5/)
 
 **Sugestão de alteração:**
-- Adicione mais um gráfico de deputados x deputadas
+- Adicione mais um gráfico de proposição x status
 
 
-6. **Lista os deputados que participam da comissão que tem o ID 5973:**
+6. **Construa uma aplicação WEB que mostra uma tabela com cadastro do deputado (Foto, Nome, Estado e Partido), adicione um link para mostrar um gráfico dos gastos dos deputados organizado por mês;**
    
 > Codificação: [m5_lab6](code/m5_lab6/)
 

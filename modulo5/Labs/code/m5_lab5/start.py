@@ -14,19 +14,29 @@ app = Flask(__name__)
 
 @app.route("/")
 def deputados():
-   obj = DadosAbertos()
-   list_frentes = obj.frentes()
-   
-   frentes = {}
-   for frente in list_frentes:
-       titulo = frente['titulo']
-       if not titulo in frentes:
-           frentes[titulo] = 0
-   print(frentes)   
-   bar_labels=['lista1','lista2']
-   bar_values=[20,10]
+       
+   colors = [
+    "#F7464A", "#46BFBD", "#FDB45C", "#FEDCBA",
+    "#ABCDEF", "#DDDDDD", "#ABCABC", "#4169E1",
+    "#C71585", "#FF4500", "#FEDCBA", "#46BFBD"]
 
-   return render_template('index.html', max=100, labels=bar_labels, values=bar_values)
+   obj = DadosAbertos()
+   proposicoes = obj.proposicoes()
+   
+
+   dados = {} 
+   for proposicao in proposicoes:
+       partido = proposicao['siglaTipo']   
+       if partido in dados:
+          dados[partido] +=1   
+       else:
+          dados[partido] = 1   
+   
+   labels=dados.keys()
+   values=dados.values()
+
+   
+   return render_template('index.html', title='Proposições X Partidos', max=100, set=zip(values, labels, colors))
 
 if __name__ == "__main__":
    app.run(host='0.0.0.0', debug=True, port=8080)
