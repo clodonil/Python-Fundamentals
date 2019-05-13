@@ -75,6 +75,11 @@ Vamos utilizar os seguintes recursos da linguagem:
    
 > Codificação: [m5_lab6](code/m5_lab6/)
 
+**Sugestão de alteração:**
+- Adicionar os dados do deputado junto com o gráfico;
+- Adicione mais um gráfico por tipo de gastos;
+- Organize os dados dos gastos por data (no gráfico está desordenado);
+
 
 ***
 > By:
