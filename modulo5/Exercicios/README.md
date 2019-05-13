@@ -1,4 +1,4 @@
-Módulo 2 - Lista de Exercício
+Módulo 5 - Lista de Exercício
 =========
 
 Para realização desse exercício vamos utilizar os dados do site 'dados abertos' da câmera de deputados federal (https://dadosabertos.camara.leg.br/) temos todas as informações de ações e gastos dos deputados federais. Vamos realizar o cruzamento dessas informações para obter respostas interessantes:
@@ -8,7 +8,7 @@ Para realização desse exercício vamos utilizar os dados do site 'dados aberto
 
 Para obter os valores dinamicamente, utilizaremos a biblioteca `Scrapy_DadosAbertos`. Mais a frente vamos entender como foi desenvolvida essa biblioteca, mais agora o importante é saber utiliza-lá.
 
-A biblioteca retorna os dados da API do site dados abertos. 
+A biblioteca retorna os dados da API do site dados abertos.
 
 ```python
 # importa a lib para conexão com o site Dados Abertos
@@ -23,13 +23,12 @@ list_dep = site_connect.deputados()
 print(list_dep)
 
 ```
-Execute o [demo](https://github.com/clodonil/Python-Fundamentals/blob/master/modulo2/parte1/Exercicios/code/demo.py) com o exemplo dos métodos implementados.
 
-Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os códigos em Python.
+Com essa informação, vamos responder as perguntas abaixo. Desenvolva os códigos em Python + Flask.
 
-> Questão de 1-5 serão consideradas para nota
+> Questão de 1-5 serão consideradas para nota.
 
-1. **Listar os nomes em maiúscula dos deputados que tenham mais de 50 anos de idade:**
+1. **Desenvolva uma página WEB com os nomes dos partidos e o números de deputados. Ao clicar no partido, uma nova página deve mostrar os nomes dos deputados:**
 
 2. **Listar as deputadas:**
    
