@@ -1,17 +1,17 @@
 Python Fundamentals (Python 3)
 ===============
 
-# Objetivo
+## Objetivo
 Capacitar estudantes com nenhum ou prévio conhecimento na linguagem Python a desenvolver aplicações ricas com acesso a banco de dados e interface WEB
 
-# Carga Horária  
+## Carga Horária  
 O curso tem carga horária de 40 horas
 
-# Metodologia
+## Metodologia
 
 
 
-# Conteúdo
+## Conteúdo
 
 * [Módulo 1](modulo1/README.md)
 * [Módulo 2](modulo2/README.md)
@@ -20,7 +20,7 @@ O curso tem carga horária de 40 horas
 * [Módulo 5](modulo5/README.md)
 
 
-# Contribuindo
+## Contribuindo
 
 1. Primeiramente realize um `Fork` do projeto;
 2. Crie sua feature branch: `git checkout -b my-new-feature`
@@ -29,7 +29,7 @@ O curso tem carga horária de 40 horas
 5. Envie o pull request
 
 
-Temos um grupo no whatsapp para tirar as suas dúvidas:
+## Temos um grupo no whatsapp para tirar as suas dúvidas:
 
 ![whatsapp](Imagens/whatsapp.jpeg)
 
