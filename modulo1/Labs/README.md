@@ -57,6 +57,12 @@ Exemplo de resposta:
         ...
 ```
 > Codificação: [m1_lab1.py](code/m1_lab1.py)
+
+**Sugestão de alteração:**
+- Crie o login com o formato nome.sobrenome;
+- Crie o login com a primeira letra do sobrenoma + as letras do nome invertidas;
+- Crie o login com 10 caractere, as letras devem ser obtidas do nome e sobrenome de forma aleatório; 
+
 	 
 2. **Listar os partidos que tiveram candidatos eleitos:**
    
@@ -68,12 +74,24 @@ Exemplo de Resposta:
 ```
 > Codificação: [m1_lab2.py](code/m1_lab2.py)
 
+**Sugestão de alteração:**
+- Listar os partidos ordenados pela quantidade de vereadores eleitos;
+- Listas os partidos ordenados por ordem alfabética;
+- Listas os partidos que não tiveram a cláusula de barreira; 
+
+
 3. **Mostrar o somatória de todos os votos em vereadores:**
     
 ```Exemplo de Resposta: 2364.913'```
 > Codificação: [m1_lab3.py](code/m1_lab3.py)
 
-4. **Pesquisar se tem algum vereador vereador com os seguintes nomes (João, Eduardo, josé):**
+**Sugestão de alteração:**
+- Mostrar o nome do vereador que teve mais votos;
+- Mostrar os nomes dos vereadores que tiveram mais de 40.000 votos;
+- Mostrar a méida de votos; 
+
+
+4. **Pesquisar se tem algum vereador com os seguintes nomes (João, Eduardo, josé):**
 ```
 Exemplo de Resposta:
    Eduardo Suplicy
@@ -82,6 +100,12 @@ Exemplo de Resposta:
    José Police Neto
 ```
 > Codificação: [m1_lab4.py](code/m1_lab4.py)
+
+**Sugestão de alteração:**
+- Realize a pesquisa por mais de um nome;
+- Pesquisar pelo nome e sobrenome do vereador;
+- Utilize o comando `input` para realizar a entrada do nome do vereador;
+
 	
 5. **O partido que tive mais vereadores eleitos:**
    
@@ -90,6 +114,13 @@ Exemplo de Resposta:
    PSDB com 10 vereadores
 ```
 > Codificação: [m1_lab5.py](code/m1_lab5.py)
+
+**Sugestão de alteração:**
+- Partidos que tiveram o menor número de vereadores eleitos;
+- Liste o nome do partido que teve mais vereadores eleitos e o nome dos vereadores abaixo;
+- Utilize o comando `input` para entrar com o nome do partido, deve ser retornado os nome dos vereadores;
+
+
 6. **Numero total de votos por partidos:**
 
 ```
