@@ -20,6 +20,15 @@ O curso tem carga horária de 40 horas
 * [Módulo 5](modulo5/README.md)
 
 
+# Contribuindo
+
+1. Primeiramente realize um `Fork` do projeto;
+2. Crie sua feature branch: `git checkout -b my-new-feature`
+3. Realize suas mudanças e faça os commits: `git commit -am "adicione a feature`
+4. Realize o Push da branch:  `git push origin my-new-feature`
+5. Envie o pull request
+
+
 Temos um grupo no whatsapp para tirar as suas dúvidas:
 
 ![whatsapp](Imagens/whatsapp.jpeg)
