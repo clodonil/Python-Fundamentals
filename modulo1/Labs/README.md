@@ -4,7 +4,7 @@ Laboratório do Módulo 1
 # Como trabalhar
 Vamos colocar em prática o que aprendemos sobre a linguagem Python. 
 
-Esse laboratório propoe um problema e suas soluções. O aluno deve trabalhar como `code review`, isso é entender o código e fazer modificações verificando o que muda. 
+Esse laboratório propoe um problema e suas soluções. Você deve trabalhar como `code review`, isso é entender o código e fazer modificações verificando o que muda. 
 
 > Ao final do laboratório proponha perguntas para você mesmo e tente responde-lás desenvolvendo o código em Python.
 
@@ -146,6 +146,10 @@ Resposta:
 ```
    
 > Codificação: [m1_lab6.py](code/m1_lab6.py)
+
+**Sugestão de alteração:**
+- Formate os números para 2 casas decimais, use `float("{0:.2f}".format(votos))` 
+
 
 7. **Pesquisar se tem algum vereador está na lista de investigados na Lava Jato:**
 > Lista da Lava jato: https://pt.wikipedia.org/wiki/Lista_de_pessoas_envolvidas_na_Opera%C3%A7%C3%A3o_Lava_Jato
