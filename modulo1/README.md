@@ -29,7 +29,7 @@ Apresentar o Python e introduzir os primeiros conceitos e ao final o aluno deve 
 ## 1 História
 No Brasil em 1989, Collor de Melo vencia a primeira eleição direta, na Alemanha caia o muro de Belim e na Holanda o Guido Van Rossum criava a linguagem Python.
 
-A história da linguagem é fantástica e seu aprendizado vai tornar-se mais divertido após conhecer alguns eventos que aconteceram durante a época de sua criação.
+A história da linguagem é fantástica e seu aprendizado vai tornar-se mais divertido após conhecer alguns eventos que aconteceram durante a sua criação.
 
 Não vou escrever sobre a história do Python pois já há muita coisa boa escrita, segue alguns links que vale a pena ler:
 
@@ -74,6 +74,33 @@ Os editores que recomendo para o desenvolvimento com o Python são:
 * TextEdit
 * Notepad++
 * Vim
+* PyCharm
+
+### Isolamento de Ambiente para Desenvolvimento
+É muito importante ter uma ambiente isolado para o desenvolvimento de um novo programa. Nunca se deve confiar em bibliotecas pré-instaladas, 
+sempre deve ser declarado atráves de um manifesto todas as dependências envolvidas na aplicação, conforme descrito [12factor](https://12factor.net/pt_br/dependencies).
+
+No Python, pode ser utilizado o `VirtualEnv` para criar um `workspace` isolado para desenvolvimento. 
+
+```bash
+$ python -m venv workspace_projeto
+```
+
+Após a criação do Workspace, é necessario ajustar as variáveis de ambiente para utilização.
+
+```bash
+$ source workspace_projeto/bin/active
+```
+
+Com o `VirtualEnv` ativado, todas as bibliotecas instaladas ficaram isoladas nesse ambiente, não tendo vazamento de bibliotecas.
+
+Para desativar o `VirualEnv` utilize o seguinte comando:
+
+```bash
+$ source workspace_projeto/bin/deactive
+```
+
+Além do `VirtualEnv, é possível realizar o isolamento do ambiente de outras formas, como criar uma máquina virtual exclusiva para o desenvolvimento.
 
 Para aqueles que desejam ter uma máquina virtual em Linux para desenvolver o seu código, estou deixando o código do Vagrant preparado para provisionar um CentOS7 instalado (Você precisará ter o Vagrant instalado no seu computador e também o Virtualbox).
 
@@ -128,7 +155,7 @@ O Python não tem nada disso, todo o controle do bloco de código é realizado p
 Exemplo do if com bloco de código:
 
 ```python
-if x > 5
+if x > 5:
    print("Maior")
 else
    print("Menor")
@@ -137,7 +164,7 @@ Perceba que o único controle que existe para determinar o bloco de código é o
 
 A vantagem da tabulação é que o código sempre está alinhado, com as hierarquias bem definidas, tornando o código muito mais fácil de ler e realizar as modificações necessárias.
 
-Os blocos de códigos em Python são marcados 
+Os blocos de códigos em Python são marcados sempre com `:` no final da linha.
 
 ## 5 Variável
 
@@ -237,7 +264,7 @@ a = 1+2j
 print(a, "número complexo?", isinstance(1+2j,complex))
 ```
 ### 6.3 List
- Lista é Python é uma sequência de item, equivale aos arrays de outras linguagens. A lista é um dos tipos de dados mais utilizados em Python por ser muito flexível. Todos os itens de uma lista NÃO precisam ser do mesmo tipo.  
+Lista é Python é uma sequência de item, equivale aos arrays de outras linguagens. A lista é um dos tipos de dados mais utilizados em Python por ser muito flexível. Todos os itens de uma lista NÃO precisam ser do mesmo tipo.  
    
 Exemplo:
 
