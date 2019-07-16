@@ -11,32 +11,29 @@
 ---
 <!-- page_number: true -->
 
-# Overview
+# Python Fundamentals
 
-**Gaia** is the beautiful presentation theme on Marp!
+> Python é uma linguagem de programação de alto nível, `interpretada`, imperativa, orientada a objetos, de `tipagem dinâmica` e `forte`.
 
-- ==**New features**==
-	1. Title Slides
-	2. Highlight
-	3. Color scheme
+
+Criado por Guido van Rossum em 1989.
 
 ---
 <!-- page_number: true -->
 
-# História da Python
 
-#### From menu
+# Filosofia da Linguagem
 
-Select menu: *View :arrow_right: Theme :arrow_right: Gaia*
-
-#### Use directive
-
-Set `gaia` theme by `$theme` Global Directive.
+- Bonito é melhor que feio
+- Explícito é melhor que implícito;
+- Simples é melhor que complexo;
+- Linear é melhor que aninhado;
+- Se a implementação é difícil de explicar, a ideia é ruim;
+- Se a implementação é fácil de explicar, talvez a ideia seja boa;
 
 ```
-<!-- $theme: gaia -->
+import this
 ```
-
 ---
 <!-- page_number: true -->
 ## Ambiente de Desenvolvimento
@@ -83,7 +80,46 @@ $ source workspace_projeto/bin/deactive
 
 ## Sintaxe do Python
 
+Python tem uma sintaxe simples e direta. Porém, um ponto de dificuldade aos iniciantes, são os blocos de códigos.
 
+---
+# Bloco de Código 
+
+Blocos de códigos em outas linguagem são marcas por { e }, como por exemplo em C:
+
+```c
+if (x > 5){
+printf("maior");
+}else {
+printf("menor");
+}
+```
+---
+
+# Bloco de Código 
+
+Ruby utilizam o `do` e `end` para limitar o bloco de código:
+
+```ruby
+if x > 5
+puts "Maior"
+else
+puts "Menor"
+end
+```
+---
+# Bloco de código
+
+-  Bloco de código é realizado por espaçamento. 
+
+Se os espaçamentos não forem realizados corretamente, o código não vai funcionar, ou seja o código fica completamente identado.
+
+```python
+if x > 5:
+   print("Maior")
+else
+   print("Menor")
+```
 ---
 
 # Variável
@@ -99,7 +135,6 @@ class     else      from      is        print     yield
 continue  except    global    lambda    raise
 ```
 
----
 ---
 
 # Variável (exemplos)
@@ -285,7 +320,10 @@ O tipo de dados Boolean em Python são criados pela classe `bool` que logicament
 ```python
 print(type(True))
 ```
-Os booleanos também podem ser presentados por inteiros sendo 1 para `True`e 0 para `False`.
+Os booleanos também podem ser presentados por inteiros sendo:
+
+- 1 para `True`;
+- 0 para `False`;
 
 ---
 # Conversão entre tipos
@@ -304,7 +342,8 @@ Os booleanos também podem ser presentados por inteiros sendo 1 para `True`e 0 p
 
 ---
 # Operadores
-Igualmente as outras linguagens de programação, as operações básicas de matemáticas são realizadas pelos operadores `+`, `-`, `/` e `*`. 
+
+Operações básicas de matemáticas são realizadas pelos operadores `+`, `-`, `/` e `*`. 
 
 | Descrição     | Operador |
 |---------------|----------|
@@ -320,8 +359,7 @@ A utilização é bem simples.
 ```python
 soma = 10 + 5
 ```
-Python também segue as precedências definidas pela Matemática, porém sempre recomendamos utilizar parentes `( )` para separar os operadores, para tornar mais legível.
-Por exemplo:
+Python também segue as precedências definidas pela Matemática.
 
 ```python 
 result = 2+2*2   # Resultado 6
@@ -337,7 +375,7 @@ Operadores que fazem operação e atribuição.
 |-----------|------------|
 | soma e atribui         | +=       |
 | subtrai e atribui      | -=       |
-| dividi e atribui       | \*=       |
+| dividi e atribui       | \*=      |
 | multiplica e atribui   | /=       | 
 
 ---
@@ -348,6 +386,10 @@ a = 10
 a = a + 10 
 a += 10
 ```
+
+---
+# 
+
 Além dos operadores básicos, também temos os operadores para exponenciação, extração do módulo da divisão, parte inteira de uma divisão.
 
 |Descrição	|Operador|
@@ -365,15 +407,14 @@ result = 2 ** 2  # resutado  4
 result = 5 // 2  # resultado 2
 result = 5 %  2  # resultado 1
 ```
-Esses operadores que vimos também podem ser utilizados com outras estruturas de dados tais como string e list.
-Um exemplo de utilização com string:
+Esses operadores podem ser utilizados com outras estruturas de dados tais como string e list.
 
 ```python
 result = "-"*50   
 result = "Ola" + "Mundo"
 ```
 ---
-#Operadores com Lista:
+# Operadores com Lista:
 ```python
  lista = [1,2,3] * 10
  todos_numeros = [2,4,6,8] + [1,3,5,7] 
@@ -389,8 +430,8 @@ Além dos operadores matemáticos, também temos os operadores lógicos que reto
 |Menor ou igual a	|<=|
 | Negação        | not |
 ---
-# Operadores Lógicos
-A utilização dos operadores lógicos também é bem simples. Eles não são muito utilizados para tomadas de decisão em `IF`.
+# Operadores Lógicos (Exemplos)
+A utilização dos operadores lógicos também é bem simples.
 ```python
 a=10 > 5
 b=100 == 200
@@ -402,19 +443,36 @@ if a and b:
    print("Tudo errado")
 x = not(a and b)
 ```
-Também temos os operadores para verificar se um item está contido em um conjunto, para testar identidade e para criar pequenas funções.
+---
+# Operadores Contido e Identidade
 
-|Descrição | Operador|
-|----------|---------|
-|Contido em |in         |
-| Teste de identidade               | is |
-|Criar funções | lambda     |
+Os operadores `contido` e teste de `identidade`.
 
-Utilizamos muito o operador `in` para verificar se um valor está incluso em uma lista.
+|Descrição | Operador   |
+|----------|------------|
+|Contido em    | in     |
+|Identidade    | is     |
+|Criar funções | lambda |
+
+---
+# Operador Contido (IN)
+
+Operador `in` para verificar se um valor está em uma lista.
+
 ```python
-x = 10 in [3,4,5,10]   | Retorna True
+x = 10 in [3,4,5,10]  
+y = 50 in [3,4,5,10] 
+
 ```
-Já operador `is` é para testar a identidade de um objetivo. Verificar se realmente é o mesmo objeto.
+
+x => True
+y => False
+
+---
+# Identidade (IS)
+
+Operador `is` é para r a identidade de um objetivo. Verificar se realmente é o mesmo objeto.
+
 ```python
 a=10
 b=a
@@ -425,11 +483,245 @@ a=[10,2,3]
 b=[10,2,3]
 k a is b
 ```
+---
+# Lambda
+
 O operador lambda é bastante útil, com ele podemos fazer pequenas funções. 
+
 ```python
 produdo = lambda  x,y: x*y
-print(produto(6,4))
+result = produto(6,4)
+print(result)
 ```
+---
+## Controle de Fluxo
+
+O controle de fluxo de dados no Python podem ser realizados utilizando desvio no fluxo de código, ou através de sistema de repetição.
+
+- if
+- for
+- while
+
+---
+## Condição `IF`
+
+No desvio de fluxo, utilizamos o comando `IF`. A sintaxe é a seguinte:
+
+```python
+if (expressão):
+   pass
+elif (expressão):
+   pass
+else:
+   pass
+```
+---
+## Condição `IF` (Exemplo)
+
+Vamos fazer uma entrada de dados via `input`, transformar em inteiro e realizar as comparações.
+
+```python
+x = int(input("Please enter an integer: "))
+
+if x < 0:
+    print('Valor negativo')
+elif x == 0:
+    print('Zero')
+elif x > 0 and x < 10:
+    print('Maior que Zero e menor que 10')
+else:
+    print('Maior que 10')
+```   
+---
+
+## Repetição `For`
+
+Além do desvio de fluxo, podemos repetir um pedaço de código utilizando o `FOR`. 
+
+```python
+words = ['gato', 'cachorro', 'coelho']
+for w in words:
+    print(w, len(w))
+```
+---
+<!-- template: gaia -->
+
+> Caso não tenha uma lista de `coisas`, uma nova lista de números pode ser criada utilizando a função `range`. Por exemplo, se você precise gerar uma lista de números de 0 até 5 `range(5)`
+
+---
+# Gerador de Lista de Números
+
+```python
+for i in range(5):
+    print(i)
+```
+A sintaxe do `range` é a seguinte:
+
+```python
+range(inicio, fim, pulo)
+```
+---
+# Mais exemplo de Range
+
+Exemplos:
+```
+range(5, 10)
+   5, 6, 7, 8, 9
+
+range(0, 10, 3)
+   0, 3, 6, 9
+
+range(-10, -100, -30)
+  -10, -40, -70
+```
+---
+## Repetição `while`
+
+Como forma de loop também temos o `while`. Com o `while` não possui uma lista, portanto não é possível saber a quantidade de vezes que o fluxo do programa vai ficar no `while. 
+
+O fluxo vai ficar no `while` até a condição for `False`.
+
+Sintáxe:
+```
+ while condição:
+    pass
+ else:
+    pass
+```
+---
+## Repetição `while` (Exemplo)
+
+Vamos repetir um bloco de código enquanto o valor de `x` seja menor que `10`. 
+
+```python
+x= 0
+
+while x < 10:
+    print('Numero', x)
+    x += 1
+
+else:
+   print('Finalizado')
+```   
+---
+## Repetição `while` (Exemplo)
+
+Em muitos casos isso não é possível determinar a quantidade de vezes que o `While` vai ser executado. 
+
+```python
+x = 'inicio'
+lista = []
+while x.lower() != 'fim':
+    x = input("Digite o próximo nome:")
+    lista.append(x)
+
+print(lista)
+```
+---
+##  `break`, `continue` e `else`
+
+- A instrução `break`, como em C, é interna para as funções `for` ou `while` e quando invocado finaliza de forma bruta o loop.
+ 
+- A instrução `continue` finaliza aquela parte do bloco de código e volta para o início do loop. 
+
+- As instruções de loop podem ter uma cláusula `else`; ele é executado quando o loop termina por esgotamento da lista (`for`) ou quando a condição se torna `falsa` (`while`), mas não quando o loop é finalizado por uma instrução `break`. 
+
+---
+# `break`, `continue` e `else`(Exemplo)
+
+
+
+```python
+nomes=['maria','jose','carlos','eduardo']
+
+for nome in nomes:
+    if nome == 'jose':
+        continue
+    elif nome == 'eduardo':
+        break
+    print(nome)
+
+else:
+   print("Finalizado naturalmente")
+   
+```
+---
+## Outras funções
+
+- print
+
+O `print` como já vimos em vários exemplos, é utilizado para imprimir (mostrar) algo na tela.
+
+- split
+
+A função `split` utiliza um padrão para 'quebrar' uma string e gerar uma lista. 
+
+---
+## Exemplos de print()
+Vamos aprender com esses exemplos:
+
+```python
+# declarar variavel
+nome, idade, salario ="jose",30, 100.00
+
+# imprimindo texto
+print("Inicio do programa")
+
+# imprimindo apenas variável
+print(nome)
+
+# Imprime string com variável
+print("Usuario:",nome)
+```
+---
+## Continuando...
+
+```
+# Imprime string com variável
+print("O usuario:"+ nome)
+
+# Usando o format
+print("O usuario {0} tem {1:d} idade".format(nome, idade))
+
+# Usando format com float
+print("salario {0:0.2f} l".format(salario))
+
+# alinha a direita com 20 espaços em branco
+print("{0:>20}".format(nome))
+```
+---
+# Continuando...
+
+```
+# alinha a direita com 20 símbolos -
+print("{0:->20}".format(nome))
+
+# alinha ao centro usando 10 espaços em branco a esquerda e 10 a direita
+print("{0:^20}".format(nome))
+
+# imprime só as primeiras cinco letras
+print("{0:.3}".format(nome))
+
+#Imprime em hexdecimaç
+print("{0:x}".format(23))
+```
+
+---
+## Split (Exemplo)
+
+Como exemplo, vamos utilizar as seguinte strings:
+
+```
+texto = "jose:30anos:rua de baixo:sp"
+```
+Temos um delimitador na variável que é o ":".
+
+```python
+lista = texto.split(":")  # ['jose','30anos','rua de baixo','sp']
+print(lista[0])           # imprimir o nome
+```
+
+> Qualquer caractere pode ser o delimitador.
 
 ---
 <!-- template: gaia -->
