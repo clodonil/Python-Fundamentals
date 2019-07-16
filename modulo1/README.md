@@ -333,10 +333,10 @@ Set é uma coleção não ordenada de itens exclusivos (não pode ter itens repe
 Podemos realizar operações de conjunto como união, interseção em dois conjuntos. Conjunto tem valores exclusivos. Eles eliminam duplicatas.
 
 Como o conjunto é uma coleção não ordenada, a indexação não funciona. Portanto, o operador [ ] não funciona.
-```python
-posicao_chegada={3,4,1,7,8}
-print(posicao_chegada)
-```
+   ```python
+   posicao_chegada={3,4,1,7,8}
+   print(posicao_chegada)
+   ```
 ### 6.7 Frozenset
 Frozen set são conjuntos similares ao set. A diferença que frozenset são imutáveis, portanto não podem ser modificados. Devido a isso, podem ser usados como chave no dicionário ou como elemento de outro conjunto. Mas como conjuntos, não é ordenado (os elementos podem ser definidos em qualquer índice).
 ```python
