@@ -24,7 +24,8 @@ lista_lava_jato = tuple(site_jato.get_tables(1))
 # Criar uma tuple com os nomes dos investigados
 lista_investigados = ()
 for investigados in  lista_lava_jato[1:]:
-    lista_investigados = lista_investigados + (investigados[0],)
+    if investigados:
+       lista_investigados = lista_investigados + (investigados[0],)
 
 # pesquisar nome por nome de vereador na lista de investigado
 for vereador in vereadores[1:]:
