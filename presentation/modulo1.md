@@ -63,7 +63,7 @@ import this
 Criado um VirtualEnv
 
 ```bash
-$ python -m venv workspace_projeto
+$ python3 -m venv workspace_projeto
 ```
 Ativando o VirtualEnv
 
@@ -74,7 +74,7 @@ $ source workspace_projeto/bin/active
 Desativando o VirtualEnv
 
 ```bash
-$ source workspace_projeto/bin/deactive
+$ deactivate
 ```
 
 ---
@@ -506,7 +506,7 @@ print(id(b))
 a=[10,2,3]
 b=[10,2,3]
 
-k a is b
+k is b
 ```
 ---
 # Lambda
@@ -514,7 +514,7 @@ k a is b
 <small>O operador lambda é bastante útil, com ele podemos fazer pequenas funções. </small>
 
 ```python
-produdo = lambda  x,y: x*y
+produto = lambda  x,y: x*y
 result = produto(6,4)
 print(result)
 ```
