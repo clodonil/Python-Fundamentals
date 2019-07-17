@@ -44,7 +44,7 @@ Vamos utilizar os seguintes recursos da linguagem:
 
 > No manifesto [`requirements`](code/requirements) estão as dependências da [lib/scrapy_table.py](code/lib/scrapy_table.py). 
 
-Exemplo de execuão:
+Vídeo com o exemplo da execução do exercicío 1.
 
 [![video](../../Imagens/video_modulo1.png)](https://youtu.be/vN9QlAm4qgU)
 
