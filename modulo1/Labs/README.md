@@ -15,7 +15,7 @@ No site da Wikipedia (https://pt.wikipedia.org/wiki/C%C3%A2mara_Municipal_de_S%C
 
 ![lista_vereadores_wikipedia](https://github.com/clodonil/curso_python/blob/master/Imagens/m1_lab1_f1.PNG)
 
-Para obter os valores da lista dinamicamente, utilizaremos a biblioteca `Scrapy_table`. Mais a frente vamos entender como foi desenvolvida essa biblioteca, mais agora o importante é saber utiliza-lá.
+Para obter os valores da lista dinamicamente, utilizaremos a biblioteca [`Scrapy_table`](code/lib/scrapy_table.py). Mais a frente vamos entender como foi desenvolvida essa biblioteca, mais agora o importante é saber utiliza-lá.
 
 A biblioteca retorna as tabelas de uma página html. Se uma página tiver mais de uma tabela, informe qual delas deseja obter. Por exemplo, no código abaixo queremos pegar a tabela de número 5  `tables = site_connect.get_tables(5)`, que é a lista de vereadores. Veja no link (https://pt.wikipedia.org/wiki/C%C3%A2mara_Municipal_de_S%C3%A3o_Paulo) que existe várias tabela na página.
 
@@ -42,6 +42,7 @@ Vamos utilizar os seguintes recursos da linguagem:
 * Operadores
 * Dicionário
 
+> O manifesto [`requirements`](code/requirements)
 ------
 
 1. **Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas:**
