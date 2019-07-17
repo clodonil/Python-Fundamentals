@@ -46,9 +46,8 @@ Vamos utilizar os seguintes recursos da linguagem:
 
 Exemplo de execuão:
 
-![video]()
-
-[![video](imagens/video_modulo1.png)](https://youtu.be/vN9QlAm4qgU)
+![video](imagens/video_modulo1.png)
+(https://youtu.be/vN9QlAm4qgU)
 
 ------
 
