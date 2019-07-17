@@ -1,6 +1,6 @@
 <!-- $theme: gaia -->
-
-# Python Fundamentals
+# ![30%](image/logo2.png)
+### Python Fundamentals
 
 #### [Módulo 1](https://github.com/clodonil/Python-Fundamentals/tree/master/modulo1)
 
@@ -9,18 +9,19 @@
 
 
 ---
-<!-- page_number: true -->
+<!-- *template: invert -->
 
-# Python Fundamentals
 
 > Python é uma linguagem de programação de alto nível, `interpretada`, imperativa, orientada a objetos, de `tipagem dinâmica` e `forte`.
+>
+>
+> <small>**Criado por Guido van Rossum em 1989** </small>
 
 
-Criado por Guido van Rossum em 1989.
+
 
 ---
 <!-- page_number: true -->
-
 
 # Filosofia da Linguagem
 
@@ -36,6 +37,7 @@ import this
 ```
 ---
 <!-- page_number: true -->
+
 ## Ambiente de Desenvolvimento
 
 - **Python 3** 
@@ -48,12 +50,12 @@ import this
 
 ---
 <!-- page_number: true -->
-### Segregação de Ambientes
 
-> Nunca se deve confiar em bibliotecas pré-instaladas, sempre deve ser declarado  atráves de um manifesto todas as dependências envolvidas na aplicação, conforme descrito [12factor](https://12factor.net/pt_br/dependencies).
+# Segregação de Ambientes
 
-- VirtualEnv
-- Máquinas Virtuais
+>Nunca se deve confiar em bibliotecas pré-instaladas, sempre deve ser declarado  atráves de um manifesto todas as dependências envolvidas na aplicação, conforme descrito [12factor](https://12factor.net/pt_br/dependencies).
+- <small>VirtualEnv</small>
+- <small>Máquinas Virtuais</small>
 
 ---
 
@@ -78,9 +80,8 @@ $ source workspace_projeto/bin/deactive
 ---
 <!-- *template: gaia -->
 
-## Sintaxe do Python
 
-Python tem uma sintaxe simples e direta. Porém, um ponto de dificuldade aos iniciantes, são os blocos de códigos.
+>Python tem uma sintaxe `simples` e `direta`. Porém, um ponto de dificuldade aos iniciantes, são os blocos de códigos.
 
 ---
 # Bloco de Código 
@@ -112,7 +113,7 @@ end
 
 -  Bloco de código é realizado por espaçamento. 
 
-Se os espaçamentos não forem realizados corretamente, o código não vai funcionar, ou seja o código fica completamente identado.
+- Se o espaçamento não for realizado corretamente, o código não vai funcionar.
 
 ```python
 if x > 5:
@@ -122,10 +123,12 @@ else
 ```
 ---
 
-# Variável
+# Variável (Name)
 
-Os nomes das variáveis é conforme a vontade do programador, com nomes longos, contendo letras e números. 
-No entanto, elas devem necessariamente começar com 'letras minúsculas'. 
+- Variável pode iniciar com `underscore` ou letra;
+- Variável não pode inicar com número;
+- Variável pode conter caractere `alpha-numérico` e `underscores` (A-z, 0-9, and _ );
+- Variável são case-sensitive (age, Age e AGE)
 
 ```bash
 and       def       exec      if        not       return
@@ -158,7 +161,7 @@ nome,idade,tel = 'jose',10,'56945-2342'
 # Estrutura de Dados
 
 * String;
-* Number (Integer e Float);
+* Number (`Integer` e `Float`);
 * List;
 * Tuple;
 * Dictionary;
@@ -167,11 +170,14 @@ nome,idade,tel = 'jose',10,'56945-2342'
 ---
 # String
 Exemplo:
+<small>
  ```python
 texto="As vezes você tem que se levantar sozinho e seguir em frente"
 ```
+</small>
+
 Para declarar múltiplas linhas utilize 3 aspas simples.
-Exemplo:
+
    ```python
 texto='''
      Tudo e possível. 
@@ -182,6 +188,8 @@ texto='''
 # Manipulando String
 
 Exemplo:
+<small>
+  
 ```python
 texto="As vezes você tem que se levantar sozinho e seguir em frente" 
 # Recuperar o caractere da posição 5
@@ -193,6 +201,8 @@ print(texto[0:10])  # Retorno "As vezes v"
 # Recuperar da posição 10 até a posição 15
 print(texto[10:15]) # retorno "ocê t"
 ```
+</small>
+
 ---
 # Numbers
 
@@ -206,10 +216,10 @@ print(a, "do tipo", type(a))
 a = 1+2j
 print(a, "número complexo?", isinstance(1+2j,complex))
 ```
->No exemplo utilizamos a função `type()` para mostrar o tipo da classe da variável. Também usamos a função `isinstance()` para comparar o tipo da váriavel.
+> <small>No exemplo utilizamos a função `type()` para mostrar o tipo da classe da variável. Também usamos a função `isinstance()` para comparar o tipo da váriavel.</small>
 ---
 # List
-Lista é Python é uma sequência de item, equivale aos arrays de outras linguagens.
+Lista é uma sequência de item, equivale aos arrays de outras linguagens.
 
 ```python 
 lista=[10,60,'jose','45234234',50.9]
@@ -217,19 +227,23 @@ lista=[10,60,'jose','45234234',50.9]
 print("Conteúdo da lista", lista)
 ```
 Estrutura da Lista:
-
+<small>
 |0 |1 |2     | 3        | 4  |
-|--|--|------|----------|----|
+|:-:|:-:|:-:|:-:|:-:|
 |10|60|'jose'|'45234234'|50.9|
+</small>
 
 ---
 # List
 
 Acessando elementos da lista
 
-|0 |1 |2 | 3| 4 |5|6 |7   |
-|--|--|--|--|---|-|-|---|
+<small>
+  
+|0 |1 |2 | 3| 4 |5|6 |7 |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |10|30|50|90|100|1|5|19 | 
+</small>
 
 ```python
 lista=[10,30,50,90,100,1,5,19]
@@ -258,18 +272,18 @@ print(a)
 ---
 # Tuple
 
-As tuplas são uma sequência de itens, semelhante a uma lista. A diferença que a tuples são imultavél.
+As tuplas são sequência de itens, semelhante a uma lista. A diferença que a tuples são imutavéis.
 
 ```python
 t = (10,40,'jose','maria',6.5)
 
 print(t[1])
 ```
-
-**Tuple é mais rápido que uma lista**
+<small>*Tuple é mais rápido que uma lista*</small>
 
 ---
 # Dictionary
+
 Dicionário são estrutura de dados com um par conhecido como `chave/valor`. 
 
 ```python
@@ -278,10 +292,11 @@ login = {"user": "jose","password":"okri"}
 print("usuario", login['user'])
 ```
 Hash:
-
+<small>
 |user|password|
-|---|---------|
+|:-:|:-:|
 |jose|okri|
+</small>
 
 ---
 # Set
@@ -294,7 +309,7 @@ print(posicao_chegada)
 
 ---
 # Frozenset
-`Frozen set` são conjuntos similares ao set. A diferença que frozenset são imutáveis, portanto não podem ser modificados.
+`Frozenset` são conjuntos similares ao set. A diferença que frozenset são imutáveis, portanto não podem ser modificados.
 
 
 ```python
@@ -302,16 +317,6 @@ lista = ('a', 'e', 'i', 'o', 'u')
 
 fSet = frozenset(lista)
 print('O frozen set é:', fSet)
-```
----
-# Um outro exemplo:
-
-```python
-# random dictionary
-person = {"name": "John", "age": 23, "sex": "male"}
-
-fSet = frozenset(person)
-print('The frozen set is:', fSet)
 ```
 ---
 # Boolean
@@ -324,21 +329,23 @@ Os booleanos também podem ser presentados por inteiros sendo:
 
 - 1 para `True`;
 - 0 para `False`;
+- [] {} () para `False`
 
 ---
 # Conversão entre tipos
+<small>
 
-| Descrição| Função | Exemplo |
-|----------|-----------|-----|
-| Converte para intero.|  int(x) | num=int(a)|
-| Converte para float.|float(x) |num = float(a) |
-| Converte para String |str(x) | letra = str(num)  |
-| Converte para uma tuple|tuple(s) |t_lista = tuple(lista)|
-| Converte para Lista.|list(s) |lista = list(a) |
-| Converte para Set.|set(s) | l = set(lista) |
-| Converte um set em frozenset.| frozenset(s) |frozenset(x) |
-| Converte um número em um string da tabela ascii. | chr(x) | chr(95) |
-| Converte uma string em um valor da tabela ascii.| ord(x) | ord('a') |
+| Descrição| Função |
+|----------|-----------|
+|Converte para intero.|  int(x) |
+|Converte para float.|float(x)  |
+|Converte para String |str(x)   |
+|Converte para uma tuple|tuple(s) |
+|Converte para Lista.|list(s)  |
+|Converte para Set.|set(s)  |
+|Converte um set em frozenset.| frozenset(s)  |
+
+</small>
 
 ---
 # Operadores
@@ -347,10 +354,10 @@ Operações básicas de matemáticas são realizadas pelos operadores `+`, `-`, 
 
 | Descrição     | Operador |
 |---------------|----------|
-| adição	       | +        |
+| adição	    | +        |
 | subtração	    | -        |
-| multiplicação	| /        |
-| divisão	      | *        |
+| divisão	    | /        |
+| multiplicação | *        |
 
 ---
 # Exemplo
@@ -359,7 +366,7 @@ A utilização é bem simples.
 ```python
 soma = 10 + 5
 ```
-Python também segue as precedências definidas pela Matemática.
+Python também segue as precedências definidas pela matemática.
 
 ```python 
 result = 2+2*2   # Resultado 6
@@ -375,8 +382,8 @@ Operadores que fazem operação e atribuição.
 |-----------|------------|
 | soma e atribui         | +=       |
 | subtrai e atribui      | -=       |
-| dividi e atribui       | \*=      |
-| multiplica e atribui   | /=       | 
+| multiplica e atribui       | \*=      |
+| dividi e atribui   | /=       | 
 
 ---
 
@@ -388,15 +395,19 @@ a += 10
 ```
 
 ---
-# 
+#
+>Além dos operadores básicos, também temos os operadores para `exponenciação`, `módulo da divisão`, `parte inteira de uma divisão`.
 
-Além dos operadores básicos, também temos os operadores para exponenciação, extração do módulo da divisão, parte inteira de uma divisão.
+<br/>
+<br/>
+<small>
 
 |Descrição	|Operador|
 |--------|-------|
 |exponenciação	|**|
 |parte inteira	|//|
 |módulo|	%|
+</small>
 
 ---
 # Exemplo
@@ -414,27 +425,34 @@ result = "-"*50
 result = "Ola" + "Mundo"
 ```
 ---
-# Operadores com Lista:
+## Operadores com Lista:
 ```python
  lista = [1,2,3] * 10
  todos_numeros = [2,4,6,8] + [1,3,5,7] 
 ```
+<small>
+
 Além dos operadores matemáticos, também temos os operadores lógicos que retornam `True` e `False`.
 
-|Descrição	|Operador|
-|----------|--------|
-|Maior que	|>|
+  
+|Descrição|Operador|
+|:-|:-:|
+|Maior que|>|
 |Menor que	|<|
 |Igual a	|==|
-|Maior ou igual a	|>=|
-|Menor ou igual a	|<=|
-| Negação        | not |
+|Maior ou igual a|>=|
+|Menor ou igual a|<=|
+|Negação       | not |
+
+</small>
+
 ---
-# Operadores Lógicos (Exemplos)
+## Operadores Lógicos (Exemplos)
 A utilização dos operadores lógicos também é bem simples.
 ```python
 a=10 > 5
 b=100 == 200
+
 if 200 > 100:
    print("maior")   
 if a or b:
@@ -444,15 +462,18 @@ if a and b:
 x = not(a and b)
 ```
 ---
-# Operadores Contido e Identidade
+## Operadores Contido e Identidade
 
 Os operadores `contido` e teste de `identidade`.
-
+<small>
+  
 |Descrição | Operador   |
 |----------|------------|
 |Contido em    | in     |
 |Identidade    | is     |
 |Criar funções | lambda |
+
+</small>
 
 ---
 # Operador Contido (IN)
@@ -465,28 +486,32 @@ y = 50 in [3,4,5,10]
 
 ```
 
-x => True
-y => False
+:arrow_right: x é `True`
+:arrow_right: y é `False`
 
 ---
 # Identidade (IS)
 
-Operador `is` é para r a identidade de um objetivo. Verificar se realmente é o mesmo objeto.
+Operador `is` é para verificar identidade de um objetivo.
 
 ```python
 a=10
 b=a
-k = a is b   
+
+k = a is b
+
 print(id(a))
 print(id(b))
+
 a=[10,2,3]
 b=[10,2,3]
+
 k a is b
 ```
 ---
 # Lambda
 
-O operador lambda é bastante útil, com ele podemos fazer pequenas funções. 
+<small>O operador lambda é bastante útil, com ele podemos fazer pequenas funções. </small>
 
 ```python
 produdo = lambda  x,y: x*y
@@ -494,13 +519,13 @@ result = produto(6,4)
 print(result)
 ```
 ---
-## Controle de Fluxo
+# Controle de Fluxo 
 
-O controle de fluxo de dados no Python podem ser realizados utilizando desvio no fluxo de código, ou através de sistema de repetição.
+O controle de fluxo de dados no Python podem ser realizados utilizando desvio no fluxo de código ou através de sistema de repetição.
 
-- if
-- for
-- while
+- **if**
+- **for**
+- **while**
 
 ---
 ## Condição `IF`
@@ -518,10 +543,10 @@ else:
 ---
 ## Condição `IF` (Exemplo)
 
-Vamos fazer uma entrada de dados via `input`, transformar em inteiro e realizar as comparações.
+Entrada de dados via `input`, transformar em inteiro e realizar as comparações.
 
 ```python
-x = int(input("Please enter an integer: "))
+x = int(input("Digite um numero: "))
 
 if x < 0:
     print('Valor negativo')
@@ -537,18 +562,32 @@ else:
 ## Repetição `For`
 
 Além do desvio de fluxo, podemos repetir um pedaço de código utilizando o `FOR`. 
+<br>
+
 
 ```python
 words = ['gato', 'cachorro', 'coelho']
 for w in words:
     print(w, len(w))
 ```
+<small>
+  
+|w|len(w)|
+|:-:|:-:|
+|gato|4|
+|cachorro| 8|
+|coelho| 6|
+</small>
+
 ---
 <!-- template: gaia -->
 
 > Caso não tenha uma lista de `coisas`, uma nova lista de números pode ser criada utilizando a função `range`. Por exemplo, se você precise gerar uma lista de números de 0 até 5 `range(5)`
 
+
 ---
+<!-- template: default -->
+
 # Gerador de Lista de Números
 
 ```python
@@ -567,17 +606,18 @@ Exemplos:
 ```
 range(5, 10)
    5, 6, 7, 8, 9
-
+```
+```
 range(0, 10, 3)
    0, 3, 6, 9
-
+```
+```
 range(-10, -100, -30)
   -10, -40, -70
 ```
 ---
 ## Repetição `while`
 
-Como forma de loop também temos o `while`. Com o `while` não possui uma lista, portanto não é possível saber a quantidade de vezes que o fluxo do programa vai ficar no `while. 
 
 O fluxo vai ficar no `while` até a condição for `False`.
 
@@ -620,16 +660,18 @@ print(lista)
 ---
 ##  `break`, `continue` e `else`
 
-- A instrução `break`, como em C, é interna para as funções `for` ou `while` e quando invocado finaliza de forma bruta o loop.
+
+- A instrução `break` é interna para as funções `for` ou `while` e quando invocado `finaliza` de forma bruta o loop.
  
 - A instrução `continue` finaliza aquela parte do bloco de código e volta para o início do loop. 
 
 - As instruções de loop podem ter uma cláusula `else`; ele é executado quando o loop termina por esgotamento da lista (`for`) ou quando a condição se torna `falsa` (`while`), mas não quando o loop é finalizado por uma instrução `break`. 
 
+
 ---
-# `break`, `continue` e `else`(Exemplo)
+# `break`, `continue` e `else`
 
-
+<br>
 
 ```python
 nomes=['maria','jose','carlos','eduardo']
@@ -650,14 +692,14 @@ else:
 
 - print
 
-O `print` como já vimos em vários exemplos, é utilizado para imprimir (mostrar) algo na tela.
+O `print` como já vimos em vários exemplos, é utilizado para imprimir na tela.
 
 - split
 
 A função `split` utiliza um padrão para 'quebrar' uma string e gerar uma lista. 
 
 ---
-## Exemplos de print()
+## Exemplos de `print()`
 Vamos aprender com esses exemplos:
 
 ```python
@@ -676,6 +718,8 @@ print("Usuario:",nome)
 ---
 ## Continuando...
 
+<br>
+
 ```
 # Imprime string com variável
 print("O usuario:"+ nome)
@@ -692,11 +736,14 @@ print("{0:>20}".format(nome))
 ---
 # Continuando...
 
+<br>
+
 ```
 # alinha a direita com 20 símbolos -
 print("{0:->20}".format(nome))
 
-# alinha ao centro usando 10 espaços em branco a esquerda e 10 a direita
+# alinha ao centro usando 10 espaços em branco
+# a esquerda e 10 a direita
 print("{0:^20}".format(nome))
 
 # imprime só as primeiras cinco letras
@@ -717,31 +764,17 @@ texto = "jose:30anos:rua de baixo:sp"
 Temos um delimitador na variável que é o ":".
 
 ```python
-lista = texto.split(":")  # ['jose','30anos','rua de baixo','sp']
-print(lista[0])           # imprimir o nome
+lista = texto.split(":")  
+# ['jose','30anos','rua de baixo','sp']
+
+print(lista[0])           
+# imprimir o nome
 ```
 
-> Qualquer caractere pode ser o delimitador.
+><small>- Qualquer caractere pode ser o delimitador. </small>
 
 ---
 <!-- template: gaia -->
 
-# ==That's all!==
+# Laboratório Módulo 1
 
-## Let's create beautiful slides<br />with ==Marp== + ==Gaia== theme!
----
-<!-- *template: invert -->
-
-> In Greek mythology, **Gaia** also spelled **Gaea**, was the personification of the Earth and one of the Greek primordial deities.
->
-> <small>-- *[Gaia (mythology) - Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/Gaia_%28mythology%29)*</small>
-
----
-
----
-
-#### `<!-- $theme: gaia -->` of Marp
-
-###### [![](../images/marp.png)](https://yhatt.github.io/marp)
-
-#### https://yhatt.github.io/marp
