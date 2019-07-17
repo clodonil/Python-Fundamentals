@@ -46,7 +46,10 @@ Vamos utilizar os seguintes recursos da linguagem:
 
 Exemplo de execuão:
 
-![video](https://youtu.be/vN9QlAm4qgU)
+![video]()
+
+[![video](imagens/video_modulo1.png)](https://youtu.be/vN9QlAm4qgU)
+
 ------
 
 1. **Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas:**
