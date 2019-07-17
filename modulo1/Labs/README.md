@@ -43,6 +43,10 @@ Vamos utilizar os seguintes recursos da linguagem:
 * Dicionário
 
 > No manifesto [`requirements`](code/requirements) estão as dependências da [lib/scrapy_table.py](code/lib/scrapy_table.py). 
+
+Exemplo de execuão:
+
+![video](https://youtu.be/vN9QlAm4qgU)
 ------
 
 1. **Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas:**
