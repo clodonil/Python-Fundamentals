@@ -42,7 +42,7 @@ Vamos utilizar os seguintes recursos da linguagem:
 * Operadores
 * Dicionário
 
-> O manifesto [`requirements`](code/requirements) estão as dependências da [lib/scrapy_table.py](code/lib/scrapy_table.py). 
+> No manifesto [`requirements`](code/requirements) estão as dependências da [lib/scrapy_table.py](code/lib/scrapy_table.py). 
 ------
 
 1. **Listar os 8 caracteres do nome do vereador para fazer o login de acesso aos sistemas:**
