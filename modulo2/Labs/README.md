@@ -33,8 +33,12 @@ list_dep = site_connect.deputados()
 print(list_dep)
 
 ```
-
+> Antes de executar o exercício, instale as dependências do arquivo [requirements.txt](code/requirements.txt)
 Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os códigos em Python.
+
+```python
+$ pip install -r requirements.txt
+```
 
 Vamos utilizar os seguintes recursos da linguagem:
 * Variável (String/Float);

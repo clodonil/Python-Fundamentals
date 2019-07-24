@@ -27,13 +27,14 @@ lista = ['jose',30]
 </small>
 
 ---
+<!-- *template: invert -->
 # Revisão
 ## Estrutura de Dados
 
 * Tuple;
 <small>
 ```python
-lista = ['jose',30]
+lista = ('jose',30)
 ```
 </small>
 
@@ -62,8 +63,8 @@ lista = {'Nome':'jose Silva','idade':30}
 - **for**
 <small>
  ```python
- valores = []
- for key in valores:
+ words = ['gato', 'cachorro', 'coelho']
+ for key in words:
      print("Key -> {0}".format(key))
  ```
 </small>
@@ -101,12 +102,12 @@ s = "se nada mudar, invente."
 
   
 |Método | Sintaxe|Exemplo|
-|-------|-------|---|
+|-|-------|---|
 |s.capitalize()	|s.capitalize()|"Titulo"|
 |s.center(width, char)	|`s.center(50,'-')`|--texto--
 |s.ljust(width, char)	|`s.ljust(30,'-')`|texto---
 |s.rjust	|`s.rjust(30,'-')`|---texto|
-|s.count(t, end)|`s.count('e')`  e `s.count('e',2,10)`| 2 e 3
+|s.count(t, end)|`s.count('e')`  e `s.count('e',2,23)`| 3 e 2
 
 </small>
 
@@ -117,13 +118,13 @@ s = "se nada mudar, invente."
 
 |Método | Sintaxe |Exemplo|
 |-------|-------|------|
-|s.find(t, start, end)	|`s.find('e'`) e `s.find('e',1,20)`|
-|s.rfind(t, start, end)	|`s.rfind('d')` e `s.rfind('d',2,23)`|
-|s.isalnum()  |`s.isalmun()`|
-|s.isalpha()	|`s.isalpha()`|
-|s.isdecimal()	|`s.isdecimal()`|
-|s.islower()	|`s.islower()`|
-|s.isuper()	|`s.issuper()`|
+|s.find(t, start, end)	|`s.find('e'`) e `s.find('e',2,20)`| 1, 18
+|s.rfind(t, start, end)	|`s.rfind('e')` e `s.rfind('e',2,20)`| 21, 18
+|s.isalnum()  |`s.isalmun()`| False
+|s.isalpha()	|`s.isalpha()`| False
+|s.isdecimal()	|`s.isdecimal()`| False
+|s.islower()	|`s.islower()`| True
+|s.isupper()	|`s.isupper()`| False
 
 </small>
 
@@ -134,8 +135,8 @@ s = "se nada mudar, invente."
 
 |Método | Sintaxe|Exemplo|
 |-------|-------|---|
-|s.isspace()	|`s.isspace()`|
-|s.join(t)	|`s = '.'` , `t='dois'` e  `s.join(t)='d.o.i.s'`|
+|s.isspace()	|`s.isspace()`| False
+|s.join(t)	|`s = '.'` , `t='dois'` e  `s.join(t)`|'d.o.i.s'
 |s.lower()	|`s.lowe()`|
 |s.upper()	|`s.upper()`|
 |s.partition(t)|`s.partition('m')`|
@@ -149,13 +150,13 @@ s = "se nada mudar, invente."
 
 <small>
 
-|Método | Exemplo|
-|-------|-------|
-|s.strip(t)|`s.strip()`|
-|s.lstrip(chars)|`s.lstrip()`|
-|s.rstrip(chars)|`s.rstrip()`|
-|s.swapcase()|`s.swapcase()`|
-|s.title()|	`s.title()`|
+|Método | Descrição|Sintaxe|
+|-------|-------|---|
+|s.strip(t)|Remove espaço no inicio e fim da string |`s.strip()`| 
+|s.lstrip(chars)|Remove espaço do lado esquerdo|`s.lstrip()`|
+|s.rstrip(chars)|Remove espaço do lado direito|`s.rstrip()`|
+|s.swapcase()|Inverte para lowe()/upper()|`s.swapcase()`|
+|s.title()|Primeiros caracteres em Maiúscula	|`s.title()`|
 
 </small>
 
@@ -175,8 +176,8 @@ a=10
 
 | Méthodo  | Descrição  | Exemplo|
 |----------|------------|--------|
-|bit_length |  Quantidade de bit para guardar o Inteiro         | ``bin(a)`` ; ```a.bin_length()```    
-|to_bytes|  Retonar uma array com os bytes que representam o inteiro.         |   ```a.to_bytes(2, byteorder='big')``` |
+|bit_length |  Quantidade de bit para guardar o inteiro         | ``bin(a)`` ; ```a.bit_length()```    
+|to_bytes|  Retonar os bytes que representam o inteiro.         |   ```a.to_bytes(2, byteorder='big')``` |
 
 </small>
 
@@ -195,8 +196,7 @@ a=10.1
 
 | Méthodo  | Descrição  | Exemplo|
 |---------|-------------|-------|
-|as_integer_ratio| Retorna um par de inteiros cuja proporção é exatamente igual ao float original|        |    
-|fromhex| Retorna o float hex de uma string          | ```a.fromhex('b')```       | 
+|as_integer_ratio| Retorna um par de inteiros cuja proporção é gual ao float original| ```a.as_integer_ratio()```       |    
 |hex| Converte um float em Hex          | ```a.hex()```       |  
 |is_integer|  Verifica se o conteúdo do float é Inteiro         |   ```float(10).is_integer()``` |  
 
@@ -216,26 +216,26 @@ lista=[]
 |append    | Adiciona um item no final da lista           |  ```lista.append('jose')```         |
 |copy  | Faz uma copia da lista           |   ```lista_b = lista.copy()```         |
 |count  |  retorna o número de ocorrência de um item          | ```lista.count('jose')```    |
-|extend  | Prolonga a lista, adicionando no fim todos os elementos de outra lista            | ```lista.extend([10,'maria')```      |
+|extend  | Prolonga a lista, adicionando no fim todos os elementos de outra lista            | ```lista.extend([10,'maria'])```      |
 
 </small>
 
 ---
 # Principais Métodos - List
 
-<small>
+<small><small>
 
 | Méthodo  | Descrição  | Exemplo| 
 |----------|------------|--------|
-|index  |Devolve o índice do primeiro item cujo valor é igual a ao item pesquisado| ```lista.index('jose')```         |
+|index  |Retorna o índice do primeiro item pesquisado| ```lista.index('jose')```         |
 |insert  | Insere um item em uma posição especificada. | ```lista.insert(0,'pedro')```  |
-|pop  |Remove o item na posição dada e o devolve. |   ```lista.pop()``` ```lista.pop(0)``` |
+|pop  |Remove o item na posição dada. |   ```lista.pop()``` ```lista.pop(0)``` |
 |remove  | Remove o primeiro item encontrado na lista conforme o valor passado.     |   ```lista.remove('jose')```  |
 |reverse  |Inverte a ordem dos elementos na lista |    ```lista.reverse()``` |
 |sort  |  Ordena os itens na própria lista|  ```lista.sort()```|
 |clear  | Limpa toda a lista (remove tudo)| ```lista.clear()```|
 
-</small>
+</small></small>
 
 ---
 # Principais Métodos - Tuple
@@ -253,9 +253,9 @@ t = ('jose','maria','pedro')
 </small>
 
 ---
-## Principais Métodos - Dicionário
+## Principais Métodos - Dictionaries
 
-<small>
+<small><small>
 
 ```python
 st = {'SP':'São Paulo','RJ':'Rio de Janeiro','MG':'Minas Gerais' }
@@ -263,14 +263,22 @@ st = {'SP':'São Paulo','RJ':'Rio de Janeiro','MG':'Minas Gerais' }
 |Métodos | Descrição | Exemplo |
 |-------|-----------|---------|
 |st.copy()| Faz uma cópia do dicionário| ```new = st.copy()```|
-|st.fromkeys() |          |         |
 |st.get()      |Retorna um valor de uma chave         | ```st.get('SP')``` , ```st['SP']```        |
 |st.items()    |Retorna uma visão do dicionário (key e value)        |```st.items()```         |
 |st.keys()     |Retorna uma visão do dicionário (key)         |    ```st.keys()```     |
 |st.values()   |Retorna uma visão do dicionário (value)         |   ```st.values()```      |
-|st.pop()      |Remove e Retorna um valor de uma chave.         |   ```st.get('RS')```      |
+|st.pop()      |Remove e Retorna um valor de uma chave.         |   ```st.pop('RS')```      |
+
+</small></small>
+
+---
+## Principais Métodos - Dicionário
+
+<small>
+
+|Métodos | Descrição | Exemplo |
+|-------|-----------|---------|
 |st.popitem()    |Remove e retorna um par(key, value) pela ordem de LIFO         | ```st.popitem()```         |
-|st.setdefault() | Similar ao get,mais retorna um valor default se nenhuma key for achado          | ```st.setdefault('RO','None')```        |
 |st.update()     |Atualiza um dicionário.         |   ```st.update({'RS':'Rio Grande do Sul'})```      |
 |st.clear()     | Limpa todos os elementos de um dicionário         | ```st.clear()```        |
 
@@ -279,12 +287,16 @@ st = {'SP':'São Paulo','RJ':'Rio de Janeiro','MG':'Minas Gerais' }
 ---
 ## Principais Métodos - Set
 
-<small>
+
+<small>  
 
 ```python
-conj1 = {1,3,4,5,6}        # conj1 = set()
+conj1 = {1,3,4,5,6}        
 conj2 = {200,300,400,500,1,2,3}
 ```
+<small>
+
+
 |Métodos | Descrição | Exemplos |
 |--------|-----------|----------|
 |conj1.add()	  | Adiciona elementos ao Set| ```conj1.add('jose')```|
@@ -292,18 +304,30 @@ conj2 = {200,300,400,500,1,2,3}
 |conj1.clear()	|Remove todos os elementos de um  set|``` new.clear()```|
 |conj1.remove()|	Remove elementos de um Set| ```conj1.remove('jose')```|
 |conj1.difference()|Retorna a diferença entre 2 Sets conj1 - conj2 |```conj1.difference(conj2)```|
-|conj1.difference_update()|	Updates Calling Set With Intersection o f Sets||
 |conj1.discard()	|Remove elemento de um Set, se estiver presente|```conj1.discard('jose')```|
+
+</small></small>
+
+---
+## Principais Métodos - Set
+
+<small><small>
+
+|Métodos | Descrição | Exemplos |
+|--------|-----------|----------|
 |conj1.intersection()	|Retorna a interseção de 2 ou mais Sets|```conj1.intersection(conj2)```|
-|conj1.intersection_update()|	Updates Calling Set With Intersection of Sets||
-|conj1.isdisjoint()	|Checks Disjoint Sets||
-|conj1.issubset()	|Checks if a Set is Subset of Another Set||
 |conj1.pop()	|Remove um elemento arbitrario|```conj1.pop()```|
-|conj1.symmetric_difference()|	Returns Symmetric Difference||
-|conj1.symmetric_difference_update()	|Updates Set With Symmetric Difference||
 |conj1.union()	|Retorna um novo Set com a União entre Sets|```conj1.union(conj2)```|
 |conj1.update()|	Add Elements to The Set.|``` conj1.update({8,4,5}) ```|
-|enumerate()|	Retorna a enumeração de um set|``` list(enumerate(conj1))``` |
+
+</small></small>
+
+---
+## Principais Métodos - Set
+<small>
+
+|Métodos | Descrição | Exemplos |
+|--------|-----------|----------|
 |len()	|Retorna o tamanho do Set|``` len(conj1) ```|
 |max()	|Retorna o maior elemento de um Set|``` max(conj1)```|
 |min()	|Retorna o menor elemento de um Set|``` min(conj1)```|
@@ -314,6 +338,30 @@ conj2 = {200,300,400,500,1,2,3}
 </small>
 
 ---
+# Funções built-in
+
+68 comandos internos.
+
+<small><small><small>
+
+|            |            | 		|      |        | |
+|------------|------------|---------------------|------|--------|-----|
+|abs()	      |`dict()`	      |help()	       |`min()`      |	setattr()|delattr()	|
+|all()	      |dir()	       |hex()	        |next()	    |zip()|hash() |
+|any()	      |divmod()     |	`id()`	        |object()	  |`sorted()`| memoryview()|
+|ascii()	    |enumerate()	 |`input()`	      |oct()	     |`type()`| `set()`	|
+|`bin()`	      |eval()       |	`int()`	       |open()     |	`str()`|complex()|
+|`bool()`	     |exec()       |	isinstance()	|ord()	     |`sum()`|hasattr()|
+|bytearray()	|filter()	    |issubclass()	 |pow()	     |super()|`max()` |
+| vars()  |`float()`      |	iter()	      |`print()`    |	`tuple()`|round() |
+|callable() 	|`format()`	    |`len()`	        |property()	|\__import__()|reversed()|
+|chr()	      |`frozenset()`	 |`list()`	       |range()   	|map()|globals() |
+|classmethod()	| getattr()	|locals()      |	repr()   	|compile()|
+
+</small></small></small>
+
+---
+
 <!-- template: gaia -->
 
 # Laboratório Módulo 2
