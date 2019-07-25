@@ -52,28 +52,61 @@ Vamos utilizar os seguintes recursos da linguagem:
 
 ------
 
-1. **Imprima a quantidade de deputadores retornados na consulta**
+1. **Imprima o nome dos deputados e a quantidade de deputadores**
 
-> Codificação: [m2p1_lab1.py](code/m2p1_lab1.py)
-	 
+> Codificação: [m2_lab1.py](code/m2_lab1.py)
+
+**Sugestão de alteração:**
+- Imprima o id,nome e partido dos deputados;
+- Imprima o partido  e o número de deputados eleitos;
+- Imprima os deputados que tenha no nome as string 'jose','ze','maria' ; 
+
+
 2. **Listar os dados dos deputados (id, Nome, DNasc, email, estado, partido):**
    
-> Codificação: [m2p1_lab2.py](code/m2p1_lab2.py)
+> Codificação: [m2_lab2.py](code/m2_lab2.py)
 
-3. **Ordene a lista dos deputados por partido. Imprima o nome do deputado e o partido:**
+**Sugestão de alteração:**
+- Adicione o campo escolaridade do deputado;
+- Liste os deputados que tem ensino superior;
+- Liste a escolaridade e o número de deputado que tem essa escolaridade ex: Superior 10, Mestrado 20; 
+
+3. **Lista dos deputados por partido. Imprima o nome do deputado e o partido:**
     
-> Codificação: [m2p1_lab3.py](code/m2p1_lab3.py)
+> Codificação: [m2_lab3.py](code/m2_lab3.py)
+
+**Sugestão de alteração:**
+- Imprima a lista ordenado por partido;
+- Imprima apenas os deputados do PT e PSDB;
+- Imprima a quantidade de deputados do PSL; 
 
 4. **Lista as descrição e o valor das despesas de um deputado (pode ser qualquer um):**
 
-> Codificação: [m2p1_lab4.py](code/m2p1_lab4.py)
-	
+> Codificação: [m2_lab4.py](code/m2_lab4.py)
+
+**Sugestão de alteração:**
+- Imprima a soma dos gastos do deputado;
+- Formate o texto do gasto do deputado com o método title;
+- Imprima também o nome do fornecedor; 
+
 5. **Lista os titulos em maiúsculo dos orgãos (comissão) do Congresso.:**
    
-> Codificação: [m2p1_lab5.py](code/m2p1_lab5.py)
+> Codificação: [m2_lab5.py](code/m2_lab5.py)
+
+**Sugestão de alteração:**
+- Formate a saida do print, para uma melhor representação;
+- Formate o titulo da comissão, imprimindo no máximo 30 caracteres;
+- Imprima o total de comissão; 
+
+
 6. **Lista os deputados que participam da comissão que tem o ID 5973:**
    
-> Codificação: [m2p1_lab6.py](code/m2p1_lab6.py)
+> Codificação: [m2_lab6.py](code/m2_lab6.py)
+
+**Sugestão de alteração:**
+- Imprima o partido que tem mais representante na comissão;
+- Imprima o nome do deputado em maisculo;
+- Imprima a quantidade de deputados que estão na comissão; 
 
 
 ***
