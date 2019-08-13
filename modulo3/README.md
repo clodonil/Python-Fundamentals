@@ -320,7 +320,7 @@ Construindo objeto...
 
 Com a chamada da classe, podemos criar um object e executar o método `deposito`, e acessar o atributo `saldo`. Os atributos estã públicos e podem ser acessados, entretanto nem sempre isso é desejado. No exemplo, o `saldo` deveria ser acessivel apenas pelos métodos.
 
-Para isso, podemos deixar o atributo no modo privado, e para isso adicionamos `__` antes do nome da variável. O mesmo conceito é valido para os métodos.
+Para isso, podemos deixar o atributo no modo privado, e para isso adicionamos `__` (underscore) antes do nome da variável. O mesmo conceito é valido para os métodos.
 
 ```python
 class Conta:
@@ -362,19 +362,124 @@ def limite(self, limite):
     self.__limite = limite
 ```
 
+## 6.  Herança 
+A Herança é um conceito do paradigma da orientação à objetos que determina que uma classe pode herdar atributos e métodos de uma outra classe e, assim, evitar que haja muita repetição de código.
+
+Utilizando o exemplo da conta, vamos criar a classe de `Investimento`, herdando todos os métodos e atributos da classe `Conta`.
+
+```python
+class Conta:
+    def __init__(self,nconta, titular, saldo, limite):
+       print("Construindo objeto...")
+       self.__nconta = nconta
+       self.__titular = titular
+       self.__saldo = saldo
+       self.__limite = limite
 
 
+    def deposito(self, valor):
+       self.__saldo += valor
 
-## 6.  Herança
-## 7.  Polimorfismo
+    def saque(self, valor):
+       self.__saldo -= valor
+
+    def extrato(self):
+       print("Sr(a) {0} o Saldo eh {1}".format(self.__titular,self.__saldo))
+
+    @property
+    def saldo(self):
+       return self.__saldo
+
+    @property
+    def titular(self):
+       return self.__titular
+
+    @property
+    def limite(self):
+       return self.__limite
+
+    @limite.setter
+    def limite(self, limite):
+      self.__limite = limite
+
+class Investimento(Conta):
+    pass
+```
+
+Validando a implementação:
+
+```
+>>> from conta import Conta, Investimento
+>>> maria = Investimento(1321,'Maria',100,200)
+Construindo objeto...
+>>> maria.titular
+'Maria'
+>>> maria.limite
+200
+```
+
+No modelo de conta `Investimento`, precisamos do atributo de taxa de juros. Portanto vamos dar uma sobrecarga no método `__init__()` e instânciar o método `__init__()` da classe `Conta` usando o método `super()`.
+
+```
+class Investimento(Conta):
+    def __init__(self, nconta,titular, saldo, limite,juros):
+      super().__init__(nconta, titular, saldo, limite)
+      self.__juros = juros
+      
+```
+Na conta investimento vamos implementar o método `rendimento()` que aplica a taxa de juros no saldo. Na classe `Conta`, os atributos estão privados, portanto precisamos mudar esse estado para as classes filhas acessarem os atributos. Por definição, mudamos os atributos para (_)(underscore).
+
+```
+class Conta:
+    def __init__(self,nconta, titular, saldo, limite):
+       print("Construindo objeto...")
+       self._nconta = nconta
+       self._titular = titular
+       self._saldo = saldo
+       self._limite = limite
+
+    def deposito(self, valor):
+       self.__saldo += valor
+
+    def saque(self, valor):
+       self.__saldo -= valor
+
+    def extrato(self):
+       print("Sr(a) {0} o Saldo eh {1}".format(self.__titular,self.__saldo))
+
+    @property
+    def saldo(self):
+       return self.__saldo
+
+    @property
+    def titular(self):
+       return self.__titular
+
+    @property
+    def limite(self):
+       return self.__limite
+
+    @limite.setter
+    def limite(self, limite):
+      self.__limite = limite
+
+class Investimento(Conta):
+    def __init__(self, nconta,titular, saldo, limite, juros):
+      super().__init__(nconta, titular, saldo, limite)
+      self.__juros = juros
+
+    def redimento(self):
+        self._saldo += (self._saldo * self.__juros)
+        return self._saldo
+```
 
 ## 11 Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
-> [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
+> [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo3/Labs/README.md)
 
 ## 11 Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
-> [Lista de Exercício](exercicios/README.md)
+> [Lista de Exercício](https://github.com/clodonil/curso_python/tree/master/modulo3/exercicios/README.md)
 
 ***
 > By:
