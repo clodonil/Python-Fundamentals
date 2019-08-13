@@ -173,25 +173,201 @@ def verifica():
        print('maior')
        controle += x
     else:
-       print('menor')   
+       print('menor')
 
 
 verifica()
 ```
+Para finalizar o estudo do paradigma procedural, vamos exemplicar implementando um exemplo de estruturação de procedures para desenvolvimento de uma movimentação financeira.
+
+Imagine que precisamos implementar a seguinte estrutura de dados:
 
 
+**Procedures:**
+```
+criar_conta
+deposito
+saque
+extrato
+```
+
+**Atributos da Conta:**
+```
+Numero da Conta
+titular
+Saldo
+Limite
+```
+Vamos começar implementando o `criar_conta`, que vai receber como parâmetro o `Numero da Conta`,`titular`, `Saldo`,`limite` e cria a estrutura de dados como dicionário.
+
+Salve os códigos abaixo no arquivo `banco.py`.
+
+```python
+
+def criar_conta(nconta, titular, saldo, limite):
+   conta = {"nconta": nconta, "titular": titular, "saldo": saldo, "limite": limite}
+   return conta
+
+```
+Para validar a implementação, abra o python em modo interativo e execute os comandos:
+
+```bash
+>>> from banco import criar_conta
+>>> clodonil = criar_conta(123,'clodonil',100,500)
+>>> clodonil['nconta']
+123
+
+```
+
+> O mesmo procedimento pode ser feito para as outras procedures:
+
+Agora vamos implementar a procedure para realizar o depósito na conta.
+
+```python
+def deposito(conta, valor): 
+    conta ["saldo"] += valor
+```    
+Da mesma forma vamos implementar o módulo saque.
+
+```python
+def saque(conta,valor):
+    conta["saldo"] -= valor
+```
+```
+def extrato(conta):
+    print("Sr(a) {0} o Saldo é {1}".format(conta["titular"],conta["saldo"]))
+```
+Agora que as procedures estão prontas, podemos importadas no programa principal e realizar as chamadas, conforme o exemplo a seguir:
+
+```python
+from banco import criar_conta, deposito, saque, extrato
+
+conta_do_jose = criar_conta(3123,'Jose',50,1500)
+deposito(conta_do_jose, 100)
+extrato(conta_do_jose)
+saque(conta_do_jose, 50)
+```
+>  Como sugestão, melhore as procedures para não realizar o saque além do limite, para criar contas apenas com saldo positivo.
 
 ## OOP
 
-[ orientação a objetos](https://en.wikipedia.org/wiki/Object-oriented_programming)
+O Paradigma [orientação a objetos](https://en.wikipedia.org/wiki/Object-oriented_programming)(OO), tem como proposta resolver problemas atráves de troca de mensagens entre `Objetos`, que são representações dos problemas atuais.
 
+O modelo de OO é formado por quatro componentes básicos (`objeto`, `mensagem`, `método` e `classes`):
+
+- **Objeto**: Um objeto consiste em um conjunto de operações encapsuladas (métodos) e um `estado` (determinado pelo valor dos atributos) que grava e recupera os efeitos destas operações. Um objeto tem determinadas propriedades que o caracterizam, e que são armazenadas no próprio objeto.  Objeto é uma instância de uma classe.
+
+ - **Mensagem**: Mensagens são requisições enviadas de um objeto para outro, para que o objeto “receptor” forneça algum  resultado  desejado  através  da  execução  de  uma  operação.
+
+ - **Métodos**: Métodos são similares a procedimentos e funções e consistem nas descrições das operações que um objeto  executa  quando  recebe  uma  mensagem.
+
+ - **Atributos**: Um atributo consiste em um dado ou informação de estado, para o qual cada objeto de uma classe tem  seu  próprio  valor.  Existem  dois  tipos  de  atributos  em  um  sistema  orientado  a  objetos:  os  atributos  de objetos e os atributos de classes.
+
+ - **Classes**: Uma classe é uma estrutura que abstrai um conjunto de objetos com características similares. Uma classe define o comportamento de seus objetos - através de métodos - e os estados possíveis destes objetos - através de atributos.
+
+Entre as principais características da OOP, destaca-se a `reutilização de código` e a abstração dos detalhes dos  componentes  do  software.
+
+Modelagem por objetos, vê o  mundo  como  uma  coletânea  de  objetos  que  interagem  entre  si,  apresentam  características próprias  que  são representadas pelos seus atributos (dados) e operações (processos).
 
 ## 5.  Classes
+
+Para entramos mais na prática, vamos utilizar o exemplo de `conta bancária` que utilizamos no estilo procedural. Nesse modelo podemos facilmente identificar o objeto `Conta`.
+
+Antes de instânciar o objeto `Conta`, precisamos definir a classe que vai conter os atributos e métodos:
+
+- Os métodos `deposito`, `saque` e `extrato`, basicamente ficaram igual, porém agora encapsulado dentro da classe.
+- O método especial `__init__()` representa o construtor da classe e será executada somente quando a classe é criada;
+- `Self` representa o endereçamento do objeto na mémoria, utilizado para acessar os atributos e métodos.
+
+
+```python
+# Arquivo: banco.py
+class Conta:
+    def __init__(self,nconta, titular, saldo, limite):
+       print("Construindo objeto...")
+       self.nconta = nconta
+       self.titular = titular
+       self.saldo = saldo
+       self.limite = limite
+
+    def deposito(self, valor):
+       self.saldo += valor
+
+    def saque(self, valor):
+       self.saldo -= valor
+
+    def extrato(self):
+       print("Sr(a) {0} o Saldo eh {1}".format(self.titular,self.saldo))
+
+```
+
+Agora que temos a classe Conta, podemos criar vários objetos do tipo conta:
+
+```bash
+>> from banco import Conta
+>>> x = Conta(12321,'Clodonil',100,200)
+Construindo objeto...
+>>> x
+<banco.Conta object at 0x7f1ba4093d10>
+>>> x.saldo
+100
+>>> x.deposito(100)
+>>> x.saldo
+200
+>>> 
+```
+## 10. Encapsulamento
+
+Com a chamada da classe, podemos criar um object e executar o método `deposito`, e acessar o atributo `saldo`. Os atributos estã públicos e podem ser acessados, entretanto nem sempre isso é desejado. No exemplo, o `saldo` deveria ser acessivel apenas pelos métodos.
+
+Para isso, podemos deixar o atributo no modo privado, e para isso adicionamos `__` antes do nome da variável. O mesmo conceito é valido para os métodos.
+
+```python
+class Conta:
+    def __init__(self,nconta, titular, saldo, limite):
+       print("Construindo objeto...")
+       self.__nconta = nconta
+       self.__titular = titular
+       self.__saldo = saldo
+       self.__limite = limite
+```
+A ação de tornar privado o acesso aos atributos, no mundo Orientado a Objetos, chamamos de encapsulamento. Com isso, definimos que o acesso deve ocorrer apenas por meio dos métodos.
+
+Entretanto é comum o desenvolvimento implementar métodos para acessar os `getters` e `setter` para ter acesso ao atributo protegido.
+
+Exemplo de implementação do `getters` diretamente:
+
+```python
+
+def get_titular():
+    return self. __titular
+```
+No Python podemos utilizar a palavra reservada `@property` para implementar os get e set da melhor forma possível:
+
+```python
+@property
+def saldo(self):
+    return self.__saldo
+
+@property
+def titular(self):
+    return self.__titular 
+
+@property
+def limite(self):
+    return self.__limite
+
+@limite.setter
+def limite(self, limite):
+    self.__limite = limite
+```
+
+
+
+
 ## 6.  Herança
 ## 7.  Polimorfismo
-## 8.  Métodos
-## 9.  Atributos
-## 10. Encapsulamento
+
 ## 11 Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
 > [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
