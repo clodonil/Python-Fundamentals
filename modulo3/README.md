@@ -48,9 +48,9 @@ lista = list(map(str, string('Python'))) # atribuição a um novo objeto
 print(lista) # ['P', 'y', 't', 'h', 'o', 'n']
 ```
 
-## 2. Estruturada (Procedural)
+## 2. Estruturada
 
-O desenvolvimento através do [paradigma procedural](https://en.wikipedia.org/wiki/Procedural_programming) estrutura a execução através de rotinas estanques que são chamadas conforme a necessidade. Normalmente as chamamos de procedures/funções.
+O desenvolvimento estruturada, também conhecida como [paradigma procedural](https://en.wikipedia.org/wiki/Procedural_programming), estrutura a execução através de rotinas estanques que são chamadas conforme a necessidade. Normalmente as chamamos de procedures/funções.
 
 
 Em algumas linguagens a diferenciação entre procedures e funções se dá pelo fato que função retorna algum valor e o procedure, apenas processa algo. No `Python` a função `return` devolve o conteúdo da variável declarada como retorno.
