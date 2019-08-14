@@ -7,7 +7,7 @@ Apresentar os vários estilos (paradigmas) de programação em Python, focando n
 ## Conteúdo:
 > 1. [MultiParadigma](#1-MultiParadigma)</br>
 > 2. [Estruturada](#2-Estruturada)</br>
-> 2.1. [Escopo de Variável](#2.1-Escopo-de-Variável)</br>
+> 2.1. [Escopo de Variável](#2-1-Escopo-de-Variável)</br>
 > 3. [Orientado a Objeto](#3-Orientado-a-Objeto)</br>
 > 3.1. [Classes](#3.1-Classes)</br>
 > 3.2. [Encapsulamento](#3.2-Encapsulamento)</br>
@@ -114,7 +114,7 @@ Em caso de organizar os códigos em subdiretórios, a chamada da função trata 
 
 No próximo exemplo, temos o arquivo `main.py` que chama o `calc.py` que está dentro do subdiretório `libs`.
 
-```
+```bash
  /main.py
    /libs/
        calc.py
