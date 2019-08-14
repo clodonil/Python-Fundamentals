@@ -129,14 +129,12 @@ print(lista) # ['P', 'y', 't', 'h', 'o', 'n']
 
 > Trata a computação como uma avaliação de funções matemáticas e que evita estados ou dados mutáveis. Ela enfatiza a aplicação de funções.
 
-<small>
   
 ```python
 string = lambda x: x
 lista = list(map(str, string('Python'))) 
 print(lista) # ['P', 'y', 't', 'h', 'o', 'n']
 ```
-</small>
 
 ---
 # Estruturada (Procedural)
@@ -158,7 +156,7 @@ if __name__ == "__main__":
 </small>
 
 ---
-> No desenvolvimento procedural, é muito comum serem criados `bibliotecas de funções` para serem utilizados em vários projetos diferentes.
+> No desenvolvimento procedural, é muito criar `biblioteca de funções` para serem utilizados em vários projetos diferentes.
 
 ---
 # import
@@ -230,7 +228,8 @@ verifica()
 ---
 # Exemplo Alteração:
 #### Acessando variável Global
-```
+
+```python
 x = 30
 y = 20
 controle = 0
@@ -390,7 +389,13 @@ class Conta:
      self.__limite = limite
 ```       
 ---
-Métodos para acessar os getters e setter para ter acesso ao atributo protegido.
+Métodos para implementar os getters e setter para ter acesso ao atributo protegido.
+
+<small><small>
+
+[conta.py](https://raw.githubusercontent.com/clodonil/Python-Fundamentals/master/modulo3/exemplos/conta.py)
+
+</small></small>
 
 ```python
 @property
@@ -409,6 +414,7 @@ def limite(self):
 def limite(self, limite):
     self.__limite = limite
 ```
+
 ---
 # Herança
 
@@ -425,7 +431,6 @@ Criando a classe `Investimento` e herdando os métodos e atributos na classe `Co
 class Investimento(Conta):
     pass
 ```    
-
 * Validando a criação da classe `Investimento`.
 
 ```python
@@ -437,6 +442,42 @@ Construindo objeto...
 >>> maria.limite
 200
 ```
+---
+# Sobrecarga de Métodos
+
+Muitas vezes precisamos rescrever um método que foi implementado na classe `Pai`. Um exemplo muito comum é o método `__init__()`. Para instânciar o método da classe `Pai`, usamos o comando `super()`.
+
+```
+class Investimento(Conta):
+  def __init__(self, nconta,titular, saldo, limite,juros):
+    super().__init__(nconta, titular, saldo, limite)
+    self.__juros = juros
+```
+---
+
+Para finalizar, vamos implementar o método rendimento. O método rendimento utilizar a variável `saldo` que está privada na classe `Conta`. Precisamos mudar esse atributo para `(_) underscore`.
+
+<small><small>
+  
+[conta.py](https://raw.githubusercontent.com/clodonil/Python-Fundamentals/master/modulo3/exemplos/conta_v2.py)
+</small></small>
+
+<small>
+
+```
+class Investimento(Conta):
+    def __init__(self, nconta,titular, saldo, limite, juros):
+      super().__init__(nconta, titular, saldo, limite)
+      self.__juros = juros
+
+    def redimento(self):
+        self._saldo += (self._saldo * self.__juros)
+        return self._saldo
+
+```
+
+
+</small>
 
 ---
 
