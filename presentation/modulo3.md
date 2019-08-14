@@ -156,7 +156,7 @@ if __name__ == "__main__":
 </small>
 
 ---
-> No desenvolvimento procedural, é muito criar `biblioteca de funções` para serem utilizados em vários projetos diferentes.
+> No desenvolvimento procedural, é muito comum criar `biblioteca de funções` para serem utilizados em vários projetos diferentes.
 
 ---
 # import
@@ -389,7 +389,7 @@ class Conta:
      self.__limite = limite
 ```       
 ---
-Métodos para implementar os getters e setter para ter acesso ao atributo protegido.
+Métodos para implementar os `getters` e `setter` para ter acesso ao atributo protegido.
 
 <small><small>
 

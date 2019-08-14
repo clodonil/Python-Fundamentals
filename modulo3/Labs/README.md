@@ -1,8 +1,8 @@
-Laboratório do Módulo 3 
+Laboratório do Módulo 3
 ======
 
 # Como trabalhar
-Vamos colocar em prática o que aprendemos sobre a linguagem Python. 
+Vamos colocar em prática o que aprendemos sobre a linguagem Python e seus paradigmas. 
 
 Esse laboratório propoe um problema e suas soluções. O aluno deve trabalhar como `code review`, isso é entender o código e fazer modificações construindo assim o seu conhecimento. 
 
@@ -33,40 +33,82 @@ list_dep = site_connect.deputados()
 print(list_dep)
 
 ```
-
+> Antes de executar o exercício, instale as dependências do arquivo [requirements.txt](code/requirements.txt)
 Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os códigos em Python.
 
+```python
+$ pip install -r requirements.txt
+```
+
 Vamos utilizar os seguintes recursos da linguagem:
-* Salvar dados em JSON;
-* Salvar dados em arquivos texto;
-* Salvar dados em CSV;
-* Manipulando datas;
-* Criando banco de dados;
+* Variável (String/Float);
+* List
+* Set
+* Tuple
+* for
+* if
+* Operadores
+* Dicionário
+* Funções
+* Classes
 
 ------
 
-1. **Salve em um arquivo texto os nomes dos deputados**
+1. **Crie uma função para retornar a quantidade de letras do nome do deputado**
 
 > Codificação: [m3_lab1.py](code/m3_lab1.py)
-	 
-2. **Exporte para CSV os dados de gastos de pelo menos 5 deputados. Faça um arquivo para cada deputado):**
-   
-> Codificação: [m3_lab2.py](code/m3_lab2.py)
 
-3. **Exporte no formato json os dados cadastraes dos deputados:**
+**Sugestão de alteração:**
+- Crie uma função para retornar o nome do deputador formatado; 
+- Crie uma função para retornar o sobrenome do deputado;
+- Crie uma função para retornar True se o deputado for do partido PSDB, todos os outros retorna False;
+
+
+2. **Crie uma função para retornar uma lista com  os dados do deputados (id, Nome, DNasc, email, estado, partido):**
+   
+> Codificação: [m2_lab2.py](code/m3_lab2.py)
+
+**Sugestão de alteração:**
+- Adicione o campo escolaridade do deputado;
+- Liste os deputados que tem ensino superior;
+- Liste a escolaridade e o número de deputado que tem essa escolaridade ex: Superior 10, Mestrado 20; 
+
+3. **Crie uma função, que dado o partido, retorna a lista de deputados:**
     
-> Codificação: [m3lab3.py](code/m3_lab3.py)
+> Codificação: [m2_lab3.py](code/m3_lab3.py)
 
-4. **Lista as descrição e o valor das despesas de um deputado (pode ser qualquer um):**
+**Sugestão de alteração:**
+- Imprima a lista ordenado por partido;
+- Imprima apenas os deputados do PT e PSDB;
+- Imprima a quantidade de deputados do PSL; 
 
-> Codificação: [m3_lab4.py](code/m3_lab4.py)
-	
-5. **Lista os titulos em maiúsculo dos orgãos (comissão) do Congresso.:**
+4. **Crie uma função que retorna os gastos que são recorrentes a cada mês de cada deputado:**
+
+> Codificação: [m2_lab4.py](code/m3_lab4.py)
+
+**Sugestão de alteração:**
+- Imprima a soma dos gastos do deputado;
+- Formate o texto do gasto do deputado com o método title;
+- Imprima também o nome do fornecedor; 
+
+5. **Crie uma função que retorna o deputado que tem os gastos acima de um valor definido:**
    
-> Codificação: [m3_lab5.py](code/m2p1_lab5.py)
+> Codificação: [m2_lab5.py](code/m3_lab5.py)
+
+**Sugestão de alteração:**
+- Formate a saida do print, para uma melhor representação;
+- Formate o titulo da comissão, imprimindo no máximo 30 caracteres;
+- Imprima o total de comissão; 
+
+
 6. **Lista os deputados que participam da comissão que tem o ID 5973:**
    
-> Codificação: [m3_lab6.py](code/m2p1_lab6.py)
+> Codificação: [m2_lab6.py](code/m3_lab6.py)
+
+**Sugestão de alteração:**
+- Imprima o partido que tem mais representante na comissão;
+- Imprima o nome do deputado em maisculo;
+- Imprima a quantidade de deputados que estão na comissão; 
 
 
 ***
