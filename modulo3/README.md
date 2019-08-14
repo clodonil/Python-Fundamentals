@@ -7,11 +7,11 @@ Apresentar os vários estilos (paradigmas) de programação em Python, focando n
 ## Conteúdo:
 > 1. [MultiParadigma](#1-MultiParadigma)</br>
 > 2. [Estruturada](#2-Estruturada)</br>
-> 2.1. [Escopo de Variável](#2-1-Escopo-de-Variável)</br>
+> 2.1. [Escopo de Variável](#21-Escopo-de-Variável)</br>
 > 3. [Orientado a Objeto](#3-Orientado-a-Objeto)</br>
-> 3.1. [Classes](#3.1-Classes)</br>
-> 3.2. [Encapsulamento](#3.2-Encapsulamento)</br>
-> 3.3 [Herança](#3.3-Herança)</br>
+> 3.1. [Classes](#31-Classes)</br>
+> 3.2. [Encapsulamento](#32-Encapsulamento)</br>
+> 3.3 [Herança](#33-Herança)</br>
 > 4. [Laboratório](#4-laboratório)</br>
 > 5. [Lista de Exercício](#5-lista-de-exercício)</br>
 
