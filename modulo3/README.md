@@ -5,15 +5,15 @@ __Python Fundamentals__ - Módulo 3
 Apresentar os vários estilos (paradigmas) de programação em Python, focando nos paradigmas estruturadas e OOP.
 
 ## Conteúdo:
-> 1. [MultiParadigma](#1-MultiParadigma)
-> 2. [Estruturada](#2-Estruturada)
-> 2.1. [Escopo de Variável](#p1)
-> 3. [Orientado a Objeto](#2.1-Escopo-de-Variável)
-> 3.1. [Classes](#3.1-Classes)
-> 3.2. [Encapsulamento](#3.2-Encapsulamento)
-> 3.3 [Herança](#3.3-Herança)
-> 4. [Laboratório](#4-laboratório)
-> 5. [Lista de Exercício](#5-lista-de-exercício)
+> 1. [MultiParadigma](#1-MultiParadigma)</br>
+> 2. [Estruturada](#2-Estruturada)</br>
+> 2.1 [Escopo de Variável](#2.1-Escopo de Variável)</br>
+> 3. [Orientado a Objeto](#2.1-Escopo-de-Variável)</br>
+> 3.1. [Classes](#3.1-Classes)</br>
+> 3.2. [Encapsulamento](#3.2-Encapsulamento)</br>
+> 3.3 [Herança](#3.3-Herança)</br>
+> 4. [Laboratório](#4-laboratório)</br>
+> 5. [Lista de Exercício](#5-lista-de-exercício)</br>
 
 ## 1. MultiParadigma
 
@@ -270,7 +270,7 @@ Entre as principais características da OOP, destaca-se a `reutilização de có
 
 Modelagem por objetos, vê o  mundo  como  uma  coletânea  de  objetos  que  interagem  entre  si,  apresentam  características próprias  que  são representadas pelos seus atributos (dados) e operações (processos).
 
-### 3.1 Classes
+### 3.1. Classes
 
 Para entramos mais na prática, vamos utilizar o exemplo de `conta bancária` que utilizamos no estilo procedural. Nesse modelo podemos facilmente identificar o objeto `Conta`.
 
@@ -317,7 +317,7 @@ Construindo objeto...
 200
 >>> 
 ```
-### 3.2 Encapsulamento
+### 3.2. Encapsulamento
 
 Com a chamada da classe, podemos criar um objeto e executar o método `deposito`, e acessar o atributo `saldo`. Os atributos estão públicos e podem ser acessados, entretanto nem sempre isso é desejado. No exemplo, o `saldo` deveria ser acessivel apenas pelos métodos.
 
@@ -363,7 +363,7 @@ def limite(self, limite):
     self.__limite = limite
 ```
 
-### 3.3  Herança 
+### 3.3. Herança 
 A Herança é um conceito do paradigma da orientação à objetos que determina que uma classe pode herdar atributos e métodos de uma outra classe e, assim, evitar que haja muita repetição de código.
 
 Utilizando o exemplo da conta, vamos criar a classe de `Investimento`, herdando todos os métodos e atributos da classe `Conta`.
@@ -474,11 +474,11 @@ class Investimento(Conta):
         return self._saldo
 ```
 
-## 5 Laboratório
+## 5. Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
 > [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo3/Labs/README.md)
 
-## 4 Lista de Exercício
+## 4. Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
 > [Lista de Exercício](https://github.com/clodonil/curso_python/tree/master/modulo3/exercicios/README.md)
 
