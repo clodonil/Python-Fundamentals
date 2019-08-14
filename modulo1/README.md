@@ -100,7 +100,7 @@ Para desativar o `VirualEnv` utilize o seguinte comando:
 $ source workspace_projeto/bin/deactive
 ```
 
-Além do `VirtualEnv, é possível realizar o isolamento do ambiente de outras formas, como criar uma máquina virtual exclusiva para o desenvolvimento.
+Além do `VirtualEnv`, é possível realizar o isolamento do ambiente de outras formas, como criar uma máquina virtual exclusiva para o desenvolvimento.
 
 Para aqueles que desejam ter uma máquina virtual em Linux para desenvolver o seu código, estou deixando o código do Vagrant preparado para provisionar um CentOS7 instalado (Você precisará ter o Vagrant instalado no seu computador e também o Virtualbox).
 
