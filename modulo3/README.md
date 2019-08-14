@@ -2,15 +2,16 @@ __Python Fundamentals__ - Módulo 3
  ====================== 
  
 ## Objetivo
-Apresentar os vários estilos (paradigmas) de programação em Python, visando a OOP.
+Apresentar os vários estilos (paradigmas) de programação em Python, focando nos paradigmas estruturadas e OOP.
 
 ## Conteúdo:
-> 5. [Classes](#p1)
-> 6. [Herança](#p1)
-> 7. [Polimorfismo](#p1)
-> 8. [Métodos](#p1)
-> 9. [Atributos](#p1)
+> 1. [MultiParadigma](#1-MultiParadigma)
+> 6. [Estruturada](#p1)
+> 2.1. [Escopo de Variável](#p1)
+> 8. [Orientado a Objeto](#p1)
+> 9. [Classes](#p1)
 > 10. [Encapsulamento](#p1)
+> 3.4 [Herança](#)
 > 11. [Laboratório](#10-laboratório)
 > 12. [Lista de Exercício](#11-lista-de-exercício)
 
@@ -47,7 +48,7 @@ lista = list(map(str, string('Python'))) # atribuição a um novo objeto
 print(lista) # ['P', 'y', 't', 'h', 'o', 'n']
 ```
 
-## Procedural
+## 2. Estruturada (Procedural)
 
 O desenvolvimento através do [paradigma procedural](https://en.wikipedia.org/wiki/Procedural_programming) estrutura a execução através de rotinas estanques que são chamadas conforme a necessidade. Normalmente as chamamos de procedures/funções.
 
@@ -120,7 +121,7 @@ No próximo exemplo, temos o arquivo `main.py` que chama o `calc.py` que está d
 ```
 Nesse caso, fica assim `from libs.calc import soma`. Perceba que o caminho do arquivo é definido, usando o ponto do separador.
 
-## Escopo de Variável
+### 2.1 Escopo de Variável
 
 O escopo de variável no Python é um tanto peculiar, é importante conhecer. 
 
@@ -249,7 +250,7 @@ saque(conta_do_jose, 50)
 ```
 >  Como sugestão, melhore as procedures para não realizar o saque além do limite, para criar contas apenas com saldo positivo.
 
-## OOP
+## 3. Orientado a Objeto
 
 O Paradigma [orientação a objetos](https://en.wikipedia.org/wiki/Object-oriented_programming)(OO), tem como proposta resolver problemas atráves de troca de mensagens entre `Objetos`, que são representações dos problemas atuais.
 
@@ -269,7 +270,7 @@ Entre as principais características da OOP, destaca-se a `reutilização de có
 
 Modelagem por objetos, vê o  mundo  como  uma  coletânea  de  objetos  que  interagem  entre  si,  apresentam  características próprias  que  são representadas pelos seus atributos (dados) e operações (processos).
 
-## 5.  Classes
+## 3.1 Classes
 
 Para entramos mais na prática, vamos utilizar o exemplo de `conta bancária` que utilizamos no estilo procedural. Nesse modelo podemos facilmente identificar o objeto `Conta`.
 
@@ -318,7 +319,7 @@ Construindo objeto...
 ```
 ## 10. Encapsulamento
 
-Com a chamada da classe, podemos criar um object e executar o método `deposito`, e acessar o atributo `saldo`. Os atributos estã públicos e podem ser acessados, entretanto nem sempre isso é desejado. No exemplo, o `saldo` deveria ser acessivel apenas pelos métodos.
+Com a chamada da classe, podemos criar um objeto e executar o método `deposito`, e acessar o atributo `saldo`. Os atributos estão públicos e podem ser acessados, entretanto nem sempre isso é desejado. No exemplo, o `saldo` deveria ser acessivel apenas pelos métodos.
 
 Para isso, podemos deixar o atributo no modo privado, e para isso adicionamos `__` (underscore) antes do nome da variável. O mesmo conceito é valido para os métodos.
 
