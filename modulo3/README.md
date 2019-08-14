@@ -6,14 +6,14 @@ Apresentar os vários estilos (paradigmas) de programação em Python, focando n
 
 ## Conteúdo:
 > 1. [MultiParadigma](#1-MultiParadigma)
-> 6. [Estruturada](#p1)
+> 2. [Estruturada](#2-Estruturada)
 > 2.1. [Escopo de Variável](#p1)
-> 8. [Orientado a Objeto](#p1)
-> 9. [Classes](#p1)
-> 10. [Encapsulamento](#p1)
-> 3.4 [Herança](#)
-> 11. [Laboratório](#10-laboratório)
-> 12. [Lista de Exercício](#11-lista-de-exercício)
+> 3. [Orientado a Objeto](#2.1-Escopo-de-Variável)
+> 3.1. [Classes](#3.1-Classes)
+> 3.2. [Encapsulamento](#3.2-Encapsulamento)
+> 3.3 [Herança](#3.3-Herança)
+> 4. [Laboratório](#4-laboratório)
+> 5. [Lista de Exercício](#5-lista-de-exercício)
 
 ## 1. MultiParadigma
 
@@ -270,7 +270,7 @@ Entre as principais características da OOP, destaca-se a `reutilização de có
 
 Modelagem por objetos, vê o  mundo  como  uma  coletânea  de  objetos  que  interagem  entre  si,  apresentam  características próprias  que  são representadas pelos seus atributos (dados) e operações (processos).
 
-## 3.1 Classes
+### 3.1 Classes
 
 Para entramos mais na prática, vamos utilizar o exemplo de `conta bancária` que utilizamos no estilo procedural. Nesse modelo podemos facilmente identificar o objeto `Conta`.
 
@@ -317,7 +317,7 @@ Construindo objeto...
 200
 >>> 
 ```
-## 10. Encapsulamento
+### 3.2 Encapsulamento
 
 Com a chamada da classe, podemos criar um objeto e executar o método `deposito`, e acessar o atributo `saldo`. Os atributos estão públicos e podem ser acessados, entretanto nem sempre isso é desejado. No exemplo, o `saldo` deveria ser acessivel apenas pelos métodos.
 
@@ -363,7 +363,7 @@ def limite(self, limite):
     self.__limite = limite
 ```
 
-## 6.  Herança 
+### 3.3  Herança 
 A Herança é um conceito do paradigma da orientação à objetos que determina que uma classe pode herdar atributos e métodos de uma outra classe e, assim, evitar que haja muita repetição de código.
 
 Utilizando o exemplo da conta, vamos criar a classe de `Investimento`, herdando todos os métodos e atributos da classe `Conta`.
@@ -409,7 +409,7 @@ class Investimento(Conta):
 
 Validando a implementação:
 
-```
+```bash
 >>> from conta import Conta, Investimento
 >>> maria = Investimento(1321,'Maria',100,200)
 Construindo objeto...
@@ -421,7 +421,7 @@ Construindo objeto...
 
 No modelo de conta `Investimento`, precisamos do atributo de taxa de juros. Portanto vamos dar uma sobrecarga no método `__init__()` e instânciar o método `__init__()` da classe `Conta` usando o método `super()`.
 
-```
+```python
 class Investimento(Conta):
     def __init__(self, nconta,titular, saldo, limite,juros):
       super().__init__(nconta, titular, saldo, limite)
@@ -430,7 +430,7 @@ class Investimento(Conta):
 ```
 Na conta investimento vamos implementar o método `rendimento()` que aplica a taxa de juros no saldo. Na classe `Conta`, os atributos estão privados, portanto precisamos mudar esse estado para as classes filhas acessarem os atributos. Por definição, mudamos os atributos para (_)(underscore).
 
-```
+```python
 class Conta:
     def __init__(self,nconta, titular, saldo, limite):
        print("Construindo objeto...")
@@ -474,11 +474,11 @@ class Investimento(Conta):
         return self._saldo
 ```
 
-## 11 Laboratório
+## 5 Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para práticar os conhecimentos apreendidos
 > [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo3/Labs/README.md)
 
-## 11 Lista de Exercício
+## 4 Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercicio:
 > [Lista de Exercício](https://github.com/clodonil/curso_python/tree/master/modulo3/exercicios/README.md)
 
