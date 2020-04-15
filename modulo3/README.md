@@ -52,6 +52,7 @@ print(lista) # ['P', 'y', 't', 'h', 'o', 'n']
 
 O desenvolvimento estruturada, também conhecida como [paradigma procedural](https://en.wikipedia.org/wiki/Procedural_programming), estrutura a execução através de rotinas estanques que são chamadas conforme a necessidade. Normalmente as chamamos de procedures/funções.
 
+![funcao](../imagens/funcao.png)
 
 Em algumas linguagens a diferenciação entre procedures e funções se dá pelo fato que função retorna algum valor e o procedure, apenas processa algo. No `Python` a função `return` devolve o conteúdo da variável declarada como retorno.
 

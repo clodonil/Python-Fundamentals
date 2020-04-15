@@ -12,13 +12,13 @@ from  scrapy_dadosAbertos import DadosAbertos
 dep = DadosAbertos()
 
 # dep.deputado_id() retorna a lista detalhada do deputado
-deputado = dep.deputado_id('73437')
+deputado = dep.deputado_id('160559')
 
 # recupera o nome do deputado
 nome = deputado['nomeCivil']
 
 # dep.deputado_despesas(id) retorna a lista com as despesas do deputado
-despesas = dep.deputado_despesas('73437')
+despesas = dep.deputado_despesas('160559')
 
 #Interecao para mostrar despesa a despesa
 for despesa in despesas:
