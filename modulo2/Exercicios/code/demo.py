@@ -1,5 +1,5 @@
 # importa a lib para conexão com o site Dados Abertos
-from  lib.scrapy_dadosAbertos import DadosAbertos
+from scrapy_dadosAbertos import DadosAbertos
 # Inicia a class para obter os dados
 site_connect = DadosAbertos()
 # obtendo ajuda com os métodos disponíveis.

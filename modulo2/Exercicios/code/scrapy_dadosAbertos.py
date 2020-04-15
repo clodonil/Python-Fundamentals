@@ -14,8 +14,8 @@ class DadosAbertos:
        self.url = 'https://dadosabertos.camara.leg.br/api/v2/'
 
     def get(self,link):
-        parametros = {'formato': 'json', 'itens': 100}
-        resposta = requests.get(link, parametros)      
+        #parametros = {'formato': 'json', 'itens': 100}
+        resposta = requests.get(link)      
         try: 
            return resposta.json()['dados']
         except:
