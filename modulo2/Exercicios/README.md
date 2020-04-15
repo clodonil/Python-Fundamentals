@@ -54,7 +54,7 @@ Com essa informação, vamos responder as perguntas abaixo.desenvolvendo os cód
 ```
 9. Mostre todos os votos (a favor ou contra) de um deputado e a descrição dos projetos:
 
-10. Apresente todos os projetos para um usuário e solicite a votaçao para cada projeto. Verifique qual deputado votou mais semestre ao usuário.
+10. Apresente todos os projetos para um usuário e solicite a votaçao para cada projeto. Verifique qual deputado votou mais semelhante ao usuário.
 ```
 ***
 > By:
