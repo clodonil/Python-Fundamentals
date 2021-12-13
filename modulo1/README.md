@@ -40,6 +40,10 @@ Não vou escrever sobre a história do Python pois já há muita coisa boa escri
 ## 2 Filosofia da Linguagem
 A linguagem Python tem uma filosofia. Siga e seja Feliz.
 
+```python
+import this
+```
+
 > O [Zen Python](https://www.python.org/dev/peps/pep-0020/) por Tim  Peters
 * Bonito é melhor que feio.
 * Explícito é melhor que implícito.
@@ -114,7 +118,7 @@ $ vagrant up
 $ vagrant ssh python
 ```
 Outra possibilidade também é utilizar uma IDE que está na cloud. No meu ponto de vista os melhores são:
-* [cloud9](https://c9.io/login)
+* [colab](https://colab.research.google.com/drive/)
 * [repl](https://repl.it/languages/python3)
 
 É só se cadastrar e sair usando.
@@ -715,13 +719,21 @@ Perceba que temos um delimitador na variável que é o ":". Podemos utilizar ess
 lista = texto.split(":")  # ['jose','30anos','rua de baixo','sp']
 print(lista[0])           # imprimir o nome
 ```
-Qualquer caractere pode ser o delimitador.
+Qualquer caractere pode ser o delimitador. 
 
-## 10 Laboratório
+## 10 Prática
+
+Antes de entrar no laboratório e lista de execício proposto, segue uma lista de exercício para colocar em prática os seus conhecimento.
+
+* [EstruturaSequencial](https://wiki.python.org.br/EstruturaSequencial)
+* [EstruturaDeDecisao](https://wiki.python.org.br/EstruturaDeDecisao)
+* [EstruturaDeRepeticao](https://wiki.python.org.br/EstruturaDeRepeticao)
+
+## 11 Laboratório
 No link abaixo temos o laboratório dirigido, faça o laboratório para praticar os conhecimentos apreendidos
 > [Laboratório](https://github.com/clodonil/curso_python/tree/master/modulo1/Labs)
 
-## 11 Lista de Exercício
+## 12 Lista de Exercício
 Após realizar o laboratório e brincar com os códigos, teste o seu conhecimento com a lista de exercícios:
 > [Lista de Exercícios](exercicios/README.md)
 
